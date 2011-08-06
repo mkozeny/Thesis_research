@@ -1,0 +1,14 @@
+package main;
+
+import java.util.Map;
+
+
+public class Test
+{
+
+	public static void main(String [] args)
+	{
+		Graph g = new Graph();
+		Map<Graph.Node, Integer> mapping = g.color(2);
+	}
+}

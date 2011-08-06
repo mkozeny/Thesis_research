@@ -1,0 +1,19 @@
+package main;
+
+public class nQueensProblemSolver {
+
+	private int n;
+	
+	private Cell []  cells;
+	
+	public nQueensProblemSolver(int n) {
+		super();
+		this.n = n;
+		this.cells = new Cell[n];
+	}
+
+	public void solveNQueensProblemRecursively()
+	{
+		
+	}
+}

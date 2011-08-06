@@ -1,0 +1,6 @@
+package main;
+
+public class Node {
+    public final int label;
+    public Node(int label) { this.label = label; }
+  }

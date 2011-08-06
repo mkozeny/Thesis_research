@@ -1,0 +1,12 @@
+package main;
+
+
+public class Test
+{
+
+	public static void main(String [] args)
+	{
+		Graph g = new Graph();
+		Map<Node, Integer> mapping = g.color(2);
+	}
+}

@@ -1,0 +1,62 @@
+package main;
+
+public class NQueensProblemSolver {
+
+	private int n;
+	
+	private Cell []  cells;
+	
+	private int pointer;
+	
+	public NQueensProblemSolver(int n) {
+		super();
+		this.n = n;
+		this.cells = new Cell[n];
+		this.pointer = 0;
+	}
+
+	public void solveNQueensProblemRecursively(int i, int j)
+	{
+		if(pointer<n)
+		{
+			for(;i<n;i++)
+			{
+				for(j=0;j<n;j++)
+				{
+					if(!(isSomeQueenInSameRow(j) || isSomeQueenOnDiagonal(i, j)))
+					{
+						if(pointer == 5)
+							System.out.println("OMG");
+						cells[pointer] = new Cell(i, j);
+						solveNQueensProblemRecursively(++pointer, 0);
+					}
+				}
+			}
+		}
+	}
+	private boolean isSomeQueenInSameRow(int row)
+	{
+		for(int k=0;k <pointer; k++)
+		{
+			if(cells[k].getJ() == row)
+				return true;
+		}
+		return false;
+	}
+	
+	private boolean isSomeQueenOnDiagonal(int row, int column)
+	{
+		for(int k = 0;k<pointer;k++)
+			{
+				if(cells[k].getI() - cells[k].getJ() == row - column
+						|| cells[k].getI() + cells[k].getJ() == row + column)
+					return true;
+		}
+		return false;
+	}
+	
+	public Cell[] getCells()
+	{
+		return this.cells;
+	}
+}

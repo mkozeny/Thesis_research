@@ -1,0 +1,60 @@
+package main;
+
+import java.util.LinkedHashSet;
+import java.util.Map;
+import java.util.Set;
+
+import edu.mit.csail.sdg.annotations.Ensures;
+import edu.mit.csail.sdg.annotations.Modifies;
+import edu.mit.csail.sdg.squander.Squander;
+import edu.mit.csail.sdg.squander.annotations.FreshObjects;
+import edu.mit.csail.sdg.squander.annotations.Options;
+
+public class Test
+{
+class Graph {
+	  class Node {
+	    public final int label;
+	    public Node(int label) { this.label = label; }
+	  }
+	  
+	  class Edge {
+	    public final Node src, dest;
+	    public final int cost;
+	    public Edge(Node src, Node dest, int cost) {
+	        this.src = src;
+	        this.dest = dest;
+	        this.cost = cost;
+	    } 
+	  }
+	  
+	  private Set<Node> nodes = new LinkedHashSet<Node>();
+	  private Set<Edge> edges = new LinkedHashSet<Edge>();
+	    
+	  @Ensures({
+	      "return.keys = this.nodes.elts", 
+	      "all c : return.vals | c > 0 && c <= k",
+	      "all e : this.edges.elts | return.elts[e.src] != return.elts[e.dst]"
+	  })
+	  @Modifies("return.elts")
+	  @Options(ensureAllInts=true)
+	  @FreshObjects(cls = Map.class, typeParams={Node.class, Integer.class}, num = 1)
+	  public Map<Node, Integer> color(int k) {
+		  Set<Node> nodes = new LinkedHashSet<Node>();
+		  Node node1 = new Node(0);
+		  nodes.add(node1);
+		  Node node2 = new Node(0);
+		  nodes.add(node2);
+		  Node node3 = new Node(0);
+		  nodes.add(node3);
+		  Node node4 = new Node(0);
+		  nodes.add(node4);
+		  
+		  Set<Edge> edges = new LinkedHashSet<Edge>();
+		  
+		  
+	      return Squander.exe(this, k);
+	  }
+	}
+
+}

@@ -1,0 +1,45 @@
+package main;
+
+import java.util.LinkedHashSet;
+import java.util.Map;
+import java.util.Set;
+
+import main.Graph.Edge;
+import main.Graph.Node;
+
+
+public class Test
+{
+
+	public static void main(String [] args)
+	{
+		Graph g = new Graph();
+		Set<Graph.Node> nodes = new LinkedHashSet<Graph.Node>();
+		  Graph.Node node1 = new Graph.Node(1);
+		  nodes.add(node1);
+		  Graph.Node node2 = new Graph.Node(2);
+		  nodes.add(node2);
+		  Graph.Node node3 = new Graph.Node(3);
+		  nodes.add(node3);
+		  Graph.Node Graph.Node4 = new Graph.Node(4);
+		  Graph.Nodes.add(Graph.Node4);
+		  
+		  Set<Edge> edges = new LinkedHashSet<Edge>();
+		  Edge edge1 = new Edge(Graph.Node1, Graph.Node3, 1);
+		  edges.add(edge1);
+		  Edge edge2 = new Edge(Graph.Node1, Graph.Node4, 1);
+		  edges.add(edge2);
+		  Edge edge3 = new Edge(Graph.Node2, Graph.Node3, 1);
+		  edges.add(edge3);
+		  Edge edge4 = new Edge(Graph.Node2, Graph.Node4, 1);
+		  edges.add(edge4);
+		  g.setGraph.Nodes(Graph.Nodes);
+		  g.setEdges(edges);
+		Map<Graph.Graph.Node, Integer> mapping = g.color(2);
+		Set<Graph.Node> result = mapping.keySet();
+		for(Graph.Node n: result)
+		{
+			System.out.println("Node: "+n.label+", color: "+mapping.get(n));
+		}
+	}
+}

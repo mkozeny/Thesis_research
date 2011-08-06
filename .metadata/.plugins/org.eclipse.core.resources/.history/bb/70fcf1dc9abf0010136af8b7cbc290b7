@@ -1,0 +1,16 @@
+package main;
+
+public class nQueensProblemSolver {
+
+	private int n;
+	
+	public nQueensProblemSolver(int n) {
+		super();
+		this.n = n;
+	}
+
+	public void solveNQueensProblemRecursively()
+	{
+		
+	}
+}

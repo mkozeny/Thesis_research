@@ -1,0 +1,8 @@
+package main;
+
+import edu.mit.csail.sdg.squander.annotations.Options;
+
+@Options("")
+public class Test {
+	
+}
