@@ -16,21 +16,25 @@ public class NQueensProblemSolver {
 	}
 
 	public void solveNQueensProblemRecursively() {
-		for (int j = 0; j < n; j++) {
+		if (pointer < n) {
+			/*
+			 * if(pointer == 5) System.out.println("OMG");
+			 */
+			for (int j = 0; j < n; j++) {
 				if (!(isSomeQueenInSameRow(j) || isSomeQueenOnDiagonal(pointer,
 						j))) {
 					cells[pointer] = new Cell(pointer, j);
-					if (pointer == n - 1)
-						return;
 					++pointer;
 					solveNQueensProblemRecursively();
+					if (pointer == n)
+						return;
 					if (pointer < n - 1 || cells[pointer] == null)
 						cells[--pointer] = null;
 
 				}
 			}
 
-		
+		}
 	}
 
 	private boolean isSomeQueenInSameRow(int row) {

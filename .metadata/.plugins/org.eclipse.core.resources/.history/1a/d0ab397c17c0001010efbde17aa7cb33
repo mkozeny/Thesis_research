@@ -16,7 +16,8 @@ public class NQueensProblemSolver {
 	}
 
 	public void solveNQueensProblemRecursively() {
-		for (int j = 0; j < n; j++) {
+		if (pointer < n) {
+			for (int j = 0; j < n; j++) {
 				if (!(isSomeQueenInSameRow(j) || isSomeQueenOnDiagonal(pointer,
 						j))) {
 					cells[pointer] = new Cell(pointer, j);
@@ -30,7 +31,7 @@ public class NQueensProblemSolver {
 				}
 			}
 
-		
+		}
 	}
 
 	private boolean isSomeQueenInSameRow(int row) {
