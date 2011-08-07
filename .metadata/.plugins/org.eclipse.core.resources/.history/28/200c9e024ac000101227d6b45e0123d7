@@ -1,0 +1,10 @@
+package main;
+
+public class Edge {
+    public final Node src, dest;
+    public Edge(Node src, Node dest) {
+        this.src = src;
+        this.dest = dest;
+        
+    } 
+  }

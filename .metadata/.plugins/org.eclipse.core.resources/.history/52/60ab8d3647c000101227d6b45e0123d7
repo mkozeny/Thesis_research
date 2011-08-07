@@ -1,0 +1,58 @@
+package main;
+
+import java.util.HashSet;
+import java.util.Random;
+import java.util.Set;
+
+public class Graph {
+	
+	private int n;
+	
+	public Graph(int n) {
+		super();
+		this.n = n;
+		this.nodes = new HashSet<Node>();
+		this.edges = new HashSet<Edge>();
+	}
+
+	Set<Node> nodes;
+	
+	Set<Edge> edges;
+	
+	public void generateGraph()
+	{
+		Node src = new Node(0);
+		Node first = src;
+		this.nodes.add(src);
+		for(int i=1; i < n; i++)
+		{
+			Node dest = new Node(i);
+			this.nodes.add(dest);
+			Edge edge = new Edge(src, dest);
+			this.edges.add(edge);
+			src = dest;
+		}
+		Edge edge = new Edge(src, first);
+		this.edges.add(edge);
+		final int maxNumberOfNodes = this.n*(this.n+1);
+		Random generator = new Random();
+		int countOfExtraEdges = generator.nextInt((int)(0.6*maxNumberOfNodes));
+		countOfExtraEdges += (int)0.3*maxNumberOfNodes;
+		Random nodeChooser = new Random();
+		Node [] arrayOfNodes =  new Node[this.nodes.size()];
+		nodes.toArray(arrayOfNodes);
+		for(int i=1; i < n; i++)
+		{
+			int choosedNode = nodeChooser.nextInt(this.nodes.size()-1);
+			Node firstNode = arrayOfNodes[choosedNode];
+			choosedNode = nodeChooser.nextInt(this.nodes.size()-1);
+			Node secondNode = arrayOfNodes[choosedNode];
+			Edge e = new Edge(firstNode, secondNode);
+			this.edges.add(e);
+		}
+		for (Edge e : edges) {
+			System.out.println("Edge: src: " + e.src.value + ", dest: "
+					+ e.dest.value);
+		}
+	}
+}

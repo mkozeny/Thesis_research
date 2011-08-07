@@ -1,0 +1,22 @@
+package main;
+
+import java.util.Set;
+
+public class Graph {
+	
+	private int n;
+	
+	public Graph(int n) {
+		super();
+		this.n = n;
+	}
+
+	Set<Node> nodes;
+	
+	Set<Edge> edges;
+	
+	public void generateGraph()
+	{
+		
+	}
+}

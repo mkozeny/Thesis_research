@@ -1,0 +1,29 @@
+package main;
+
+import java.util.Set;
+
+public class Graph {
+	
+	private int n;
+	
+	public Graph(int n) {
+		super();
+		this.n = n;
+	}
+
+	Set<Node> nodes;
+	
+	Set<Edge> edges;
+	
+	public void generateGraph()
+	{
+		Node src = new Node(0);
+		for(int i=1; i < n; i++)
+		{
+			Node dest = new Node(i);
+			Edge edge = new Edge(src, dest);
+			edges.add(edge);
+			src = dest;
+		}
+	}
+}

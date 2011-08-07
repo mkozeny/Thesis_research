@@ -1,0 +1,37 @@
+package main;
+
+public class NQueensProblemSolver {
+
+	private int n;
+
+	private Cell[] cells;
+
+	private int pointer;
+
+	public NQueensProblemSolver(int n) {
+		super();
+		this.n = n;
+		this.cells = new Cell[n];
+		this.pointer = 0;
+	}
+
+	@Requires ( ” r e s u l t . l e n g t h == n” )
+	@Ensures ( {
+	” a l l k : i n t | k>=0 && k<n => l o n e ( C e l l @ i ) . k” ,
+	” a l l k : i n t | k>=0 && k<n => l o n e ( C e l l @ j ) . k” ,
+	” a l l q1 : r e s u l t . e l t s | no q2 : r e s u l t . e l t s − q1 | ”+
+	” q1 . i = q2 . i | | q1 . i −q1 . j = q2 . i −q2 . j | | q1 . j = q2 . j
+	})
+	@Modifies ({
+	” C e l l . i [ ] [ ] [ { k : i n t | k>=0 && k<n } ] ” ,
+	” C e l l . j [ ] [ ] [ { k : i n t | k>=0 && k<n } ] ”
+	})
+	public s t a t i c void nqueens ( i n t n , Set<C e l l > r e s u l t ) {
+	Squander . e x e ( null , n , r e s u l t ) ;
+	}
+
+
+	public Cell[] getCells() {
+		return this.cells;
+	}
+}

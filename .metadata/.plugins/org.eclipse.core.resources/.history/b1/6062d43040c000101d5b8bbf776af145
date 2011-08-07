@@ -1,0 +1,44 @@
+package main;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Graph {
+	
+	private int n;
+	
+	public Graph(int n) {
+		super();
+		this.n = n;
+		this.nodes = new HashSet<Node>();
+		this.edges = new HashSet<Edge>();
+	}
+
+	Set<Node> nodes;
+	
+	Set<Edge> edges;
+	
+	public void generateGraph()
+	{
+		Node src = new Node(0);
+		Node first = src;
+		this.nodes.add(src);
+		for(int i=1; i < n; i++)
+		{
+			Node dest = new Node(i);
+			this.nodes.add(dest);
+			Edge edge = new Edge(src, dest);
+			this.edges.add(edge);
+			src = dest;
+		}
+		Edge edge = new Edge(src, first);
+		this.edges.add(edge);
+		
+		final int maxNumberOfNodes = n(n+1);
+		
+		for (Edge e : edges) {
+			System.out.println("Edge: src: " + e.src.value + ", dest: "
+					+ e.dest.value);
+		}
+	}
+}

@@ -1,0 +1,22 @@
+package main;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		NQueensProblemSolver solver = new NQueensProblemSolver(30);
+		Set<Cell> cells = new HashSet<Cell>();
+		solver.nqueens(16, cells);
+		for(Cell cell:cells)
+		{
+			System.out.println("Cell coordinations: x: "+cell.getI()+", y: "+cell.getJ());
+		}
+
+	}
+
+}

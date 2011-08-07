@@ -1,0 +1,18 @@
+package main;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		NQueensProblemSolver solver = new NQueensProblemSolver(30);
+		solver.nqueens(n, result);
+		for(Cell cell:solver.getCells())
+		{
+			System.out.println("Cell coordinations: x: "+cell.getI()+", y: "+cell.getJ());
+		}
+
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;hamiltonianPath/src/main&apos;&#x0A;- Original project: &apos;testSquander&apos;&#x0A;- Destination element: &apos;hamiltonianPath/src/main&apos;&#x0A;- Original elements:&#x0A;     main.Edge.java&#x0A;     main.Node.java" description="Copy compilation units" destination="=hamiltonianPath/src&lt;main" element1="/src&lt;main{Edge.java" element2="/src&lt;main{Node.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1312640516760" units="2" version="1.0"/>
+</session>
