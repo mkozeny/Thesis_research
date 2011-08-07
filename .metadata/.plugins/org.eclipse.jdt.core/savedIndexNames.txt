@@ -1,15 +1,8 @@
 INDEX VERSION 1.126+/home/kozenym/Desktop/DP/squander_workspace/.metadata/.plugins/org.eclipse.jdt.core
 3896298957.index
-3299196241.index
+2271110841.index
 411780243.index
-3411458025.index
-1925641959.index
-1285357630.index
-277583183.index
 2993748855.index
 3510461256.index
 1898542586.index
 188161557.index
-1048154902.index
-269978711.index
-3243621715.index

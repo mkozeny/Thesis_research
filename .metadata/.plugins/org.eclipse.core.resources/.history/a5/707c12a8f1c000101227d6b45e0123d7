@@ -11,8 +11,8 @@ public class Main {
 	public static void main(String[] args) {
 		GraphExecutor graph = new GraphExecutor(10);
 		graph.generateGraph();
-		Edge [] edges = graph.solveHamiltonianPath();
-		for(Edge e:edges)
+		graph.solveHamiltonianPath();
+		for(Edge e:graph.getResult())
 		{
 			System.out.println("Edge src: "+e.getSrc().getValue()+", dest: "+e.getDest().getValue());
 		}
