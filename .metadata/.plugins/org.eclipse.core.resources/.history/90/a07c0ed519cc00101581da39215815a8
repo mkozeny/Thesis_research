@@ -1,0 +1,40 @@
+package graph;
+
+public class GraphExtension extends Graph {
+
+	public GraphExtension(int n) {
+		super(n);
+		
+	}
+	@Override
+	public void generateGraph()
+	{
+		super.generateGraph();
+		for(Edge e:this.edges)
+		{
+			Node n;
+			this.nodes.remove(e.getSrc());
+			e.setSrc(n=new ExtendedNode(e.getSrc().getValue()));
+			this.nodes.add(n);
+			this.nodes.remove(e.getDest());
+			e.setDest(n=new ExtendedNode(e.getDest().getValue()));
+			this.nodes.add(n);
+		}
+		for(Node n:this.nodes)
+		{
+			if(!(n instanceof ExtendedNode))
+			{
+				this.nodes.remove(n);
+				this.nodes.add(new ExtendedNode(n.getValue()));
+			}
+		}
+	}
+
+	private void createNeighbourhood()
+	{
+		for(Node n:this.nodes)
+		{
+			
+		}
+	}
+}

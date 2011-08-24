@@ -1,0 +1,36 @@
+package graph;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class ExtendedNode extends Node {
+
+
+	public static enum State
+	{
+		FRESH,
+		OPENED,
+		CLOSED
+	}
+	
+	public ExtendedNode(int value) {
+		super(value);
+		this.neighbourhood = new HashSet<Node>();
+	}
+	
+	private State state;
+	
+	private int distance;
+
+	private Set<Node> neighbourhood;
+
+	public Set<Node> getNeighbourhood() {
+		return neighbourhood;
+	}
+
+	public void setNeighbourhood(Set<Node> neighbourhood) {
+		this.neighbourhood = neighbourhood;
+	}
+	
+	
+}

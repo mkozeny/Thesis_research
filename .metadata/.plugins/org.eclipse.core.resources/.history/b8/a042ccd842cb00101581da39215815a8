@@ -1,0 +1,32 @@
+package main;
+
+public class Thing {
+
+	private int v;
+	
+	private int c;
+
+	public Thing(int v, int c) {
+		super();
+		this.v = v;
+		this.c = c;
+	}
+
+	public int getV() {
+		return v;
+	}
+
+	public void setV(int v) {
+		this.v = v;
+	}
+
+	public int getC() {
+		return c;
+	}
+
+	public void setC(int c) {
+		this.c = c;
+	}
+	
+	
+}

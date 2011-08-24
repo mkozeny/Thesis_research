@@ -1,0 +1,48 @@
+package graph;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+public class GraphExtension extends Graph {
+
+	public GraphExtension(int n) {
+		super(n);
+		
+	}
+	@Override
+	public void generateGraph()
+	{
+		super.generateGraph();
+		for(Edge e:this.edges)
+		{
+			Node n;
+			this.nodes.remove(e.getSrc());
+			e.setSrc(n=new ExtendedNode(e.getSrc().getValue()));
+			this.nodes.add(n);
+			this.nodes.remove(e.getDest());
+			e.setDest(n=new ExtendedNode(e.getDest().getValue()));
+			this.nodes.add(n);
+		}
+		for(Node n:this.nodes)
+		{
+			if(!(n instanceof ExtendedNode))
+			{
+				n=new ExtendedNode(n.getValue());
+			}
+			createNeighbourhood(n);
+		}
+		
+	}
+
+	private void createNeighbourhood(Node node)
+	{
+		List<? extends Node> actualNodes = new ArrayList<ExtendedNode>();
+		actualNodes.addAll((ArrayList<? extends Node>) this.nodes);
+		actualNodes.remove(node);
+		for(Node n:this.nodes)
+		{
+			
+		}
+	}
+}

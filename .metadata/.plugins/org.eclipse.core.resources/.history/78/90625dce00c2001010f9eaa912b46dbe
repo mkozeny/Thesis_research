@@ -1,0 +1,31 @@
+package main;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		KnapSack kn = new KnapSack(100, 4);
+		int [] v = new int[4];
+		v[0]=18;
+		v[1]=42;
+		v[2]=88;
+		v[3]=3;
+		int [] c = new int[4];
+		c[0]=114;
+		c[1]=136;
+		c[2]=192;
+		c[3]=223;
+		kn.setV(v);
+		kn.setC(c);
+		//int [] result = new int[4];
+		//kn.solveKnapSackProblem(result, 470);
+		int [] result = kn.solveKnapSackProblem(470);
+		for(int i=0; i < result.length; i++)
+		{
+			System.out.print(result[i]+" ");
+		}
+	}
+
+}

@@ -1,5 +1,6 @@
 package graph;
 
+import java.lang.reflect.Constructor;
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
@@ -9,6 +10,8 @@ public class Graph {
 	protected int n;
 	
 	protected int [] [] matrixOfFollowers;
+	
+	protected int [] [] matrixOfIncidency;
 	
 	protected Edge [] result;
 	
@@ -20,6 +23,7 @@ public class Graph {
 		this.nodes = new HashSet<Node>();
 		this.edges = new HashSet<Edge>();
 		this.matrixOfFollowers = new int [n][n];
+		this.matrixOfIncidency = new int [n][n];
 		this.result = new Edge [n-1];
 		this.pointer = 0;
 	}
@@ -72,6 +76,8 @@ public class Graph {
 		//int k = 0;
 		for (Edge e : this.edges) {
 			matrixOfFollowers[e.getSrc().getValue()][e.getDest().getValue()] = 1;
+			matrixOfIncidency[e.getSrc().getValue()][e.getDest().getValue()] = 1;
+			matrixOfIncidency[e.getDest().getValue()][e.getSrc().getValue()] = 1;
 			/*System.out.println(k+". Edge: src: " + ((e.getSrc()!=null)?e.getSrc().getValue():"") + ", dest: "
 					+ ((e.getDest()!=null)?e.getDest().getValue():""));*/
 			//k++;

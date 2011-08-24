@@ -1,0 +1,13 @@
+package graph;
+
+public class ExtendedNode extends Node {
+
+	public ExtendedNode(int value) {
+		super(value);
+		this.isSelected = false;
+	}
+
+	private boolean isSelected;
+	
+	
+}

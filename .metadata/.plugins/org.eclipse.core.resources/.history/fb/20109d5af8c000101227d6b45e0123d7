@@ -1,0 +1,23 @@
+package main;
+
+public class KnapSack {
+
+	private int capacity;
+	
+	private int n;
+	
+	private int [] v;
+	
+	private int [] c;
+
+	public KnapSack(int capacity, int n) {
+		super();
+		this.capacity = capacity;
+		this.n = n;
+	}
+	
+	public int [] solveKnapSackProblem()
+	{
+		
+	}
+}

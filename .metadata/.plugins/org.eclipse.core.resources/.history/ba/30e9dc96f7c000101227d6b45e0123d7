@@ -1,0 +1,12 @@
+package main;
+
+public class KnapSack {
+
+	private int capacity;
+	
+	private int n;
+	
+	private int [] v;
+	
+	private int [] m;
+}

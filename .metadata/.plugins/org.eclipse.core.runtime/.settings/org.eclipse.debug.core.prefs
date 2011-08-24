@@ -1,3 +1,3 @@
-#Sun Aug 07 09:03:23 CEST 2011
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="e.getSrc().getValue()"/>\n<expression enabled\="true" text\="srcValue"/>\n<expression enabled\="true" text\="e.getDest().getValue()"/>\n<expression enabled\="true" text\="destValue"/>\n</watchExpressions>\n
+#Sat Aug 13 12:39:38 CEST 2011
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="StrictMath.pow(base,arity)"/>\n<expression enabled\="true" text\="universe.size()"/>\n<expression enabled\="true" text\="Integer.MAX_VALUE"/>\n</watchExpressions>\n
 eclipse.preferences.version=1

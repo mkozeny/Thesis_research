@@ -1,0 +1,10 @@
+package graph;
+
+public class GraphExtension extends Graph {
+
+	public GraphExtension(int n) {
+		super(n);
+		
+	}
+
+}

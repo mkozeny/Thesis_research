@@ -1,0 +1,20 @@
+package graph;
+
+public class GraphExtension extends Graph {
+
+	public GraphExtension(int n) {
+		super(n);
+		
+	}
+	@Override
+	public void generateGraph()
+	{
+		super.generateGraph();
+		for(Edge e:this.edges)
+		{
+			e.setSrc(new ExtendedNode(e.getSrc().getValue()));
+			e.setDest(new ExtendedNode(e.getDest().getValue()));
+		}
+	}
+
+}

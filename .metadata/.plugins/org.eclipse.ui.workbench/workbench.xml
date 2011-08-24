@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="21" version="2.0">
+<workbench progressCount="19" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="0" y="24">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
-<coolbarLayout locked="0">
+<coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="124" y="34"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
@@ -30,6 +30,16 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
 </presentation>
 </folder>
 </info>
@@ -38,7 +48,7 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/testSquander/src/main/Test.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1246" selectionTopPixel="325"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Graph.java" partName="Graph.java" path="/home/kozenym/Desktop/DP/squander_workspace/testSquander/src/main/Graph.java" title="Graph.java" tooltip="testSquander/src/main/Graph.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Graph.java" partName="Graph.java" path="/home/kozenym/Desktop/DP/squander_workspace/testSquander/src/main/Graph.java" title="Graph.java" tooltip="testSquander/src/main/Graph.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/testSquander/src/main/Graph.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1081" selectionTopPixel="283"/>
 </editor>
@@ -46,12 +56,53 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/testSquander/src/main/Edge.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KnapSack.java" partName="KnapSack.java" path="/home/kozenym/Desktop/DP/squander_workspace/knapSack-squander/src/main/KnapSack.java" title="KnapSack.java" tooltip="knapSack-squander/src/main/KnapSack.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/knapSack-squander/src/main/KnapSack.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1209" selectionTopPixel="250"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/kozenym/Desktop/DP/squander_workspace/knapSack-squander/src/main/Main.java" title="Main.java" tooltip="knapSack-squander/src/main/Main.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/knapSack-squander/src/main/Main.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="986" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NQueensProblemSolver.java" partName="NQueensProblemSolver.java" path="/home/kozenym/Desktop/DP/squander_workspace/nQueens-squander/src/main/NQueensProblemSolver.java" title="NQueensProblemSolver.java" tooltip="nQueens-squander/src/main/NQueensProblemSolver.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/nQueens-squander/src/main/NQueensProblemSolver.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="349" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/kozenym/Desktop/DP/squander_workspace/nQueens/src/main/Main.java" title="Main.java" tooltip="nQueens/src/main/Main.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/nQueens/src/main/Main.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NQueensProblemSolver.java" partName="NQueensProblemSolver.java" path="/home/kozenym/Desktop/DP/squander_workspace/nQueens/src/main/NQueensProblemSolver.java" title="NQueensProblemSolver.java" tooltip="nQueens/src/main/NQueensProblemSolver.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/nQueens/src/main/NQueensProblemSolver.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="91" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphExtension.java" partName="GraphExtension.java" path="/home/kozenym/Desktop/DP/squander_workspace/lDominantniMnozinaGrafu-squander/src/graph/GraphExtension.java" title="GraphExtension.java" tooltip="lDominantniMnozinaGrafu-squander/src/graph/GraphExtension.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lDominantniMnozinaGrafu-squander/src/graph/GraphExtension.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3169" selectionTopPixel="1736"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExtendedNode.java" partName="ExtendedNode.java" path="/home/kozenym/Desktop/DP/squander_workspace/lDominantniMnozinaGrafu-squander/src/graph/ExtendedNode.java" title="ExtendedNode.java" tooltip="lDominantniMnozinaGrafu-squander/src/graph/ExtendedNode.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lDominantniMnozinaGrafu-squander/src/graph/ExtendedNode.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="263" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphExecutor.java" partName="GraphExecutor.java" path="/home/kozenym/Desktop/DP/squander_workspace/lDominantniMnozinaGrafu-squander/src/main/GraphExecutor.java" title="GraphExecutor.java" tooltip="lDominantniMnozinaGrafu-squander/src/main/GraphExecutor.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lDominantniMnozinaGrafu-squander/src/main/GraphExecutor.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/kozenym/Desktop/DP/squander_workspace/lDominantniMnozinaGrafu-squander/src/main/Main.java" title="Main.java" tooltip="lDominantniMnozinaGrafu-squander/src/main/Main.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lDominantniMnozinaGrafu-squander/src/main/Main.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="21" selectionOffset="179" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Graph.java" partName="Graph.java" path="/home/kozenym/Desktop/DP/squander_workspace/commonGraphUtils/src/graph/Graph.java" title="Graph.java" tooltip="commonGraphUtils/src/graph/Graph.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/commonGraphUtils/src/graph/Graph.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1460" selectionTopPixel="814"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>&#x0A;<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings (2 items)"/>
+<expanded>
+<category IMemento.internal.id="Warnings (17 items)"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="73" org.eclipse.ui.ide.markerType="108" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.resourceField="108" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -60,9 +111,6 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1311588953974">
@@ -93,6 +141,9 @@
 </customFilters>
 </viewState>
 </view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
@@ -110,8 +161,6 @@
 <alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
-<alwaysOnActionSet id="com.genuitec.myeclipse.actions"/>
-<alwaysOnActionSet id="com.genuitec.myeclipse.test.actions"/>
 <alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
 <alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
 <alwaysOnActionSet id="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>
@@ -152,11 +201,11 @@
 <perspective_action id="com.genuitec.eclipse.dehory.dehoryperspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
 <layout>
@@ -215,56 +264,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/testSquander/src/main/Test.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/testSquander/src/main/Graph.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/testSquander/src/main/Edge.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/testSquander/src/main/Graph.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/testSquander/src/main/Test.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/lDominantniMnozinaGrafu-squander/src/graph/GraphExtension.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/lDominantniMnozinaGrafu-squander/src/graph/ExtendedNode.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/lDominantniMnozinaGrafu-squander/src/main/GraphExecutor.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/lDominantniMnozinaGrafu-squander/src/main/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/commonGraphUtils/src/graph/Graph.java"/>
 </editors>
-<item historyLabel="Test.java" index="0">
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="2106" y="3"/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="1751" y="0"/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="1812" y="0"/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="1745" y="0"/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="1743" y="0"/>
+</item>
+<item historyLabel="GraphExecutor.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Test.java" index="0">
-<position info="not_deleted" x="955" y="0"/>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="200" y="0"/>
 </item>
-<item historyLabel="Graph.java" index="1">
+<item historyLabel="GraphExecutor.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Test.java" index="0">
-<position info="not_deleted" x="955" y="0"/>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="200" y="0"/>
 </item>
-<item historyLabel="Graph.java" index="1">
-<position info="not_deleted" x="910" y="0"/>
-</item>
-<item historyLabel="Test.java" index="0">
-<position info="not_deleted" x="2382" y="0"/>
-</item>
-<item historyLabel="Graph.java" index="1">
-<position info="not_deleted" x="909" y="1"/>
-</item>
-<item historyLabel="Test.java" index="0">
-<position info="not_deleted" x="1246" y="0"/>
-</item>
-<item historyLabel="Graph.java" index="1">
-<position info="not_deleted" x="807" y="0"/>
-</item>
-<item historyLabel="Edge.java" index="2">
+<item historyLabel="GraphExecutor.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Graph.java" index="3">
-<position info="not_deleted" x="807" y="0"/>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="200" y="0"/>
 </item>
-<item historyLabel="Test.java" index="4">
-<position info="not_deleted" x="1246" y="0"/>
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="2" y="0"/>
 </item>
-<item historyLabel="Graph.java" index="3">
-<position info="not_deleted" x="1081" y="0"/>
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="1365" y="0"/>
 </item>
-<item historyLabel="Test.java" index="4">
-<position info="not_deleted" x="1246" y="0"/>
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="1383" y="0"/>
 </item>
-<item active="true" historyLabel="Graph.java" index="3">
-<position info="not_deleted" x="1081" y="0"/>
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="1602" y="0"/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="1779" y="0"/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="1552" y="0"/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="176" y="0"/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="2138" y="0"/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="176" y="0"/>
+</item>
+<item historyLabel="GraphExecutor.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ExtendedNode.java" index="1">
+<position info="not_deleted" x="263" y="0"/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="1816" y="0"/>
+</item>
+<item historyLabel="Graph.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Graph.java" index="4">
+<position info="not_deleted" x="229" y="0"/>
+</item>
+<item historyLabel="Graph.java" index="4">
+<position info="not_deleted" x="2167" y="0"/>
+</item>
+<item historyLabel="GraphExecutor.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="1816" y="0"/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position/>
+</item>
+<item historyLabel="GraphExecutor.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Graph.java" index="4">
+<position info="not_deleted" x="1460" y="0"/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="176" y="0"/>
+</item>
+<item historyLabel="GraphExecutor.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="2614" y="0"/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="685" y="24"/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="822" y="0"/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="1816" y="0"/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position/>
+</item>
+<item historyLabel="Main.java" index="3">
+<position info="not_deleted" x="179" y="21"/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position/>
+</item>
+<item historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="763" y="0"/>
+</item>
+<item active="true" historyLabel="GraphExtension.java" index="0">
+<position info="not_deleted" x="876" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -283,6 +437,36 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Graph.java" tooltip="commonGraphUtils/src/graph/Graph.java">
+<persistable path="/commonGraphUtils/src/graph/Graph.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="lDominantniMnozinaGrafu-squander/src/main/Main.java">
+<persistable path="/lDominantniMnozinaGrafu-squander/src/main/Main.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphExecutor.java" tooltip="lDominantniMnozinaGrafu-squander/src/main/GraphExecutor.java">
+<persistable path="/lDominantniMnozinaGrafu-squander/src/main/GraphExecutor.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExtendedNode.java" tooltip="lDominantniMnozinaGrafu-squander/src/graph/ExtendedNode.java">
+<persistable path="/lDominantniMnozinaGrafu-squander/src/graph/ExtendedNode.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphExtension.java" tooltip="lDominantniMnozinaGrafu-squander/src/graph/GraphExtension.java">
+<persistable path="/lDominantniMnozinaGrafu-squander/src/graph/GraphExtension.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NQueensProblemSolver.java" tooltip="nQueens/src/main/NQueensProblemSolver.java">
+<persistable path="/nQueens/src/main/NQueensProblemSolver.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="nQueens/src/main/Main.java">
+<persistable path="/nQueens/src/main/Main.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NQueensProblemSolver.java" tooltip="nQueens-squander/src/main/NQueensProblemSolver.java">
+<persistable path="/nQueens-squander/src/main/NQueensProblemSolver.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="knapSack-squander/src/main/Main.java">
+<persistable path="/knapSack-squander/src/main/Main.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KnapSack.java" tooltip="knapSack-squander/src/main/KnapSack.java">
+<persistable path="/knapSack-squander/src/main/KnapSack.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Edge.java" tooltip="testSquander/src/main/Edge.java">
 <persistable path="/testSquander/src/main/Edge.java"/>
 </file>

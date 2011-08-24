@@ -1,7 +1,7 @@
 package graph;
 
 public class Node implements Comparable<Node>{
-    private final int value;
+    protected final int value;
     public Node(int value) { this.value = value; }
 	@Override
 	public int compareTo(Node o) {

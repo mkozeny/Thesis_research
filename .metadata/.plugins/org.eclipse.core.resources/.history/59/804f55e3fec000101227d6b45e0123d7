@@ -1,0 +1,43 @@
+package main;
+
+import edu.mit.csail.sdg.annotations.Ensures;
+import edu.mit.csail.sdg.annotations.Modifies;
+import edu.mit.csail.sdg.squander.Squander;
+import edu.mit.csail.sdg.squander.annotations.FreshObjects;
+
+public class KnapSack {
+
+	private int capacity;
+	
+	private int n;
+	
+	private int [] v;
+	
+	private int [] c;
+
+	public KnapSack(int capacity, int n) {
+		super();
+		this.capacity = capacity;
+		this.n = n;
+	}
+	
+	@Ensures({"sum i: int | i >= 0 && i < this.n => return[i]*this.c[i] > minCost",
+		"sum i: int | i >= 0 && i < this.n => return[i]*this.v[i] < this.capacity" ,
+		"return.length = n "})
+	@Modifies ({ "return.length" , "return.elems" })
+	@FreshObjects ( cls = int[].class , num = 1 )
+	public int [] solveKnapSackProblem(int minCost)
+	{
+		return Squander.exe(this, minCost);
+	}
+	
+	public void setC(int[] c) {
+		this.c = c;
+	}
+	public void setV(int[] v) {
+		this.v = v;
+	}
+	
+	
+}
+

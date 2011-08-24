@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="edu.mit.csail.sdg.annotations.Requires"/>
+<fullyQualifiedTypeName name="edu.mit.csail.sdg.annotations.Invariant"/>
+<fullyQualifiedTypeName name="java.util.Queue"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="graph.ExtendedNode.State"/>
+<fullyQualifiedTypeName name="graph.GraphExtension"/>
+<fullyQualifiedTypeName name="graph.ExtendedNode"/>
 </qualifiedTypeNameHistroy>
