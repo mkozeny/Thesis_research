@@ -1,0 +1,22 @@
+package main;
+
+import graph.ExtendedNode;
+import graph.GraphExtension;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		GraphExtension ge = new GraphExtension(2,1,5);
+		ge.generateGraph();
+		//GraphExecutor grex = new GraphExecutor(2,ge.getExtendedNodes());
+		ExtendedNode [] result = ge.solveLDominantniMnozinaGrafuProblem();
+		for(ExtendedNode node:result)
+		{
+			System.out.println("Node: "+node.getValue());
+		}
+	}
+
+}
