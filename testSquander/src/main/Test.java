@@ -65,7 +65,7 @@ public class Test {
 		nodes.add(node9);
 		Node node10 = new Node(10);
 		nodes.add(node10);
-		//end of example 2
+		//end of example2
 		
 		
 		Set<Edge> edges = new LinkedHashSet<Edge>();
