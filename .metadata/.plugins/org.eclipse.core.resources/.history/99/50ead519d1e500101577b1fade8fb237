@@ -1,0 +1,53 @@
+package game;
+
+public class Cell {
+
+	public Cell() {
+		super();
+	}
+	
+	
+
+	public Cell(int row, int column, int occupied) {
+		super();
+		this.row = row;
+		this.column = column;
+		this.occupied = occupied;
+	}
+
+
+
+	private int row;
+	
+	private int column;
+	
+	private int occupied;
+
+	public int getRow() {
+		return row;
+	}
+
+	public void setRow(int row) {
+		this.row = row;
+	}
+
+	public int getColumn() {
+		return column;
+	}
+
+	public void setColumn(int column) {
+		this.column = column;
+	}
+
+	public int getOccupied() {
+		return occupied;
+	}
+
+	public void setOccupied(int occupied) {
+		this.occupied = occupied;
+	}
+
+	
+	
+	
+}

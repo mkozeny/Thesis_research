@@ -1,8 +1,0 @@
-package main;
-
-import edu.mit.csail.sdg.squander.annotations.Options;
-
-@Options(ensureAllInts = true)
-public class Test {
-	
-}

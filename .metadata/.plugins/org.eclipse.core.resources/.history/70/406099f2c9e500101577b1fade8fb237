@@ -1,0 +1,20 @@
+package game;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class State {
+
+	private List<Cell> cells;
+	
+	private int n;
+
+	public State(List<Cell> cells, int n) {
+		super();
+		this.cells = cells;
+		this.n = n;
+	}
+	
+	
+}

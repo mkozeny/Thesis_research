@@ -1,0 +1,36 @@
+package game;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class GameField {
+
+	public GameField(int n) {
+		super();
+		this.gameField = new int [n-1][];
+		this.n = n;
+		this.followers = new HashSet<GameField>();
+	}
+
+	private int [] [] gameField;
+	
+	private Set<GameField> followers;
+	
+	private int n;
+	
+	public void initGameField()
+	{
+		//this.gameField = new int [n- 1][];
+		if(this.n > 1)
+		{
+			for(int i = 0; i < n -1 ; i++)
+			{
+				if(i == n - 2)
+					this.gameField [i] = new int [2*(i+1) - 1];
+				else
+					this.gameField [i] = new int [2*(i+1) + 1];
+			}
+		}
+		//this.gameField[0][0]=1;
+	}
+}

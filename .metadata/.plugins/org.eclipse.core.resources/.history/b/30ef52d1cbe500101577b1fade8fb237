@@ -1,0 +1,48 @@
+package game;
+
+
+import java.util.List;
+
+
+public class State {
+
+	private List<Cell> cells;
+	
+	private int n;
+	
+	private Integer [][] leftNeighbors;
+	
+	private Integer [][] leftTopNeighbors;
+	
+	private Integer [][] leftBottomNeighbors;
+	
+	private Integer [][] rightNeighbors;
+	
+	private Integer [][] rightTopNeighbors;
+	
+	private Integer [][] rightBottomNeighbors;
+
+	public State(List<Cell> cells, int n) {
+		super();
+		this.cells = cells;
+		this.n = n;
+	}
+
+	public List<Cell> getCells() {
+		return cells;
+	}
+
+	public void setCells(List<Cell> cells) {
+		this.cells = cells;
+	}
+
+	public int getN() {
+		return n;
+	}
+
+	public void setN(int n) {
+		this.n = n;
+	}
+	
+	
+}

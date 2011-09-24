@@ -73,14 +73,24 @@ public class Graph {
 				edgesToRemove.add(e);
 		}
 		this.edges.removeAll(edgesToRemove);
-		//int k = 0;
+		int id = 1;
+		Random edgeCost = new Random();
+		int tmp = 0;
 		for (Edge e : this.edges) {
 			matrixOfFollowers[e.getSrc().getValue()][e.getDest().getValue()] = 1;
 			matrixOfIncidency[e.getSrc().getValue()][e.getDest().getValue()] = 1;
 			matrixOfIncidency[e.getDest().getValue()][e.getSrc().getValue()] = 1;
+			e.setCost(tmp = edgeCost.nextInt(10));
+			e.setCost(tmp == 0?1:tmp);
+			e.setId(id);
+			id++;
 			/*System.out.println(k+". Edge: src: " + ((e.getSrc()!=null)?e.getSrc().getValue():"") + ", dest: "
 					+ ((e.getDest()!=null)?e.getDest().getValue():""));*/
 			//k++;
+		}
+		for(Edge e:this.edges)
+		{
+			System.out.println("Edge src: "+e.getSrc().getValue()+", dest: "+e.getDest().getValue()+", cost: "+e.getCost());
 		}
 		/*for(int i=0; i < n; i++)
 		{
@@ -129,6 +139,16 @@ public class Graph {
 	public void setNodes(Set<Node> nodes) {
 		this.nodes = nodes;
 	}
+
+	public Set<Edge> getEdges() {
+		return edges;
+	}
+
+	public void setEdges(Set<Edge> edges) {
+		this.edges = edges;
+	}
+	
+	
 	
 	/*private boolean doesResultNotContainNode(int value)
 	{

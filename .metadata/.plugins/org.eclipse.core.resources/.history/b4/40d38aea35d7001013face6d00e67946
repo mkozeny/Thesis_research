@@ -1,0 +1,22 @@
+package main;
+
+import game.SoliterSolver;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int [] [] gameField = new int[2][2];
+		SoliterSolver ss = new SoliterSolver();
+		ss.solveSolitergame(gameField);
+		for(int i = 0; i < gameField.length; i++)
+		{
+			for(int j = 0; j < gameField[0].length; j++)
+				System.out.print(gameField[i][j]);
+			System.out.println();
+		}
+	}
+
+}

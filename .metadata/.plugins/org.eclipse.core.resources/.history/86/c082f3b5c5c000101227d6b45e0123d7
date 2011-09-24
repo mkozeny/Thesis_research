@@ -1,7 +1,0 @@
-package main;
-
-import graph.Graph;
-
-public class GraphExecutor extends Graph {
-
-}

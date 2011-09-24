@@ -1,0 +1,15 @@
+package game;
+
+import edu.mit.csail.sdg.annotations.Ensures;
+import edu.mit.csail.sdg.annotations.Modifies;
+import edu.mit.csail.sdg.squander.Squander;
+
+public class SoliterSolver {
+
+	@Ensures({"all e: gameField[int].elems | e = 1"})
+	@Modifies("gameField.elems")
+	public void solveSolitergame(int [] [] gameField)
+	{
+		Squander.exe(this, gameField);
+	}
+}

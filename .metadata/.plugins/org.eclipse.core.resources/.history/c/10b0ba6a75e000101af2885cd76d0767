@@ -1,0 +1,46 @@
+package main;
+
+import java.util.Set;
+
+import edu.mit.csail.sdg.annotations.Ensures;
+import edu.mit.csail.sdg.annotations.Modifies;
+import edu.mit.csail.sdg.squander.Squander;
+import edu.mit.csail.sdg.squander.annotations.FreshObjects;
+
+public class FollowersSolver {
+
+	private Set<Number> numbers;
+	
+	private Number first;
+	
+	@Ensures({//"return.length = 3",
+		"return[int] in this.numbers.elts",
+		"return[0] = this.first",
+		"all e1: return[int] | no e2:(return[int] - e1) | e1.value=e2.value",
+		"all i: int | i>=0 && i < return.length-1 => (one e: return[i].followers.elts | return[i+1].value = e.value)"
+		})
+	@FreshObjects(cls = Number [].class, num = 1)
+	@Modifies({"return.length","return.elems"})
+	public Number[] solveFollowers()
+	{
+		return Squander.exe(this);
+	}
+
+	public Set<Number> getNumbers() {
+		return numbers;
+	}
+
+	public void setNumbers(Set<Number> numbers) {
+		this.numbers = numbers;
+	}
+
+	public Number getFirst() {
+		return first;
+	}
+
+	public void setFirst(Number first) {
+		this.first = first;
+	}
+	
+	
+}

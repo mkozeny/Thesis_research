@@ -10,6 +10,8 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		Set<Cell> cells = new HashSet<Cell>();
+		for (int i = 0; i < 8; i++)
+            cells.add(new Cell(i, 0));
 		NQueensProblemSolver.nqueens(8, cells);
 		for(Cell cell:cells)
 		{

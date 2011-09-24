@@ -1,0 +1,57 @@
+package game;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import edu.mit.csail.sdg.annotations.Ensures;
+import edu.mit.csail.sdg.annotations.Modifies;
+import edu.mit.csail.sdg.squander.Squander;
+
+public class SoliterSolver {
+
+	
+	
+	public SoliterSolver(int n) {
+		super();
+		this.gameField = new int [n-1][];
+		this.n = n;
+	}
+
+	private int [] [] gameField;
+	
+	private Set<GameField> gameFields = new HashSet<GameField>();
+	
+	private int n;
+	
+	public void generateGameField()
+	{
+		//this.gameField = new int [n- 1][];
+		if(this.n > 1)
+		{
+			for(int i = 0; i < n -1 ; i++)
+			{
+				if(i == n - 2)
+					this.gameField [i] = new int [2*(i+1) - 1];
+				else
+					this.gameField [i] = new int [2*(i+1) + 1];
+			}
+		}
+		//this.gameField[0][0]=1;
+	}
+	
+	@Ensures({"all e: this.gameField[{k : int | k>0 && k<this.n -2}] | (all i: e[int] | i = 1)"})
+	//@Ensures({"all i, j: int | this.gameField[i][j] == 1"})
+	//@Ensures({"all e: this.gameField[int] | (all i: e[int] | (i = @old(i) + 1))"})
+	//@Modifies({"this.gameField[int].elems [{e : this.gameField[int].elems | e=0}]"})
+	@Modifies({"this.gameField[{k : int | k>0 && k<this.n -2}].elems"})
+	public void solveSolitergame()
+	{
+		Squander.exe(this);
+	}
+
+	public int[][] getGameField() {
+		return gameField;
+	}
+	
+	
+}

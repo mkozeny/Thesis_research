@@ -1,6 +1,0 @@
-package main;
-
-@Ensures
-public class Test {
-
-}

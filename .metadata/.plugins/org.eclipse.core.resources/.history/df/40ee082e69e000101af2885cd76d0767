@@ -1,0 +1,18 @@
+package main;
+
+import edu.mit.csail.sdg.annotations.Modifies;
+import edu.mit.csail.sdg.annotations.Requires;
+import edu.mit.csail.sdg.squander.Squander;
+import edu.mit.csail.sdg.squander.annotations.FreshObjects;
+
+public class FollowersSolver {
+
+	@Requires({"return.length = 3",
+		"all i: int | i>=1 && i < return.length => return[i] in return[i+1].followers"})
+	@FreshObjects(cls = Number [].class, num = 1)
+	@Modifies({"return.length","return.elems"})
+	public Number[] solveFollowers()
+	{
+		return Squander.exe(this);
+	}
+}

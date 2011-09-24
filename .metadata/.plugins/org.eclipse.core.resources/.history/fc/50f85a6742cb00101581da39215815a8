@@ -1,8 +1,0 @@
-package main;
-
-public class Thing {
-
-	private int v;
-	
-	private int c;
-}
