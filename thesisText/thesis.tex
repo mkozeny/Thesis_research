@@ -54,8 +54,8 @@
 % Zvolte jednu z moznosti 
 % Choose one of the following options
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand\TypeOfWork{Diplomová práce} \typeout{Diplomova prace}
-% \newcommand\TypeOfWork{Master's Thesis}   \typeout{Master's Thesis} 
+%\newcommand\TypeOfWork{Diplomová práce} \typeout{Diplomova prace}
+ \newcommand\TypeOfWork{Master's Thesis}   \typeout{Master's Thesis} 
 % \newcommand\TypeOfWork{Bakalářská práce}  \typeout{Bakalarska prace}
 % \newcommand\TypeOfWork{Bachelor's Project}  \typeout{Bachelor's Project}
 
@@ -69,11 +69,12 @@
 %\newcommand\StudProgram{Elektrotechnika a informatika, dobíhající, Bakalářský}
 %\newcommand\StudProgram{Elektrotechnika a informatika, dobíhající, Magisterský}
 % \newcommand\StudProgram{Elektrotechnika a informatika, strukturovaný, Bakalářský}
- \newcommand\StudProgram{Elektrotechnika a informatika, strukturovaný, Navazující magisterský}
+% \newcommand\StudProgram{Elektrotechnika a informatika, strukturovaný,
+% Navazující magisterský}
 % \newcommand\StudProgram{Softwarové technologie a management, Bakalářský}
 % English study:
 % \newcommand\StudProgram{Electrical Engineering and Information Technology}  % bachelor programe
-% \newcommand\StudProgram{Electrical Engineering and Information Technology}  %master program
+ \newcommand\StudProgram{Electrical Engineering and Information Technology}  %master program
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -83,11 +84,12 @@
 % nabidky jsou z: http://www.fel.cvut.cz/cz/education/bk/prehled.html
 
 %\newcommand\StudBranch{Výpočetní technika}   % pro program EaI bak. (dobihajici i strukt.)
-\newcommand\StudBranch{Výpočetní technika}   % pro prgoram EaI mag. (dobihajici i strukt.)
+%\newcommand\StudBranch{Výpočetní technika}   % pro prgoram EaI mag. (dobihajici
+%i strukt.)
 %\newcommand\StudBranch{Softwarové inženýrství}            %pro STM
 %\newcommand\StudBranch{Web a multimedia}                  % pro STM
 %\newcommand\StudBranch{Computer Engineering}              % bachelor programe
-%\newcommand\StudBranch{Computer Science and Engineering}  % master programe
+\newcommand\StudBranch{Computer Science and Engineering}  % master programe
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -108,9 +110,9 @@ pdfauthor={\FirstandFamilyName},
 bookmarks=true,
 colorlinks=true,
 breaklinks=true,
-urlcolor=red,
-citecolor=blue,
-linkcolor=blue,
+urlcolor=black,
+citecolor=black,
+linkcolor=black,
 unicode=true,
 ]
 {hyperref}
@@ -206,12 +208,14 @@ unicode=true,
 
 \acknowledgements
 \noindent
-Zde můžete napsat své poděkování, pokud chcete a máte komu děkovat.
+At this point I would like to thank supervisor of my thesis Mr Ing. Jiří Daněček
+and author of Squander framework Mr Aleksandar Milicevics for valuable comments
+and advices to this work.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%   Prohlaseni / Declaration 
 
-\declaration{V~Kořenovicích nad Bečvárkou dne 15.\,5.\,2008}
+\declaration{In~Prague, 30.\,9.\,2011}
 %\declaration{In Kořenovice nad Bečvárkou on May 15, 2008}
 
 
@@ -280,33 +284,242 @@ Očekávají se cca 1 -- 2 odstavce, maximálně půl stránky.
 % atd...
 
 %*****************************************************************************
-\chapter{Úvod}
-Úvod charakterizující kontext zadání, případně motivace.
+\chapter{Introduction}
+As was said in abstract, the main purpose of this thesis is to describe and use
+framework Squander developed at Massachusetts Institute of Technology (MIT) by Mr
+Aleksandar Milicevics. This framework brings to Java declarative
+constructs, which are useful for implementing programs that involve computations
+that are relatively easy to specify but hard to solve algorithmically. In such
+cases is better to use declarative constraints to naturally express the core of
+the computation, whereas imperative code is natural choice to read input
+parameters and setting up data structures for the computation. This is
+big advantage of this framework, that programmer can smoothly switch between
+declarative logical and imperative programming.
 
-Výsledná struktura vaší práce a názvy a rozsahy jednotlivých kapitol se samozřejmě budou lišit podle typu práce a podle konkrétní povahy zpracovávaného tématu. Níže uvedená struktura práce odpovídá \textit{práci implementační}, viz \cite{infodp} respektive \cite{infobp}. 
-
-
+By ability of mixing imperative and declarative code can programmer easily
+express constraints of problem in terms of existing data structures and objects
+on the heap. Despite having overhead of encoding and decoding, it is surprising
+how is competitive Squander's SAT-based solution with specialized heuristic
+developed for concrete problem.
 %*****************************************************************************
-\chapter{Popis problému, specifikace cíle}
+\chapter{Logical programming principles}
 
+The most known logical programming in the world is definitely Prolog and
+thereby we can describe properties of logical programming using this language.
+His name is derived from term PROgramming in LOGic and was developed for
+programming of symbolic computation. His success led to formation new discipline
+in mathematical information technology - \textbf{logical programming}.
+
+Logical programming focus on description of relation's properties without need
+to know how to do that.
+
+\section{Logical programming paradigm}
+
+Logical programming differ from imperative languages in following points:
+\begin{enumerate}
+  \item no assignment statement
+  \item no cycles, no branching 
+  \item no flow control
+  \item object is marked as \textit{variable}, which satisfies some set of
+  conditions, that are being during computation more specified
+\end{enumerate}
+Logical programming is based on following concepts:
+\begin{enumerate}
+  \item declaring facts about objects and relations between objects
+  \item declaring valid rules about objects and relations between thmeselves and
+  computing queries
+\end{enumerate}
+In logical programming are \textit{facts} unconditional commands and
+\textit{rules} are conditional commands. Facts and rules are stored in one
+shared database. Language does not differ between program and data.
+
+\newpage
+\subsection{Facts}
+\label{sec:facts}
+For expressing \textit{facts} and \textit{rules} are used \textit{clauses}.
+Facts are used for expressing unconditionally true assertions and are clauses
+with defined headers, but with no body. Usual way to ilustrate how to
+composed facts are family relationships.
+
+\begin{quote}
+\begin{verbatim}
+                            parent(john, jane).
+                            parent(ann, jane).
+                            parent(john, richard).
+                            parent(ann, richard).
+                            man(john).
+                            man(richard).
+                            womam(ann).
+                            woman(jane).
+\end{verbatim}
+\end{quote}
+Every clause declares concrete fact about relation. We can see that relation
+\verb|parent|, e.g. \verb|parent(john, jane).| is concrete \textit{instance} of
+this relation for \textit{objects} \verb|john| and \verb|jane|. After declaring
+those facts is possible to form queries concerning relation \verb|parent|.
+
+\begin{verbatim}
+                                 ?-parent(john, jane).
+\end{verbatim}
+Example above shows, how it is possible to ask, if John is parent to Jane.
+Because language has this fact recorded in its environment and answer is:
+
+\begin{verbatim}                            
+                                 yes
+\end{verbatim}
+Similarly can be query constructed on non-existing fact:
+
+\begin{verbatim}
+                                 ?-parent(john, emily).
+                            
+                                 no
+\end{verbatim}
+Answer to this query is \verb|no| of course. Query can be also composed in a
+way, that we want to get some object, which is with other object in
+required relation.
+
+\begin{verbatim}
+                                 ?-parent(X, jane).
+                            
+                                 X = john
+\end{verbatim}
+Here it is also possible to get other possible solution, so we get one more
+positive answer:
+
+\begin{verbatim}
+                                 X = ann
+\end{verbatim}
+After that are all possible answers exhausted, so for the next command we get:
+
+\begin{verbatim}
+                                 no
+\end{verbatim}
+Now we try to express little bit complicated query: who is mother of Jane. This
+query is necessary construct from two suqueries. First we limit set of solution
+to Jane's parents. For that purpose we use query already shown above:
+
+\begin{verbatim}
+                                 ?-parent(X, jane).
+\end{verbatim}
+
+
+\newpage
+
+In variable \verb|X| is now stored every object, who has relation \verb|parent|
+to object \verb|jane|. In our case \verb|john| and \verb|ann|. Now we have to
+limit this set of results to object, which is declared in clause \verb|women|,
+so we add:
+
+\begin{verbatim}
+                          ?-parent(X, jane), women(X).
+\end{verbatim}
+As a result of these clauses we get:
+
+\begin{verbatim}
+                          X = ann
+\end{verbatim}
+and nothing more. In framework Squander are as facts used objects, that are
+declared in framework's rules (see subsection \ref{sec:rules}). There are no
+facts declared explicitly so we do not devote to them any more.
+
+\subsection{Rules}
+\label{sec:rules}
+Expressing knowledge by facts cannot be always effective. Complexity of
+relationships in family expressed by unconditional commands would lead to
+big expansion of database. Despite having unlimited memory available, searching
+for relevant information would has been time consuming. For this reason Prolog
+provides conditional expressions - \textit{rules}.
+
+By investigating facts is possible to derived new rule based on logical or
+factual context. That knowledge allow us to express facts, which are not
+explicitly stored in database. Let us show it in following example:
+
+\begin{verbatim}
+                          mother(X, Y) :- parent(X, Y),woman(X).
+\end{verbatim}
+Left side of rule expressed so called \textbf{head of rule} and right side
+\textbf{body of rule}. This rule express, that \verb|X| is mother of \verb|Y|.
+Rule is only labeled generalization of last example in previous subsection \ref{sec:facts}.
+In next example will be shown more complicated construct:
+
+\begin{verbatim}
+               brother(X, Y) :- parent(O, Y),parent(O, X),man(X).
+\end{verbatim}
+Expression above means, that \verb|X| is brother of \verb|Y| if exists at least
+one object \verb|O|, which is common in relation \verb|parent| for both \verb|X|
+and \verb|Y| assuming \verb|X| is a man. Mathematical interpretation of teh
+rule is:
+\begin{center}
+\uv{For all arbitrary persons X and Y,\\
+ if some of the parents of X is O \\
+ and some of the parents of Y is O \\
+ and person X is a man, \\
+ then X is brother of Y.}
+\end{center}
+
+
+When calling this rule with following parameters:
+\begin{verbatim}
+                          brother(richard, Y).
+                          
+                          Y = jane
+\end{verbatim}
+Rules are main construct of framework Squander, because they defined state of
+object before and after computation, declares which object or object's
+properties can be modified etc. On the other hand these rules are not called as
+it is in Prolog, but they are declared as metadata for handling with objects.
+More about Squander's rules in chapter \ref{chap:framework}.
+
+\section{Terminology}
+When simplyfying in Prolog, we can say, that in every task appear
+\textit{objects} and \textit{relations}. Name of objects are called
+\textit{terms} and name of relations are called \textit{predicates}. Terms are
+analogous to arithmetic expressions, which point to the computed value, and
+predicates are analogous to name of procedures, which defines relationship
+between input parameters and output values, in imperative programming language.
+
+There are two types of terms: \textit{simple terms} consisting of constants
+(e.g. \verb|ann|, \verb|richard|,\ldots) and \textit{compound terms}. Compound
+terms are also called \textit{structures} is every term containing simple
+or compound term.
+
+In previous subsection \ref{sec:rules}, there are predicates \verb|parent|,
+\verb|man| and \verb|woman| as names of three relations defined by program.
+Predicate with name \verb|parent| is defined as a set:
+\verb|{(john,jane),(ann,jane),(john,richard),(ann,richard)}|. Next predicate
+with name \verb|man| is defined as a set:
+\verb|{john,richard}| and finally predicate
+with name \verb|woman| is defined as a set:
+\verb|{ann,jane}|. 
+
+Finally there are three types of \textit{formulas} in Prolog:
 \begin{itemize}
-\item Popis řešeného problému, vymezení cílů DP/BP a požadavků na implementovaný systém.
-\item Popis struktury DP/BP ve vztahu k vytyčeným cílům.
-\item Rešeršní zpracování existujících implementací, pokud jsou známy.
-\end{itemize}
-
+  \item \textit{atomic} - basic formulas (e.g. \verb|parent(john, jane).,|
+  \verb|parent(ann, jane).|)
+  \item \textit{conditional command} - implication constructs $A :- P_1,
+  P_2,\ldots, P_n$ where $P_1, P_2,\ldots, P_n$ are atomic formulas
+  (e.g. \verb|brother(X, Y) :- parent(O, Y),parent(O, X),man(X).|)
+  \item \textit{target clauses} - query type ($?-C_1, C_2,\ldots, C_n$ where
+  $C_1, C_2,\ldots, C_n$ are targets)\\ (e.g. \verb|?-parent(X, jane),|
+  \verb|women(X).|)
+\end{itemize} 
 %*****************************************************************************
-\chapter{Analýza a návrh řešení}
+\chapter{Meaning of annotations}
 Analýza a návrh implementace (včetně diskuse různých alternativ a volby implementačního prostředí).
 
 
 %*****************************************************************************
-\chapter{Realizace}
+\chapter{Framework description}
+\label{chap:framework}
+Popis implementace/realizace se zaměřením na nestandardní části řešení.
+
+%*****************************************************************************
+\chapter{Implementation of algorithms}
 Popis implementace/realizace se zaměřením na nestandardní části řešení.
 
 
 %*****************************************************************************
-\chapter{Testování}
+\chapter{Comparison}
 
 \begin{itemize}
  \item Způsob, průběh a výsledky testování.
@@ -315,7 +528,7 @@ Popis implementace/realizace se zaměřením na nestandardní části řešení.
 
 
 %*****************************************************************************
-\chapter{Závěr}
+\chapter{Conclusion}
 
 \begin{itemize}
 \item Zhodnocení splnění cílů DP/BP a  vlastního přínosu práce (při formulaci je třeba vzít v potaz zadání práce).
