@@ -40,6 +40,42 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx}
 %\usepackage{indentfirst} %1. odstavec jako v cestine.
+\usepackage{qtree}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{textcomp}
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\lstset{ %
+language=Java,                % the language of the code
+basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+numbers=left,                   % where to put the line-numbers
+numberstyle=\footnotesize,      % the size of the fonts that are used for the line-numbers
+%stepnumber=2,                   % the step between two line-numbers. If it's 1,
+%each line
+                                % will be numbered
+numbersep=5pt,                  % how far the line-numbers are from the code
+backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=single,                   % adds a frame around the code
+tabsize=2,                      % sets default tabsize to 2 spaces
+captionpos=b,                   % sets the caption-position to bottom
+breaklines=true,                % sets automatic line breaking
+breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+title=\lstname,                 % show the filename of files included with \lstinputlisting;
+                                % also try caption instead of title
+escapeinside={\%*}{*)},         % if you want to add a comment within your code
+morekeywords={*,...},            % if you want to add more keywords to the set
+keywordstyle=\color[rgb]{0,0,1}\bfseries,
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{0.627,0.126,0.941}
+}
+
 
 \usepackage{k336_thesis_macros} % specialni makra pro formatovani DP a BP
  % muzete si vytvorit i sva vlastni v souboru k336_thesis_macros.sty
@@ -301,6 +337,12 @@ express constraints of problem in terms of existing data structures and objects
 on the heap. Despite having overhead of encoding and decoding, it is surprising
 how is competitive Squander's SAT-based solution with specialized heuristic
 developed for concrete problem.
+
+In first chapter I am going to describe basic principles of logical programming
+using language Prolog and in following one meaning of annotations, which are
+used to express logical constructions in framework Squander. Last chapters are
+devoted to framework itself and its comparison to common imperativ way of
+programming.
 %*****************************************************************************
 \chapter{Logical programming principles}
 
@@ -343,6 +385,7 @@ composed facts are family relationships.
 
 \begin{quote}
 \begin{verbatim}
+                            parent(david, john).
                             parent(john, jane).
                             parent(ann, jane).
                             parent(john, richard).
@@ -403,7 +446,7 @@ to Jane's parents. For that purpose we use query already shown above:
 \end{verbatim}
 
 
-\newpage
+
 
 In variable \verb|X| is now stored every object, who has relation \verb|parent|
 to object \verb|jane|. In our case \verb|john| and \verb|ann|. Now we have to
@@ -503,11 +546,168 @@ Finally there are three types of \textit{formulas} in Prolog:
   $C_1, C_2,\ldots, C_n$ are targets)\\ (e.g. \verb|?-parent(X, jane),|
   \verb|women(X).|)
 \end{itemize} 
+
+\section{Evaluation in Prolog}
+Main difference between \textbf{procedural semantics} and \textbf{declarative
+semantics} is shown on clause below:
+\begin{verbatim}
+                          P :- Q, R.
+\end{verbatim}
+where \verb|P| and \verb|Q| are arbitrary forms of terms. We can read this
+clause from declarative point of view:
+\begin{itemize}
+  \item \verb|P| is true, if \verb|Q| and \verb|R| are true
+  \item from validity of \verb|Q| and \verb|R| follow \verb|P|
+\end{itemize}
+From procedural point of view has clause different meaning:
+\begin{itemize}
+  \item to solve problem \verb|P|, it is necessary to solve \textbf{first}
+  problem \verb|Q| and \textbf{then} problem \verb|R|
+  \item to fulfil target \verb|P|, it is necessary \textbf{first} to fulfil
+  target \verb|Q| and then fulfil target \verb|R|
+\end{itemize}
+
+\verb|Evaluation| of sequence of targets $G_1, G_2,..., G_m$ in Prolog consists
+of following steps:
+\begin{itemize}
+  \item If is sequence of targets empty, evaluation \textbf{succeded}.
+  \item For non-empty sequence of targets, operation \textit{SEARCHING} is
+  invoked.
+  \item \textit{SEARCHING}: Clauses of the program from top to bottom are
+  searched till first clause $C$ occurence, whose head is successfuly
+  unified with target $G_1$. If such clause is not found, evaluation ended
+  unsuccessfuly.
+  
+  If is found clause $C$ in form
+ \begin{center}
+                          $H :- B_1, B_2,\ldots, B_n$
+\end{center}
+then all its variables are renamed such, that new form $C'$ of clause $C$, which
+has no varibles in common with targets $G_1, G_2,..., G_m$. $C'$ has form:
+\begin{center}
+                          $H' :- B_1', B_2',\ldots, B_n'$
+\end{center}
+$G$ and $H$ are unified by substition $S$.
+In sequence of targets is target $G_1$ replaced by body of clause $C'$ such,
+that new seqence has form:
+\begin{center}
+                          $B_1', B_2',\ldots, B_n', G_2,\ldots, G_m$
+\end{center}
+If is $C$ fact, then $n = 0$ and sequence of targets is shortened to $m - 1$
+targets.
+
+Then substituion $S$ is donein order to make new list of targets, so new form
+is:
+\begin{center}
+                          $B_1'', B_2'',\ldots, B_n'', G_2',\ldots, G_m'$
+\end{center}
+
+
+By recursive invoication procedure \verb|Evaluate| is evaulated this sequence of
+targets. If this evaluation ends successfuly, previous evaluation is treated as
+also successful. If this evaluation does not end successfuly, last sequence of
+targets is left and it is made return to operation \textit{SEARCHING}, where is
+continued immediately behind clause $C$ in order to find some next usable
+clause.
+\end{itemize}
+Let us show evaulation in following rules, which used facts declared in
+subsection \ref{sec:facts}:\\
+\\
+\begin{verbatim}
+                          ancestor(X, Y) :- parent(X, Y).
+                          ancestor(X, Y) :- parent(X, Z), parent(Z, Y).
+\end{verbatim}
+
+\setlength{\parskip}{1cm plus4mm minus3mm}
+
+
+\begin{figure}[ht]
+
+
+\begin{tikzpicture}
+
+
+%\tikzset{level distance=42pt}
+
+\Tree [.\node(xh){$ancestor(david, jane)$}; \edge
+node[auto=right]{\textbf{a}};[\node(t){unsuccess}; ] .{$parent(david, jane)$}
+\edge node[auto=left]{\textbf{b}}; [ [[\edge
+node[auto=left]{\textbf{a}};[\node(u){success}; ].{$parent(john, jane)$}
+].{$ancestor(john, jane)$} ]  .\fbox{$Z = john$} ].\node(wh){$parent(david, Z),$\\ $parent(Z, jane)$}; ] 
+\draw[dashed,->] (t)..controls +(east:3.5) .. (wh);
+\draw[dashed,->] (u)..controls +(west:2.5)  .. (xh);
+\end{tikzpicture}
+\caption{Expression evaluation in Prolog}
+\end{figure}
+
+
+
+First of the queries is answered unsuccessfuly when applied rule \textbf{a},
+rule \textbf{b} is then successful.
+
+
 %*****************************************************************************
 \chapter{Meaning of annotations}
-Analýza a návrh implementace (včetně diskuse různých alternativ a volby implementačního prostředí).
+Since Java 5.0 release, general purpose of annotation was ability to define
+and use own annotation types. The facility consists of a syntax for declaring
+annotation types, a syntax for annotating declarations, APIs for reading
+annotations, a class file representation for annotations.
+
+Annotations do not directly affect program semantics, but they do affect the way
+programs are treated by tools and libraries, which can in turn affect the
+semantics of the running program. Annotations can be read from source files,
+class files, or reflectively at runtime.
 
 
+Annotation type declarations are similar to normal interface declarations. An
+at-sign (\verb|@|) precedes the \verb|interface| keyword. Each method
+declaration defines an \textit{element} of the annotation type. Method
+declarations must not have any parameters or a \verb|throws| clause. Return
+types are restricted to primitives, \verb|String|, \verb|Class|, \verb|enums|,
+annotations, and arrays of the preceding types. Methods can have default values.
+Here is an example annotation type declaration:
+
+\lstinputlisting[label=samplecode,caption=Length annotation]{src/Length.java}
+
+
+This is simple annotation typically used for entity field e.g. of type
+\verb|String| for permitted length of this field.
+
+Once an annotation type is defined, you can use it to annotate declarations. An
+annotation is a special kind of modifier, and can be used anywhere that other
+modifiers (such as \verb|public|, \verb|static|, or \verb|final|) can be used.
+By convention, annotations precede other modifiers. Annotations consist of an at-sign
+(\verb|@|) followed by an annotation type and a parenthesized list of
+element-value pairs. The values must be compile-time constants. Here is a filed
+declaration with an annotation corresponding to the annotation type declared above:
+
+\lstinputlisting[label=samplecode,caption=Class Role]{src/Role.java}
+
+Annotation type without any with no elements is called \textit{marker}
+annotation type, e.g.:
+
+\lstinputlisting[label=samplecode,caption=Entity annotation]{src/Entity.java}
+
+We can join these two types of annotation together in following example:
+
+\lstinputlisting[label=samplecode,caption=Entity Role]{src/entity/Role.java}
+
+Annotations can be annotatied itself. Such annotations are called
+\textit{meta-annotations}. E.g. using
+(\verb|@Target(ElementType.METHOD)|) indicates, that annotation type should
+be used to annotate only method declarations:
+
+\lstinputlisting[label=samplecode,caption=Test annotation]{src/Test.java}
+\newpage
+In following example, there is updated entity shown above with tool for testing
+the annotations:
+\lstinputlisting[label=samplecode,caption=Extended class
+Role]{src/extended/Role.java}
+\lstinputlisting[label=samplecode,caption=Test of method
+annotation]{src/RunTests.java}
+\newpage
+\lstinputlisting[label=samplecode,caption=Test of entity
+Role annotation]{src/TestRole.java}
 %*****************************************************************************
 \chapter{Framework description}
 \label{chap:framework}
