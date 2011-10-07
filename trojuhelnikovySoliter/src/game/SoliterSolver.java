@@ -19,6 +19,13 @@ public class SoliterSolver {
 
 	private int n;
 	
+	//left=1
+	//right=2
+	//left top=3
+	//right top=4
+	//left bottom=5
+	//right bottom=6
+	private int [] [] adj;
 	
 	public SoliterSolver(State startState, int n) {
 		super();
@@ -91,7 +98,7 @@ public class SoliterSolver {
 			      "(all cell2 : states[i].cells.elts | (cell1 != src && cell1 != via && cell1 != dest)?(cell2.occupied=cell1.occupied):" +
 			      "((cell2=src || cell2=via)?(cell2.occupied=0):(cell2.occupied=1)))))"})*/
 	//@Invariant("this.startState.cells.elts")
-	@Ensures({
+	/*@Ensures({
 		"states[0] = this.startState",
 		"all v : {1} | one {c : states[states.length-1].cells.elts | c.occupied = v}",
 		"all i: int | i>=0 && i<states.length => (all c : states[i].cells.elts | c.occupied in {0,1})",
@@ -106,7 +113,7 @@ public class SoliterSolver {
 		 "|| (this.leftBottomNeighbors.elts[src] = via && this.leftBottomNeighbors.elts[via] = dest)" +
 		 "|| (this.rightTopNeighbors.elts[src] = via && this.rightTopNeighbors.elts[via] = dest)" +
 		 "|| (this.rightBottomNeighbors.elts[src] = via && this.rightBottomNeighbors.elts[via] = dest))" +
-		//"=> states[i].cells.elts = states[i-1].cells.elts)"
+		
 			      "=> (all cell1 : states[i-1].cells.elts | " +
 			      "(all cell2 : states[i].cells.elts |" +
 			      " (cell1 != src && cell1 != via && cell1 != dest)?" +
@@ -123,6 +130,175 @@ public class SoliterSolver {
 	public void solveSolitergame(State [] states)
 	{
 		Squander.exe(this, new Object[] {states});
+	}*/
+	
+	/*@Ensures({
+		"states[0] = this.startState",
+		"all v : {true} | one {i : {0 ... states[0].cells.length - 1} | states[states.length-1].cells[i].occupied = v}",
+		//"all i: int | i>=0 && i<states.length => (all j : int | states[i].cells[j].occupied in {0,1})",
+		 "all i: {1 ... states.length} |  " +
+		 "(some src, via ,dest : {0 ... states[i-1].cells.length - 1} | " +
+		 " src!=via && src!=dest && via!=dest &&" +
+		 " states[i-1].cells[src].occupied " +
+		 "&& states[i-1].cells[via].occupied && !states[i-1].cells[dest].occupied  " +
+		 "&& ((this.leftNeighbors.elts[states[i-1].cells[src]] = states[i-1].cells[via]" +
+		 " && this.leftNeighbors.elts[states[i-1].cells[via]] = states[i-1].cells[dest])" +
+		 "|| (this.rightNeighbors.elts[states[i-1].cells[src]] = states[i-1].cells[via]" +
+		 " && this.rightNeighbors.elts[states[i-1].cells[via]] = states[i-1].cells[dest])" +
+		 "|| (this.leftTopNeighbors.elts[states[i-1].cells[src]] = states[i-1].cells[via]" +
+		 " && this.leftTopNeighbors.elts[states[i-1].cells[via]] = states[i-1].cells[dest])" +
+		 "|| (this.leftBottomNeighbors.elts[states[i-1].cells[src]] = states[i-1].cells[via]" +
+		 " && this.leftBottomNeighbors.elts[states[i-1].cells[via]] = states[i-1].cells[dest])" +
+		 "|| (this.rightTopNeighbors.elts[states[i-1].cells[src]] = states[i-1].cells[via]" +
+		 " && this.rightTopNeighbors.elts[states[i-1].cells[via]] = states[i-1].cells[dest])" +
+		 "|| (this.rightBottomNeighbors.elts[states[i-1].cells[src]] = states[i-1].cells[via]" +
+		 " && this.rightBottomNeighbors.elts[states[i-1].cells[via]] = states[i-1].cells[dest]))=> " +
+		
+			      " (all cell1 : {0 ... states[i-1].cells.length - 1} | " +
+			      "(all cell2 : {0 ... states[i].cells.length - 1} |" +
+			      " (states[i-1].cells[cell1] != states[i-1].cells[src] && states[i-1].cells[cell1] != states[i-1].cells[via] && states[i-1].cells[cell1] != states[i-1].cells[dest])?" +
+			      "(states[i].cells[cell2].occupied==states[i-1].cells[cell1].occupied)" +
+			      ":" +
+			      "(states[i].cells[cell2].occupied!=states[i-1].cells[cell1].occupied))))"
+			      "(states[i-1].cells[src].occupied!=states[i].cells[src].occupied)" +
+			      ":(states[i-1].cells[src].occupied=states[i].cells[src].occupied))"
+			      })
+	//@Modifies({"Cell.occupied"})
+	@Modifies({"Cell.occupied [{cell : Cell | (all i:int|this.startState.cells[i]!=cell)}]" 
+	//+" [{cell : Cell | cell !in this.startState.cells.elems}]"
+		
+		//,"return.elems","return.length"
+		})
+	//@FreshObjects(cls = State[].class, num = 1)
+	public void solveSolitergame(State [] states)
+	{
+		Squander.exe(this, new Object[] {states});
+	}*/
+	
+	
+	/*@Ensures({
+		"states[0] = this.startState",
+		"one {i : {0 ... states[0].cells.length - 1} | states[states.length-1].cells[i].occupied}",
+		//"all i : {1 ... states.length} | #states[i].cells.elems.occupied = #states[i-1].cells.elems"
+		//"all i: int | i>=0 && i<states.length => (all j : int | states[i].cells[j].occupied in {0,1})",
+		 "all i: {1 ... states.length} |  " +
+		 "(some src, via ,dest : {0 ... states[i-1].cells.length - 1} | " +
+		 " (" +
+		 //"src!=via && src!=dest && via!=dest &&" +
+		 " ((states[i-1].cells[src].occupied " +
+		 "&& states[i-1].cells[via].occupied && !states[i-1].cells[dest].occupied)  " +
+		 "|| (!states[i-1].cells[src].occupied " +
+		 "&& !states[i-1].cells[via].occupied && states[i-1].cells[dest].occupied))  " +
+		 "&& ((this.leftNeighbors.elts[states[i-1].cells[src]] = states[i-1].cells[via]" +
+		 " && this.leftNeighbors.elts[states[i-1].cells[via]] = states[i-1].cells[dest])" +
+		 "|| (this.rightNeighbors.elts[states[i-1].cells[src]] = states[i-1].cells[via]" +
+		 " && this.rightNeighbors.elts[states[i-1].cells[via]] = states[i-1].cells[dest])" +
+		 "|| (this.leftTopNeighbors.elts[states[i-1].cells[src]] = states[i-1].cells[via]" +
+		 " && this.leftTopNeighbors.elts[states[i-1].cells[via]] = states[i-1].cells[dest])" +
+		 "|| (this.leftBottomNeighbors.elts[states[i-1].cells[src]] = states[i-1].cells[via]" +
+		 " && this.leftBottomNeighbors.elts[states[i-1].cells[via]] = states[i-1].cells[dest])" +
+		 "|| (this.rightTopNeighbors.elts[states[i-1].cells[src]] = states[i-1].cells[via]" +
+		 " && this.rightTopNeighbors.elts[states[i-1].cells[via]] = states[i-1].cells[dest])" +
+		 "|| (this.rightBottomNeighbors.elts[states[i-1].cells[src]] = states[i-1].cells[via]" +
+		 " && this.rightBottomNeighbors.elts[states[i-1].cells[via]] = states[i-1].cells[dest])))=> " +
+		
+			      "(all j:({0 ... states[i-1].cells.length - 1} - src - via - dest)|" +
+			      "states[i].cells[j].occupied=states[i-1].cells[j].occupied " +
+			      "&& states[i].cells[src].occupied!=states[i-1].cells[src].occupied " +
+			      "&& states[i].cells[via].occupied!=states[i-1].cells[via].occupied" +
+			      "&& states[i].cells[dest].occupied!=states[i-1].cells[dest].occupied))"
+			      
+			      })
+	//@Modifies({"Cell.occupied"})
+	@Modifies({"Cell.occupied [{cell : Cell | (all i:int|this.startState.cells[i]!=cell)}]" 
+	//+" [{cell : Cell | cell !in this.startState.cells.elems}]"
+		
+		//,"return.elems","return.length"
+		})
+	//@FreshObjects(cls = State[].class, num = 1)
+*/	
+	
+	
+	/*@Ensures({
+		"states[0] = this.startState",
+		"one {i : {0 ... states[0].cells.length - 1} | states[states.length-1].cells[i].occupied}",
+		//"all i : {1 ... states.length} | #states[i].cells.elems.occupied = #states[i-1].cells.elems"
+		//"all i: int | i>=0 && i<states.length => (all j : int | states[i].cells[j].occupied in {0,1})",
+		 "all i: {1 ... states.length} |  " +
+		 "(some src : {0 ... states[i-1].cells.length - 1} |some via : {0 ... states[i-1].cells.length - 1} |some dest : {0 ... states[i-1].cells.length - 1} | " +
+		 " (" +
+		 "src!=via && src!=dest && via!=dest &&" +
+		 " ((states[i-1].cells[src].occupied " +
+		 "&& states[i-1].cells[via].occupied && !states[i-1].cells[dest].occupied)  " +
+		 "|| (!states[i-1].cells[src].occupied " +
+		 "&& !states[i-1].cells[via].occupied && states[i-1].cells[dest].occupied))  " +
+		 "&& ((this.adj[src][via] = 1" +
+		 " && this.adj[via][dest] = 1)" +
+		 "|| (this.adj[src][via] = 2" +
+		 " && this.adj[via][dest] = 2)" +
+		 "|| (this.adj[src][via] = 3" +
+		 " && this.adj[via][dest] = 3)" +
+		 "|| (this.adj[src][via] = 4" +
+		 " && this.adj[via][dest] = 4)" +
+		 "|| (this.adj[src][via] = 5" +
+		 " && this.adj[via][dest] = 5)" +
+		 "|| (this.adj[src][via] = 6" +
+		 " && this.adj[via][dest] = 6)))? " +
+		"(" +
+		"all j:{0 ... states[i-1].cells.length - 1} | (j!= src && j!= via && j!= dest)?" +
+			      "(states[i].cells[j].occupied=states[i-1].cells[j].occupied) : " +
+			      "(states[i].cells[j].occupied!=states[i-1].cells[j].occupied)" +
+			      "states[i].cells[src].occupied!=states[i-1].cells[src].occupied " +
+			      "&& states[i].cells[via].occupied!=states[i-1].cells[via].occupied" +
+			      "&& states[i].cells[dest].occupied!=states[i-1].cells[dest].occupied"+
+		")"+
+		 ":(false"+
+			      "(all j:{0 ... states[i-1].cells.length - 1} |" +
+			      "states[i].cells[j].occupied=states[i-1].cells[j].occupied " +
+			      "&& states[i].cells[src].occupied!=states[i-1].cells[src].occupied " +
+			      "&& states[i].cells[via].occupied!=states[i-1].cells[via].occupied" +
+			      "&& states[i].cells[dest].occupied!=states[i-1].cells[dest].occupied" +
+			      "))"
+			      
+			      })
+	//@Modifies({"Cell.occupied"})
+	@Modifies({"Cell.occupied [{cell : Cell | (all i:int|this.startState.cells[i]!=cell)}]" 
+	//+" [{cell : Cell | cell !in this.startState.cells.elems}]"
+		
+		//,"return.elems","return.length"
+		})
+	//@FreshObjects(cls = State[].class, num = 1)
+	public void solveSolitergame(State [] states)
+	{
+		Squander.exe(this, new Object[] {states});
+	}*/
+	
+	@Ensures({
+		"return = states",
+		"return[0] = this.startState",
+		"one {i : {0 ... return[0].cells.length - 1} | return[states.length-1].cells[i].occupied}",
+		"all i: {1 ... return.length-1} |  " +
+		 "(exists src, via : {0 ... return[i-1].cells.length - 1} | " +
+		 "one dest : {0 ... return[i-1].cells.length - 1} | " +
+		 "src!=via && src!=dest && via!=dest &&" +
+		 " (return[i-1].cells[src].occupied " +
+		 "&& return[i-1].cells[via].occupied && !return[i-1].cells[dest].occupied)  " +
+		 "&& (this.adj[src][via] !=  0) " +
+		 "&& (this.adj[via][dest] !=  0) " +
+		 "&& return[i-1].s = src "+
+		 "&& return[i-1].v = via "+
+		 "&& return[i-1].d = dest "+
+		 "&& (this.adj[src][via] =  this.adj[via][dest])" +
+		 "&& !return[i].cells[src].occupied" +
+		 "&& !return[i].cells[via].occupied" +
+		 "&& return[i].cells[dest].occupied && " +
+		"(" +
+		"all j:{0 ... return[i-1].cells.length - 1} | (j!= src && j!= via && j!= dest)=>" +
+			      "return[i-1].cells[j].occupied=return[i].cells[j].occupied))"})
+	@Modifies({"Cell.occupied [{cell : Cell | (all i:int|return[0].cells[i]!=cell)}]"})
+	public State [] solveSolitergame(State [] states)
+	{
+		return Squander.exe(this, new Object[] {states});
 	}
 	
 	/*public void generateStates()
@@ -180,23 +356,32 @@ public class SoliterSolver {
 			lastRow +=1;
 			statesCount += lastRow;
 		}*/
+		this.adj = new int [statesCount][statesCount];
 		State [] states = new State [statesCount-1];
-		for(Cell actualCell:startState.getCells())
+		for(int i=0; i<startState.getCells().length; i++)
 		{
-			for(Cell potentialNeighbor:startState.getCells())
+			Cell actualCell = startState.getCells()[i];
+			for(int j=0; j< startState.getCells().length; j++)
 			{
+				Cell potentialNeighbor = startState.getCells()[j];
 				if(potentialNeighbor.getRow() == actualCell.getRow() && potentialNeighbor.getColumn() == actualCell.getColumn() -1)
-					leftNeighbors.put(actualCell, potentialNeighbor);
+					adj[i][j] = 1;
+					//leftNeighbors.put(actualCell, potentialNeighbor);
 				else if(potentialNeighbor.getRow() == actualCell.getRow() && potentialNeighbor.getColumn() == actualCell.getColumn() +1)
-					rightNeighbors.put(actualCell, potentialNeighbor);
+					adj[i][j] = 2;
+					//rightNeighbors.put(actualCell, potentialNeighbor);
 				else if(potentialNeighbor.getRow() == actualCell.getRow() -1 && potentialNeighbor.getColumn() == actualCell.getColumn() -1)
-					leftTopNeighbors.put(actualCell, potentialNeighbor);
+					adj[i][j] = 3;
+					//leftTopNeighbors.put(actualCell, potentialNeighbor);
 				else if(potentialNeighbor.getRow() == actualCell.getRow() -1 && potentialNeighbor.getColumn() == actualCell.getColumn())
-					rightTopNeighbors.put(actualCell, potentialNeighbor);
+					adj[i][j] = 4;
+					//rightTopNeighbors.put(actualCell, potentialNeighbor);
 				else if(potentialNeighbor.getRow() == actualCell.getRow() +1 && potentialNeighbor.getColumn() == actualCell.getColumn())
-					leftBottomNeighbors.put(actualCell, potentialNeighbor);
+					adj[i][j] = 5;
+					//leftBottomNeighbors.put(actualCell, potentialNeighbor);
 				else if(potentialNeighbor.getRow() == actualCell.getRow() +1 && potentialNeighbor.getColumn() == actualCell.getColumn() +1)
-					rightBottomNeighbors.put(actualCell, potentialNeighbor);
+					adj[i][j] = 6;
+					//rightBottomNeighbors.put(actualCell, potentialNeighbor);
 			}
 		}
 		/*for(Cell cell:startState.getCells())
@@ -211,15 +396,19 @@ public class SoliterSolver {
 		}
 		System.out.println("--------------------");*/
 		states[0] = startState;
+		int position = 0;
+		int cols;
 		for(int i =0; i < statesCount-2; i++)
 		{
 			State s = new State(this.n);
-			int cols = 1;
+			cols = 1;
+			position = 0;
 			for(int j = 0; j< this.n; j++)
 			{
 				for(int k = 0; k< cols; k++)
 				{
-					s.getCells().add(new Cell(j,k));
+					s.getCells()[position] = new Cell(j,k);
+					position++;
 				}
 				cols++;
 			}
@@ -237,19 +426,40 @@ public class SoliterSolver {
 			System.out.println("--------------------");
 			
 		}*/
-		System.out.println("---COUNT OF STATES: "+states.length+"---");
-		int cnt = 1;
-		for(State state:states)
+		//System.out.println("---COUNT OF STATES: "+states.length+"---");
+		
+		for(int i =0; i < statesCount-1; i++)
+		{
+			System.out.println("---STATE: "+(i+1)+"---");
+			cols = 1;
+			position = 0;
+			for(int j = 0; j< this.n; j++)
+			{
+				for(int l = 0; l< this.n-j; l++)
+					System.out.print(" ");
+				for(int k = 0; k< cols; k++)
+				{
+					
+					System.out.print(((states[i].getCells()[position].getOccupied())?1:0)+" ");
+					position++;
+				}
+				System.out.println();
+				cols++;
+			}
+			//s.setLeftNeighbors(this.startState.getLeftBottomNeighbors());
+			
+		}
+		/*for(State state:states)
 		{
 			System.out.println("---STATE: "+cnt+"---");
 			Cell [] cells = new Cell[state.getCells().size()];
 			state.getCells().toArray(cells);
 			Arrays.sort(cells);
-			for(Cell cell:cells)
+			for(Cell cell:state.getCells())
 				System.out.print(cell.getOccupied()+" ");
 			System.out.println();
 					cnt++;
-		}
+		}*/
 		return states;
 	}
 }

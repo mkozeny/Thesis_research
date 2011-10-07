@@ -12,10 +12,10 @@ public class Cell implements Comparable<Cell>{
 		super();
 		this.row = row;
 		this.column = column;
-		this.occupied = 0;
+		this.occupied = false;
 	}
-
-	public Cell(int row, int column, int occupied) {
+	
+	public Cell(int row, int column, boolean occupied) {
 		super();
 		this.row = row;
 		this.column = column;
@@ -28,7 +28,7 @@ public class Cell implements Comparable<Cell>{
 	
 	private int column;
 	
-	private int occupied;
+	private boolean occupied;
 
 	public int getRow() {
 		return row;
@@ -46,11 +46,11 @@ public class Cell implements Comparable<Cell>{
 		this.column = column;
 	}
 
-	public int getOccupied() {
+	public boolean getOccupied() {
 		return occupied;
 	}
 
-	public void setOccupied(int occupied) {
+	public void setOccupied(boolean occupied) {
 		this.occupied = occupied;
 	}
 

@@ -12,9 +12,11 @@ import java.util.Set;
 
 public class State {
 
-	private Set<Cell> cells;
+	private Cell [] cells;
 	
 	private int n;
+	
+	public int s, v, d ;
 	
 	//TODO udelat hash mapou
 	/*private Map<Cell, Cell> leftNeighbors;
@@ -29,7 +31,7 @@ public class State {
 	
 	private Map<Cell, Cell> rightBottomNeighbors;*/
 
-	public State(Set<Cell> cells, int n) {
+	public State(Cell [] cells, int n) {
 		super();
 		this.cells = cells;
 		this.n = n;
@@ -43,7 +45,7 @@ public class State {
 	
 	public State(int n) {
 		super();
-		this.cells = new HashSet<Cell>();
+		this.cells = new Cell[n*(n+1)/2];
 		this.n = n;
 		/*this.leftNeighbors = new HashMap<Cell, Cell>();
 		this.leftTopNeighbors = new HashMap<Cell, Cell>();
@@ -62,14 +64,16 @@ public class State {
 		int freeColumn = 0;
 		if(freeRow >0)
 			freeColumn = random.nextInt(freeRow);
+		int position = 0;
 		for(int i = 0; i< this.n; i++)
 		{
 			for(int j = 0; j< cols; j++)
 			{
 				if(i==freeRow && j==freeColumn)
-					this.cells.add(new Cell(i,j));
+					this.cells[position] = new Cell(i,j);
 				else
-					this.cells.add(new Cell(i,j,1));
+					this.cells[position] = new Cell(i,j,true);
+				position++;
 			}
 			cols++;
 		}
@@ -96,11 +100,11 @@ public class State {
 
 	
 
-	public Set<Cell> getCells() {
+	public Cell [] getCells() {
 		return cells;
 	}
 
-	public void setCells(Set<Cell> cells) {
+	public void setCells(Cell [] cells) {
 		this.cells = cells;
 	}
 
