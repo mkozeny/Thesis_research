@@ -39,6 +39,7 @@
 % Styles required in your work follow %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx}
+\usepackage{tabularx,colortbl}
 %\usepackage{indentfirst} %1. odstavec jako v cestine.
 \usepackage{qtree}
 \usepackage{tikz}
@@ -47,6 +48,7 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{textcomp}
+\usepackage{amssymb}
 \definecolor{listinggray}{gray}{0.9}
 \definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
 \lstset{ %
@@ -245,7 +247,7 @@ unicode=true,
 \acknowledgements
 \noindent
 At this point I would like to thank supervisor of my thesis Mr Ing. Jiří Daněček
-and author of Squander framework Mr Aleksandar Milicevics for valuable comments
+and author of Squander framework Mr Aleksandar Milicevic for valuable comments
 and advices to this work.
 
 
@@ -323,7 +325,7 @@ Očekávají se cca 1 -- 2 odstavce, maximálně půl stránky.
 \chapter{Introduction}
 As was said in abstract, the main purpose of this thesis is to describe and use
 framework Squander developed at Massachusetts Institute of Technology (MIT) by Mr
-Aleksandar Milicevics. This framework brings to Java declarative
+Aleksandar Milicevic. This framework brings to Java declarative
 constructs, which are useful for implementing programs that involve computations
 that are relatively easy to specify but hard to solve algorithmically. In such
 cases is better to use declarative constraints to naturally express the core of
@@ -563,7 +565,7 @@ From procedural point of view has clause different meaning:
 \begin{itemize}
   \item to solve problem \verb|P|, it is necessary to solve \textbf{first}
   problem \verb|Q| and \textbf{then} problem \verb|R|
-  \item to fulfil target \verb|P|, it is necessary \textbf{first} to fulfil
+  \item to fulfill target \verb|P|, it is necessary \textbf{first} to fulfil
   target \verb|Q| and then fulfil target \verb|R|
 \end{itemize}
 
@@ -711,8 +713,262 @@ Role annotation]{src/TestRole.java}
 %*****************************************************************************
 \chapter{Framework description}
 \label{chap:framework}
-Popis implementace/realizace se zaměřením na nestandardní části řešení.
+\section{Introduction}
+\subsection{Overview}
+Squander is a framework providing unified environment for both declarative
+constraints and imperative statements in single program. This is very practical when
+implementing problems, which are easy to define but difficult to solve them
+algorithmically. In such cases, declarative constraints can be natural way to
+express problem, whereas imprative code is used for setting up the problem and
+data manipulation.
 
+Thanks to ability of mixing imperative code with executable declarations, it is
+possible to express problem in terms of existing data structures and then run
+framework solver, which according to given constraints update the heap to
+reflect the solution.
+
+
+Without having technology like this one, programmer has to translate his program
+to external solver, then run the solver and then again manually translate the
+solution back to the native programming language.
+
+\subsection{Architecture}
+We can divide running of Squander in following steps:
+\begin{enumerate}
+  \item serialize heap into relations
+  \item translate specs and heap relations into Kodkod
+  \item translate relational into boolean logic
+  \item (if a solution is found) restore relations from boolean assignments
+  (if a solution is found) restore field values from relations
+  \item (if a solution is found) restore the heap to reflect the solution
+   
+\end{enumerate}
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[width=7cm]{figures/architecture-diagram}
+\caption{Architecture diagram}
+\label{fig:logo}
+\end{center}
+\end{figure}
+
+Further will be explained in deatil all of these steps and terms like Kodkod
+etc.
+
+\subsection{Applications}
+In this section will be briefly described applications of framework. Most
+typical applications are these:
+\begin{itemize}
+  \item \textbf{solving hard constraint problems} - puzzles (solitaire, sudoku,
+  n-queens,\ldots), graph problems (traveling salesman problem, Hamiltonian
+  path, general bisection breadth,\ldots), schedulers, dependency managers,\ldots
+  \item \textbf{test input generation} - e.g. generate data structure instances
+  that satisfy complex constraints
+  \item \textbf{specification validation} - specifications can also contain
+  errors, and the most intuitive way to test a specification would be to execute
+  it on some concrete input and see if the result makes sense or not
+  \item \textbf{runtime assertion checking} - check whether a given rich
+  property holds at an arbitrary point during the execution of a program
+\end{itemize}
+
+On the other hand, framework has some limitations:
+\begin{itemize}
+  \item \textbf{boundedness} - everything has to be bounded $\rightarrow$ framework
+  cannot generate an arbitrary set of new objects (which may be needed to satisfy a
+  specification); instead, the exact number of new objects of each class must be
+  specified by the user
+  \item \textbf{small integers} - integers must also be bounded to a small
+  bitwidth (to make the solving tractable), which can occasionally cause subtle
+  integer overflow bugs, which are typically hard to find
+  \item \textbf{equality issues} - referential equality is used by default for
+  all classes except for \verb|String|, so it is impossible to write a spec that
+  asserts that two objects are equal in the sense of Java \verb|equals|
+  \item \textbf{lack of support for higher-order expressions} - it is not
+  possible to write a specification that says \uv{find a path in the graph such
+  that there is no other path in the graph longer than it} and solve it with
+  Squander; it is possible, however, to express and solve \uv{find a path in the
+  graph with at least k nodes}, which is computationally as hard as the previous
+  problem, because a binary search can be used to efficiently find the maximum k
+  for which a solution exists
+ 
+ 
+\end{itemize}
+
+\section{Execution of Squander}
+
+Information about framework presented in this section are taken from
+\cite{milicevic:executableSpecificationsForJavaPrograms}, where is
+thre background of Squander described in detail.
+
+\subsection{Kodkod}
+Kodkod is a solver for relational logic. Kodkod requires bounded universe , a
+set of untyped relations, bounds for every relation and relation formula. Then
+translates given problem into boolean satisfiability problem (SAT) and applies
+of-the- shelf SAT solverto search for satysfiyng solution, which is reflected
+back if found.
+
+When are the relations in Kodkod created, they are untyped, meaning that every
+relation can potentionally contain any tuple drawn from the finite universe.
+Actual set of tuples, which relation actually may contains is defined through
+Kodkod \textit{bounds}:
+\begin{itemize}
+  \item \textit{lower bound} to define tuples, that relation \textbf{must}
+  contain.
+  \item \textit{upper bounds} to define tuples, which relation \textbf{may}
+  contain.
+\end{itemize}
+
+The size of these bounds has a big influence on search time - the fewer tuples
+are in the difference of lower and upper bound, the smaller search space is, the
+faster solving is.
+
+
+\subsection{JFSL}
+JSFL is formal lightweight specification for Java supporting relational and set
+algebra, as well as common Java operators. Using expressive power of relation
+algebra, JFSL makes it easy to succinctly and formally specify complex
+properties about Java programs such as method pre and postcondition, class
+invariants and so called \textit{frame conditions}, which means portion of the
+heap, that is methos allow to modify. It also supports \textit{specification
+fields} which can be useful for specifying abstract data types. 
+
+
+\subsubsection{JFSL expressions}
+
+JFSL expressions are evaluated into relations. JFSL provides common algebra
+operators, together with interger and boolean operators. Some of them are shown
+in Table \ref{tab:unaryExpressions} and quantified operators, which are also
+provided by the framework, are shown in Table \ref{tab:quantifiedExpressions}.
+
+
+\begin{table}[ht]
+  \centering
+  \caption{Unary expressions supported by JFSL}
+  \begin{tabular}{|l|l|}
+  \hline
+  \rowcolor[gray]{.8}    Operator  & Description  \\
+  \hline
+  \hline
+  \verb|#| & set cardinality\\
+  \hline
+  \hline
+  \verb|no| & \uv{no} multiplicity (empty)\\ 
+  \hline
+  \verb|lone|  & \uv{lone} mulitiplicity (zero or one)\\ 
+  \hline
+  \verb|one| & \uv{one} multiplicity (exactly one) \\ 
+  \hline
+  \verb|some| & \uv{some} multiplicity (one or more) \\ 
+  \hline
+  \verb|!| & boolean negation \\ 
+  \hline
+  \verb|-| & integer negation \\ 
+  \hline
+  \verb|sum| & integer summation \\ 
+  \hline
+  \hline
+  \verb|=>| & boolean implication \\ 
+  \hline
+  
+  \verb|<=>| & boolean equivalence (\uv{if and only if}) \\ 
+  \hline
+  \hline
+  \verb|?| & if-then-else ternary operator (as in Java) \\ 
+  \hline
+  \hline
+  \verb|@+| & relational union \\ 
+  \hline
+  \verb|@-| & relational difference \\ 
+  \hline
+  \verb|@&| & relational intersection \\ 
+  \hline
+  \end{tabular}
+  \label{tab:unaryExpressions}
+\end{table}
+
+\begin{table}[ht]
+  \centering
+  \caption{Quantified expressions supported by JFSL}
+  \begin{tabular}{|l|l|l|}
+  \hline
+  \rowcolor[gray]{.8}    Operator  & Description  & Usage\\
+  \hline
+  \hline
+  \verb|all| & universal quantifier & \verb#all x: T | P(x)#\\
+  \hline
+  \verb|some| & existential quantifier & \verb#some x: T | P(x)#\\ 
+  \hline
+  \verb|sum|  & integer summation & \verb#sum i: int | a[i]#\\ 
+  \hline
+  \verb|union| & set comprehension & \verb#{x: T | P(x)}#\\ 
+  \hline
+  
+  \end{tabular}
+  \label{tab:quantifiedExpressions}
+\end{table}
+\newpage
+\subsubsection{JFSL annotations}
+JFSL annotations are written as Java annotations and are for interaction
+between framework and programmer. Main components (JFSL annotations) are:
+
+\begin{itemize}
+  \item \verb|@Invariant| - this annotaion is attached to the classes and used
+  to define, that condition must be fulfilled for the given class. That means,
+  that this condition has to be fulfilled before and after execution.
+  
+  \item \verb|@Requires| -  this annotation specifies constraints before method
+  invocation. The method is expected to execute correctly if only the
+  precondition is satisfied immediately before method invocation. Class
+  invariants are added immediately to the method preconditions.
+  \newpage
+  \item \verb|@Ensures| - attached to the methods and used to specify
+  constraints on the state, which have to be satisfied after method invocation.
+  It means, that it captures all effect that method is expected to produce.
+  Class invariants are implicitly added to method postconditions.
+  
+  \item  \verb|@Modifies| - this annotation is attached to the methods to
+  specify frame conditions. Frame condition can hold up 4 different pieces of
+  specification (syntax: \verb|@Modifies| \verb|("f [s][l][u]")|). First, and
+  the only one mandatory piece, is the name of modifiable field, \verb|f|. It is
+  optionally followed by \textit{instance selector} \verb|s|, followed by
+  \textit{lower bound} and the \textit{upper bound}. Instance selector specifies
+  instances, for which the field may be modified - if not specified, it is
+  assumed \uv{all}. The lower bound contains concrete field values for some
+  objects in the post-state. The upper bound holds the possible field values in
+  the post-state.
+  
+  \item \verb|@SpecField| - attached to the classes and used to define
+  specification fields. Definition of type specification consists of type
+  declaration, and optionally an abstract function. the abstraction function
+  defines, how the field value is computed in terms of other fields. For example
+  \verb#@SpecField("x: one int| x = this.y - this.z")#  defines a singleton
+  integer field \verb|x|, the value of which must be equal to the difference of
+  \verb|y| and \verb|z|. Specifications fields are inherited from super-types
+  and sub-types can override the abstraction function (by simply redefining
+  it), a feature that is particularly useful for specifying abstract datatypes,
+  such as Java collections.
+  
+  
+
+  
+\end{itemize}
+
+In context of these specification, the goal is to execute a method, that makes
+modification of the portion of the heap (specified in frame condition), so that
+final state satisfies postcondition.
+
+Execution of Squander begins in client's code when invoking
+method \verb|Squander.exe()| involving following steps:
+
+\begin{enumerate}
+  \item Assembling all revelant constraints from annotations, as well as class
+  annotations corresponding to all invariant classes.
+  \item Construction relations representing objects and their fields in
+  pre-state and adding additional relations for holding their values in the
+  post-state, along with their Kodkod bounds
+  \item Parsing constraints and converting them to a single relational formula
+  \item If solution is found, translation of the Kodkod result objects into
+  updates of Java heap state, by modification of the object fields
+\end{enumerate}
 %*****************************************************************************
 \chapter{Implementation of algorithms}
 Popis implementace/realizace se zaměřením na nestandardní části řešení.
@@ -741,6 +997,15 @@ Popis implementace/realizace se zaměřením na nestandardní části řešení.
 % zapracujte) pomoci prikazu bibtex a nasledne pdflatex (nebo
 % latex). Druhy z nich alespon 2x, aby se poresily odkazy.
 
+\begin{thebibliography}{1}
+
+\bibitem{milicevic:executableSpecificationsForJavaPrograms}
+Aleksandar Milicevic; MASSACHUSETTS INSTITUTE OF TECHNOLOGY, Department of
+Electrical Engineering and Computer Science; \textit{Executable Specifications
+for Java Programs}, September 2010.
+
+\end{thebibliography}
+
 % originally following specification for bibliography formating was used
 %\bibliographystyle{abbrv}
 
@@ -758,6 +1023,7 @@ Popis implementace/realizace se zaměřením na nestandardní části řešení.
 \def\CS{$\cal C\kern-0.1667em\lower.5ex\hbox{$\cal S$}\kern-0.075em $}
 \bibliography{reference}
 }
+
 
 % M. Dušek radi:
 %\bibliographystyle{alpha}

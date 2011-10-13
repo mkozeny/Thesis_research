@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  2 OCT 2011 21:20
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  13 OCT 2011 17:45
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -297,6 +297,39 @@ File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
+(/usr/share/texmf-texlive/tex/latex/tools/tabularx.sty
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen106
+\extrarowheight=\dimen107
+\NC@list=\toks17
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+\TX@col@width=\dimen108
+\TX@old@table=\dimen109
+\TX@old@col=\dimen110
+\TX@target=\dimen111
+\TX@delta=\dimen112
+\TX@cols=\count91
+\TX@ftn=\toks18
+)
+(/usr/share/texmf-texlive/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2001/02/13 v0.1j Color table columns (DPC)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+\everycr=\toks19
+\minrowclearance=\skip45
+)
 (/usr/share/texmf-texlive/tex/latex/qtree/qtree.sty
 Package: 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
 Package: qtree 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
@@ -312,13 +345,13 @@ Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 103.
 (/usr/share/texmf-texlive/tex/latex/pict2e/p2e-pdftex.def
 File: p2e-pdftex.def 2009/08/05 v0.1s Driver-dependant file (RN,HjG,JT)
 )
-\pIIe@GRAPH=\toks17
-\@arclen=\dimen106
-\@arcrad=\dimen107
-\@tempdimd=\dimen108
+\pIIe@GRAPH=\toks20
+\@arclen=\dimen113
+\@arcrad=\dimen114
+\@tempdimd=\dimen115
 )
-\c@treecount=\count91
-\c@branchcount=\count92
+\c@treecount=\count92
+\c@branchcount=\count93
 \parentbox=\box26
 \treebox=\box27
 \treeboxone=\box28
@@ -341,92 +374,92 @@ File: p2e-pdftex.def 2009/08/05 v0.1s Driver-dependant file (RN,HjG,JT)
 \treeboxeighteen=\box45
 \treeboxnineteen=\box46
 \treeboxtwenty=\box47
-\treeoffsetone=\skip43
-\treeoffsettwo=\skip44
-\treeoffsetthree=\skip45
-\treeoffsetfour=\skip46
-\treeoffsetfive=\skip47
-\treeoffsetsix=\skip48
-\treeoffsetseven=\skip49
-\treeoffseteight=\skip50
-\treeoffsetnine=\skip51
-\treeoffsetten=\skip52
-\treeoffseteleven=\skip53
-\treeoffsettwelve=\skip54
-\treeoffsetthirteen=\skip55
-\treeoffsetfourteen=\skip56
-\treeoffsetfifteen=\skip57
-\treeoffsetsixteen=\skip58
-\treeoffsetseventeen=\skip59
-\treeoffseteighteen=\skip60
-\treeoffsetnineteen=\skip61
-\treeoffsettwenty=\skip62
-\treeshiftone=\skip63
-\treeshifttwo=\skip64
-\treeshiftthree=\skip65
-\treeshiftfour=\skip66
-\treeshiftfive=\skip67
-\treeshiftsix=\skip68
-\treeshiftseven=\skip69
-\treeshifteight=\skip70
-\treeshiftnine=\skip71
-\treeshiftten=\skip72
-\treeshifteleven=\skip73
-\treeshifttwelve=\skip74
-\treeshiftthirteen=\skip75
-\treeshiftfourteen=\skip76
-\treeshiftfifteen=\skip77
-\treeshiftsixteen=\skip78
-\treeshiftseventeen=\skip79
-\treeshifteighteen=\skip80
-\treeshiftnineteen=\skip81
-\treeshifttwenty=\skip82
-\treewidthone=\skip83
-\treewidthtwo=\skip84
-\treewidththree=\skip85
-\treewidthfour=\skip86
-\treewidthfive=\skip87
-\treewidthsix=\skip88
-\treewidthseven=\skip89
-\treewidtheight=\skip90
-\treewidthnine=\skip91
-\treewidthten=\skip92
-\treewidtheleven=\skip93
-\treewidthtwelve=\skip94
-\treewidththirteen=\skip95
-\treewidthfourteen=\skip96
-\treewidthfifteen=\skip97
-\treewidthsixteen=\skip98
-\treewidthseventeen=\skip99
-\treewidtheighteen=\skip100
-\treewidthnineteen=\skip101
-\treewidthtwenty=\skip102
-\daughteroffsetone=\skip103
-\daughteroffsettwo=\skip104
-\daughteroffsetthree=\skip105
-\daughteroffsetfour=\skip106
-\branchwidthone=\skip107
-\branchwidthtwo=\skip108
-\branchwidththree=\skip109
-\branchwidthfour=\skip110
-\parentoffset=\skip111
-\treeoffset=\skip112
-\daughteroffset=\skip113
-\branchwidth=\skip114
-\parentwidth=\skip115
-\treewidth=\skip116
-\qta=\toks18
-\qtb=\toks19
-\nbranches=\count93
-\qroofx=\count94
-\qroofy=\count95
+\treeoffsetone=\skip46
+\treeoffsettwo=\skip47
+\treeoffsetthree=\skip48
+\treeoffsetfour=\skip49
+\treeoffsetfive=\skip50
+\treeoffsetsix=\skip51
+\treeoffsetseven=\skip52
+\treeoffseteight=\skip53
+\treeoffsetnine=\skip54
+\treeoffsetten=\skip55
+\treeoffseteleven=\skip56
+\treeoffsettwelve=\skip57
+\treeoffsetthirteen=\skip58
+\treeoffsetfourteen=\skip59
+\treeoffsetfifteen=\skip60
+\treeoffsetsixteen=\skip61
+\treeoffsetseventeen=\skip62
+\treeoffseteighteen=\skip63
+\treeoffsetnineteen=\skip64
+\treeoffsettwenty=\skip65
+\treeshiftone=\skip66
+\treeshifttwo=\skip67
+\treeshiftthree=\skip68
+\treeshiftfour=\skip69
+\treeshiftfive=\skip70
+\treeshiftsix=\skip71
+\treeshiftseven=\skip72
+\treeshifteight=\skip73
+\treeshiftnine=\skip74
+\treeshiftten=\skip75
+\treeshifteleven=\skip76
+\treeshifttwelve=\skip77
+\treeshiftthirteen=\skip78
+\treeshiftfourteen=\skip79
+\treeshiftfifteen=\skip80
+\treeshiftsixteen=\skip81
+\treeshiftseventeen=\skip82
+\treeshifteighteen=\skip83
+\treeshiftnineteen=\skip84
+\treeshifttwenty=\skip85
+\treewidthone=\skip86
+\treewidthtwo=\skip87
+\treewidththree=\skip88
+\treewidthfour=\skip89
+\treewidthfive=\skip90
+\treewidthsix=\skip91
+\treewidthseven=\skip92
+\treewidtheight=\skip93
+\treewidthnine=\skip94
+\treewidthten=\skip95
+\treewidtheleven=\skip96
+\treewidthtwelve=\skip97
+\treewidththirteen=\skip98
+\treewidthfourteen=\skip99
+\treewidthfifteen=\skip100
+\treewidthsixteen=\skip101
+\treewidthseventeen=\skip102
+\treewidtheighteen=\skip103
+\treewidthnineteen=\skip104
+\treewidthtwenty=\skip105
+\daughteroffsetone=\skip106
+\daughteroffsettwo=\skip107
+\daughteroffsetthree=\skip108
+\daughteroffsetfour=\skip109
+\branchwidthone=\skip110
+\branchwidthtwo=\skip111
+\branchwidththree=\skip112
+\branchwidthfour=\skip113
+\parentoffset=\skip114
+\treeoffset=\skip115
+\daughteroffset=\skip116
+\branchwidth=\skip117
+\parentwidth=\skip118
+\treewidth=\skip119
+\qta=\toks21
+\qtb=\toks22
+\nbranches=\count94
+\qroofx=\count95
+\qroofy=\count96
 \@qrscratchbox=\box48
 )
 (/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks20
+\pgfutil@everybye=\toks23
 )
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def)
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
@@ -440,21 +473,21 @@ Package: pgf 2008/01/15 v2.00 (rcs-revision 1.12)
 Package: pgfsys 2008/02/07 v2.00 (rcs-revision 1.31)
 
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks21
-\pgfkeys@temptoks=\toks22
+\pgfkeys@pathtoks=\toks24
+\pgfkeys@temptoks=\toks25
 )
-\pgf@x=\dimen109
-\pgf@y=\dimen110
-\pgf@xa=\dimen111
-\pgf@ya=\dimen112
-\pgf@xb=\dimen113
-\pgf@yb=\dimen114
-\pgf@xc=\dimen115
-\pgf@yc=\dimen116
-\c@pgf@counta=\count96
-\c@pgf@countb=\count97
-\c@pgf@countc=\count98
-\c@pgf@countd=\count99
+\pgf@x=\dimen116
+\pgf@y=\dimen117
+\pgf@xa=\dimen118
+\pgf@ya=\dimen119
+\pgf@xb=\dimen120
+\pgf@yb=\dimen121
+\pgf@xc=\dimen122
+\pgf@yc=\dimen123
+\c@pgf@counta=\count97
+\c@pgf@countb=\count98
+\c@pgf@countc=\count99
+\c@pgf@countd=\count100
 
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/01/13  (rcs-revision 1.6)
@@ -469,8 +502,8 @@ File: pgfsys-common-pdf.def 2007/12/17  (rcs-revision 1.8)
 )))
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2008/01/23  (rcs-revision 1.6)
-\pgfsyssoftpath@smallbuffer@items=\count100
-\pgfsyssoftpath@bigbuffer@items=\count101
+\pgfsyssoftpath@smallbuffer@items=\count101
+\pgfsyssoftpath@bigbuffer@items=\count102
 )
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
@@ -482,6 +515,7 @@ Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
@@ -501,11 +535,11 @@ Package: pgfcore 2008/01/15 v2.00 (rcs-revision 1.6)
 \pgfmath@box=\box49
 )
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@stack=\toks23
-\c@pgfmath@parsecounta=\count102
-\c@pgfmath@parsecountb=\count103
-\c@pgfmath@parsecountc=\count104
-\pgfmath@parsex=\dimen117
+\pgfmath@stack=\toks26
+\c@pgfmath@parsecounta=\count103
+\c@pgfmath@parsecountb=\count104
+\c@pgfmath@parsecountc=\count105
+\pgfmath@parsex=\dimen124
 )
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathoperations.code.tex
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathtrig.code.tex)
@@ -513,47 +547,47 @@ Package: pgfcore 2008/01/15 v2.00 (rcs-revision 1.6)
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathbase.code.tex)))
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2008/02/03  (rcs-revision 1.13)
-\pgf@picminx=\dimen118
-\pgf@picmaxx=\dimen119
-\pgf@picminy=\dimen120
-\pgf@picmaxy=\dimen121
-\pgf@pathminx=\dimen122
-\pgf@pathmaxx=\dimen123
-\pgf@pathminy=\dimen124
-\pgf@pathmaxy=\dimen125
-\pgf@xx=\dimen126
-\pgf@xy=\dimen127
-\pgf@yx=\dimen128
-\pgf@yy=\dimen129
-\pgf@zx=\dimen130
-\pgf@zy=\dimen131
+\pgf@picminx=\dimen125
+\pgf@picmaxx=\dimen126
+\pgf@picminy=\dimen127
+\pgf@picmaxy=\dimen128
+\pgf@pathminx=\dimen129
+\pgf@pathmaxx=\dimen130
+\pgf@pathminy=\dimen131
+\pgf@pathmaxy=\dimen132
+\pgf@xx=\dimen133
+\pgf@xy=\dimen134
+\pgf@yx=\dimen135
+\pgf@yy=\dimen136
+\pgf@zx=\dimen137
+\pgf@zy=\dimen138
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2008/02/13  (rcs-revision 1.14)
-\pgf@path@lastx=\dimen132
-\pgf@path@lasty=\dimen133
+\pgf@path@lastx=\dimen139
+\pgf@path@lasty=\dimen140
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2008/01/23  (rcs-revision 1.11)
-\pgf@shorten@end@additional=\dimen134
-\pgf@shorten@start@additional=\dimen135
+\pgf@shorten@end@additional=\dimen141
+\pgf@shorten@start@additional=\dimen142
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2008/01/15  (rcs-revision 1.26)
 \pgfpic=\box50
 \pgf@hbox=\box51
 \pgf@layerbox@main=\box52
-\pgf@picture@serial@count=\count105
+\pgf@picture@serial@count=\count106
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2007/12/12  (rcs-revision 1.8)
-\pgflinewidth=\dimen136
+\pgflinewidth=\dimen143
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2008/02/04  (rcs-revision 1.10)
-\pgf@pt@x=\dimen137
-\pgf@pt@y=\dimen138
-\pgf@pt@temp=\dimen139
+\pgf@pt@x=\dimen144
+\pgf@pt@y=\dimen145
+\pgf@pt@temp=\dimen146
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2006/10/11  (rcs-revision 1.2)
@@ -569,8 +603,8 @@ File: pgfcorearrows.code.tex 2007/06/07  (rcs-revision 1.8)
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2007/12/10  (rcs-revision 1.9)
-\pgf@max=\dimen140
-\pgf@sys@shading@range@num=\count106
+\pgf@max=\dimen147
+\pgf@sys@shading@range@num=\count107
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2008/01/15  (rcs-revision 1.1)
@@ -588,7 +622,7 @@ File: pgfcorepatterns.code.tex 2008/01/15  (rcs-revision 1.1)
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2008/02/13  (rcs-revision 1.4)
 \pgfnodeparttextbox=\box54
-\toks@savedmacro=\toks24
+\toks@savedmacro=\toks27
 )
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2008/01/15  (rcs-revision 1.1)
@@ -596,8 +630,8 @@ File: pgfmoduleplot.code.tex 2008/01/15  (rcs-revision 1.1)
 )
 (/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v2.00 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen141
-\pgf@nodesepend=\dimen142
+\pgf@nodesepstart=\dimen148
+\pgf@nodesepend=\dimen149
 )
 (/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v2.00 (rcs-revision 1.1)
@@ -605,37 +639,37 @@ Package: pgfcomp-version-1-18 2007/07/23 v2.00 (rcs-revision 1.1)
 (/usr/share/texmf/tex/latex/pgf/utilities/pgffor.sty
 (/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2007/11/07 v2.00 (rcs-revision 1.8)
-\pgffor@iter=\dimen143
-\pgffor@skip=\dimen144
+\pgffor@iter=\dimen150
+\pgffor@skip=\dimen151
 ))
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2008/02/13 v2.00 (rcs-revision 1.27)
 
 (/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2007/03/09 v2.00 (rcs-revision 1.9)
-\pgf@plot@mark@count=\count107
-\pgfplotmarksize=\dimen145
+\pgf@plot@mark@count=\count108
+\pgfplotmarksize=\dimen152
 )
-\tikz@lastx=\dimen146
-\tikz@lasty=\dimen147
-\tikz@lastxsaved=\dimen148
-\tikz@lastysaved=\dimen149
-\tikzleveldistance=\dimen150
-\tikzsiblingdistance=\dimen151
+\tikz@lastx=\dimen153
+\tikz@lasty=\dimen154
+\tikz@lastxsaved=\dimen155
+\tikz@lastysaved=\dimen156
+\tikzleveldistance=\dimen157
+\tikzsiblingdistance=\dimen158
 \tikz@figbox=\box55
 \tikz@tempbox=\box56
-\tikztreelevel=\count108
-\tikznumberofchildren=\count109
-\tikznumberofcurrentchild=\count110
-\tikz@fig@count=\count111
+\tikztreelevel=\count109
+\tikznumberofchildren=\count110
+\tikznumberofcurrentchild=\count111
+\tikz@fig@count=\count112
 
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2008/01/15  (rcs-revision 1.1)
-\pgfmatrixcurrentrow=\count112
-\pgfmatrixcurrentcolumn=\count113
-\pgf@matrix@numberofcolumns=\count114
+\pgfmatrixcurrentrow=\count113
+\pgfmatrixcurrentcolumn=\count114
+\pgf@matrix@numberofcolumns=\count115
 )
-\tikz@expandcount=\count115
+\tikz@expandcount=\count116
 
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
 hs.code.tex
@@ -644,65 +678,65 @@ File: tikzlibrarytopaths.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
 (/usr/share/texmf/tex/latex/tikz-qtree/pgftree.sty
 (/usr/share/texmf/tex/latex/pgfsubpic/pgfsubpic.sty
 (/usr/share/texmf/tex/latex/tikz-qtree/pgfsubpic.tex
-\pgf@subpicminx=\dimen152
-\pgf@subpicminy=\dimen153
-\pgf@subpicmaxx=\dimen154
-\pgf@subpicmaxy=\dimen155
+\pgf@subpicminx=\dimen159
+\pgf@subpicminy=\dimen160
+\pgf@subpicmaxx=\dimen161
+\pgf@subpicmaxy=\dimen162
 ))
 (/usr/share/texmf/tex/latex/tikz-qtree/pgftree.tex
-\levelsep=\dimen156
-\subtreesep=\dimen157
-\pgftree@childx=\dimen158
-\pgftree@savechildx=\dimen159
-\pgftree@childy=\dimen160
-\pgftree@savechildy=\dimen161
-\pgftree@childi=\count116
-\pgftree@savechildi=\count117
+\levelsep=\dimen163
+\subtreesep=\dimen164
+\pgftree@childx=\dimen165
+\pgftree@savechildx=\dimen166
+\pgftree@childy=\dimen167
+\pgftree@savechildy=\dimen168
+\pgftree@childi=\count117
+\pgftree@savechildi=\count118
 \pgf@subpic@hbox@children=\box57
-\pgf@subpic@minx@children=\dimen162
-\pgf@subpic@miny@children=\dimen163
-\pgf@subpic@maxx@children=\dimen164
-\pgf@subpic@maxy@children=\dimen165
-\pgftree@lastchildx=\dimen166
-\pgftree@lastchildy=\dimen167
+\pgf@subpic@minx@children=\dimen169
+\pgf@subpic@miny@children=\dimen170
+\pgf@subpic@maxx@children=\dimen171
+\pgf@subpic@maxy@children=\dimen172
+\pgftree@lastchildx=\dimen173
+\pgftree@lastchildy=\dimen174
 ))
 (/usr/share/texmf/tex/latex/tikz-qtree/tikz-qtree.tex
-\@result=\toks25
-\child@list=\toks26
-\root@node=\toks27
+\@result=\toks28
+\child@list=\toks29
+\root@node=\toks30
 ))
 (/usr/share/texmf-texlive/tex/latex/caption/caption.sty
 Package: caption 2009/10/09 v3.1k Customizing captions (AR)
 
 (/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
 Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
-\captionmargin=\dimen168
-\captionmargin@=\dimen169
-\captionwidth=\dimen170
-\caption@indent=\dimen171
-\caption@parindent=\dimen172
-\caption@hangindent=\dimen173
+\captionmargin=\dimen175
+\captionmargin@=\dimen176
+\captionwidth=\dimen177
+\caption@indent=\dimen178
+\caption@parindent=\dimen179
+\caption@hangindent=\dimen180
 )
-\c@ContinuedFloat=\count118
+\c@ContinuedFloat=\count119
 )
 (/usr/share/texmf-texlive/tex/latex/listings/listings.sty
-\lst@mode=\count119
+\lst@mode=\count120
 \lst@gtempboxa=\box58
-\lst@token=\toks28
-\lst@length=\count120
-\lst@currlwidth=\dimen174
-\lst@column=\count121
-\lst@pos=\count122
-\lst@lostspace=\dimen175
-\lst@width=\dimen176
-\lst@newlines=\count123
-\lst@lineno=\count124
-\lst@maxwidth=\dimen177
+\lst@token=\toks31
+\lst@length=\count121
+\lst@currlwidth=\dimen181
+\lst@column=\count122
+\lst@pos=\count123
+\lst@lostspace=\dimen182
+\lst@width=\dimen183
+\lst@newlines=\count124
+\lst@lineno=\count125
+\lst@maxwidth=\dimen184
 
 (/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
-\c@lstnumber=\count125
-\lst@skipnumbers=\count126
+\c@lstnumber=\count126
+\lst@skipnumbers=\count127
 \lst@framebox=\box59
 )
 (/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
@@ -851,6 +885,17 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
 )
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks32
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
 (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
@@ -879,9 +924,9 @@ O)
 (/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
 Package: xcolor-patch 2009/10/02 xcolor patch
 ))
-\@linkdim=\dimen178
-\Hy@linkcounter=\count127
-\Hy@pagecounter=\count128
+\@linkdim=\dimen185
+\Hy@linkcounter=\count128
+\Hy@pagecounter=\count129
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
@@ -958,10 +1003,10 @@ Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 )))
-\Fld@menulength=\count129
-\Field@Width=\dimen179
-\Fld@charsize=\dimen180
-\Field@toks=\toks29
+\Fld@menulength=\count130
+\Field@Width=\dimen186
+\Fld@charsize=\dimen187
+\Field@toks=\toks33
 Package hyperref Info: Hyper figures OFF on input line 4377.
 Package hyperref Info: Link nesting OFF on input line 4382.
 Package hyperref Info: Hyper index ON on input line 4385.
@@ -973,9 +1018,8 @@ Package hyperref Info: PDF/A mode OFF on input line 4407.
 (/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
 )
-\Hy@abspage=\count130
-\c@Item=\count131
-\c@Hfootnote=\count132
+\Hy@abspage=\count131
+\c@Item=\count132
 )
 *hyperref using default driver hpdftex*
 (/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
@@ -984,8 +1028,8 @@ File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
 )
 (/usr/share/texmf-texlive/tex/latex/natbib/natbib.sty
 Package: natbib 2009/07/16 8.31 (PWD, AO)
-\bibhang=\skip117
-\bibsep=\skip118
+\bibhang=\skip120
+\bibsep=\skip121
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count134
 ) (./thesis.aux
@@ -1010,52 +1054,55 @@ LaTeX Warning: Label `samplecode' multiply defined.
 
 LaTeX Warning: Label `samplecode' multiply defined.
 
+
+LaTeX Warning: Label `fig:logo' multiply defined.
+
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 172.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 172.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 174.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 174.
 
  (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 172.
-LaTeX Font Info:    ... okay on input line 172.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 174.
+LaTeX Font Info:    ... okay on input line 174.
 
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count135
-\scratchdimen=\dimen181
+\scratchdimen=\dimen188
 \scratchbox=\box60
 \nofMPsegments=\count136
 \nofMParguments=\count137
-\everyMPshowfont=\toks30
+\everyMPshowfont=\toks34
 \MPscratchCnt=\count138
-\MPscratchDim=\dimen182
+\MPscratchDim=\dimen189
 \MPnumerator=\count139
-\everyMPtoPDFconversion=\toks31
+\everyMPtoPDFconversion=\toks35
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count140
-Package hyperref Info: Link coloring ON on input line 172.
+Package hyperref Info: Link coloring ON on input line 174.
  (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
@@ -1064,8 +1111,8 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count141
 )
-LaTeX Info: Redefining \ref on input line 172.
-LaTeX Info: Redefining \pageref on input line 172.
+LaTeX Info: Redefining \ref on input line 174.
+LaTeX Info: Redefining \pageref on input line 174.
  (./thesis.out)
 (./thesis.out)
 \@outlinefile=\write4
@@ -1089,7 +1136,7 @@ Supervisor: Ing. Ji\IeC {\v r}\IeC {\'\i } Dan\IeC {\v e}\IeC {\v c}ek
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-<figures/LogoCVUT.pdf, id=131, 93.34875pt x 70.2625pt>
+<figures/LogoCVUT.pdf, id=167, 93.34875pt x 70.2625pt>
 File: figures/LogoCVUT.pdf Graphic file (type pdf)
 
 <use figures/LogoCVUT.pdf> [3 <./figures/LogoCVUT.pdf>] [4
@@ -1104,17 +1151,19 @@ File: figures/LogoCVUT.pdf Graphic file (type pdf)
 ] [10
 
 ] (./thesis.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 5.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 5.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 5.
- [11])
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+ (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+ (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) [11])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
- [12] (./thesis.lof)
+ [12]
+(./thesis.lof)
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
@@ -1126,8 +1175,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
-
-[15] [16
+ [15] [16
 
 ]
 Chapter 1.
@@ -1138,17 +1186,17 @@ Chapter 1.
 ]
 Chapter 2.
 [3]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 387.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 389.
 
  (/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ) [4] [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 613--616
+Underfull \hbox (badness 10000) in paragraph at lines 615--618
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 613--616
+Underfull \hbox (badness 10000) in paragraph at lines 615--618
 
  []
 
@@ -1162,101 +1210,111 @@ Chapter 3.
 Chapter 4.
 [13
 
-] [14
+] <figures/architecture-diagram.png, id=453, 531.9875pt x 150.5625pt>
+File: figures/architecture-diagram.png Graphic file (type png)
 
-]
+<use figures/architecture-diagram.png>
+Overfull \hbox (5.75848pt too wide) in paragraph at lines 761--764
+\T1/cmr/m/n/10.95 prob-lems (trav-el-ing sales-man prob-lem, Hamil-to-nian path
+, gen-eral bi-sec-tion breadth,...),
+ []
+
+[14 <./figures/architecture-diagram.png (PNG copy)>] [15] [16] [17] [18]
 Chapter 5.
-[15] [16
+[19
+
+] [20
 
 ]
 Chapter 6.
-[17] [18
+[21] [22
 
 ]
 Chapter 7.
+[23] [24
+
+]
 No file thesis.bbl.
-[19] [20
+[25] [26
 
 ]
 Appendix A.
-[21] [22] [23] [24] [25] [26
+[27] [28] [29] [30] [31] [32
 
 ]
 Appendix B.
 
-Package natbib Warning: Citation `CSTUG' on page 27 undefined on input line 820
-.
+Package natbib Warning: Citation `CSTUG' on page 33 undefined on input line 108
+6.
 
 
-Package natbib Warning: Citation `latexdocweb' on page 27 undefined on input li
-ne 820.
+Package natbib Warning: Citation `latexdocweb' on page 33 undefined on input li
+ne 1086.
 
 
-Package natbib Warning: Citation `latexwiki' on page 27 undefined on input line
- 820.
+Package natbib Warning: Citation `latexwiki' on page 33 undefined on input line
+ 1086.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 828.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 828.
 File: figures/LogoCVUT.pdf Graphic file (type pdf)
-<use figures/LogoCVUT.pdf> [27]
+<use figures/LogoCVUT.pdf> [33]
 
-Package natbib Warning: Citation `ipe' on page 28 undefined on input line 852.
-
-[28] [29] [30]
-
-Package natbib Warning: Citation `kniha' on page 31 undefined on input line 999
-.
+Package natbib Warning: Citation `ipe' on page 34 undefined on input line 1118.
 
 
-Package natbib Warning: Citation `clanek' on page 31 undefined on input line 99
-9.
+[34] [35] [36]
+
+Package natbib Warning: Citation `kniha' on page 37 undefined on input line 126
+5.
 
 
-Package natbib Warning: Citation `sbornik' on page 31 undefined on input line 9
-99.
+Package natbib Warning: Citation `clanek' on page 37 undefined on input line 12
+65.
 
 
-Package natbib Warning: Citation `www' on page 31 undefined on input line 999.
-
-[31]
-
-Package natbib Warning: Citation `wiki:framework' on page 32 undefined on input
- line 1001.
+Package natbib Warning: Citation `sbornik' on page 37 undefined on input line 1
+265.
 
 
-Package natbib Warning: Citation `wiki:orm' on page 32 undefined on input line 
-1001.
+Package natbib Warning: Citation `www' on page 37 undefined on input line 1265.
 
-[32] [33] [34]
+
+[37]
+
+Package natbib Warning: Citation `wiki:framework' on page 38 undefined on input
+ line 1267.
+
+
+Package natbib Warning: Citation `wiki:orm' on page 38 undefined on input line 
+1267.
+
+[38] [39] [40]
 Appendix C.
-[35
+[41
 
-] [36
+] [42
 
 ]
 Appendix D.
-[37] [38
+[43] [44
 
 ]
 Appendix E.
-[39] [40
+[45] [46
 
 ]
 Appendix F.
 
-Package natbib Warning: Citation `infodp' on page 41 undefined on input line 10
-94.
+Package natbib Warning: Citation `infodp' on page 47 undefined on input line 13
+60.
 
-<figures/seznamcd.pdf, id=530, 793.96625pt x 539.01375pt>
+<figures/seznamcd.pdf, id=613, 793.96625pt x 539.01375pt>
 File: figures/seznamcd.pdf Graphic file (type pdf)
 
 <use figures/seznamcd.pdf>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[41] [42 <./figures/seznamcd.pdf>]
+[47] [48 <./figures/seznamcd.pdf>]
 
 Package natbib Warning: There were undefined citations.
 
@@ -1266,11 +1324,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 16770 strings out of 495027
- 260075 string characters out of 1181419
- 516125 words of memory out of 3000000
- 19388 multiletter control sequences out of 15000+50000
- 22339 words of font info for 48 fonts, out of 3000000 for 9000
+ 17234 strings out of 495027
+ 265660 string characters out of 1181419
+ 520341 words of memory out of 3000000
+ 19789 multiletter control sequences out of 15000+50000
+ 25526 words of font info for 63 fonts, out of 3000000 for 9000
  42 hyphenation exceptions out of 8191
  47i,13n,57p,957b,1171s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </home
@@ -1295,9 +1353,9 @@ exmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive
 /public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy
 8.pfb>
-Output written on thesis.pdf (58 pages, 547565 bytes).
+Output written on thesis.pdf (64 pages, 608462 bytes).
 PDF statistics:
- 1424 PDF objects out of 1440 (max. 8388607)
- 194 named destinations out of 1000 (max. 500000)
- 247 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1535 PDF objects out of 1728 (max. 8388607)
+ 219 named destinations out of 1000 (max. 500000)
+ 324 words of extra memory for PDF output out of 10000 (max. 10000000)
 

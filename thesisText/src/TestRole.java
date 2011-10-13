@@ -6,7 +6,7 @@ public class TestRole {
 				if (a.annotationType().equals(Length.class)) {
 					if (f.get(role) instanceof String && ((String)f.get(role)).length() > ((Length) a).max())
 						throw new Exception(
-								"Unacceptable length of field name of class Role");
+								"Unacceptable length of field "+f.getName()+" of class Role");
 				}
 			}
 		}
