@@ -49,8 +49,12 @@
 \usepackage{color}
 \usepackage{textcomp}
 \usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{fixltx2e}
+%\usepackage{hyperref}
 \definecolor{listinggray}{gray}{0.9}
 \definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\providecommand{\abs}[1]{\lvert#1\rvert}
 \lstset{ %
 language=Java,                % the language of the code
 basicstyle=\footnotesize,       % the size of the fonts that are used for the code
@@ -267,7 +271,7 @@ framework brings into language Java another way of programming, which can
 improve effectivness of implementing and computation performance of the program.
 
 Work shows how was this framework used for implementing set of algorithms,
-especially NP-complete graph algorithms, and compares that implementation with
+especially NP graph algorithms, and compares that implementation with
 common imperative way of programming.
 % Prace v cestine musi krome abstraktu v anglictine obsahovat i
 % abstrakt v cestine.
@@ -347,7 +351,7 @@ devoted to framework itself and its comparison to common imperativ way of
 programming.
 %*****************************************************************************
 \chapter{Logical programming principles}
-
+\label{chap:logProgPrinc}
 The most known logical programming in the world is definitely Prolog and
 thereby we can describe properties of logical programming using this language.
 His name is derived from term PROgramming in LOGic and was developed for
@@ -624,8 +628,8 @@ subsection \ref{sec:facts}:\\
 
 
 \begin{figure}[ht]
-
-
+%\centering
+%\begin{center}
 \begin{tikzpicture}
 
 
@@ -639,7 +643,9 @@ node[auto=left]{\textbf{a}};[\node(u){success}; ].{$parent(john, jane)$}
 \draw[dashed,->] (t)..controls +(east:3.5) .. (wh);
 \draw[dashed,->] (u)..controls +(west:2.5)  .. (xh);
 \end{tikzpicture}
+%\end{center}
 \caption{Expression evaluation in Prolog}
+
 \end{figure}
 
 
@@ -650,16 +656,40 @@ rule \textbf{b} is then successful.
 
 %*****************************************************************************
 \chapter{Meaning of annotations}
-Since Java 5.0 release, general purpose of annotation was ability to define
-and use own annotation types. The facility consists of a syntax for declaring
-annotation types, a syntax for annotating declarations, APIs for reading
-annotations, a class file representation for annotations.
+
+\section{Introduction}
+Annotations are tags that programmer insert into source code so that they
+can be processed by tools. The Java compiler understands a couple of
+annotations, but to go any further, you need to build your own processing tool
+or obtain a tool from a third party. Most common use of annotations are:
+
+\begin{itemize}
+  \item Automatic generation of auxiliary files, such as deployment descriptors or bean information classes.
+  \item Automatic generation of code for testing, logging, transaction semantics, and so on.
+\end{itemize}
+
+In EJB 3.0 are annotations used in such sense, that a lot of repetitive code is
+automated by annotations.
+
+\section{Annotations as metadata}
+Metadata are data about data. In context of computer program, metadata are data
+about the code. Since Java 5.0 release, programmer can insert arbitrary data
+into his source code. Annotations in Java is used like an \textit{modifier},
+placed before annotated item (it is a keyword similar to \verb|public| or
+\verb|static|). Annotations are used to annotate classes, fields or local
+variables and can be processed by tools that read them.
+
+Each annotation is declared by annotation interface correspond to the element of
+the annotation.
 
 Annotations do not directly affect program semantics, but they do affect the way
 programs are treated by tools and libraries, which can in turn affect the
 semantics of the running program. Annotations can be read from source files,
 class files, or reflectively at runtime.
 
+\section{Examples of use}
+
+\subsection{Field validation}
 
 Annotation type declarations are similar to normal interface declarations. An
 at-sign (\verb|@|) precedes the \verb|interface| keyword. Each method
@@ -671,8 +701,11 @@ Here is an example annotation type declaration:
 
 \lstinputlisting[label=samplecode,caption=Length annotation]{src/Length.java}
 
-
-This is simple annotation typically used for entity field e.g. of type
+Annotations can be annotatied itself. Such annotations are called
+\textit{meta-annotations}. E.g. using
+(\verb|@Target(ElementType.FIELD)|) indicates, that annotation type should
+be used to annotate only field declarations.
+This simple annotation is typically used for entity field e.g. of type
 \verb|String| for permitted length of this field.
 
 Once an annotation type is defined, you can use it to annotate declarations. An
@@ -685,7 +718,7 @@ declaration with an annotation corresponding to the annotation type declared abo
 
 \lstinputlisting[label=samplecode,caption=Class Role]{src/Role.java}
 
-Annotation type without any with no elements is called \textit{marker}
+Annotation type without any elements is called \textit{marker}
 annotation type, e.g.:
 
 \lstinputlisting[label=samplecode,caption=Entity annotation]{src/Entity.java}
@@ -694,13 +727,12 @@ We can join these two types of annotation together in following example:
 
 \lstinputlisting[label=samplecode,caption=Entity Role]{src/entity/Role.java}
 
-Annotations can be annotatied itself. Such annotations are called
-\textit{meta-annotations}. E.g. using
-(\verb|@Target(ElementType.METHOD)|) indicates, that annotation type should
-be used to annotate only method declarations:
+Another type of meta-annotation
+(\verb|@Target(ElementType.METHOD)|) is presented below and indicates using
+annotation only for method declarations:
 
 \lstinputlisting[label=samplecode,caption=Test annotation]{src/Test.java}
-\newpage
+
 In following example, there is updated entity shown above with tool for testing
 the annotations:
 \lstinputlisting[label=samplecode,caption=Extended class
@@ -710,6 +742,64 @@ annotation]{src/RunTests.java}
 \newpage
 \lstinputlisting[label=samplecode,caption=Test of entity
 Role annotation]{src/TestRole.java}
+
+
+\subsection{Annotating Event Handlers}
+In this subsection is shown example presented in
+\cite{horstmannCornell:coreJava}. When programmer have to use in his code action
+listeners, it leads to write a lot of repetitive code. Listeners are usually declared:
+
+\lstinputlisting[label=listener,caption=Action
+listener]{src/listeners/Button.java}
+
+Writing this boring code can be omitted by using annotations. Annotation will
+have form:
+
+\lstinputlisting[label=listenerAnnotation,caption=Annotation for
+performing action]{src/listeners/AnnotationAction.java}
+
+Instead of calling action listener is every method tagged with annotation.
+
+\lstinputlisting[label=usingListenerAnnotation,caption=Use annotation for
+performing action]{src/listeners/ButtonTest.java}
+
+\lstinputlisting[label=ActionListener,caption=Declaration of annotation for
+performing action]{src/listeners/ActionListenerFor.java}
+
+We now need a mechanism to analyze them and install action listeners. That is
+the job of the \verb|ActionListenerInstaller| class. The \verb|ButtonFrame|
+constructor calls
+
+\lstinputlisting[label=ActionListener,
+caption=Action Installer invocation]{src/listeners/InstallerCall.java}
+
+The static \verb|processAnnotations| method enumerates all methods of the object
+that it received. For each method, it gets the \verb|ActionListenerFor|
+annotation object and processes it.
+
+Here, we use the getAnnotation method that is defined in the
+\verb|AnnotatedElement| interface. The classes \verb|Method|,
+\verb|Constructor|, \verb|Field|, \verb|Class|, and \verb|Package| implement
+this interface. The name of the source field is stored in the annotation object.
+We retrieve it by calling the \verb|source| method, and then look up the
+matching field.
+
+\lstinputlisting[label=findingField,
+caption=Looking up for field]{src/listeners/FindingField.java}
+
+For each annotated method, we construct a proxy object that implements the\\
+\verb|ActionListener| interface and whose \verb|actionPerformed| method calls
+the annotated method. The details are not important. The key observation is that the functionality of the annotations was established
+by the \verb|processAnnotations| method.
+In Example \ref{actionListenerInstaller}, the annotations were processed at run
+time. It would also have been possible to process them at the source level. A
+source code generator might have produced the code for adding the listeners.
+Alternatively, the annotations might have been processed at the bytecode level.
+A bytecode editor might have injected the calls to \verb|addActionListener| into
+the frame constructor.
+\newpage
+\lstinputlisting[label=actionListenerInstaller,
+caption=Action Listener Installer class]{src/listeners/ActionListenerInstaller.java}
 %*****************************************************************************
 \chapter{Framework description}
 \label{chap:framework}
@@ -747,7 +837,7 @@ We can divide running of Squander in following steps:
 \begin{center}
 \includegraphics[width=7cm]{figures/architecture-diagram}
 \caption{Architecture diagram}
-\label{fig:logo}
+\label{fig:architecture}
 \end{center}
 \end{figure}
 
@@ -755,6 +845,7 @@ Further will be explained in deatil all of these steps and terms like Kodkod
 etc.
 
 \subsection{Applications}
+\label{sub:apps}
 In this section will be briefly described applications of framework. Most
 typical applications are these:
 \begin{itemize}
@@ -842,7 +933,7 @@ provided by the framework, are shown in Table \ref{tab:quantifiedExpressions}.
 
 \begin{table}[ht]
   \centering
-  \caption{Unary expressions supported by JFSL}
+  
   \begin{tabular}{|l|l|}
   \hline
   \rowcolor[gray]{.8}    Operator  & Description  \\
@@ -882,12 +973,13 @@ provided by the framework, are shown in Table \ref{tab:quantifiedExpressions}.
   \verb|@&| & relational intersection \\ 
   \hline
   \end{tabular}
+  \caption{Unary expressions supported by JFSL}
   \label{tab:unaryExpressions}
 \end{table}
 
 \begin{table}[ht]
   \centering
-  \caption{Quantified expressions supported by JFSL}
+  
   \begin{tabular}{|l|l|l|}
   \hline
   \rowcolor[gray]{.8}    Operator  & Description  & Usage\\
@@ -903,6 +995,7 @@ provided by the framework, are shown in Table \ref{tab:quantifiedExpressions}.
   \hline
   
   \end{tabular}
+  \caption{Quantified expressions supported by JFSL}
   \label{tab:quantifiedExpressions}
 \end{table}
 \newpage
@@ -956,6 +1049,8 @@ In context of these specification, the goal is to execute a method, that makes
 modification of the portion of the heap (specified in frame condition), so that
 final state satisfies postcondition.
 
+\subsection{From object heap to relational logic}
+
 Execution of Squander begins in client's code when invoking
 method \verb|Squander.exe()| involving following steps:
 
@@ -969,11 +1064,529 @@ method \verb|Squander.exe()| involving following steps:
   \item If solution is found, translation of the Kodkod result objects into
   updates of Java heap state, by modification of the object fields
 \end{enumerate}
+
+\subsubsection{Traversing the heap}
+
+For discovering reachable portion of the heap, bread-first search algorithm is
+used, which started from the set of root objects and repeatedly visiting all
+children until all reachable objects have been visited. The most important part
+is how to enumerate childre, i.e. how to serialize a given object into a set of
+field values.
+
+\subsection{Relations and bounds}
+After traversing the heap, founding all reachable objects and
+discovered all classes/-fields reffered in the specification, we have enough
+information to construct the relation, that represent state of the heap.
+
+The translation does not used all fields, but only those, whose are considered
+as \textit{relevant fields} - those, who are explicitly mentioned in the
+specification (Squander's annotation). Similarly, not all reachable objects are
+needed; only objects reachable by following the relevant fields are included in
+the translation. These objects will be referred to as \textit{literals}.
+
+First we define a finite universe consisting of all literals, plus integers within the
+bound. For every literal, a unary relation is created.
+
+For each Java type, one could either create a new relation (with appropriate
+bounds so that it contains the known literals), or one could construct a relational
+expression denoting the union of relations corresponding to all instance literals of that
+type.
+
+
+For every field, a relation of type
+\verb|fld|$.declType \rightarrow$ \verb|fld|$.type$ is created to hold
+assignments of field values to objects. If the field is modifiable (inferred
+from its mention in a \verb|@Modifies| clause), an additional relation is
+created, with the suffix \uv{pre} appended to denote the pre-state value.
+Relations for unmodifiable fields are given an exact bound that reflects the
+current state of the heap. For the modifiable relations, the \uv{pre} relation
+is given the same exact bound, and the “post” relation is bounded so that it may
+contain any tuple permitted by the field's type. Local variables, such as
+\verb|this|, \verb|return|, and method arguments are treated similarly to
+literals.
+
+\newpage
+
+Table \ref{tab:translationsToRelations} below summarizes how relations and
+bounds are created. Function \verb|rel| takes a Java element and, depending
+whether the element is modifiable, returns either one or two relations. Function
+\verb|bound| takes a Java element and its corresponding relation, and returns a
+bound for the relation. The \verb|Bound| data type contains both lower and upper
+bounds. If only one expression is passed to its constructor (\textbf{B}), both
+bounds are set to that value. Helper functions \verb|is_mod|, \verb|is_post|
+and \verb|fldval| are used to check whether a field is modifiable, to check
+whether a relation refers to the post-state, and to return a literal that
+corresponds to the value of a given field of a given literal, respectively.
+
+
+\begin{table}[ht]
+  \centering
+  
+  \begin{tabular}{|l|l|l|}
+  \hline
+  \rowcolor[gray]{.8}   \textbf{rel} :: Element $\rightarrow [$Relation$]$\\
+  \hline
+  \hline
+  
+  \textbf{rel} (Literal lit) \hspace{31mm} $=$ \hspace{2mm} $
+  [$\textbf{R}(lit.$name$, lit.$type$)$]$ \\
+  \textbf{rel} (Type t)\hspace{37mm} $=$ \hspace{2mm} $ 	\bigcup_{lit<:t}$
+  \textbf{rel} lit\\ \textbf{rel} (Field fld) \hspace{33.1mm} $=$ \\
+\hspace{2mm}	\textbf{if} is\_ mod(fld)\\
+\hspace{10mm} $[$\textbf{R}(fld.$name$, fld.$declType \rightarrow
+$fld.$type$)$]$ ++\\ 
+\hspace{10mm} $[$\textbf{R}(fld.$name$ + \_pre, fld.$declType \rightarrow
+$fld.$type$)$]$\\ 
+\hspace{5mm} \textbf{else}\\
+\hspace{10mm} $[$\textbf{R}(f.$name$, f.$declType \rightarrow $f.$type$)$]$\\
+\textbf{rel} (Local var)\hspace{34mm} $=$ \hspace{2mm} $
+[$\textbf{R}(var.$name$, var.$type$)$]$\\
+ 
+  \hline
+  \hline
+  \rowcolor[gray]{.8}   \textbf{rel} :: Element, Relation $\rightarrow
+  [$Bound$]$\\
+  \hline
+  \hline
+  
+  \textbf{bound} (Literal lit) (Relation r) \hspace{5.2mm} $=$ \hspace{2mm} 
+  \textbf{B}(lit) \\
+  \textbf{bound} (Field f) (Relation r) \hspace{10mm} $=$ \\ 
+  \hspace{5mm}	\textbf{if} is\_ mod(fld) $\wedge$ is\_post(r)\\
+
+\hspace{10mm} $[$\textbf{B}(\{\}, ext(fld.$declType \times
+$fld.$type$))$]$\\ 
+
+\hspace{5mm} \textbf{else}\\
+\hspace{10mm} $[$\textbf{B}($ 	\bigcup_{lit<:Object}$
+  \textbf{rel} lit $\times$ fldval(lit,fld))$]$\\\textbf{bound}
+  (Return ret) (Relation r)\hspace{5mm} $=$ \hspace{2mm} $[$\textbf{B}(\{\},
+  ext(ret.$type$))$]$\\
+ \textbf{bound}
+  (Local var) (Relation r)\hspace{7mm} $=$ \hspace{2mm} $[$\textbf{B}(var)$]$\\
+  \hline
+  \hline
+  \rowcolor[gray]{.8}   $[$Type$]$ $\rightarrow$
+  Expression \hspace{40mm} (hepler)\\
+  \hline
+  \hline
+  
+  \textbf{ext} $[]$ \hspace{49.5mm} $=$ \hspace{2mm} \{\}\\ 
+  \textbf{ext} (t:$[]$)  \hspace{44mm} $=$ \hspace{2mm} $ \bigcup_{lit<:t}$
+  lit\\ \textbf{ext} (t:xs) \hspace{42.5mm} $=$ \hspace{2mm} \textbf{ext} t
+  $\times$ \textbf{ext} xs\\
+  \hline
+  
+  \end{tabular}
+  \caption{Translation of different Java constructs into relations (function
+  \texttt{rel}) and bounds (function \texttt{bound})}
+  \label{tab:translationsToRelations}
+\end{table}
+
+\newpage
+\subsection{Example: translation of \texttt{BST.insert}}
+\label{sub:translation}
+We will use for illustration of translation Binary Search Tree example. This BST
+has single root node. Every node contains integer key value and pointer to the
+left and right node. To verify validity of BST, some Squander's specifications
+are used (see Listing \ref{bst}). \verb|@SpecField| constraint declares, that
+set of BST nodes consist of root node and all nodes in left and right subtree of this root node except
+for \verb|null| values. Another constraints represented by \verb|@Invariant|
+annotation delares: (1) there are no loops in BST - using transitive closure to
+define, that actual node is not accessible transitively via field \verb|parent|
+- and (2) and for every node $n$ in the BST, the $key$ of $n$ is strictly greater,
+than all keys of all nodes in the left subtree and strictly lower than all keys
+of all nodes in its right subtree - there is used reflexive transitive closure
+operator (\verb|.*|) to conveniently specify all reachable nodes starting from
+the root node.
+
+
+\lstinputlisting[label=bst,caption=Binary Search Tree
+declaration]{src/bst/BST.java}
+
+Methods for modifying tree, \verb|insert()| and \verb|remove()| shown in
+Listing \ref{operation} are obvious. In order to insert node into tree, node
+with same key may not exist in the tree, and after the insertion, tree must
+contain the given node. All left and right pointers of nodes and pointer to root
+node are allowed to modify. Deletion is defined in similar way, BST must contain node
+with the same key as node to remove and after deletion this node may not exist
+in BST.
+\newpage
+\lstinputlisting[label=operation,caption=Operations on
+BST]{src/bst/Operations.java}
+
+The resulting set of relations, shown in Table \ref{fig:translationTable}, are
+divided into three sections. Relations in the upper section are unary, unmodifiable relations,
+and represent objects on the heap. The middle section contains relations that
+are also unmodifiable, because they are used to either represent unmodifiable
+fields or values in the pre-state of modifiable fields. Finally, the relations
+in the bottom section represent the post-state of modifiable fields; these are
+the relations for which the solver will attempt to find appropriate values. By
+default, the lower bound is simply set to an empty set and the upper bound is
+the upper bound is set the extent of the field's type.
+
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[width=4cm]{figures/bst}
+\caption{A snapshot of \texttt{t1.insert(t4)}}
+\label{fig:bstInsert}
+\end{center}
+\end{figure}
+
+\newpage
+
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{ l l }
+	\textbf{BST}: & $\{t_1\}$\\
+	\textbf{N1}: & $\{n_1\}$\\
+	\textbf{N2}: & $\{n_1\}$\\
+	\textbf{N3}: & $\{n_1\}$\\
+	\textbf{N4}: & $\{n_1\}$\\
+	\textbf{null}: & $\{null\}$\\
+	\textbf{BST\textsubscript{--}this}: & $\{t_1\}$\\
+	\textbf{z}: & $\{n_4\}$\\
+	\textbf{ints}: & $\{0, 1, 5, 6\}$\\
+  \hline
+  	\textbf{key}: & $\{(n_1\rightarrow 5),(n_2\rightarrow
+	0),(n_3\rightarrow 6),(n_4\rightarrow 1)\}$\\
+	\textbf{root\textsubscript{--}pre}: & $\{(t_1\rightarrow n_1)\}$\\
+	\textbf{nodes\textsubscript{--}pre}: & $\{(t_1\rightarrow n_1),(t_1\rightarrow
+	n_2),(t_1\rightarrow n_3),(t_1\rightarrow n_4)\}$\\
+	\textbf{right\textsubscript{--}pre}: & $\{(n_1\rightarrow n_2),(n_2\rightarrow
+	0),(n_3\rightarrow null),(n_4\rightarrow null)\}$\\
+	\textbf{left\textsubscript{--}pre}: & $\{(n_1\rightarrow n_3),(n_2\rightarrow
+	0),(n_3\rightarrow null),(n_4\rightarrow null)\}$\\
+	\hline
+	\textbf{root}: & $\{\},\hspace{4mm}\{t_1\}\times\{n_1,n_2,n_3,n_4\}$\\
+	\textbf{nodes}: & $\{\},\hspace{4mm}\{t_1\}\times\{n_1,n_2,n_3,n_4\}$\\
+	\textbf{left}: &
+	$\{\},\hspace{4mm}\{n_1,n_2,n_3,n_4\}\times\{n_1,n_2,n_3,n_4\}$\\
+	\textbf{right}: &
+	$\{\},\hspace{4mm}\{n_1,n_2,n_3,n_4\}\times\{n_1,n_2,n_3,n_4\}$\\
+	
+\end{tabular}
+\end{center}
+\caption{Translation of the heap from Figure \ref{fig:bstInsert}}
+\label{fig:translationTable}
+\end{table}
+
+\subsection{Tightening the bounds}
+By declaring as modifiable fields \verb|left| and \verb|right|, as in the
+specification in \ref{bst}, we allow arbitrary modifications to the tree, as
+long as all constraints are satisfied. In effect, after the execution of the
+specification for the \verb|insert()| method, the tree will contain all old
+nodes plus the new node, but the shape of the tree may randomly change.
+
+If we want to change method specification so, that tree topology is preserved
+and new nodes can be append only to leaf nodes, we can do that by adding new
+clauses to the postcondition specification in sense, that left and right
+pointers of certain nodes must remain the same in the post state. This idea is
+completely right, but more efficient would to change the frame condition also
+for improving performance. Reducing search space by allowing modification only
+\verb|left| and \verb|right| pointers pointing to \verb|null| value improve
+performance significantly.
+
+Consider modified frame condition shown in Listng \ref{modifiedOperation}
+specifying additional constraints on the modification of \verb|left| and \verb|right| fields. This
+frame condition shows idea specified in paragraph before and ensures, that all
+new nodes will be inserted at the leaf positions.
+
+\lstinputlisting[label=modifiedOperation,caption=Modified
+frame condition on \texttt{insert()} method]{src/bst/ModifiedOperations.java}
+
+With the list of modifiable objects, Squander modifies the bounds for the
+corresponding field relation so that the current field values of the objects not
+to be modified are included in the lower bound, thus forcing the value to stay
+the same in the post state. For the heap shown in Figure \ref{fig:bstInsert},
+the modifiable objects for the \verb|left| field are \verb|n2| and \verb|n3|,
+because their left pointers are currently set to null. Similarly, for the
+\verb|right| field, the modifiable objects are also \verb|n2| and \verb|n3|. The
+updated bounds for these two fields are shown in Table \ref{fig:updatedBounds}.
+
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{ l l }
+	\textbf{left}: &
+	$\{(n_1\rightarrow
+	n_2),(n_4 \rightarrow
+	null)\},\hspace{4mm}(n_1 \rightarrow n_2)\cup(n_4 \rightarrow
+	null)\cup \{n_2,n_3\}\times\{n_1,n_2,n_3,n_4\}$\\ 
+	\textbf{right}: &
+	$\{(n_1\rightarrow
+	n_3),(n_4 \rightarrow
+	null)\},\hspace{4mm}(n_1 \rightarrow n_3)\cup(n_4 \rightarrow
+	null)\cup \{n_2,n_3\}\times\{n_1,n_2,n_3,n_4\}$\\
+	
+\end{tabular}
+\end{center}
+\caption{The updated bounds for the \texttt{left} and \texttt{right} relations}
+\label{fig:updatedBounds}
+\end{table}
+
+\subsection{Minimizing the universe size}
+For representing relations in Squander are used single sequential arrays indexed
+by Java integer. Maximal count of members in this array is \verb|Integer.MAX_VALUE| which is
+2147483647. In practice this can be a problem, because framework for relation of
+arity $k$, which has $n$ atoms in the universe (later it will be described,
+what is exactly meant under this term), allocates matrix of size $n^k$ (when
+ternary relation contains more than 1290 atoms). Heap with more than 1290
+objects are not uncommon, so a simple translation described in
+\ref{sub:translation} would not work. In the next subsection will be described a
+different translation technique called \textit{KodkodPart}, which was developed
+to minimize number of atoms representing object heap.
+
+\subsubsection{\textit{KodkodPart} translation}
+
+KodkodPart translation achieves a universe with fewer atoms by mapping
+Java objects to Kodkod atoms (not injective mapping). That means that multiple
+literals are mapped to a single atom, so that there will be fewer atoms than
+literals. The key requirements is, that there exists some inverse function,
+which maps back from the atoms literals.
+
+Considering previous example with BST (see subsection \ref{sub:translation}), we
+can define domains $\mathcal{D}$, literals $\mathcal{L}$ and assignment literals to domains
+$\gamma : \mathcal{D} \rightarrow \mathcal{P}\left(\mathcal{L}\right)$ for this
+example, which is summarized in Table \ref{tab:summaryDomainsLiterals}.
+
+\begin{table}[ht]
+\begin{center}
+\begin{align*}
+	\mathcal{D}& =\{\texttt{BST},\hspace{1mm} \texttt{Node},\hspace{1mm}
+	\texttt{Null}, \hspace{1mm} \texttt{Integer}\}\\ 
+	\mathcal{L}& =\{bst_1,\hspace{1mm} n_1,\hspace{1mm} n_2,\hspace{1mm}
+	n_3,\hspace{1mm} n_4, \hspace{1mm} null,\hspace{1mm} 0,\hspace{1mm} 1,\hspace{1mm} 5,\hspace{1mm} 6\}\\
+	\gamma\left(\texttt{BST}\right)& = \{bst_1\}\\
+	\gamma\left(\texttt{Node}\right)& =
+	\{n_1,\hspace{1mm}n_2,\hspace{1mm}n_3,\hspace{1mm}n_4\}\\
+	\gamma\left(\texttt{Null}\right)& =
+	\{null\}\\
+	\gamma\left(\texttt{Integer}\right)& =
+	\{0,\hspace{1mm}1,\hspace{1mm}5,\hspace{1mm}6\}\\
+\end{align*}
+\end{center}
+\caption{Summary of domains and instances for the \texttt{BST.insert} example}
+\label{tab:summaryDomainsLiterals}
+\end{table}
+
+Recall that field types are represented as unions of base types (in this section also
+called \textit{partitions}). For instance, the type of the field \verb|BST.root|
+is \verb|BST| $\rightarrow$ \verb|Node| $\cup$ \verb|Null|, because values of
+this field can be either instances of \verb|Node| or the \verb|null| constant.
+That means that all objects of class \verb|Node| plus the constant \verb|null|
+must be mapped to different atoms, so that it is possible to unambiguously
+restore the value of the field \verb|root|. This is the basic idea behind the
+KodkodPart translation: \textit{all literals within any given partition must be
+mapped to different atoms, whereas literals not belonging to a common partition may
+share atoms}. The inversion function can then work as follows: for a given atom,
+first select the correct partition based on the type of the field being
+restored, then unambiguously select the corresponding literal from that
+partition. To complete the example, the set of all unary types used in the
+specification for this example is:
+
+\begin{center}
+\begin{align*}
+	\mathcal{T}& =\{\texttt{BST},\hspace{1mm}
+	\texttt{BST}\cup\texttt{Null},\hspace{1mm} \texttt{Node} \cup \texttt{Null},
+	\hspace{1mm} \texttt{Null},\hspace{1mm} \texttt{Integer}\}\\
+\end{align*}
+\end{center}
+
+Set presented above is set of our partitions. A valid assignment of
+atoms to literals that uses only 5 atoms, as opposed to 10 which is how many the
+original translation would use, could be:
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+  \hline
+  $bst_1 \rightarrow a_0$ & $n_1 \rightarrow a_0$ & $n_2 \rightarrow a_1$ & $n_3
+  \rightarrow a_2$ & $n_4 \rightarrow a_3$\\
+  \hline
+  $null \rightarrow a_4$ & $0 \rightarrow a_0$ & $1 \rightarrow a_1$ & $5
+  \rightarrow a_2$ & $6 \rightarrow a_3$\\
+  \hline
+  \end{tabular}
+\end{center}
+
+Limitation of this technique is when the class \verb|Object| is used as a field
+type or anywhere in the specification. This lead toone big partition containing
+all literals (because every class is a subclass of \verb|Object|), making the
+algorithm equivalent to the original translation.
+
+\subsubsection{Partitioning algorithm}
+For a given set of base domains $\mathcal{D}$, literals $\mathcal{L}$, and
+partitions $\mathcal{T} \left( \mathcal{T} = \mathcal{P}\left( \mathcal{D} \right) \right)$, and a given function $\gamma : \mathcal{D} \rightarrow \mathcal{P}\left( \mathcal{L} \right)$ that maps domains to their instance
+literals, this algorithm produces a set of atoms $\mathcal{A}$ and a function $\alpha : \mathcal{L} \rightarrow \mathcal{A}$, such that for every partition
+$p$, function $\alpha$ returns different values for all instance literals of
+$p$. Formally:
+
+$$\left(\forall p \in \mathcal{T}\right)\left(\forall l_1,l_2 \in
+\psi\left(p\right)\right) l_1 \neq l_2 \Longrightarrow \alpha
+\left(l_1\right)\neq \alpha \left(l_2\right)$$
+
+
+where $\psi$ is a function that for a given partition returns a comprehension of
+all instance literals of all of its domains:
+
+
+$$\psi : \mathcal{T}\rightarrow \mathcal{P} \left(\mathcal{L}\right);
+\hspace{2mm} \psi\left(p\right) = \{\gamma\left(d\right)\mid d \in p\}$$
+
+Obviously, a simple bijection would satisfy this specification, but such a solution
+wouldn't achieve its main goal, which is to minimize the number of atoms, because
+the number of atoms in this case would be exactly the same as the number of literals.
+In order to specify solutions that are actually useful, we are going to require the
+algorithm to produce a result such that the cardinality of $\mathcal{A}$ (i.e.
+the total number of atoms) is minimal.
+
+It is not immediately clear what the minimal number of atoms ought to be. One
+might think that no more atoms are required than the number of instances in the
+largest partition. However, this is not always true. Consider the case shown in
+Figure \ref{fig:kodkodpart}. The largest partitions are \verb|P1| and \verb|P4|,
+both having 5 literals. On the other hand, any pair of the domains \verb|B|, \verb|C|, and
+\verb|D| have a partition in common, even though there is no single partition
+containing them all. They thus form a strongly connected component, and their literals must differ. There are 6 literals in total in
+these three domains, so 5 atoms cannot be enough. As a conclusion, the minimal
+number of atoms is indeed the number of literals in the largest partitions, but only
+after all strongly connected domains have been merged into a single partition.
+
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[width=8cm]{figures/kodkodpart}
+\caption{KodkodPart: an example where more than the number of literals of the
+largest partition is needed.}
+\label{fig:kodkodpart}
+\end{center}
+\end{figure}
+
+Luckily, cases like the one in Figure \ref{fig:kodkodpart} never happen in
+Squander, so our implementation of the algorithm doesn't have to search for
+cliques and merge partitions. The reason this never happens is that domains are
+always Java classes, and partitions are types used to represent fields. A type
+of a field is a union type which includes the entire subclass hierarchy of the
+field’s base type. For instance, if \verb|C| and \verb|D| are Java classes,
+\verb|C| extends \verb|D (C <: D)|, and some field has declared type \verb|D|,
+then the type of the field (in the relational world) will be \verb|D| $\cup$
+\verb|C| $\cup$ \verb|Null|, meaning that \verb|D| $\cup$ \verb|Null| is
+never going to be used as a partition for anything.
+
+In summary, the actual implementation inside Squander works as follows:
+
+
+\begin{enumerate}
+  \item Dependencies between domains are computed. A domain depends on all
+  domains with which it shares a partition. Let the function $\delta :
+  \mathcal{D} \rightarrow \mathcal{P}\left(\mathcal{D}\right)$ express this:
+  
+  $$\delta\left(d\right) = \{d_1 \mid d_1 \neq d\ \wedge
+  \left(\left(\exists p \in \mathcal{T}\right)d_1 \in p\right)\} $$
+  \item The largest partition $p_{max}$ is found such that
+  $$\left(\nexists p\in \mathcal{T}\right) \abs{\psi\left(p\right)} >
+  \abs{\psi\left(p_{max}\right)}$$
+  \item For every literal $l$ in $\psi\left(p_{max}\right)$ an atom a is
+  created, it is added to the universe $\mathcal{A}$ and assigned to $l$, such
+  that $\alpha\left(l\right) = a$. From this point onwards, $\mathcal{A}$ is fixed.
+  \item For every other partition $p$ iteratively, for all literals $l_p \in p$
+  that do not already have an atom assigned, a set of possible atoms
+  $\mathcal{A}_{lp}$ is computed and the first value from this set is assigned
+  to $l_p$. $\mathcal{A}_{lp}$ is computed when atoms corresponding to all literals of all
+  dependent domains is subtracted from $\mathcal{A}$, i.e.:
+  \newpage
+  
+  $$\mathcal{A}_{lp} = \mathcal{A} \setminus \{\alpha\left(l\right)\mid
+  l\in\mathcal{L}_d\} \text{, where}$$
+  
+  $$\mathcal{L}_d = \{\gamma\left(d\right)\mid
+  d\in\mathcal{D}_d\} \text{, where}$$
+  
+  $$\mathcal{D}_d = \delta\left(d_l\right) \text{, where } d_l\in\mathcal{D}
+  \wedge l_p \in \gamma\left(d_l\right)$$
+\end{enumerate}
+\section{Differences between Prolog and framework}
+
+Thing, which have both classical logical programming in Prolog and
+programming using framework Squander in common, is defining what to compute
+instead of how. Both programming paradigms use set of rules for its computation,
+but here the analogy ends.
+
+If we study Prolog and Squander more in depth, we can see, that there is
+significant difference in declaring input data. Whereas Squander is strongly
+connected to its Java data structures, Prolog use set of facts, as was
+mentioned in chapter \ref{chap:logProgPrinc}.
+
+
+Both Prolog and Squander use set of rules for its computation. If we want to
+compute some variable in Prolog, language go recursively through all rules,
+matching the input using rewriting clauses, until all of them are replaced by
+valid facts and we do not care about order of evaluation (no flow control).
+Prolog uses three types of formula. \textit{Atomic} formulas declares basic
+facts, \textit{conditional commands} are used for implication constructs and
+finally, \textit{target clauses} form query types.
+
+
+To incorporate Squander into Java annotations are used. For solving some
+algorithm, annotation \verb|@Requires|,\verb|@Ensures| and \verb|@Modifies| are
+mostly used. First one, \verb|@Requires|, is used for declaring requirements for
+input data before method \verb|Squander.exe()| is invoked. Annotation
+\verb|@Ensures| defines how the data structures should look like after method
+execution. Last one, \verb|@Modifies|, tells framework class objects or object's
+fields can be modified during execution. This is very important declaration
+for the performace of the computation in particular. If we define this
+annotation optimally, we minimize search space and speed up solving. Calculation
+itself is done by translating object heap into relations. Then are these
+relations transformed into SAT problem, which is then solved and the solution,
+if exists, is reflected back to the heap.
 %*****************************************************************************
 \chapter{Implementation of algorithms}
-Popis implementace/realizace se zaměřením na nestandardní části řešení.
+
+\section{Introduction}
+As was mentioned before, framework Squander is suitable for implementation of
+algorithms, which are easy to specify, but difficult to implement imperatively.
+For this reason I implemented algorithms belonging to NP problems. Problem is
+said that belongs to the set of NP problems if it is solveable in polynomial
+time on nondeterministic Turing machine. There is one more expression to
+explain for description of NP problems - \textit{nondeterministic Turing
+machine}. First of all we have to define deterministic Turing machine, which for
+given set of rules prescribes at most one action to be performed for any given
+situation. Whereas nondetermistic Turing machine is machine, that for given set
+of rules prescribes more than one action. We can imagine, that in every step of
+computation is Turing machine cloned in nondeterministic Turing machine.
+
+Most of the algorithm I tried to implement are NPO (especially graph
+algorithms), but there is a little problem with Squander. It does not support
+highr-order expressions (subsection \ref{sub:apps}). Unfortunately it is not
+possible to write a specification that says \uv{find a path in the graph such
+that there is no other path in the graph longer than it} and solve it with
+Squander; it is possible, however, to express and solve \uv{find a path in the
+graph with at least k nodes}, which is computationally as hard as the previous
+problem, because a binary search can be used to efficiently find the maximum k
+for which a solution exists. Due that restriction are all of the optimizations
+algorithms implemented in such way, that there is some treshold level, which
+solution has to satisfy.
 
 
+All in all, Squander should be able to solve all NP problems, because it
+transforms everything into SAT problem, which is NP-complete (Cook's theorem)
+problem and every NP problem is transferable into NP-complete problem.
+\section{Knapsack Problem}
+At the beginning when I started \uv{playing} with Squander, I tried to
+implement well known algorithm Knapsack. By using Squander's method
+specification it was pretty easy to declare annotations for computation. Firstly
+it was necessary to prepare data structures. In this case I implement class
+\verb|KnapSacck.java|, which has following properties:
+
+\begin{itemize}
+  \item \textit{integer array c} - costs of particular things in knapsack
+  \item \textit{integer array v} - weights of particular things in
+  knapsack
+  \item \textit{integer n} - count of things in knapsack
+  \item \textit{integer capacity} - capacity of knapsack (measured in weight
+  units)
+\end{itemize}
 %*****************************************************************************
 \chapter{Comparison}
 
@@ -1003,6 +1616,11 @@ Popis implementace/realizace se zaměřením na nestandardní části řešení.
 Aleksandar Milicevic; MASSACHUSETTS INSTITUTE OF TECHNOLOGY, Department of
 Electrical Engineering and Computer Science; \textit{Executable Specifications
 for Java Programs}, September 2010.
+
+\bibitem{horstmannCornell:coreJava}
+Cay Horstmann and Gary Cornell; \textit{Core Java}, 7th edition.
+
+
 
 \end{thebibliography}
 

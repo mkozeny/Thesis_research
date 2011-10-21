@@ -4,14 +4,18 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Unary expressions supported by JFSL\relax }}{17}{table.caption.8}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Quantified expressions supported by JFSL\relax }}{17}{table.caption.9}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Unary expressions supported by JFSL\relax }}{21}{table.caption.8}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Quantified expressions supported by JFSL\relax }}{21}{table.caption.9}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Translation of different Java constructs into relations (function \texttt {rel}) and bounds (function \texttt {bound})\relax }}{24}{table.caption.10}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Translation of the heap from Figure \ref {fig:bstInsert}\relax }}{27}{table.caption.12}
+\contentsline {table}{\numberline {4.5}{\ignorespaces The updated bounds for the \texttt {left} and \texttt {right} relations\relax }}{28}{table.caption.13}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Summary of domains and instances for the \texttt {BST.insert} example\relax }}{29}{table.caption.14}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Uk\IeC {\'a}zka tabulky\relax }}{35}{table.caption.13}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Uk\IeC {\'a}zka tabulky\relax }}{49}{table.caption.19}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

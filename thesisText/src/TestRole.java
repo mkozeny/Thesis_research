@@ -8,6 +8,7 @@ public class TestRole {
 						throw new Exception(
 								"Unacceptable length of field "+f.getName()+" of class Role");
 				}
+				...
 			}
 		}
 	}
