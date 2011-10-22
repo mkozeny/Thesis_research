@@ -1330,8 +1330,8 @@ updated bounds for these two fields are shown in Table \ref{fig:updatedBounds}.
 \subsection{Minimizing the universe size}
 For representing relations in Squander are used single sequential arrays indexed
 by Java integer. Maximal count of members in this array is \verb|Integer.MAX_VALUE| which is
-2147483647. In practice this can be a problem, because framework for relation of
-arity $k$, which has $n$ atoms in the universe (later it will be described,
+$2147483647$. In practice this can be a problem, because framework for relation
+of arity $k$, which has $n$ atoms in the universe (later it will be described,
 what is exactly meant under this term), allocates matrix of size $n^k$ (when
 ternary relation contains more than 1290 atoms). Heap with more than 1290
 objects are not uncommon, so a simple translation described in
@@ -1340,7 +1340,7 @@ different translation technique called \textit{KodkodPart}, which was developed
 to minimize number of atoms representing object heap.
 
 \subsubsection{\textit{KodkodPart} translation}
-
+\label{sub:kodkodpart}
 KodkodPart translation achieves a universe with fewer atoms by mapping
 Java objects to Kodkod atoms (not injective mapping). That means that multiple
 literals are mapped to a single atom, so that there will be fewer atoms than
@@ -1574,10 +1574,21 @@ transforms everything into SAT problem, which is NP-complete (Cook's theorem)
 problem and every NP problem is transferable into NP-complete problem.
 \section{Knapsack Problem}
 At the beginning when I started \uv{playing} with Squander, I tried to
-implement well known algorithm Knapsack. By using Squander's method
-specification it was pretty easy to declare annotations for computation. Firstly
-it was necessary to prepare data structures. In this case I implement class
-\verb|KnapSacck.java|, which has following properties:
+implement optimization variant of well known algorithm Knapsack. This algorithm
+is usually introduced, that there is burglar with knapsack inside some estate and he has to steal
+as many things as capacity of his knapsack allowed to him with highest price. 
+
+This problem is also sometimes called the easiest one from NP-hard problems. If
+we try to solve it by brute force, we get an exponential time complexity. But
+there are more than one way how to solve this problem with different complexity.
+E.g. by using dynamic programming we get pseudo-polynomial time complexity,
+which means that time complexity is depends not only on input data but also on
+another variable.
+
+By using Squander's method specification it was pretty easy to declare
+annotations for computation. Firstly it was necessary to prepare data
+structures. In this case I implement class \verb|KnapSacck.java|, which has
+following properties:
 
 \begin{itemize}
   \item \textit{integer array c} - costs of particular things in knapsack
@@ -1587,6 +1598,87 @@ it was necessary to prepare data structures. In this case I implement class
   \item \textit{integer capacity} - capacity of knapsack (measured in weight
   units)
 \end{itemize}
+
+That is all information we need to know about object \verb|Knapsack|. Important
+thing is to define some treshold - in our case it will be total cost of things
+in knapsack, which we pass as parameter. Now we have to define some Squander's
+specification. Firstly we make a decision, if configuration of things will be returned as a new array or
+if we pass some array as a method parameter. Let us try to choose first option.
+This option is connected with annotation \verb|@FreshObjects|, which is used to
+define, which type of object will be returned from \verb|Squander.exe()|
+method, so one instance of the object \verb|Integer| array should be created on
+the heap specifying which things are in the knapsack (value $1$) and which not
+(value $0$). After these steps, our method specification looks like this:
+
+\lstinputlisting[label=knapSack1,caption=Declaration of return type of
+\texttt{Squander.exe()} method]{src/knapsack/KnapSack1.java}
+
+After that we define some constraints, that help reduce search space. Question
+that we must ask is what objects or fields of which classes are allowed to
+be modified. Costs and weights are same during computation, similarly capacity
+and count of things in knapsack. The only structure that has to be modifiable is
+return array of \verb|Integers|. According to Squander's documentation we have
+to declare via annotation \verb|@modifies|, that both length and elements of
+returned array are modifiable:
+
+\lstinputlisting[label=knapSack2,caption=Definition of modifiable objects on
+\texttt{Squander.exe()} method]{src/knapsack/KnapSack2.java}
+
+The next step is to decide if we have some requirements on input data. We can
+see that this data are quite enough restricted by its own data type so we do not
+use annotation \verb|@Requires|, which is used to define some prerequisities for
+the execution. Let us continue with specification what we expected as a result
+of computation. 
+
+So the last thing we have to specify is method output. At first come definition,
+that total weight of the all things in knapsack has to be smaller or equal to
+the knapsack capacity:
+
+\lstinputlisting[label=knapSack3,caption=Declaration of knapsack capacity
+constraint on \texttt{Squander.exe()} method]{src/knapsack/KnapSack3.java}
+
+Then it is necessary to specify, that total cost of things in knapsack has to be
+greater than varibale \verb|minCost|, which is passed as method parameter:
+
+\lstinputlisting[label=knapSack4,caption=Declaration of knapsack total cost
+constraint on \texttt{Squander.exe()} method]{src/knapsack/KnapSack4.java}
+
+It is obvious, that Squander use keyword \verb|this| in similar way as Java.
+Finally we make a specification, that length of return \verb|Integer| array has
+to be \verb|n| and that values of that arrays have to be from set $\{0, 1\}$:
+
+\lstinputlisting[label=knapSack5,caption=Declaration of parameters of returned
+array on \texttt{Squander.exe()} method]{src/knapsack/KnapSack5.java}
+
+Knapsack problem is now completely implemented but let us think about possible
+improvements. When thinking about improvement, we should concentrate on
+modifiable object, which is returned \verb|Integer| array. In this case we get
+by with array of Boolean values, which shrinks variable domain as much as possible
+and limit the search space. We have declared constraint in \verb|@Ensures|
+annotation, that values of returned array are in set $\{0, 1\}$, but this
+constraint does not limit search space. Due that change, we should also modify
+declaration of constraints describing minimal cost and capacity of knapsack. It
+is necessary also modify \verb|@FreshObject| annotation to Boolean data type.
+
+\lstinputlisting[label=knapSack6,caption=Improving
+implementation of Knapsack using Boolean data type]{src/knapsack/KnapSack6.java}
+
+Now we have implement Knapsack problem in advanced way and it is time for
+testing, if it works correctly. During testing I used instaces for which I
+know the \verb|bestPrice| solution and for a treshold \verb|minCost| I used
+value equals to \verb|bestPrice - 1|.
+
+At first was the implementation tested on smaller instances consisting of 4
+things. From 45 examples was one failed, when Squander returns configuration,
+which was overweight. Moreover when was minmal cost greater than $510$, program
+fails on error\\ \verb|Arity too large (3) for a universe of size 2055|. We know
+from chapter \ref{chap:framework}, subsection \ref{sub:kodkodpart} that Squander
+used for representing relation array indexed by Java integer. Due to size of
+the universe $2055^3 = 8678316375$ which is greater than
+\verb|Integer.MAX_VALUE| which is $2147483647$ is Squander unable to represent relation.
+
+We can see from the measurement, that Squander is for this type of problem quite
+unsuitable.
 %*****************************************************************************
 \chapter{Comparison}
 

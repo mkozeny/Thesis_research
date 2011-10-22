@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  21 OCT 2011 21:50
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  22 OCT 2011 23:22
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -1308,98 +1308,101 @@ File: figures/kodkodpart.png Graphic file (type png)
 Chapter 5.
 [33
 
-] [34]
+] (./src/knapsack/KnapSack1.java [34]) (./src/knapsack/KnapSack2.java)
+(./src/knapsack/KnapSack3.java) (./src/knapsack/KnapSack4.java [35])
+(./src/knapsack/KnapSack5.java) (./src/knapsack/KnapSack6.java) [36] [37]
+[38
+
+]
 Chapter 6.
-[35
-
-] [36
-
-]
-Chapter 7.
-[37] [38
-
-]
-No file thesis.bbl.
 [39] [40
 
 ]
+Chapter 7.
+[41] [42
+
+]
+No file thesis.bbl.
+[43] [44
+
+]
 Appendix A.
-[41] [42] [43] [44] [45] [46
+[45] [46] [47] [48] [49] [50
 
 ]
 Appendix B.
 
-Package natbib Warning: Citation `CSTUG' on page 47 undefined on input line 170
-4.
+Package natbib Warning: Citation `CSTUG' on page 51 undefined on input line 179
+6.
 
 
-Package natbib Warning: Citation `latexdocweb' on page 47 undefined on input li
-ne 1704.
+Package natbib Warning: Citation `latexdocweb' on page 51 undefined on input li
+ne 1796.
 
 
-Package natbib Warning: Citation `latexwiki' on page 47 undefined on input line
- 1704.
+Package natbib Warning: Citation `latexwiki' on page 51 undefined on input line
+ 1796.
 
 File: figures/LogoCVUT.pdf Graphic file (type pdf)
-<use figures/LogoCVUT.pdf> [47]
+<use figures/LogoCVUT.pdf> [51]
 
-Package natbib Warning: Citation `ipe' on page 48 undefined on input line 1736.
+Package natbib Warning: Citation `ipe' on page 52 undefined on input line 1828.
 
-
-[48] [49] [50]
-
-Package natbib Warning: Citation `kniha' on page 51 undefined on input line 188
-3.
-
-
-Package natbib Warning: Citation `clanek' on page 51 undefined on input line 18
-83.
-
-
-Package natbib Warning: Citation `sbornik' on page 51 undefined on input line 1
-883.
-
-
-Package natbib Warning: Citation `www' on page 51 undefined on input line 1883.
-
-
-[51]
-
-Package natbib Warning: Citation `wiki:framework' on page 52 undefined on input
- line 1885.
-
-
-Package natbib Warning: Citation `wiki:orm' on page 52 undefined on input line 
-1885.
 
 [52] [53] [54]
-Appendix C.
-[55
 
-] [56
+Package natbib Warning: Citation `kniha' on page 55 undefined on input line 197
+5.
+
+
+Package natbib Warning: Citation `clanek' on page 55 undefined on input line 19
+75.
+
+
+Package natbib Warning: Citation `sbornik' on page 55 undefined on input line 1
+975.
+
+
+Package natbib Warning: Citation `www' on page 55 undefined on input line 1975.
+
+
+[55]
+
+Package natbib Warning: Citation `wiki:framework' on page 56 undefined on input
+ line 1977.
+
+
+Package natbib Warning: Citation `wiki:orm' on page 56 undefined on input line 
+1977.
+
+[56] [57] [58]
+Appendix C.
+[59
+
+] [60
 
 ]
 Appendix D.
-[57] [58
+[61] [62
 
 ]
 Appendix E.
-[59] [60
+[63] [64
 
 ]
 Appendix F.
 
-Package natbib Warning: Citation `infodp' on page 61 undefined on input line 19
-78.
+Package natbib Warning: Citation `infodp' on page 65 undefined on input line 20
+70.
 
-<figures/seznamcd.pdf, id=968, 793.96625pt x 539.01375pt>
+<figures/seznamcd.pdf, id=1041, 793.96625pt x 539.01375pt>
 File: figures/seznamcd.pdf Graphic file (type pdf)
 
 <use figures/seznamcd.pdf>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[61] [62 <./figures/seznamcd.pdf>]
+[65] [66 <./figures/seznamcd.pdf>]
 
 Package natbib Warning: There were undefined citations.
 
@@ -1409,10 +1412,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18216 strings out of 495027
- 278650 string characters out of 1181419
+ 18307 strings out of 495027
+ 280066 string characters out of 1181419
  644283 words of memory out of 3000000
- 20503 multiletter control sequences out of 15000+50000
+ 20517 multiletter control sequences out of 15000+50000
  28279 words of font info for 69 fonts, out of 3000000 for 9000
  42 hyphenation exceptions out of 8191
  47i,13n,57p,957b,1832s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1444,9 +1447,9 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/pub
 lic/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on thesis.pdf (78 pages, 788795 bytes).
+Output written on thesis.pdf (82 pages, 810579 bytes).
 PDF statistics:
- 1999 PDF objects out of 2073 (max. 8388607)
- 429 named destinations out of 1000 (max. 500000)
+ 2086 PDF objects out of 2487 (max. 8388607)
+ 487 named destinations out of 1000 (max. 500000)
  462 words of extra memory for PDF output out of 10000 (max. 10000000)
 
