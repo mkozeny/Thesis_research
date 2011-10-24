@@ -1573,6 +1573,8 @@ All in all, Squander should be able to solve all NP problems, because it
 transforms everything into SAT problem, which is NP-complete (Cook's theorem)
 problem and every NP problem is transferable into NP-complete problem.
 \section{Knapsack Problem}
+
+\subsection{First version}
 At the beginning when I started \uv{playing} with Squander, I tried to
 implement optimization variant of well known algorithm Knapsack. This algorithm
 is usually introduced, that there is burglar with knapsack inside some estate and he has to steal
@@ -1659,7 +1661,7 @@ annotation, that values of returned array are in set $\{0, 1\}$, but this
 constraint does not limit search space. Due that change, we should also modify
 declaration of constraints describing minimal cost and capacity of knapsack. It
 is necessary also modify \verb|@FreshObject| annotation to Boolean data type.
-
+\newpage
 \lstinputlisting[label=knapSack6,caption=Improving
 implementation of Knapsack using Boolean data type]{src/knapsack/KnapSack6.java}
 
@@ -1670,15 +1672,35 @@ value equals to \verb|bestPrice - 1|.
 
 At first was the implementation tested on smaller instances consisting of 4
 things. From 45 examples was one failed, when Squander returns configuration,
-which was overweight. Moreover when was minmal cost greater than $510$, program
+which was overweight. Moreover when was minimal cost greater than $510$, program
 fails on error\\ \verb|Arity too large (3) for a universe of size 2055|. We know
 from chapter \ref{chap:framework}, subsection \ref{sub:kodkodpart} that Squander
 used for representing relation array indexed by Java integer. Due to size of
 the universe $2055^3 = 8678316375$ which is greater than
 \verb|Integer.MAX_VALUE| which is $2147483647$ is Squander unable to represent relation.
 
-We can see from the measurement, that Squander is for this type of problem quite
-unsuitable.
+We can see from the measurement, that this implementation of knapsack
+using Squander is for this type of problem quite unsuitable.
+
+\subsection{Second version}
+
+In order to reduce search space, I tried to implement another version of
+knapsack problem. Let us think about things in knapsack as an entity, not as a
+configuration variable in array. By using this way of thinking, we get reduced
+count of atoms in Squander, because now we have only one set of objects \verb|Thing| but in the
+first version of implementation there were two arrays of the same data type
+(\verb|Integer| array \textit{c} and \verb|Integer| array \textit{v} same size
+as set of things we have now), which drastically increase number of atoms.
+Fields of entity \verb|Thing| look like this:
+\newpage
+\begin{itemize}
+  \item \textit{integer c} - cost of actual thing
+  \item \textit{integer v} - weight of actual thing
+  \item \textit{boolean choosed} - symptom if is choosed
+  \item \textit{integer position} - this variable is used for sorting the
+  output, because instances of \verb|Thing| are in \verb|java.util.Set|
+  (for performance reasons)
+\end{itemize}
 %*****************************************************************************
 \chapter{Comparison}
 

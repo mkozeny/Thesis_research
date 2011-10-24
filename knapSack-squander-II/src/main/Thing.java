@@ -1,18 +1,21 @@
 package main;
 
-public class Thing {
+public class Thing implements Comparable<Thing>{
 
 	private int v;
 	
 	private int c;
 	
-	private int choosed;
+	private boolean choosed;
+	
+	private int position;
 
-	public Thing(int v, int c) {
+	public Thing(int v, int c, int position) {
 		super();
 		this.v = v;
 		this.c = c;
-		this.choosed = 0;
+		this.position = position;
+		this.choosed = false;
 	}
 
 	public int getV() {
@@ -31,13 +34,24 @@ public class Thing {
 		this.c = c;
 	}
 
-	public int getChoosed() {
+	public boolean isChoosed() {
 		return choosed;
 	}
 
-	public void setChoosed(int choosed) {
+	public void setChoosed(boolean choosed) {
 		this.choosed = choosed;
 	}
+
+	public int getPosition() {
+		return position;
+	}
+
+	@Override
+	public int compareTo(Thing o) {
+		return this.position - o.getPosition();
+	}
+
+
 	
 	
 }

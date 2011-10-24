@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  22 OCT 2011 23:22
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  23 OCT 2011 18:12
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -1200,7 +1200,7 @@ Supervisor: Ing. Ji\IeC {\v r}\IeC {\'\i } Dan\IeC {\v e}\IeC {\v c}ek
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-<figures/LogoCVUT.pdf, id=231, 93.34875pt x 70.2625pt>
+<figures/LogoCVUT.pdf, id=239, 93.34875pt x 70.2625pt>
 File: figures/LogoCVUT.pdf Graphic file (type pdf)
 
 <use figures/LogoCVUT.pdf> [3 <./figures/LogoCVUT.pdf>] [4
@@ -1278,7 +1278,7 @@ Chapter 3.
 Chapter 4.
 [17
 
-] <figures/architecture-diagram.png, id=699, 531.9875pt x 150.5625pt>
+] <figures/architecture-diagram.png, id=709, 531.9875pt x 150.5625pt>
 File: figures/architecture-diagram.png Graphic file (type png)
 
 <use figures/architecture-diagram.png>
@@ -1292,7 +1292,7 @@ Overfull \hbox (5.75848pt too wide) in paragraph at lines 852--855
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1187.
  (./src/bst/BST.java) [25] (./src/bst/Operations.java)
-<figures/bst.png, id=770, 327.2225pt x 254.9525pt>
+<figures/bst.png, id=780, 327.2225pt x 254.9525pt>
 File: figures/bst.png Graphic file (type png)
  <use figures/bst.png>
 [26 <./figures/bst.png (PNG copy)>] (./src/bst/ModifiedOperations.java [27])
@@ -1300,7 +1300,7 @@ Overfull \hbox (6.66414pt too wide) in paragraph at lines 1312--1325
  [][] 
  []
 
-[28] [29] <figures/kodkodpart.png, id=822, 573.14125pt x 180.675pt>
+[28] [29] <figures/kodkodpart.png, id=832, 573.14125pt x 180.675pt>
 File: figures/kodkodpart.png Graphic file (type png)
 
 <use figures/kodkodpart.png> [30] [31 <./figures/kodkodpart.png (PNG copy)>]
@@ -1309,13 +1309,13 @@ Chapter 5.
 [33
 
 ] (./src/knapsack/KnapSack1.java [34]) (./src/knapsack/KnapSack2.java)
-(./src/knapsack/KnapSack3.java) (./src/knapsack/KnapSack4.java [35])
-(./src/knapsack/KnapSack5.java) (./src/knapsack/KnapSack6.java) [36] [37]
-[38
-
-]
+(./src/knapsack/KnapSack3.java) [35] (./src/knapsack/KnapSack4.java)
+(./src/knapsack/KnapSack5.java) [36] (./src/knapsack/KnapSack6.java) [37]
+[38]
 Chapter 6.
-[39] [40
+[39
+
+] [40
 
 ]
 Chapter 7.
@@ -1332,48 +1332,48 @@ Appendix A.
 ]
 Appendix B.
 
-Package natbib Warning: Citation `CSTUG' on page 51 undefined on input line 179
-6.
+Package natbib Warning: Citation `CSTUG' on page 51 undefined on input line 181
+8.
 
 
 Package natbib Warning: Citation `latexdocweb' on page 51 undefined on input li
-ne 1796.
+ne 1818.
 
 
 Package natbib Warning: Citation `latexwiki' on page 51 undefined on input line
- 1796.
+ 1818.
 
 File: figures/LogoCVUT.pdf Graphic file (type pdf)
 <use figures/LogoCVUT.pdf> [51]
 
-Package natbib Warning: Citation `ipe' on page 52 undefined on input line 1828.
+Package natbib Warning: Citation `ipe' on page 52 undefined on input line 1850.
 
 
 [52] [53] [54]
 
-Package natbib Warning: Citation `kniha' on page 55 undefined on input line 197
-5.
+Package natbib Warning: Citation `kniha' on page 55 undefined on input line 199
+7.
 
 
 Package natbib Warning: Citation `clanek' on page 55 undefined on input line 19
-75.
+97.
 
 
 Package natbib Warning: Citation `sbornik' on page 55 undefined on input line 1
-975.
+997.
 
 
-Package natbib Warning: Citation `www' on page 55 undefined on input line 1975.
+Package natbib Warning: Citation `www' on page 55 undefined on input line 1997.
 
 
 [55]
 
 Package natbib Warning: Citation `wiki:framework' on page 56 undefined on input
- line 1977.
+ line 1999.
 
 
 Package natbib Warning: Citation `wiki:orm' on page 56 undefined on input line 
-1977.
+1999.
 
 [56] [57] [58]
 Appendix C.
@@ -1393,9 +1393,9 @@ Appendix E.
 Appendix F.
 
 Package natbib Warning: Citation `infodp' on page 65 undefined on input line 20
-70.
+92.
 
-<figures/seznamcd.pdf, id=1041, 793.96625pt x 539.01375pt>
+<figures/seznamcd.pdf, id=1051, 793.96625pt x 539.01375pt>
 File: figures/seznamcd.pdf Graphic file (type pdf)
 
 <use figures/seznamcd.pdf>
@@ -1412,10 +1412,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18307 strings out of 495027
- 280066 string characters out of 1181419
+ 18311 strings out of 495027
+ 280134 string characters out of 1181419
  644283 words of memory out of 3000000
- 20517 multiletter control sequences out of 15000+50000
+ 20519 multiletter control sequences out of 15000+50000
  28279 words of font info for 69 fonts, out of 3000000 for 9000
  42 hyphenation exceptions out of 8191
  47i,13n,57p,957b,1832s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1447,9 +1447,9 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/pub
 lic/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on thesis.pdf (82 pages, 810579 bytes).
+Output written on thesis.pdf (82 pages, 814292 bytes).
 PDF statistics:
- 2086 PDF objects out of 2487 (max. 8388607)
- 487 named destinations out of 1000 (max. 500000)
- 462 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2097 PDF objects out of 2487 (max. 8388607)
+ 489 named destinations out of 1000 (max. 500000)
+ 478 words of extra memory for PDF output out of 10000 (max. 10000000)
 
