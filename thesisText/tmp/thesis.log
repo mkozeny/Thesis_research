@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  23 OCT 2011 18:12
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  25 OCT 2011 23:58
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -1311,75 +1311,84 @@ Chapter 5.
 ] (./src/knapsack/KnapSack1.java [34]) (./src/knapsack/KnapSack2.java)
 (./src/knapsack/KnapSack3.java) [35] (./src/knapsack/KnapSack4.java)
 (./src/knapsack/KnapSack5.java) [36] (./src/knapsack/KnapSack6.java) [37]
-[38]
+(./src/knapsack/KnapSack7.java) [38] [39]
+(./src/generalBisectionBreadth/Gbb1.java)
+Overfull \hbox (8.59026pt too wide) in paragraph at lines 1796--1801
+[][]\T1/cmr/m/n/10.95 Then we can add con-straints about what we ex-pect af-ter
+ ex-e-cu-tion by an-no-ta-tion []\T1/cmtt/m/n/10.95 @Ensures\T1/cmr/m/n/10.95 .
+
+ []
+
+(./src/generalBisectionBreadth/Gbb2.java) [40]
+(./src/generalBisectionBreadth/Gbb3.java) [41] [42
+
+]
 Chapter 6.
-[39
-
-] [40
-
-]
-Chapter 7.
-[41] [42
-
-]
-No file thesis.bbl.
 [43] [44
 
 ]
-Appendix A.
-[45] [46] [47] [48] [49] [50
+Chapter 7.
+[45] [46
 
 ]
-Appendix B.
+No file thesis.bbl.
+[47] [48
 
-Package natbib Warning: Citation `CSTUG' on page 51 undefined on input line 181
-8.
+]
+Appendix A.
+
+Package natbib Warning: Citation `CSTUG' on page 49 undefined on input line 188
+6.
 
 
-Package natbib Warning: Citation `latexdocweb' on page 51 undefined on input li
-ne 1818.
+Package natbib Warning: Citation `latexdocweb' on page 49 undefined on input li
+ne 1886.
 
 
-Package natbib Warning: Citation `latexwiki' on page 51 undefined on input line
- 1818.
+Package natbib Warning: Citation `latexwiki' on page 49 undefined on input line
+ 1886.
 
 File: figures/LogoCVUT.pdf Graphic file (type pdf)
-<use figures/LogoCVUT.pdf> [51]
+<use figures/LogoCVUT.pdf> [49]
 
-Package natbib Warning: Citation `ipe' on page 52 undefined on input line 1850.
-
-
-[52] [53] [54]
-
-Package natbib Warning: Citation `kniha' on page 55 undefined on input line 199
-7.
+Package natbib Warning: Citation `ipe' on page 50 undefined on input line 1918.
 
 
-Package natbib Warning: Citation `clanek' on page 55 undefined on input line 19
-97.
+[50] [51] [52]
+
+Package natbib Warning: Citation `kniha' on page 53 undefined on input line 206
+5.
 
 
-Package natbib Warning: Citation `sbornik' on page 55 undefined on input line 1
-997.
+Package natbib Warning: Citation `clanek' on page 53 undefined on input line 20
+65.
 
 
-Package natbib Warning: Citation `www' on page 55 undefined on input line 1997.
+Package natbib Warning: Citation `sbornik' on page 53 undefined on input line 2
+065.
 
 
-[55]
-
-Package natbib Warning: Citation `wiki:framework' on page 56 undefined on input
- line 1999.
+Package natbib Warning: Citation `www' on page 53 undefined on input line 2065.
 
 
-Package natbib Warning: Citation `wiki:orm' on page 56 undefined on input line 
-1999.
+[53]
 
-[56] [57] [58]
+Package natbib Warning: Citation `wiki:framework' on page 54 undefined on input
+ line 2067.
+
+
+Package natbib Warning: Citation `wiki:orm' on page 54 undefined on input line 
+2067.
+
+[54] [55] [56]
+Appendix B.
+[57
+
+] [58
+
+]
 Appendix C.
-[59
-
-] [60
+[59] [60
 
 ]
 Appendix D.
@@ -1387,22 +1396,18 @@ Appendix D.
 
 ]
 Appendix E.
-[63] [64
 
-]
-Appendix F.
+Package natbib Warning: Citation `infodp' on page 63 undefined on input line 21
+60.
 
-Package natbib Warning: Citation `infodp' on page 65 undefined on input line 20
-92.
-
-<figures/seznamcd.pdf, id=1051, 793.96625pt x 539.01375pt>
+<figures/seznamcd.pdf, id=1097, 793.96625pt x 539.01375pt>
 File: figures/seznamcd.pdf Graphic file (type pdf)
 
 <use figures/seznamcd.pdf>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[65] [66 <./figures/seznamcd.pdf>]
+[63] [64 <./figures/seznamcd.pdf>]
 
 Package natbib Warning: There were undefined citations.
 
@@ -1412,13 +1417,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18311 strings out of 495027
- 280134 string characters out of 1181419
+ 18391 strings out of 495027
+ 281442 string characters out of 1181419
  644283 words of memory out of 3000000
- 20519 multiletter control sequences out of 15000+50000
+ 20535 multiletter control sequences out of 15000+50000
  28279 words of font info for 69 fonts, out of 3000000 for 9000
  42 hyphenation exceptions out of 8191
- 47i,13n,57p,957b,1832s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,13n,57p,602b,1832s stack positions out of 5000i,500n,10000p,200000b,50000s
  </home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </home
 /kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk> </home/kozenym/
 .texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/kozenym/.texmf-va
@@ -1447,9 +1452,9 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/pub
 lic/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on thesis.pdf (82 pages, 814292 bytes).
+Output written on thesis.pdf (80 pages, 827991 bytes).
 PDF statistics:
- 2097 PDF objects out of 2487 (max. 8388607)
- 489 named destinations out of 1000 (max. 500000)
+ 2150 PDF objects out of 2487 (max. 8388607)
+ 540 named destinations out of 1000 (max. 500000)
  478 words of extra memory for PDF output out of 10000 (max. 10000000)
 
