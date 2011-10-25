@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  23 OCT 2011 18:12
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  25 OCT 2011 02:19
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -1200,7 +1200,7 @@ Supervisor: Ing. Ji\IeC {\v r}\IeC {\'\i } Dan\IeC {\v e}\IeC {\v c}ek
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-<figures/LogoCVUT.pdf, id=239, 93.34875pt x 70.2625pt>
+<figures/LogoCVUT.pdf, id=243, 93.34875pt x 70.2625pt>
 File: figures/LogoCVUT.pdf Graphic file (type pdf)
 
 <use figures/LogoCVUT.pdf> [3 <./figures/LogoCVUT.pdf>] [4
@@ -1278,7 +1278,7 @@ Chapter 3.
 Chapter 4.
 [17
 
-] <figures/architecture-diagram.png, id=709, 531.9875pt x 150.5625pt>
+] <figures/architecture-diagram.png, id=714, 531.9875pt x 150.5625pt>
 File: figures/architecture-diagram.png Graphic file (type png)
 
 <use figures/architecture-diagram.png>
@@ -1292,7 +1292,7 @@ Overfull \hbox (5.75848pt too wide) in paragraph at lines 852--855
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1187.
  (./src/bst/BST.java) [25] (./src/bst/Operations.java)
-<figures/bst.png, id=780, 327.2225pt x 254.9525pt>
+<figures/bst.png, id=785, 327.2225pt x 254.9525pt>
 File: figures/bst.png Graphic file (type png)
  <use figures/bst.png>
 [26 <./figures/bst.png (PNG copy)>] (./src/bst/ModifiedOperations.java [27])
@@ -1300,7 +1300,7 @@ Overfull \hbox (6.66414pt too wide) in paragraph at lines 1312--1325
  [][] 
  []
 
-[28] [29] <figures/kodkodpart.png, id=832, 573.14125pt x 180.675pt>
+[28] [29] <figures/kodkodpart.png, id=837, 573.14125pt x 180.675pt>
 File: figures/kodkodpart.png Graphic file (type png)
 
 <use figures/kodkodpart.png> [30] [31 <./figures/kodkodpart.png (PNG copy)>]
@@ -1311,98 +1311,94 @@ Chapter 5.
 ] (./src/knapsack/KnapSack1.java [34]) (./src/knapsack/KnapSack2.java)
 (./src/knapsack/KnapSack3.java) [35] (./src/knapsack/KnapSack4.java)
 (./src/knapsack/KnapSack5.java) [36] (./src/knapsack/KnapSack6.java) [37]
-[38]
-Chapter 6.
-[39
-
-] [40
+(./src/knapsack/KnapSack7.java) [38] [39] [40
 
 ]
-Chapter 7.
+Chapter 6.
 [41] [42
 
 ]
-No file thesis.bbl.
+Chapter 7.
 [43] [44
 
 ]
-Appendix A.
-[45] [46] [47] [48] [49] [50
+No file thesis.bbl.
+[45] [46
 
 ]
-Appendix B.
+Appendix A.
 
-Package natbib Warning: Citation `CSTUG' on page 51 undefined on input line 181
-8.
-
-
-Package natbib Warning: Citation `latexdocweb' on page 51 undefined on input li
-ne 1818.
+Package natbib Warning: Citation `CSTUG' on page 47 undefined on input line 180
+5.
 
 
-Package natbib Warning: Citation `latexwiki' on page 51 undefined on input line
- 1818.
+Package natbib Warning: Citation `latexdocweb' on page 47 undefined on input li
+ne 1805.
+
+
+Package natbib Warning: Citation `latexwiki' on page 47 undefined on input line
+ 1805.
 
 File: figures/LogoCVUT.pdf Graphic file (type pdf)
-<use figures/LogoCVUT.pdf> [51]
+<use figures/LogoCVUT.pdf> [47]
 
-Package natbib Warning: Citation `ipe' on page 52 undefined on input line 1850.
+Package natbib Warning: Citation `ipe' on page 48 undefined on input line 1837.
 
+
+[48] [49] [50]
+
+Package natbib Warning: Citation `kniha' on page 51 undefined on input line 198
+4.
+
+
+Package natbib Warning: Citation `clanek' on page 51 undefined on input line 19
+84.
+
+
+Package natbib Warning: Citation `sbornik' on page 51 undefined on input line 1
+984.
+
+
+Package natbib Warning: Citation `www' on page 51 undefined on input line 1984.
+
+
+[51]
+
+Package natbib Warning: Citation `wiki:framework' on page 52 undefined on input
+ line 1986.
+
+
+Package natbib Warning: Citation `wiki:orm' on page 52 undefined on input line 
+1986.
 
 [52] [53] [54]
+Appendix B.
+[55
 
-Package natbib Warning: Citation `kniha' on page 55 undefined on input line 199
-7.
+] [56
 
-
-Package natbib Warning: Citation `clanek' on page 55 undefined on input line 19
-97.
-
-
-Package natbib Warning: Citation `sbornik' on page 55 undefined on input line 1
-997.
-
-
-Package natbib Warning: Citation `www' on page 55 undefined on input line 1997.
-
-
-[55]
-
-Package natbib Warning: Citation `wiki:framework' on page 56 undefined on input
- line 1999.
-
-
-Package natbib Warning: Citation `wiki:orm' on page 56 undefined on input line 
-1999.
-
-[56] [57] [58]
+]
 Appendix C.
-[59
-
-] [60
+[57] [58
 
 ]
 Appendix D.
-[61] [62
+[59] [60
 
 ]
 Appendix E.
-[63] [64
 
-]
-Appendix F.
+Package natbib Warning: Citation `infodp' on page 61 undefined on input line 20
+79.
 
-Package natbib Warning: Citation `infodp' on page 65 undefined on input line 20
-92.
-
-<figures/seznamcd.pdf, id=1051, 793.96625pt x 539.01375pt>
+<figures/seznamcd.pdf, id=1061, 793.96625pt x 539.01375pt>
 File: figures/seznamcd.pdf Graphic file (type pdf)
 
 <use figures/seznamcd.pdf>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[65] [66 <./figures/seznamcd.pdf>]
+[61] [62 <./figures/seznamcd.pdf>]
 
 Package natbib Warning: There were undefined citations.
 
@@ -1412,44 +1408,86 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18311 strings out of 495027
- 280134 string characters out of 1181419
- 644283 words of memory out of 3000000
- 20519 multiletter control sequences out of 15000+50000
+ 18340 strings out of 495027
+ 280569 string characters out of 1181419
+ 644282 words of memory out of 3000000
+ 20527 multiletter control sequences out of 15000+50000
  28279 words of font info for 69 fonts, out of 3000000 for 9000
  42 hyphenation exceptions out of 8191
- 47i,13n,57p,957b,1832s stack positions out of 5000i,500n,10000p,200000b,50000s
- </home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </home
-/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk> </home/kozenym/
-.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/kozenym/.texmf-va
-r/fonts/pk/ljfour/jknappen/ec/ecbi1095.600pk> </home/kozenym/.texmf-var/fonts/p
-k/ljfour/jknappen/ec/ecbx0800.600pk> </home/kozenym/.texmf-var/fonts/pk/ljfour/
-jknappen/ec/ectt1200.600pk> </home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/
-ec/tcrm0900.600pk> </home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx09
-00.600pk> </home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk>
- </home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/k
-ozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecsl1095.600pk> </home/kozenym/.t
-exmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </home/kozenym/.texmf-var/
-fonts/pk/ljfour/jknappen/ec/ectt1095.600pk> </home/kozenym/.texmf-var/fonts/pk/
-ljfour/jknappen/ec/ecbx1095.600pk> </home/kozenym/.texmf-var/fonts/pk/ljfour/jk
-nappen/ec/ecrm0600.600pk> </home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec
-/ecbx2074.600pk> </home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1440
-.600pk> </home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> <
-/home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/koz
-enym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/kozenym/.tex
-mf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk> </home/kozenym/.texmf-var/fo
-nts/pk/ljfour/jknappen/ec/ecbx2488.600pk></usr/share/texmf-texlive/fonts/type1/
-public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
-onts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmm
-i8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-
-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/symbols/msbm10.pfb>
-Output written on thesis.pdf (82 pages, 814292 bytes).
+ 47i,13n,57p,602b,1832s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{table.caption.19} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.20} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.18} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix.F} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.7.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.B.7} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.B.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.B.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.4.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.4.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.B.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.B.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.B.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.B.1} has been referenced but does not exist
+, replaced by a fixed one
+
+ </home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </home/k
+ozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk> </home/kozenym/.t
+exmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/kozenym/.texmf-var/
+fonts/pk/ljfour/jknappen/ec/ecbi1095.600pk> </home/kozenym/.texmf-var/fonts/pk/
+ljfour/jknappen/ec/ecbx0800.600pk> </home/kozenym/.texmf-var/fonts/pk/ljfour/jk
+nappen/ec/ectt1200.600pk> </home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec
+/tcrm0900.600pk> </home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900
+.600pk> </home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> <
+/home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/koz
+enym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecsl1095.600pk> </home/kozenym/.tex
+mf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </home/kozenym/.texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ectt1095.600pk> </home/kozenym/.texmf-var/fonts/pk/lj
+four/jknappen/ec/ecbx1095.600pk> </home/kozenym/.texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/ecrm0600.600pk> </home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/e
+cbx2074.600pk> </home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1440.6
+00pk> </home/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </h
+ome/kozenym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/kozen
+ym/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/kozenym/.texmf
+-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk> </home/kozenym/.texmf-var/font
+s/pk/ljfour/jknappen/ec/ecbx2488.600pk></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8
+.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/s
+hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/s
+ymbols/msbm10.pfb>
+Output written on thesis.pdf (78 pages, 813860 bytes).
 PDF statistics:
- 2097 PDF objects out of 2487 (max. 8388607)
- 489 named destinations out of 1000 (max. 500000)
- 478 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2108 PDF objects out of 2487 (max. 8388607)
+ 507 named destinations out of 1000 (max. 500000)
+ 486 words of extra memory for PDF output out of 10000 (max. 10000000)
 
