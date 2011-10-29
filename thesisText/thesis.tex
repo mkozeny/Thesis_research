@@ -363,7 +363,8 @@ to know how to do that.
 
 \section{Logical programming paradigm}
 
-Logical programming differ from imperative languages in following points:
+According to \cite{nino:pls}, logical programming differ from imperative
+languages in following points:
 \begin{enumerate}
   \item no assignment statement
   \item no cycles, no branching 
@@ -384,8 +385,8 @@ shared database. Language does not differ between program and data.
 \newpage
 \subsection{Facts}
 \label{sec:facts}
-For expressing \textit{facts} and \textit{rules} are used \textit{clauses}.
-Facts are used for expressing unconditionally true assertions and are clauses
+As is presented in \cite{jirku:progProlog}, for expressing \textit{facts} and
+\textit{rules} are used \textit{clauses}. Facts are used for expressing unconditionally true assertions and are clauses
 with defined headers, but with no body. Usual way to ilustrate how to
 composed facts are family relationships.
 
@@ -520,8 +521,8 @@ it is in Prolog, but they are declared as metadata for handling with objects.
 More about Squander's rules in chapter \ref{chap:framework}.
 
 \section{Terminology}
-When simplyfying in Prolog, we can say, that in every task appear
-\textit{objects} and \textit{relations}. Name of objects are called
+As presents Kolář \cite{kolar:jui}, when simplyfying in Prolog, we can say,
+that in every task appear \textit{objects} and \textit{relations}. Name of objects are called
 \textit{terms} and name of relations are called \textit{predicates}. Terms are
 analogous to arithmetic expressions, which point to the computed value, and
 predicates are analogous to name of procedures, which defines relationship
@@ -574,7 +575,7 @@ From procedural point of view has clause different meaning:
 \end{itemize}
 
 \verb|Evaluation| of sequence of targets $G_1, G_2,..., G_m$ in Prolog consists
-of following steps:
+of following steps \cite{kolar:jui}:
 \begin{itemize}
   \item If is sequence of targets empty, evaluation \textbf{succeded}.
   \item For non-empty sequence of targets, operation \textit{SEARCHING} is
@@ -630,6 +631,7 @@ subsection \ref{sec:facts}:\\
 \begin{figure}[ht]
 %\centering
 %\begin{center}
+%\qtreecentertrue
 \begin{tikzpicture}
 
 
@@ -639,7 +641,7 @@ subsection \ref{sec:facts}:\\
 node[auto=right]{\textbf{a}};[\node(t){unsuccess}; ] .{$parent(david, jane)$}
 \edge node[auto=left]{\textbf{b}}; [ [[\edge
 node[auto=left]{\textbf{a}};[\node(u){success}; ].{$parent(john, jane)$}
-].{$ancestor(john, jane)$} ]  .\fbox{$Z = john$} ].\node(wh){$parent(david, Z),$\\ $parent(Z, jane)$}; ] 
+].{$ancestor(john, jane)$} ]  .\fbox{$Z = john$} ].\node(wh){$parent(david, Z),$\\ $parent(Z, jane)$};] 
 \draw[dashed,->] (t)..controls +(east:3.5) .. (wh);
 \draw[dashed,->] (u)..controls +(west:2.5)  .. (xh);
 \end{tikzpicture}
@@ -661,7 +663,8 @@ rule \textbf{b} is then successful.
 Annotations are tags that programmer insert into source code so that they
 can be processed by tools. The Java compiler understands a couple of
 annotations, but to go any further, you need to build your own processing tool
-or obtain a tool from a third party. Most common use of annotations are:
+or obtain a tool from a third party. Most common use of annotations are
+\cite{horstmannCornell:coreJava}:
 
 \begin{itemize}
   \item Automatic generation of auxiliary files, such as deployment descriptors or bean information classes.
@@ -674,8 +677,8 @@ automated by annotations.
 \section{Annotations as metadata}
 Metadata are data about data. In context of computer program, metadata are data
 about the code. Since Java 5.0 release, programmer can insert arbitrary data
-into his source code. Annotations in Java is used like an \textit{modifier},
-placed before annotated item (it is a keyword similar to \verb|public| or
+into his source code \cite{java:annotations}. Annotations in Java is used like
+an \textit{modifier}, placed before annotated item (it is a keyword similar to \verb|public| or
 \verb|static|). Annotations are used to annotate classes, fields or local
 variables and can be processed by tools that read them.
 
@@ -1730,13 +1733,21 @@ of variable \verb|minCost|, because there are not so many relations created.
 Implementation was successfuly tested for $40$ things in one instance at most.
 
 \section{General bisection breadth}
-This problem is taken from subject \textit{Parallel Systems and Algorithms}
+\label{sec:gbb}
+This problem is taken from course \textit{Parallel Systems and Algorithms}
 lectured at Faculty of Electrical Engeneering of Czech Technical University in
-Prague. It is a graph algorithm and task for that algorithm is to find two
-groups of nodes - number of nodes in one group is exactly define - such, that
-count of edges connecting these two groups are minimal. Because of using first
-order logic in Squander (\ref{sub:apps}), it is necessary again to define some
-maximum treshold of counts of edges connecting groups of nodes. For generating
+Prague (CTU FEE). It is a graph algorithm and task for that algorithm is to find
+two groups of nodes - number of nodes in one group is exactly define - such, that
+count of edges connecting these two groups are minimal. Exact definition is:
+
+\begin{center}
+\uv{Find distribution set of nodes into to two disjoint groups $X$, $Y$ such,
+that set $X$ contains $a$ nodes, set $Y$ contains $n-a$ nodes and count of edges
+$\{u,v\}$, whose $u$ is from $X$ and $v$ is from $Y$, is minimal.}
+\end{center}
+
+Because of using first order logic in Squander (\ref{sub:apps}), it is necessary
+again to define some maximum treshold of counts of edges connecting groups of nodes. For generating
 graph was implement project called \verb|Common graph utils|, which generates
 graph according to this rules:
 
@@ -1798,7 +1809,7 @@ Then we can add constraints about what we expect after execution by annotation
 \verb|resultA| and \verb|resultN| are subsets of set of nodes in the graph,
 information that size of set \verb|resultA| is \verb|a| and size of set
 \verb|resultN| is \verb|n - a|:
-
+\newpage
 \lstinputlisting[label=gbb2,caption=Declaration
 of both sets of nodes]{src/generalBisectionBreadth/Gbb2.java}
 
@@ -1811,15 +1822,292 @@ destination node are in different set (\verb|resultA| and \verb|resultN|), are
 in set \verb|commonEdges|:
 
 \lstinputlisting[label=gbb3,caption=Final
-version of implementation of algorithm General
-bisection breadth]{src/generalBisectionBreadth/Gbb3.java}
+version of implementation General
+bisection breadth algorithm]{src/generalBisectionBreadth/Gbb3.java}
+
+During testing testing this Squander implementation was able to deal with
+instances up to $30$ nodes and never return bad solution on 50 instances.
+
+\section{L-dominant set of graph}
+\label{sec:ldsg}
+Idea of this algorithm was also taken as \ref{sec:gbb} from the same course at
+CTU FEE. Also this algorithm is graph a algorithm and main idea is to find set
+of nodes in the graph, which will covered with its neighborhood of defined
+breadth, whole graph. Again to be more precise, definition of algorithm is:
+
+\begin{center}
+\uv{For a given natural number $l\geq 0$ and node $u$ of graph $G$ is
+$l-negborhood$ of node $u$ is set of all nodes of $G$ in distance not more than
+$l$ from node $u$, including node $u$ itself. Then $l-dominant\hspace{1mm}set\hspace{1mm}of\hspace{1mm}graph\hspace{1mm}G$
+is every set of nodes such, that union of their $l-neighborhood$ contains
+all nodes in $G$.}
+\end{center}
+
+For this algorithm is necessary to have more specific data about the graph. At
+first we have to generate neighborhood of specified length of all nodes in the
+graph. Due generating this neighborhood I implemented \textit{Breadth
+first search algorithm (BFS)} and extends data structure \textit{Node} from
+previous algorithm \ref{sec:gbb} of information about its state during BFS
+traversing and its neighborhood. As was said before, Squander use first
+order logic so some treshold of size of result set has to be define. Data
+structures and objects used in this implementation:
+
+\begin{itemize}
+  \item \textit{class ExtendedNode} which extends \textit{class Node} from
+  \ref{sec:gbb} of enum field \textit{state} (\textit{FRESH, OPENED, CLOSED})
+  and of \textit{Set neighborhood}
+  \item \textit{Set extendedNodes} containing all nodes in the graph
+\item \textit{Set edges} containing all edges in the graph
+  \item \textit{integer l} defining $l-neighborhood$ of node
+  \item \textit{integer treshold} expressing maximum of nodes in result set
+\end{itemize}
+
+In our implementation we will return result set of nodes as an array of
+class \verb|ExtendedNode|, which we allow to modify:
+
+\lstinputlisting[label=ldomset1,caption=Declaration
+of modifiable objects in L-Dominant set of graph
+implementation]{src/lDominantSet/LDomSet1.java}
+
+Now comes definition what we are expected to return. Definitely is return array
+subset of set \verb|extendedNodes| and its length has to be shorter or equal to
+variable \verb|treshold|:
+
+\lstinputlisting[label=ldomset2,caption=Defining result array in L-Dominant set
+of graph implementation]{src/lDominantSet/LDomSet2.java}
+
+Next we define that all neighborhoods of all nodes in result array cover
+whole graph. Then we tell Squander that in result array must not be one node
+twice or more and all of the nodes in return result array are not in
+neighborhood themselves:
+
+\lstinputlisting[label=ldomset2,caption=Final
+version of implementation L-Dominant set
+of graph algorithm]{src/lDominantSet/LDomSet3.java}
+
+This implementation works with instances with up to 60 nodes.
+
+\section{Hamiltonian path}
+Algorithm \textit{Hamiltonian path} is quite well known. Core of this algorithm
+is to find path which covers all nodes in the graph and visit no node twice or
+more. It is last graph algorithm presented in this thesis using similar data
+structures as previous ones. Implementation of algorithm is taken from
+\cite{milicevic:executableSpecificationsForJavaPrograms}. Also data structures
+and objects are similar as in previous ones:
+
+\begin{itemize}
+  \item \textit{class Node} with property \verb|value|, which symbolizes label
+  of actual node
+  \item \textit{class Edge} with properties \verb|src|, \verb|dest| of type
+  \verb|Node| and \verb|Integer| property cost, that will not be used in this
+  algorithm at all
+  \item \textit{Set nodes} containing all nodes in the graph
+	\item \textit{Set edges} containing all edges in the graph
+\end{itemize}
+
+Our implementation will return in new array of class \verb|Edge| sequence of
+visited edges during traversing - to do that, \verb|@FreshObjects| annotation is
+used. Then we allow to modify (via \verb|@Modifies| annotation) elements of
+result array and its length (see Listing \ref{hp1}).
+
+\lstinputlisting[label=hp1,caption=Declaration
+of modifiable objects and returned result in Hamiltonian path
+implementation]{src/hp/Hp1.java}
+
+After that we add constraints defining, how resulted array of edges will looks
+like - \verb|@Requires| annotation. Of course, firstly we tell Squander, that
+returned array is subset of set \verb|edges|. Then we add similar constraint about nodes that all nodes
+(both source and destination) are equal to set of \verb|nodes| and constraint
+that length of resulted array is count of \verb|nodes -1|. Last constraint in
+\verb|@Requires| annotation define, that for every edge in result set is
+destination node source node of following one:
+
+\lstinputlisting[label=hp2,caption=Final implementation of Hamiltonian path
+algorithm]{src/hp/Hp2.java}
+
+This implementation works fine for graphs with 15 nodes containing Hamiltonian
+path and for graphs with 10 nodes which do not contain Hamiltonian path.
+
+\section{Triangular solitaire}
+As last algorithm I tried to implement simple game called  \textit{Triangular
+solitaire}. Idea of that algorithm as idea of previous two graph
+algorithms (\ref{sec:gbb} and \ref{sec:ldsg}) was taken from course
+\textit{Parallel systems and algorithms} lectured at CTU FEE. Specification of
+the algorithm was finaly changed according to \cite{web:mathIsFun}. Target of
+this algortihm is to leave only one occupied position on the game field by doing
+allowed transitions. Allowed transition between two states of game field is to
+move move with choosed peg via another peg to position which is not occupied by
+the peg. Movements in actual state are available horizontally in both directions
+and vertically under angle 45 or 135 degrees, see following Figure
+\ref{fig:initGF}.
+
+\begin{figure}[ht]
+\begin{center}
+\begin{tikzpicture}[>=stealth]
+\draw[fill=gray!50] (0,0) -- (3,5.196152423) -- (6,0)-- (0,0);
+
+
+
+
+\draw[fill=red] (1,0.65) circle (0.3);
+\draw[fill=red] (2,0.65) circle (0.3);
+\draw[fill=white] (3,0.65) circle (0.3);
+\draw[fill=red] (4,0.65) circle (0.3);
+\draw[fill=red] (5,0.65) circle (0.3);
+
+\draw[fill=red] (1.5,1.5) circle (0.3);
+\draw[fill=red] (2.5,1.5) circle (0.3);
+\draw[fill=red] (3.5,1.5) circle (0.3);
+\draw[fill=red] (4.5,1.5) circle (0.3);
+
+\draw[fill=red] (2,2.35) circle (0.3);
+\draw[fill=red] (3,2.35) circle (0.3);
+\draw[fill=red] (4,2.35) circle (0.3);
+
+\draw[fill=red] (2.5,3.2) circle (0.3);
+\draw[fill=red] (3.5,3.2) circle (0.3);
+
+\draw[fill=red] (3,4.05) circle (0.3);
+
+%\draw[dashed,thick,->] (1,0.65) -- (3,0.65);
+%\draw[dashed,thick,->] (5,0.65) -- (3,0.65);
+%\draw[dashed,thick,->] (2,2.35) -- (3,0.65);
+%\draw[dashed,thick,->] (4,2.35) -- (3,0.65);
+
+
+\draw [dashed,->] (1,0.65) arc (140:45:1.3cm);
+\draw [dashed,->] (5,0.65) arc (40:135:1.3cm);
+\draw [dashed,very thick,->] (2,2.35) arc (80:-15:1.3cm);
+\draw [dashed,->] (4,2.35) arc (100:195:1.3cm);
+
+
+
+\draw [thick,->] (6,2.5) -- (8,2.5);
+
+
+\draw[fill=gray!50] (8,0) -- (11,5.196152423) -- (14,0)-- (8,0);
+
+
+
+
+\draw[fill=red] (9,0.65) circle (0.3);
+\draw[fill=red] (10,0.65) circle (0.3);
+\draw[fill=red] (11,0.65) circle (0.3);
+\draw[fill=red] (12,0.65) circle (0.3);
+\draw[fill=red] (13,0.65) circle (0.3);
+
+\draw[fill=red] (9.5,1.5) circle (0.3);
+\draw[fill=white] (10.5,1.5) circle (0.3);
+\draw[fill=red] (11.5,1.5) circle (0.3);
+\draw[fill=red] (12.5,1.5) circle (0.3);
+
+\draw[fill=white] (10,2.35) circle (0.3);
+\draw[fill=red] (11,2.35) circle (0.3);
+\draw[fill=red] (12,2.35) circle (0.3);
+
+\draw[fill=red] (10.5,3.2) circle (0.3);
+\draw[fill=red] (11.5,3.2) circle (0.3);
+
+\draw[fill=red] (11,4.05) circle (0.3);
+
+%\draw[dashed,thick,->] (1,0.65) -- (3,0.65);
+%\draw[dashed,thick,->] (5,0.65) -- (3,0.65);
+%\draw[dashed,thick,->] (2,2.35) -- (3,0.65);
+%\draw[dashed,thick,->] (4,2.35) -- (3,0.65);
+
+
+%\draw [dashed,->] (9,0.65) arc (140:45:1.3cm);
+%\draw [dashed,->] (13,0.65) arc (40:135:1.3cm);
+%\draw [dashed,very thick,->] (10,2.35) arc (80:-15:1.3cm);
+%\draw [dashed,->] (12,2.35) arc (100:195:1.3cm);
+
+\end{tikzpicture}
+
+\end{center}
+\caption{Initialized game field and possible transitions}
+\label{fig:initGF}
+\end{figure}
+
+In this Figure we can see except initialization state also example of one
+possible transition between two states. If it is target of the game to leave
+only one position occupied with peg, it is obvious that we need $N - 1$ steps to
+do that, where $N$ is count of positions in game field, because in every step we
+lose one peg ($N = \frac{n(n-+1)}{2}$, where $n$ is length of side of the game
+field, it is simple summmation of arithmetic progression). Now we should
+declare, what we want to return from our program. Of course it will be sequence of states of game field, which lead to solution,
+specifiyng occupation of concrete cell. Let us declare data structures, which
+are necessary for computation.
+
+First one will be definitely \textit{class Cell} containing boolean field
+\verb|occupied| and maybe some information about its position in the game field
+which is not very necessary for purpose of Squander computation. Next data
+structure we need is \textit{class State} grouping individual cell together
+defining actual state of game field. \textit{Class SolitaireSolver}, computing
+configuration of states, has following fields:
+\newpage
+\begin{itemize}
+  \item \textit{startState} defining inital state of the game field, where only
+  one cell is not occupied
+  \item \textit{integer n} for defining size of side of game field - it has to
+  be greater or equal to 5
+  \item \textit{integer array adj} containing type of adjacency (if exists)
+  between cells, where index to that matrix is position of the cell in
+  \verb|cells| array ($left=1, right=2, top_{45}=3, top_{135}=4, bottom_{135}=5,
+  bottom_{45}=6$)
+\end{itemize}
+
+Now let us do the specification of the main method computing desirable sequence
+of states. At first we will define some requirements on data structures we have.
+We only allow to modify field \verb|occupied| of class \verb|Cell|, but only on
+those instances, who are not representing \verb|startState|, because this state
+has to be constant all the time (declared vis \verb|@Modifies| annotation and
+optional instance selector in this annotation). Then we add constraint to object
+\verb|startState|, that only one of the object in array \verb|Cells| can be
+unoccupied. We declare this constraint using annotation \verb|@Invariant|
+guarantees this constraint all the time (in this implementation will be enough
+to use annotation \verb|@Required| when declaring this constraint, because we
+allow to modify only \verb|Cell| objects in all states except for
+\verb|startState|). Last requirement is that size of side of the triangle has
+to be greater or equal to 5.
+
+\lstinputlisting[label=ts1,caption=Defining requirements for Triangular
+solitaire algorithm]{src/solitaire/TriSol1.java}
+
+That were requirements for the algorithm. Now we have to add specifications
+about the output of the algorithm. Specifications about returned array of states
+are that all members of the result set are equal to all input states, because we
+have to pass \uv{empty} states as method parameter. Last specification told us,
+that only one cell of the last state is occupied. Specification is described in
+Listing \ref{ts2}.
+\newpage
+\lstinputlisting[label=ts2,caption=Defining result set parameters for
+Triangular solitaire algorithm]{src/solitaire/TriSol2.java}
+
+Finally the most important thing is to add to method specification transition
+constraints between two following states. In that constraint we specify that in
+all states except last one exists three different cells such, that first one
+(\verb|src|) and second one (\verb|via|) is occupied and the last one
+(\verb|dest|) is empty and that value for first and second one and for the
+second one and last one in the \verb|adj| matrix is the same and nonzero (that
+means using positions of object cell in the \verb|cells| array of actual state
+in \verb|adj| matrix to get type of adjacency if exists). If everything what was
+mentioned is fulfilled, then is possible to make a transition such, that all
+cell's occupied values are copied from actual state to following one except for
+those three states mentioned above, which are copied inversively (\verb|src|,
+\verb|via| and \verb|dest|) - see Listing \ref{ts3}.
+
+This implementation works fine only for instances with up to 21 cells in game
+field (side length 6). For larger instances was timeout treshold exceeded.
+\newpage
+\lstinputlisting[label=ts3,caption=Final implementation of
+Triangular solitaire algorithm]{src/solitaire/TriSol3.java}
 %*****************************************************************************
 \chapter{Comparison}
 
 \begin{itemize}
  \item Způsob, průběh a výsledky testování.
  \item Srovnání s existujícími řešeními, pokud jsou známy.
-\end{itemize} 
+\end{itemize}
 
 
 %*****************************************************************************
@@ -1846,7 +2134,22 @@ for Java Programs}, September 2010.
 \bibitem{horstmannCornell:coreJava}
 Cay Horstmann and Gary Cornell; \textit{Core Java}, 7th edition.
 
+\bibitem{jirku:progProlog}
+Petr Jirků a kol.; \textit{Programování v jazyku Prolog}, 1991.
 
+\bibitem{kolar:jui}
+doc. RNDr. Josef Kolář, CSc.; \textit{Jazyky pro umělou inteligenci}, 1994.
+
+\bibitem{nino:pls}
+Dr. Jaime Niño, Associate Professor of Computer Science; University of New
+Orleans; \textit{Programming language structure - lectures}, 2011.
+
+\bibitem{java:annotations}Annotations;\\
+\verb|http://download.oracle.com/javase/1,5.0/docs/guide/language/annotations.html|
+
+\bibitem{web:mathIsFun}Math
+is fun
+web;\\\verb|http://www.mathsisfun.com/games/triangle-peg-solitaire/index.html#|
 
 \end{thebibliography}
 
