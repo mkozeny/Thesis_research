@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PluginConfiguration requires="org.eclipse.hyades.test.tools.core">
+	<AgentControllerEnvironment configuration="default">
+		<Variable name="CLASSPATH_ORG_ECLIPSE_HYADES_TEST_TOOLS_CORE" position="append" value="%PLUGINS_HOME%/org.eclipse.tptp.test.tools.junit.plugin_4.5.1.v201001111000/junit.plugin.runner.jar"/>
+	</AgentControllerEnvironment>
+	<Option name="org.eclipse.tptp.test.tools.junit.plugin" type="version" value="4.5.1.v201001111000"/>
+</PluginConfiguration>

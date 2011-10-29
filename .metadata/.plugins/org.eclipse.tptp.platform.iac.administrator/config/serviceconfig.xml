@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AgentControllerConfiguration>
+	<AgentControllerEnvironment configuration="default">
+		<Variable name="JAVA_PATH" position="replace" value="/usr/lib/jvm/java-6-sun-1.6.0.20/jre/bin/java"/>
+		<Variable name="RASERVER_HOME" position="replace" value="/home/kozenym/Desktop/eclipse/plugins/org.eclipse.tptp.platform.ac.linux_ia32_4.4.202.v201002100300/agent_controller"/>
+		<Variable name="TPTP_AC_HOME" position="replace" value="%RASERVER_HOME%"/>
+		<Variable name="TPTP_AC_CONFIG_HOME" position="replace" value="/home/kozenym/Desktop/DP/squander_workspace/.metadata/.plugins/org.eclipse.tptp.platform.iac.administrator/config"/>
+		<Variable name="PLUGINS_HOME" position="replace" value="/home/kozenym/Desktop/eclipse/plugins"/>
+		<Variable name="LD_LIBRARY_PATH" position="prepend" value="%RASERVER_HOME%/lib"/>
+		<Variable name="SYS_TEMP_DIR" position="replace" value="%TEMP%"/>
+		<Variable name="LOCAL_AGENT_TEMP_DIR" position="replace" value="%SYS_TEMP_DIR%"/>
+		<Variable name="CLASSPATH_ORG_APACHE_COMMONS_LOGGING" position="append" value="/home/kozenym/Desktop/eclipse/plugins/org.apache.commons.logging_1.0.4.v200904062259.jar"/>
+		<Variable name="CLASSPATH_ORG_ECLIPSE_CORE_COMMANDS" position="append" value="/home/kozenym/Desktop/eclipse/plugins/org.eclipse.core.commands_3.5.0.I20090525-2000.jar"/>
+		<Variable name="CLASSPATH_ORG_ECLIPSE_CORE_RUNTIME" position="append" value="/home/kozenym/Desktop/eclipse/plugins/org.eclipse.core.runtime_3.5.0.v20090525.jar"/>
+		<Variable name="CLASSPATH_ORG_ECLIPSE_EQUINOX_COMMON" position="append" value="/home/kozenym/Desktop/eclipse/plugins/org.eclipse.equinox.common_3.5.1.R35x_v20090807-1100.jar"/>
+		<Variable name="CLASSPATH_ORG_ECLIPSE_OSGI" position="append" value="/home/kozenym/Desktop/eclipse/plugins/org.eclipse.osgi_3.5.2.R35x_v20100126.jar"/>
+		<Variable name="CLASSPATH_ORG_ECLIPSE_EMF_COMMON" position="append" value="/home/kozenym/Desktop/eclipse/plugins/org.eclipse.emf.common_2.5.0.v200906151043.jar"/>
+		<Variable name="CLASSPATH_ORG_ECLIPSE_EMF_ECORE" position="append" value="/home/kozenym/Desktop/eclipse/plugins/org.eclipse.emf.ecore_2.5.0.v200906151043.jar"/>
+		<Variable name="CLASSPATH_ORG_ECLIPSE_EMF_ECORE_XMI" position="append" value="/home/kozenym/Desktop/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.5.0.v200906151043.jar"/>
+		<Variable name="CLASSPATH_ORG_ECLIPSE_JFACE" position="append" value="/home/kozenym/Desktop/eclipse/plugins/org.eclipse.jface_3.5.2.M20100120-0800.jar"/>
+		<Variable name="CLASSPATH_ORG_ECLIPSE_SWT" position="append" value="/home/kozenym/Desktop/eclipse/plugins/org.eclipse.swt_3.5.2.v3557f.jar:/home/kozenym/Desktop/eclipse/plugins/org.eclipse.swt.gtk.linux.x86_3.5.2.v3557f.jar"/>
+		<Variable name="CLASSPATH_ORG_ECLIPSE_TPTP_PLATFORM_MODELS" position="append" value="/home/kozenym/Desktop/eclipse/plugins/org.eclipse.tptp.platform.models_4.6.2.v201002022040.jar"/>
+		<Variable name="CLASSPATH_ORG_ECLIPSE_TPTP_PLATFORM_MODELS_HIERARCHY" position="append" value="/home/kozenym/Desktop/eclipse/plugins/org.eclipse.tptp.platform.models.hierarchy_4.6.2.v200910191900.jar"/>
+		<Variable name="CLASSPATH_ORG_JUNIT" position="append" value="/home/kozenym/Desktop/eclipse/plugins/org.junit_3.8.2.v20090203-1005/junit.jar"/>
+		<Variable name="CLASSPATH_COM_IBM_ICU" position="append" value="/home/kozenym/Desktop/eclipse/plugins/com.ibm.icu_4.0.1.v20090822.jar"/>
+		<Variable name="CLASSPATH_ORG_APACHE_JAKARTA_COMMONS_LOGGING" position="append" value="%CLASSPATH_ORG_APACHE_COMMONS_LOGGING%"/>
+		<Variable name="CLASSPATH" position="append" value="/home/kozenym/Desktop/eclipse/plugins/org.eclipse.core.runtime_3.5.0.v20090525.jar"/>
+		<Variable name="CLASSPATH" position="append" value="/home/kozenym/Desktop/eclipse/plugins/org.eclipse.equinox.common_3.5.1.R35x_v20090807-1100.jar"/>
+		<Variable name="CLASSPATH" position="append" value="/home/kozenym/Desktop/eclipse/plugins/org.eclipse.osgi_3.5.2.R35x_v20100126.jar"/>
+	</AgentControllerEnvironment>
+	<ApplicationAliases>
+		<Application configuration="default" executable="java.exe" location="%SYS_TEMP_DIR%" path="%JAVA_PATH%">
+			<Variable name="CLASSPATH" position="append" value="%CLASSPATH_ORG_ECLIPSE_EQUINOX_COMMON%"/>
+			<Variable name="LD_LIBRARY_PATH" position="prepend" value="%RASERVER_HOME%/lib"/>
+		</Application>
+	</ApplicationAliases>
+	<Plugin path="/home/kozenym/Desktop/DP/squander_workspace/.metadata/.plugins"/>
+	<Agent path="%TPTP_AC_HOME%/agents"/>
+	<Jvm location="/usr/lib/jvm/java-6-sun-1.6.0.20/jre/lib/i386/server/libjvm.so"/>
+	<Logging directory="%TPTP_AC_CONFIG_HOME%" format="CBE" level="INFORMATION"/>
+	<ProcessController>%TPTP_AC_HOME%/bin/tptpProcessController</ProcessController>
+	<Connection name="Dev">
+		<TransportLayer loadlib="socketTL" type="TPTP_SOCKET">
+			<Configuration>
+				<Port>10006</Port>
+				<SecurityEnabled>false</SecurityEnabled>
+			</Configuration>
+			<CommandExtractor>tptpCmdExtr</CommandExtractor>
+		</TransportLayer>
+		<TransportLayer loadlib="namedPipeTL" type="TPTP_LOG">
+			<Configuration>
+				<PipeName>acmasterlog</PipeName>
+			</Configuration>
+			<CommandExtractor>tptpCmdExtr</CommandExtractor>
+		</TransportLayer>
+		<TransportLayer loadlib="namedPipeTL" type="TPTP_NAMEDPIPE">
+			<Configuration>
+				<PipeName>acmaster</PipeName>
+			</Configuration>
+			<CommandExtractor>tptpCmdExtr</CommandExtractor>
+		</TransportLayer>
+		<TransportLayer loadlib="sharedMemTL" type="TPTP_SHAREDMEM">
+			<Configuration>
+				<MemName>acbuffer</MemName>
+			</Configuration>
+			<CommandExtractor>tptpCmdExtr</CommandExtractor>
+		</TransportLayer>
+	</Connection>
+	<PeerConnectionTransport>TPTP_SOCKET</PeerConnectionTransport>
+</AgentControllerConfiguration>

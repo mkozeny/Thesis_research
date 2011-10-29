@@ -13,12 +13,12 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		GraphExtension ge = new GraphExtension(10);
+		GraphExtension ge = new GraphExtension(25);
 		ge.generateGraph();
 		Set<Node> resultA = new HashSet<Node>();
 		Set<Node> resultN = new HashSet<Node>();
 		Set<Edge> commonEdges = new HashSet<Edge>();
-		ge.solveZobecnenaBisekcniSirkaGrafuProblem(resultA, resultN, commonEdges, 2, 5);
+		ge.solveZobecnenaBisekcniSirkaGrafuProblem(resultA, resultN, commonEdges, 7, 7);
 		System.out.println("---SET A---");
 		for(Node n:resultA)
 		{

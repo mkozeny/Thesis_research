@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="edu.mit.csail.sdg.annotations.Invariant"/>
 <fullyQualifiedTypeName name="java.util.Queue"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="graph.ExtendedNode.State"/>
 <fullyQualifiedTypeName name="graph.GraphExtension"/>
 <fullyQualifiedTypeName name="main.GraphExecutor"/>
-<fullyQualifiedTypeName name="graph.ExtendedNode"/>
-<fullyQualifiedTypeName name="edu.mit.csail.sdg.annotations.Requires"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="edu.mit.csail.sdg.squander.annotations.FreshObjects"/>
+<fullyQualifiedTypeName name="game.Cell"/>
+<fullyQualifiedTypeName name="game.State"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Field"/>
+<fullyQualifiedTypeName name="java.lang.annotation.Target"/>
+<fullyQualifiedTypeName name="java.lang.annotation.ElementType"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="edu.mit.csail.sdg.squander.annotations.Options"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="graph.ExtendedNode"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="edu.mit.csail.sdg.annotations.Invariant"/>
+<fullyQualifiedTypeName name="edu.mit.csail.sdg.annotations.Requires"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,733 @@
+OndrejPalenik;Bc.;Ondřej;Páleník;PalenikO@gr.cd.cz;725,722,086;admin;CD_CN_man
+FilipPotucek;Bc.;Filip;Potůček;Potucek@gr.cd.cz;725,461,510;admin;CD_CN_red
+MilanBabica;Mgr.;Milan ;Babica;Babica@gr.cd.cz;724,769,585;admin;CD_CN_ved
+ZaludaP;Ing. ;Petr;Žaluda;ZaludaP@gr.cd.cz;972,232,100;cd1875;CD_GR
+Jiraskova;Bc. ;Blanka ;Jirásková;jiraskova@gr.cd.cz;972,232,230;cd1878;CD_GR_KGR_ost
+Petrakova;;Lucka;Petráková;petrakova@gr.cd.cz;972,232,050;cd1873;CD_GR_KGR_ost
+ZelenkovaK;Ing.;Kamila ;Zelenková;zelenkovak@gr.cd.cz;724,808,650;cd1619;CD_GR_KGR_ost
+Stuplova;Ing.;Jana;Štuplová;stuplova@gr.cd.cz;972,232,338;cd1880;CD_GR_KGR_red
+VostrakovaJ;;Jarmila ;Vostřáková;vostrakovaj@gr.cd.cz;972,232,203;cd1877;CD_GR_KGR_ved
+Jelen;JUDr.;Eduard;Jeleň;jelen@gr.cd.cz;724,518,685;cd1561;CD_GR_KKMR_red
+SyselM;Ing.;Martin;Sysel;SyselM@gr.cd.cz;725,741,273;cd1825;CD_GR_O17_red
+Adamek;Ing.;Adámek;Mojmír;Adamek@gr.cd.cz;606,659,196;cd1440;CD_GR_O17_ved
+Zajic;Ing.;Miroslav;Zajíc;Zajic@gr.cd.cz;602,298,854;cd1287;CD_GR_O17_ved
+KralJ;JUDr., CSc.;Jaroslav ;Král;KralJ@gr.cd.cz;972,232,160;cd1876;CD_GR_O19_red
+Holadova;;Dagmar;Holadová;holadova@gr.cd.cz;725,039,728;cd1670;CD_GR_O22_red
+Holakovsky;Mgr.;Petr;Holakovský;Holakovsky@gr.cd.cz;725,039,659;cd1669;CD_GR_O22_ved
+Krsnak;;Jan;Krsňák;krsnak@gr.cd.cz;606,050,957;cd1409;CD_GR_O22_ved
+Rakova;;Irena;Raková;Rakova@gr.cd.cz;602,680,797;cd1373;CD_GR_O22_ved
+Oharkova;Ing.;Michaela;Oharková;oharkova@gr.cd.cz;602,418,735;cd1303;CD_GR_O23_red
+Blecha;JUDr.;Jan;Blecha;blecha@gr.cd.cz;602,459,407;cd1306;CD_GR_O25_red
+Pazourkova;Mgr.;Eva;Pazourková;Pazourkova@gr.cd.cz;725,169,367;cd1683;CD_GR_O25_ved
+MikesL;Ing.;Ladislav;Mikeš;MikesL@gr.cd.cz;725,048,542;cd1671;CD_GR_O30_red
+Nebesky;Ing.;Michal;Nebeský;Nebesky@gr.cd.cz;972,232,743;cd1884;CD_GR_UEN
+Janalik;Ing.;Václav;Janalík;Janalik@gr.cd.cz;724,777,004;cd1607;CD_GR_UEN_CIS_BRN_man
+Laznickova;;Marie;Lázničková;Laznickova@gr.cd.cz;724,773,904;cd1604;CD_GR_UEN_CIS_BRN_ved
+Syrovatka;Ing.;Rudolf;Syrovátka;Syrovatka@dkv.plz.cd.cz;972,625,091;cd1947;CD_GR_UEN_CIS_BRN_ved
+Drimal;;Ivan;Dřímal;Drimal@gr.cd.cz;724,495,091;cd1552;CD_GR_UEN_CIS_OST_ost
+Kavkova;;Marcela;Kavková;Kavkova@gr.cd.cz;972,765,110;cd1962;CD_GR_UEN_CIS_OST_ost
+Molatova;;Šárka;Molatová;Molatova@gr.cd.cz;602,376,073;cd1298;CD_GR_UEN_CIS_OST_ost
+Vlachova;Ing.;Marcela;Vlachová;Vlachova@gr.cd.cz;602,782,374;cd1396;CD_GR_UEN_CIS_OST_ost
+Mestekova;Ing.;Iveta;Mestéková;Mestekova@gr.cd.cz;602,733,526;cd1387;CD_GR_UEN_CIS_OST_ved
+Skopalova;Ing.;Dana ;Skopalová;Skopalova@gr.cd.cz;602,570,690;cd1348;CD_GR_UEN_CIS_OST_ved
+Hejduk;Ing. ;Ladislav;Hejduk ;Hejduk@gr.cd.cz;602,130,308;cd1246;CD_GR_UEN_CIS_PHA_man
+BauerovaZ;;Zuzana ;Bauerová;BauerovaZ@gr.cd.cz;725,537,747;cd1773;CD_GR_UEN_CIS_PHA_ost
+Jindrichova;;Radomila ;Jindřichová;Jindrichova@gr.cd.cz;725,708,045;cd1817;CD_GR_UEN_CIS_PHA_ost
+Hruskova;;Radana;Hrušková;Hruskova@gr.cd.cz;602,291,605;cd1284;CD_GR_UEN_CIS_PHA_ved
+Kabrielova;;Hana;Kabrielová;Kabrielova@gr.cd.cz;602,283,936;cd1273;CD_GR_UEN_CIS_PHA_ved
+NovakovaJana;Ing.;Jana ;Nováková;NovakovaJana@gr.cd.cz;602,660,955;cd1369;CD_GR_UEN_CIS_PLZ_man
+Herbst;;Klára;Herbst;Herbst@gr.cd.cz;972,524,513;cd1930;CD_GR_UEN_CIS_PLZ_ost
+Karnold;Ing.;Václav;Karnold;Karnold@gr.cd.cz;972,524,408;cd1929;CD_GR_UEN_CIS_PLZ_ost
+Cirhanova;Ing.;Jiřina;Cirhanová;Cirhanova@gr.cd.cz;602,466,349;cd1308;CD_GR_UEN_CIS_PLZ_ved
+Sistkova;;Ludmila;Šístková;Sistkova@gr.cd.cz;606,165,768;cd1421;CD_GR_UEN_CIS_PLZ_ved
+Zachar;Ing.;Jiri;Zachař;Zachar@gr.cd.cz;602,655,540;cd1368;CD_GR_UEN_CIS_UNL_man
+DoubravaO;Ing.;Oldřich;Doubrava;Doubrava@gr.cd.cz;602,570,662;cd1345;CD_GR_UEN_CIS_UNL_ost
+NovakovaP;;Petra;Nováková;Novakovap@gr.cd.cz;606,610,615;cd1432;CD_GR_UEN_CIS_UNL_ost
+Juricova;;Vladimíra;Juricová;Juricova@gr.cd.cz;606,793,625;cd1462;CD_GR_UEN_CIS_UNL_ved
+PetrakovaZ;;Zuzana ;Petráková;PetrakovaZ@szdc.cz;724,496,755;cd1553;CD_GR_UEN_CIS_UNL_ved
+Kele;Ing. ;Iva;Kele;Kele@gr.cd.cz;725,004,211;cd1663;CD_GR_UEN_KEN_red
+Muller;Ing.;Libor;Muller;Muller@gr.cd.cz;603,280,367;cd1405;CD_GR_UEN_O1_red
+Bartoskova;Ing.;Magdalena;Bartošková;Bartoskova@gr.cd.cz;724,033,703;cd1491;CD_GR_UEN_O1_ved
+Betkova;Ing.;Kateřina;Beťková;Betkova@gr.cd.cz;724,832,752;cd1625;CD_GR_UEN_O1_ved
+GrohJ;Ing.;Jiří;Groh;GrohJ@gr.cd.cz;602,289,027;cd1276;CD_GR_UEN_O1_ved
+Parizkova;Ing.;Irena;Pařízková;Parizkova@gr.cd.cz;725,819,154;cd1841;CD_GR_UEN_O1_ved
+Simonicek;Ing.;Pavel;Šimoníček;Simonicek@gr.cd.cz;724,773,903;cd1603;CD_GR_UEN_O1_ved
+Winkelhofer;Ing.;Ladislav;Winkelhofer;Winkelhofer@gr.cd.cz;602,668,398;cd1372;CD_GR_UEN_O1_ved
+Musilova;Ing.;Ivana;Musilová;Musilova@gr.cd.cz ;972,233,176;cd1888;CD_GR_UEN_O2_ost
+ProchazkaV;Ing.;Vladimír ;Procházka;ProchazkaV@gr.cd.cz ;972,232,790;cd1886;CD_GR_UEN_O2_ost
+Vohralik;Ing.;Petr;Vohralík;Vohralik@gr.cd.cz;972,232,743;cd1885;CD_GR_UEN_O2_red
+FaltysekZ;Ing.;Zdeněk;Faltýsek;FaltysekZ@gr.cd.cz;602,289,251;cd1280;CD_GR_UEN_O2_ved
+FialovaM;;Marie;Fialová;FialovaM@gr.cd.cz;724,037,612;cd1493;CD_GR_UEN_O2_ved
+Frank;Ing.;Vladimír;Frank;Frank@gr.cd.cz;606,721,548;cd1448;CD_GR_UEN_O2_ved
+Koptova;Ing.;Olga;Koptová;Koptova@gr.cd.cz;724,071,331;cd1497;CD_GR_UEN_O2_ved
+CechovaZ;Ing.  Ph.D;Zuzana;Čechová;cechova@gr.cd.cz;724,285,220;cd1535;CD_GR_UEN_O2012_ost
+Dvorak;Ing. ;Radek ;Dvořák;dvorak@gr.cd.cz;724,574,441;cd1574;CD_GR_UEN_O2012_ost
+Stepankova;;Kateřina;Štěpánková;stepankova@gr.cd.cz;602,110,061;cd1239;CD_GR_UEN_O2012_ost
+Zakoucka;Ing. ;Lenka;Zákoucká;zakoucka@gr.cd.cz;724,957,757;cd1656;CD_GR_UEN_O2012_ost
+Mannova;Dr.;Martina;Mannová;Mannova@gr.cd.cz;602,262,178;cd1269;CD_GR_UEN_O2012_red
+Dousa;;Josef ;Douša;Dousa@gr.cd.cz;724,172,979;cd1512;CD_GR_UEN_O3_ost
+Efler;;David ;Efler;Efler@gr.cd.cz;602,687,056;cd1374;CD_GR_UEN_O3_ost
+Hruzova;Bc.;Pavlína;Hrůzová;Hruzova@gr.cd.cz;724,336,020;cd1538;CD_GR_UEN_O3_ost
+Metelka;Ing. ;Vladimír;Metelka;Metelka@gr.cd.cz;776,598,267;cd1865;CD_GR_UEN_O3_ost
+DluhosovaH;Ing., Mgr., M.B.A.;Hana;Dluhošová;DluhosovaH@gr.cd.cz;602,525,606;cd1321;CD_GR_UEN_O3_red
+DostalikJ;Ing.;Jiří;Dostalík;DostalikJ@gr.cd.cz;602,289,241;cd1279;CD_GR_UEN_O3_ved
+Brumlichova;Ing.;Marie;Brumlichová;Brumlichova@gr.cd.cz;724,255,081;cd1529;CD_GR_UEN_O6_red
+Fouskova;;Jaroslava;Fousková;Fouskova@gr.cd.cz;725,501,665;cd1765;CD_GR_UEN_O6_ved
+StepankovaH;Ing.;Helena;Štěpánková;StepankovaH@gr.cd.cz;724,066,245;cd1496;CD_GR_UEN_O6_ved
+Vrbicka;;Venuše;Vrbická;Vrbicka@gr.cd.cz;602,838,706;cd1401;CD_GR_UEN_O6_ved
+Belinova;Mgr.;Ivana;Bělinová;Belinova@gr.cd.cz;602,286,254;cd1274;CD_GR_UEN_O8_ost
+CernaV; Bc.;Věra;Černá ;CernaV@gr.cd.cz;724,740,129;cd1590;CD_GR_UEN_O8_ost
+Ciprova;;Irena;Ciprová ;Ciprova@gr.cd.cz;725,174,062;cd1705;CD_GR_UEN_O8_ost
+Hartmanova;;Štěpánka;Hartmanová;Hartmanova@gr.cd.cz;725,737,366;cd1824;CD_GR_UEN_O8_ost
+Janosova;;Věra;Janošová ;Janosova@gr.cd.cz;725,863,002;cd1849;CD_GR_UEN_O8_ost
+Kadavova;;Lenka;Kadavová;Kadavova@gr.cd.cz;724,361,753;cd1545;CD_GR_UEN_O8_ost
+Kantor;;Miroslav;Kantor;Kantor@gr.cd.cz;725,923,787;cd1857;CD_GR_UEN_O8_ost
+Karger;;Ladislav;Karger;Karger@gr.cd.cz;725,587,635;cd1802;CD_GR_UEN_O8_ost
+Klima;Ing.;Karel;Klíma;Klima@gr.cd.cz;725,923,805;cd1858;CD_GR_UEN_O8_ost
+Kulhava;Ing.;Petra;Kulhavá;Kulhava@gr.cd.cz;725,851,005;cd1846;CD_GR_UEN_O8_ost
+MuzikovaM;;Monika;Mužíková;MuzikovaM@gr.cd.cz;725,174,040;cd1687;CD_GR_UEN_O8_ost
+NavratilovaD;;Dana;Narátilová;NavratilovaD@gr.cd.cz;606,737,125;cd1450;CD_GR_UEN_O8_ost
+Roubal;;Leoš;Roubal;Roubal@gr.cd.cz;725,174,066;cd1708;CD_GR_UEN_O8_ost
+Silhan;;Josef;Šilhan;Silhan@gr.cd.cz;725,174,056;cd1699;CD_GR_UEN_O8_ost
+Taublerova;Ing.;Blanka;Taublerová;TaublerovaB@gr.cd.cz;724,808,654;cd1620;CD_GR_UEN_O8_ost
+Babica;Mgr.;Milan ;Babica;Babica@gr.cd.cz;724,769,585;cd1601;CD_GR_UEN_O8_red
+PalenikO;Bc.;Ondřej;Páleník;PalenikO@gr.cd.cz;725,722,086;cd1820;CD_GR_UEN_O8_red
+Potucek;;Filip;Potůček;Potucek@gr.cd.cz;725,461,510;cd1764;CD_GR_UEN_O8_red
+Ajgrmanova;Ing.;Zuzana;Ajgrmanová;Ajgrmanova@gr.cd.cz;606,089,080;cd1420;CD_GR_UEN_O8_ved
+KopeckaL;;Lydie;Kopecká;KopeckaL@gr.cd.cz;725,591,342;cd1804;CD_GR_UEN_O8_ved
+KrejcikM;Ing.;Martin;Krejčík ;KrejcikM@gr.cd.cz;606,089,078;cd1418;CD_GR_UEN_O8_ved
+StejskalM;Ing.;Martin;Stejskal;StejskalM@gr.cd.cz;724,049,035;cd1494;CD_GR_UEN_O8_ved
+Vosatka;Ing.;Jaroslav;Vosátka ;Vosatka@gr.cd.cz;606,089,079;cd1419;CD_GR_UEN_O8_ved
+Zohnova;Mgr.;Lenka;Zohnová;Zohnova@gr.cd.cz;725,850,113;cd1845;CD_GR_UEN_O8_ved
+Hrazdilova;;Milena;Hrázdilová;Hrazdilova@opt.cd.cz;972,749,317;cd1959;CD_GR_UEN_OPT_OL_ost
+Juracka;;Jiří;Juračka;Juracka@opt.cd.cz;972,749,313;cd1958;CD_GR_UEN_OPT_OL_ost
+Prenosilova;;Renáta;Přenosilová;Prenosilova@opt.cd.cz;602,130,805;cd1247;CD_GR_UEN_OPT_OL_ost
+Matlochova;;Jana;Matlochová;Matlochova@opt.cd.cz;972,749,309;cd1957;CD_GR_UEN_OPT_OL_ved
+Chyba;PhDr.;Radim;Chyba;Chyba@zc.cd.cz;724,037,462;cd1492;CD_GR_UEN_ZC_CST_man
+Voboril;Ing.;Zbyněk;Vobořil;Voboril@zc.cd.cz;724,341,633;cd1542;CD_GR_UEN_ZC_CST_man
+Bachorova;;Božena ;Báchorová;Bachorova@zc.cd.cz;725,174,039;cd1686;CD_GR_UEN_ZC_CST_ost
+Barek;;Petr;Bárek;Barek@zc.cd.cz;725,174,063;cd1706;CD_GR_UEN_ZC_CST_ost
+Bartosek;;Jaroslav;Bartošek;Bartosek@zc.cd.cz;725,174,044;cd1691;CD_GR_UEN_ZC_CST_ost
+Bumbalkova;;Ivana ;Bumbálková;Bumbalkova@zc.cd.cz;606,081,111;cd1417;CD_GR_UEN_ZC_CST_ost
+Ciklova;Ing.;Jana; Čiklova;Ciklova@zc.cd.cz;724,175,585;cd1517;CD_GR_UEN_ZC_CST_ost
+Culkova;;Jiřina;Culková;Culkova@zc.cd.cz;606,080,300;cd1416;CD_GR_UEN_ZC_CST_ost
+Dolecek;;Jan;Doleček;Dolecek@zc.cd.cz;725,174,058;cd1701;CD_GR_UEN_ZC_CST_ost
+Doskocil;Ing.;Pavel;Doskočil;Doskocil@zc.cd.cz;725,761,557;cd1832;CD_GR_UEN_ZC_CST_ost
+Gregorova;;Ivana ;Gregorová;Gregorova@zc.cd.cz;725,174,060;cd1703;CD_GR_UEN_ZC_CST_ost
+Grygarova;;Růžena;Grygarová;Grygarova@zc.cd.cz;972,734,260;cd1952;CD_GR_UEN_ZC_CST_ost
+Horakova;;Renata;Horáková;Horakova@zc.cd.cz;602,590,634;cd1353;CD_GR_UEN_ZC_CST_ost
+Kaderkova;;Eva;Kaderková;Kaderkova@zc.cd.cz;725,174,041;cd1688;CD_GR_UEN_ZC_CST_ost
+Kleinova;;Jana;Kleinová;Kleinova@zc.cd.cz;725,174,053;cd1697;CD_GR_UEN_ZC_CST_ost
+Kocarova;;Radka;Kočařová;Kocarova@zc.cd.cz;606,080,297;cd1415;CD_GR_UEN_ZC_CST_ost
+Kocmanova;;Helena ;Kocmanová;Kocmanova@zc.cd.cz;725,174,037;cd1684;CD_GR_UEN_ZC_CST_ost
+Koutova;;Zdena;Koutová;Koutova@zc.cd.cz;606,080,296;cd1414;CD_GR_UEN_ZC_CST_ost
+Kovar;;Tomáš;Kovář;Kovar@zc.cd.cz;972,325,886;cd1905;CD_GR_UEN_ZC_CST_ost
+Laskova;;Jana;Lásková;Laskova@zc.cd.cz;725,174,038;cd1685;CD_GR_UEN_ZC_CST_ost
+Macku;;Iveta;Macků;Macku@zc.cd.cz;972,325,825;cd1904;CD_GR_UEN_ZC_CST_ost
+Macurova;;Ivana;Mačurová;Macurova@zc.cd.cz;606,080,289;cd1411;CD_GR_UEN_ZC_CST_ost
+Marinka;;Tomáš;Marinka;Marinka@zc.cd.cz;606,080,294;cd1413;CD_GR_UEN_ZC_CST_ost
+Necasova;;Eva;Nečasová;Necasova@zc.cd.cz;725,174,051;cd1696;CD_GR_UEN_ZC_CST_ost
+Petrova;;Iva;Petrová;Petrova@zc.cd.cz;724,887,937;cd1652;CD_GR_UEN_ZC_CST_ost
+Privratsky;;Vlastimil;Přívratský;Privratsky@zc.cd.cz;725,174,043;cd1690;CD_GR_UEN_ZC_CST_ost
+Rouser;;Lukáš;Roušar;Rousar@zc.cd.cz;725,174,042;cd1689;CD_GR_UEN_ZC_CST_ost
+Sejkorova;DiE.;Vladimíra;Sejkorová;Sejkorova@zc.cd.cz;972,325,802;cd1902;CD_GR_UEN_ZC_CST_ost
+Schusserova;;Jana ;Schusserová;Schusserova@zc.cd.cz;725,174,045;cd1692;CD_GR_UEN_ZC_CST_ost
+Sikora;;Jiří;Sikora;Sikora@zc.cd.cz;725,174,050;cd1695;CD_GR_UEN_ZC_CST_ost
+Simandlova;;Renata ;Simandlová;Simandlova@zc.cd.cz;972,225,212;cd1869;CD_GR_UEN_ZC_CST_ost
+Simek;;Libor;Šimek;Simek@zc.cd.cz;725,174,057;cd1700;CD_GR_UEN_ZC_CST_ost
+Simkova;;Ivana ;Šimková;Simkova@zc.cd.cz;725,174,046;cd1693;CD_GR_UEN_ZC_CST_ost
+Sitny;;Martin;Sitný;Sitny@zc.cd.cz;606,080,292;cd1412;CD_GR_UEN_ZC_CST_ost
+Skerik;;Jan;Škeřík;Skerik@zc.cd.cz;602,350,368;cd1297;CD_GR_UEN_ZC_CST_ost
+Sobkova;;Dagmar;Sobková;Sobkova@zc.cd.cz;725,174,055;cd1698;CD_GR_UEN_ZC_CST_ost
+Sokol;;Milan;Sokol;Sokol@zc.cd.cz;725,174,064;cd1707;CD_GR_UEN_ZC_CST_ost
+Svabova;;Miluše;Švábová;Svabova@zc.cd.cz;972,225,263;cd1870;CD_GR_UEN_ZC_CST_ost
+Umlauf;;Stanislav;Umlauf;Umlauf@zc.cd.cz;725,174,059;cd1702;CD_GR_UEN_ZC_CST_ost
+Zapletalova;;Lenka;Zapletalová;Zapletalova@zc.cd.cz;725,174,047;cd1694;CD_GR_UEN_ZC_CST_ost
+Zeinertova;;Ivana ;Zeinertová;Zeinertova@zc.cd.cz;972,325,802;cd1903;CD_GR_UEN_ZC_CST_ost
+Stockmann;Ing., Ph.D.;Pavel;Stockmann;Stockmann@zc.cd.cz;724,163,420;cd1508;CD_GR_UEN_ZC_CST_red
+KrejciT;;Tomáš;Krejčí;Krejci@zc.cd.cz;725,174,061;cd1704;CD_GR_UEN_ZC_CST_ved
+MickovaB;;Blanka ;Mičkova;Mickova@zc.cd.cz;725,781,554;cd1834;CD_GR_UEN_ZC_CST_ved
+SuchaH;;Helena;Suchá;Sucha@zc.cd.cz;725,317,008;cd1757;CD_GR_UEN_ZC_CST_ved
+Zrnikova;;Iva;Zrníková;Zrnikova@zc.cd.cz;602,590,633;cd1352;CD_GR_UEN_ZC_CST_ved
+Blazek;Ing. ;Antonín;Blažek ;Blazek@gr.cd.cz;972,232,400;cd1882;CD_GR_UNOD
+Kana;Ing.;Jiří;Kaňa;kana@dkv.bno.cd.cz;777,324,977;cd1866;CD_GR_UNOD_DKV_BRN_man
+KotrbaA;Ing.;Alois;Kotrba;kotrba@dkv.bno.cd.cz;606,745,331;cd1452;CD_GR_UNOD_DKV_BRN_man
+Mrkos ;;Miroslav;Mrkos;mrkos@dkv.bno.cd.cz;602,539,926;cd1330;CD_GR_UNOD_DKV_BRN_man
+Novacek;;Jiří ;Nováček;novacek@dkv.bno.cd.cz;602,648,871;cd1366;CD_GR_UNOD_DKV_BRN_man
+NovakMa;Ing.;Marek;Novák;novak@dkv.bno.cd.cz;724,006,824;cd1484;CD_GR_UNOD_DKV_BRN_man
+Rederer;Ing.;Zbyněk;Rederer;rederer@dkv.bno.cd.cz;602,587,491;cd1351;CD_GR_UNOD_DKV_BRN_man
+Bartova;;Jitka;Bártová;Bartova@dkv.bno.cd.cz;724,378,707;cd1549;CD_GR_UNOD_DKV_BRN_ost
+Bohm;;Jiří;Böhm;bohm@dkv.bno.cd.cz;725,222,939;cd1730;CD_GR_UNOD_DKV_BRN_ost
+Cech;Ing.;Pavel ;Čech;cech@dkv.bno.cd.cz;724,753,021;cd1593;CD_GR_UNOD_DKV_BRN_ost
+Cupak;;Vítězslav;Cupák;cupak@dkv.bno.cd.cz;725,222,918;cd1724;CD_GR_UNOD_DKV_BRN_ost
+Duchacek;;Jan;Ducháček;duchacek@dkv.bno.cd.cz;725,222,969;cd1737;CD_GR_UNOD_DKV_BRN_ost
+Elstr;Ing.;Martin;Elstr;elstr@dkv.bno.cd.cz;725,222,912;cd1718;CD_GR_UNOD_DKV_BRN_ost
+Frak;;Vít;Franěk;frak@dkv.bno.cd.cz;725,222,959;cd1734;CD_GR_UNOD_DKV_BRN_ost
+Hroskova;;Růžena ;Hrošková;Hroskova@epos.cd.cz;725,222,975;cd1740;CD_GR_UNOD_DKV_BRN_ost
+Jedlik;;Vítězslav;jedlík;jedlik@dkv.bno.cd.cz;725,222,952;cd1731;CD_GR_UNOD_DKV_BRN_ost
+Knop;Ing.;Jiří;Knop;knop@dkv.bno.cd.cz;725,222,923;cd1726;CD_GR_UNOD_DKV_BRN_ost
+Kocik;;Jan;Kočík;kocik@dkv.bno.cd.cz;725,222,915;cd1721;CD_GR_UNOD_DKV_BRN_ost
+Kolouch;;Miloš;Kolouch;kolouch@dkv.bno.cd.cz;725,222,999;cd1745;CD_GR_UNOD_DKV_BRN_ost
+KrejciM;;Monika;Krejčí;krejci@dkv.bno.cd.cz;725,222,973;cd1739;CD_GR_UNOD_DKV_BRN_ost
+Lezak;Ing.;Zdeněk;Ležák;lezak@dkv.bno.cd.cz;725,222,930;cd1729;CD_GR_UNOD_DKV_BRN_ost
+MaskovaO;;Olga ;Mašková;MaskovaO@epos.cd.cz;724,378,702;cd1548;CD_GR_UNOD_DKV_BRN_ost
+MickovaJ;;Jitka ;Mičková;Mickova@dkv.bno.cd.cz;724,378,766;cd1550;CD_GR_UNOD_DKV_BRN_ost
+MrkosJ;;Jiří;Mrkos;mrkosj@dkv.bno.cd.cz;725,222,965;cd1736;CD_GR_UNOD_DKV_BRN_ost
+MusilO;;Ota;Musil;MusilO@dkv.bno.cd.cz;606,745,332;cd1453;CD_GR_UNOD_DKV_BRN_ost
+Novackova;;Helena;Nováčková;Novackova@dkv.bno.cd.cz;724,378,698;cd1547;CD_GR_UNOD_DKV_BRN_ost
+Otahal;;Radek ;Otáhal;otahal@dkv.bno.cd.cz;725,222,960;cd1735;CD_GR_UNOD_DKV_BRN_ost
+Prchal;;Jaroslav;Prchal;prchal@dkv.bno.cd.cz;725,222,954;cd1732;CD_GR_UNOD_DKV_BRN_ost
+Slovak;Ing.;Pavel;Slovák;slovak@dkv.bno.cd.cz;725,222,911;cd1717;CD_GR_UNOD_DKV_BRN_ost
+Sobotkova;;Vlasta;Sobotková;Sobotkova@dkv.bno.cd.cz;725,224,911;cd1746;CD_GR_UNOD_DKV_BRN_ost
+Topolsky;Ing.;Radek;Topolský;topolsky@dkv.bno.cd.cz;725,222,917;cd1723;CD_GR_UNOD_DKV_BRN_ost
+Vigdorovic;;Igor;Vigdorovič;vigdorovic@dkv.bno.cd.cz;725,222,929;cd1728;CD_GR_UNOD_DKV_BRN_ost
+Vilimek;;Libor;Vilímek;vilimek@dkv.bno.cd.cz;725,222,916;cd1722;CD_GR_UNOD_DKV_BRN_ost
+Zahradnicek;;Martin;Zahradníček;zahradnicek@dkv.bno.cd.cz;725,222,972;cd1738;CD_GR_UNOD_DKV_BRN_ost
+ZakJ;;Jiří;Žák;zak@dkv.bno.cd.cz;725,222,914;cd1720;CD_GR_UNOD_DKV_BRN_ost
+Zoufala;;Marie;Zoufalá;Zoufala@epos.cd.cz;602,539,925;cd1329;CD_GR_UNOD_DKV_BRN_ost
+Prusa;Ing.;Zdeněk;Průša;prusa@dkv.bno.cd.cz;602,550,768;cd1336;CD_GR_UNOD_DKV_BRN_red
+Ballis;Ing.;Petr;Balliš;Ballis@dkv.bno.cd.cz;602,263,934;cd1270;CD_GR_UNOD_DKV_BRN_ved
+Bubenik;Ing.;Martin;Bubeník;Bubenik@dkv.bno.cd.cz;725,222,922;cd1725;CD_GR_UNOD_DKV_BRN_ved
+Cerny;Ing.;Miroslav;Černý;cerny@dkv.bno.cd.cz;725,222,979;cd1741;CD_GR_UNOD_DKV_BRN_ved
+Cigak;;Stanislav;Cigák;Cigak@dkv.bno.cd.cz;602,766,801;cd1392;CD_GR_UNOD_DKV_BRN_ved
+Husek;Ing.;Michal;Hušek;Husek@dkv.bno.cd.cz;602,540,271;cd1335;CD_GR_UNOD_DKV_BRN_ved
+Jaksl;;Roman;Jakšl;Jaksl@dkv.bno.cd.cz;725,205,989;cd1715;CD_GR_UNOD_DKV_BRN_ved
+Karlin;;Miroslav;Karlín;Karlin@dkv.bno.cd.cz;724,006,826;cd1485;CD_GR_UNOD_DKV_BRN_ved
+Kotas;Ing.;Jiří;Kotas;Kotas@dkv.bno.cd.cz;725,222,996;cd1743;CD_GR_UNOD_DKV_BRN_ved
+LukesV;Ing.;Vladimír;Lukeš;Lukes@dkv.bno.cd.cz;602,540,247;cd1333;CD_GR_UNOD_DKV_BRN_ved
+Mahr;;Lubomír;Mahr;Mahr@dkv.bno.cd.cz;606,745,330;cd1451;CD_GR_UNOD_DKV_BRN_ved
+Marek;;Josef;Marek;Marek@dkv.bno.cd.cz;725,222,998;cd1744;CD_GR_UNOD_DKV_BRN_ved
+Michalec;;Josef;Michalec;Michalec@dkv.bno.cd.cz;725,572,043;cd1794;CD_GR_UNOD_DKV_BRN_ved
+Prazak;Ing.;Miroslav;Pražák;prazak@dkv.bno.cd.cz;725,222,913;cd1719;CD_GR_UNOD_DKV_BRN_ved
+Rabina;;Josef;Rabina;rabina@dkv.bno.cd.cz;725,222,924;cd1727;CD_GR_UNOD_DKV_BRN_ved
+Solansky;;Václav;Solanský;solansky@dkv.bno.cd.cz;725,222,980;cd1742;CD_GR_UNOD_DKV_BRN_ved
+Tomsic;;Václav;Tomšic;Tomsic@dkv.bno.cd.cz;725,222,902;cd1716;CD_GR_UNOD_DKV_BRN_ved
+Altmxva;;Jitka;Altmxvá;Altmxva@epos.cd.cz;725,560,419;cd1791;CD_GR_UNOD_DKV_CST_ost
+Bartonicek;Ing.;Václav;Bartoníček;bartonicek@dkv.cst.cd.cz;606,749,687;cd1454;CD_GR_UNOD_DKV_CST_ost
+BerakF;;František;Berák ;berak@dkv.cst.cd.cz;724,739,841;cd1589;CD_GR_UNOD_DKV_CST_ost
+Bouska;;Martin;Bouška;bouska@mail.cd.cz;724,706,108;cd1585;CD_GR_UNOD_DKV_CST_ost
+BraunovaI;;Irena;Braunová ;braunova@dkv.cst.cd.cz;972,341,522;cd1907;CD_GR_UNOD_DKV_CST_ost
+Brur;;Václav;Brur;Brur@dkv.lbc.cd.cz;724,655,062;cd1578;CD_GR_UNOD_DKV_CST_ost
+Bucek;;Jiří;Buček;bucek@epos.cd.cz;725,204,622;cd1714;CD_GR_UNOD_DKV_CST_ost
+Bures;;Vladimír;Bureš ;Bures@dkv.cst.cd.cz;725,687,004;cd1811;CD_GR_UNOD_DKV_CST_ost
+Cihak;;Martin;Čihák;cihak@dkv.lbc.cd.cz;724,655,083;cd1582;CD_GR_UNOD_DKV_CST_ost
+Cudova;;Lenka;Čudová ;cudova@epos.cd.cz;725,559,280;cd1789;CD_GR_UNOD_DKV_CST_ost
+Cuhelova;;Marta;Čuhelová ;cuhelova@dkv.cst.cd.cz;725,687,003;cd1810;CD_GR_UNOD_DKV_CST_ost
+Darbujanova;;Irena;Dařbujánová ;darbujxva@epos.cd.cz;972,222,933;cd1868;CD_GR_UNOD_DKV_CST_ost
+DockalVa;;Václav;Dočkal ;Dockal@dkv.cst.cd.cz;972,322,559;cd1893;CD_GR_UNOD_DKV_CST_ost
+DoubravaP;;Pavel;Doubrava ;doubrava@dkv.cst.cd.cz;603,875,526;cd1406;CD_GR_UNOD_DKV_CST_ost
+Dufek;;Vladislav;Dufek ;Dufek@dkv.cst.cd.cz;725,266,037;cd1754;CD_GR_UNOD_DKV_CST_ost
+Ducheckova;;Dana ;Duchečková;Ducheckova@epos.cd.cz;972,322,833;cd1895;CD_GR_UNOD_DKV_CST_ost
+Ehrenbereger;;Josef;Ehrenberger ;ehrenbereger@dkv.cst.cd.cz;725,552,527;cd1779;CD_GR_UNOD_DKV_CST_ost
+Farkac;;Karel;Farkač;farkac@mail.cd.cz;724,706,112;cd1587;CD_GR_UNOD_DKV_CST_ost
+FialaL;;Libor;Fiala ;fiala@dkv.lbc.cd.cz;724,655,082;cd1581;CD_GR_UNOD_DKV_CST_ost
+Gregarova;;Jitka ;Gregarová;gregarova@dkv.cst.cd.cz;724,266,022;cd1532;CD_GR_UNOD_DKV_CST_ost
+Groger;;Ján;Griger ;Griger@mail.cd.cz;972,322,840;cd1896;CD_GR_UNOD_DKV_CST_ost
+Hulinska;Ing.;Ivana;Hulínská;hulinska@mail.cd.cz;724,655,030;cd1577;CD_GR_UNOD_DKV_CST_ost
+Charvat;;Lukáš;Charvát;Charvat@epos.cd.cz;972,341,255;cd1906;CD_GR_UNOD_DKV_CST_ost
+Chudy;Ing.;Evžen;Chudý;chudy@dkv.cst.cd.cz;725,687,006;cd1812;CD_GR_UNOD_DKV_CST_ost
+Jehlickova;;Ivana;Jehličková;jehlickova@epos.cd.cz;724,349,671;cd1544;CD_GR_UNOD_DKV_CST_ost
+Juk;;Bohuslav;Juk ;Juk@dkv.cst.cd.cz;725,552,535;cd1782;CD_GR_UNOD_DKV_CST_ost
+Kalousek;;Josef;Kalousek ;Kalousek@dkv.cst.cd.cz;725,583,946;cd1799;CD_GR_UNOD_DKV_CST_ost
+Kaplan;;Lubomir;Kaplan ;Kaplan@dkv.cst.cz;725,687,001;cd1808;CD_GR_UNOD_DKV_CST_ost
+Kargerova;;Marta;Kargerová;kargerova@dkv.cst.cd.cz;725,266,023;cd1747;CD_GR_UNOD_DKV_CST_ost
+Kopriva;Ing.;Jiří ;Kopřiva;kopriva@dkv.cst.cd.cz;725,266,036;cd1753;CD_GR_UNOD_DKV_CST_ost
+Kubis;Ing.;Emil;Kubiš ;kubis@mail.cd.cz;602,435,233;cd1304;CD_GR_UNOD_DKV_CST_ost
+KuceraP;;Petr;Kučera;Kucera@dkv.lbc.cd.cz;724,655,064;cd1579;CD_GR_UNOD_DKV_CST_ost
+Letal;;Stanislav;Létal ;letal@mail.cd.cz;606,785,241;cd1461;CD_GR_UNOD_DKV_CST_ost
+Mackerle;;Bořivoj;Mackerle ;mackerle@mail.cd.cz;724,706,109;cd1586;CD_GR_UNOD_DKV_CST_ost
+Mach;;Vladimír;Mach ;mach@dkv.cst.cd.cz;725,266,033;cd1752;CD_GR_UNOD_DKV_CST_ost
+MarekJi;;Jiří;Marek;MarekJi@mail.cd.cz;972,325,484;cd1901;CD_GR_UNOD_DKV_CST_ost
+Martxva;;Milena;Marťxvá ;martxva@dkv.cst.cd.cz;725,266,027;cd1749;CD_GR_UNOD_DKV_CST_ost
+Masatova;;Gabriela;Mašatová ;Masatova@epos.cd.cz;972,322,937;cd1897;CD_GR_UNOD_DKV_CST_ost
+Mikan;Ing.;Zdeněk;Mikan ;mikan@dkv.cst.cd.cz;972,322,436;cd1891;CD_GR_UNOD_DKV_CST_ost
+NovakMil2;Ing.;Milan ;Novák;novak@dkv.cst.cd.cz;602,737,130;cd1388;CD_GR_UNOD_DKV_CST_ost
+Nymsova;Ing. ;Janka;Nymšová;Nymsova@dkv.cst.cd.cz;725,034,685;cd1666;CD_GR_UNOD_DKV_CST_ost
+Oplistilova;;Václava;Oplíštilová ;Oplistilova@epos.cd.cz;972,322,407;cd1890;CD_GR_UNOD_DKV_CST_ost
+Pavlis;Ing.;Zdeněk;Pavliš ;pavlis@mail.cd.cz;725,687,002;cd1809;CD_GR_UNOD_DKV_CST_ost
+PelcP;;Petr;Pelc ;pelcp@dkv.cst.cd.cz;723,379,413;cd1480;CD_GR_UNOD_DKV_CST_ost
+Reger;;Aleš ;Reger;reger@dkv.cst.cd.cz;972,325,163;cd1898;CD_GR_UNOD_DKV_CST_ost
+Rehak;;Zdeněk;Řehák ;Rehak@dkv.cst.cd.cz;724,573,215;cd1571;CD_GR_UNOD_DKV_CST_ost
+Rousar;;Vladimír;Roušar ;rousar@dkv.cst.cd.cz;724,064,626;cd1495;CD_GR_UNOD_DKV_CST_ost
+Rousek;;Michal ;Rousek;rousek@dkv.cst.cd.cz;724,520,854;cd1562;CD_GR_UNOD_DKV_CST_ost
+Rubek;Ing.;Slavomír;Rubek ;Rubek@dkv.cst.cd.cz;972,325,243;cd1899;CD_GR_UNOD_DKV_CST_ost
+RybaV;Ing.;Vladimír;Ryba;RybaV@mail.cd.cz;725,266,031;cd1750;CD_GR_UNOD_DKV_CST_ost
+Sauer;;Jaroslav;Šauer ;Sauer@dkv.cst.cd.cz;725,552,534;cd1781;CD_GR_UNOD_DKV_CST_ost
+Sedek;;Michal;Šedek;sedek@dkv.cst.cd.cz;725,034,687;cd1667;CD_GR_UNOD_DKV_CST_ost
+Sedlackova;;Zdeňka;Sedláčková ;sedlackova@mail.cd.cz;972,322,559;cd1894;CD_GR_UNOD_DKV_CST_ost
+Sedo;Ing.;Jiří ;Šedo;sedo@dkv.cst.cd.cz;606,785,236;cd1460;CD_GR_UNOD_DKV_CST_ost
+Semerak;Ing.;Jan;Semerák ;semerak@dkv.cst.cd.cz;606,609,644;cd1428;CD_GR_UNOD_DKV_CST_ost
+Setina;;Martin;Šetina ;setina@dkv.cst.cd.cz;725,266,026;cd1748;CD_GR_UNOD_DKV_CST_ost
+Spurny;;Václav;Spurný;spurny@dkv.cst.cd.cz;725,034,679;cd1665;CD_GR_UNOD_DKV_CST_ost
+Sritr;Ing.;Martin;Šritr ;sritr@mail.cd.cz;724,655,080;cd1580;CD_GR_UNOD_DKV_CST_ost
+Stejskal;Ing.;Miroslav;Stejskal ;stejskal@dkv.cst.cd.cz;606,609,647;cd1429;CD_GR_UNOD_DKV_CST_ost
+Stekly;;Jiří;Steklý;stekly@epos.cd.cz;725,582,247;cd1798;CD_GR_UNOD_DKV_CST_ost
+Stembirek;Ing.;Leoš;Štembírek ;stembirek@dkv.cst.cd.cz;724,706,107;cd1584;CD_GR_UNOD_DKV_CST_ost
+Stransky;;Jan;Stránský ;stransky@dkv.cst.cd.cz;972,325,260;cd1900;CD_GR_UNOD_DKV_CST_ost
+SvabJ;;Jan;Šváb ;SvabJ@epos.cd.cz;728,194,468;cd1859;CD_GR_UNOD_DKV_CST_ost
+Taslarova;;Helena;Táslarová ;Taslarova@epos.cd.cz;725,560,471;cd1792;CD_GR_UNOD_DKV_CST_ost
+TomaskovaE;Ing.;Eva;Tomášková;tomaskova@dkv.cst.cd.cz;724,302,701;cd1537;CD_GR_UNOD_DKV_CST_ost
+TomaskovaP;;Pavlína;Tomášková;Tomaskova@epos.cd.cz;972,342,309;cd1908;CD_GR_UNOD_DKV_CST_ost
+Vasatko;Ing.;Petr;Vašátko ;vasatko@dkv.cst.cd.cz;725,552,528;cd1780;CD_GR_UNOD_DKV_CST_ost
+Verr;Bc.;Luboš;Verr ;verr@dkv.cst.cd.cz;606,785,235;cd1459;CD_GR_UNOD_DKV_CST_ost
+Vinkler;Ing.;Jaroslav;Vinkler;vinkler@dkv.cst.cd.cz;725,266,032;cd1751;CD_GR_UNOD_DKV_CST_ost
+Vonka;Ing.;Jan ;Vonka;vonka@dkv.cst.cd.cz;606,609,648;cd1430;CD_GR_UNOD_DKV_CST_ost
+Zacek;;Jaroslav ;Žáček;zacek@mail.cd.cz;724,573,216;cd1572;CD_GR_UNOD_DKV_CST_ost
+Zahradka;;Zdeněk;Zahrádka ;Zahradka@mail.cd.cz;972,322,551;cd1892;CD_GR_UNOD_DKV_CST_ost
+Zerovnicky;;Zdeněk;Žerovnický ;zerovnicky@epos.cd.cz;725,069,037;cd1676;CD_GR_UNOD_DKV_CST_ost
+Janousek;Ing.;Vladimír;Janoušek;Janousek@dkv.plz.cd.cz;602,385,489;cd1300;CD_GR_UNOD_DKV_OLC_man
+Bacovcinova;;Xenie;Bačovčinová;bacovcinova@epos.cd.cz;972,525,295;cd1932;CD_GR_UNOD_DKV_OLC_ost
+Barteczek;Ing.;Marián ;Barteczek;barteczek@dkv.olc.cd.cz;602,769,471;cd1393;CD_GR_UNOD_DKV_OLC_ost
+Bedova;;Hana;Bedová;bedova@epos.cd.cz;972,544,936;cd1941;CD_GR_UNOD_DKV_OLC_ost
+Bulava;;Milan;Bulava;bulava@dkv.olc.cd.cz;725,575,095;cd1795;CD_GR_UNOD_DKV_OLC_ost
+Burda;;Vítězslav;Burda;burda@dkv.olc.cd.cz;602,784,228;cd1399;CD_GR_UNOD_DKV_OLC_ost
+Drevojak;;Petr;Dřevoják;drevojak@dkv.olc.cd.cz;606,643,696;cd1437;CD_GR_UNOD_DKV_OLC_ost
+Eis;;Radek;Eis;eis@dkv.plz.cd.cz;725,876,000;cd1850;CD_GR_UNOD_DKV_OLC_ost
+FialaJ;;Jiří;Fiala;fiala@dkv.plz.cd.cz;725,750,784;cd1827;CD_GR_UNOD_DKV_OLC_ost
+Gabrlik;Ing.;Jiří;Gabrlík;gabrlik@epos.cd.cz;725,880,990;cd1855;CD_GR_UNOD_DKV_OLC_ost
+Heinzova;;Jiřina;Heinzová;heinzova@dkv.plz.cd.cz;972,443,345;cd1919;CD_GR_UNOD_DKV_OLC_ost
+Hlavacova;;Irena;Hlaváčová;hlavacova@dkv.plz.cd.cz;602,557,031;cd1339;CD_GR_UNOD_DKV_OLC_ost
+Hlisnikovsky;;Jaroslav;Hlisníkovský;hlisnikovsky@dkv.olc.cd.cz;602,114,709;cd1241;CD_GR_UNOD_DKV_OLC_ost
+HrabalP;;Petr;Hrabal;hrabalP@epos.cd.cz;725,880,989;cd1854;CD_GR_UNOD_DKV_OLC_ost
+Jestrab;;Marek;Jestřáb;jestrab@dkv.olc.cd.cz;602,159,668;cd1253;CD_GR_UNOD_DKV_OLC_ost
+Jochecivo;;Ivo;Jochec;jochecivo@epos.cd.cz;725,057,400;cd1672;CD_GR_UNOD_DKV_OLC_ost
+Kacmar;;Jan;Kačmár;kacmar@epos.cd.cz;725,880,981;cd1852;CD_GR_UNOD_DKV_OLC_ost
+Kadlec ;Ing.;Václav;Kadlec;kadlec@dkv.plz.cd.cz;602,570,612;cd1344;CD_GR_UNOD_DKV_OLC_ost
+KadlecekL;;Libor;Kadleček;kadlecekl@epos.cd.cz;725,880,988;cd1853;CD_GR_UNOD_DKV_OLC_ost
+Kadounova;;Ludmila;Kadounová;kadounova@dkv.plz.cd.cz;972,544,238;cd1936;CD_GR_UNOD_DKV_OLC_ost
+Kasik;;Pavel;Kašík;kasik@dkv.olc.cd.cz;606,719,585;cd1443;CD_GR_UNOD_DKV_OLC_ost
+Klus;Ing.;Radim;Klus;klus@dkv.olc.cd.cz;725,880,978;cd1851;CD_GR_UNOD_DKV_OLC_ost
+Komarek;;Josef;Komárek;komarek@dkv.olc.cd.cz;602,577,214;cd1350;CD_GR_UNOD_DKV_OLC_ost
+KorbelPavel;;Pavel ;Korbel;korbelpavel@epos.cd.cz;606,720,541;cd1447;CD_GR_UNOD_DKV_OLC_ost
+Kramperova;;Dagmar;Kramperová;kramperova@dkv.plz.cd.cz;972,552,845;cd1943;CD_GR_UNOD_DKV_OLC_ost
+Kredbova;;Ilona;Kredbová;kredbova@dkv.plz.cd.cz;972,428,425;cd1917;CD_GR_UNOD_DKV_OLC_ost
+Kubata;Ing.;Václav;Kubata;kubata@dkv.plz.cz;724,757,309;cd1597;CD_GR_UNOD_DKV_OLC_ost
+Les;;Luboš;Les;les@dkv.plz.cd.cz;972,524,125;cd1927;CD_GR_UNOD_DKV_OLC_ost
+Malanik;;Jiří;Malaník;malanik@epos.cd.cz;605,452,836;cd1407;CD_GR_UNOD_DKV_OLC_ost
+Marsal;;Jan;Maršál;marsal@epos.cd.cz;972,251,862;cd1889;CD_GR_UNOD_DKV_OLC_ost
+NovakJi2;;Jiří;Novák;novak@dkv.olc.cd.cz;606,641,794;cd1435;CD_GR_UNOD_DKV_OLC_ost
+Pecivova;;Ludmila;Pečivová;pecivova@dkv.olc.cd.cz;724,552,885;cd1567;CD_GR_UNOD_DKV_OLC_ost
+Pesek;;Josef;Pešek;pesek@epos.cd.cz;725,057,541;cd1673;CD_GR_UNOD_DKV_OLC_ost
+Peterkova;;Soňa;Peterková;peterkova@epos.cd.cz;972,522,367;cd1921;CD_GR_UNOD_DKV_OLC_ost
+Radrova;;Ludmila;Rádrová;radrova@dkv.plz.cd.cz;972,543,651;cd1933;CD_GR_UNOD_DKV_OLC_ost
+SafarA;;Antonín;Šafář;safarA@epos.cd.cz;607,263,447;cd1473;CD_GR_UNOD_DKV_OLC_ost
+Selepova;;Věra;Šelepová;selepova@dkv.plz.cd.cz;972 5 24125;cd1963;CD_GR_UNOD_DKV_OLC_ost
+Shejbalova;Ing.;Jarmila ;Shejbalová;shejbalova@ldgw.cd.cz;606,871,950;cd1471;CD_GR_UNOD_DKV_OLC_ost
+Silikroman;;Roman;Šilík;silikroman@epos.cd.cz;724,986,540;cd1661;CD_GR_UNOD_DKV_OLC_ost
+SkladalA;;Augustin;Skládal;skladal@epos.cd.cz;725,880,991;cd1856;CD_GR_UNOD_DKV_OLC_ost
+Skoda;;Martin;Škoda;skoda@dkv.olc.cd.cz;724,248,299;cd1525;CD_GR_UNOD_DKV_OLC_ost
+Skoumal;Ing.;Vladimír;Skoumal;skoumal@dkv.olc.cd.cz;724,137,021;cd1506;CD_GR_UNOD_DKV_OLC_ost
+Skricik;Ing.;Pavel;Skřičík;skricik@dkv.olc.cd.cz;725,063,900;cd1674;CD_GR_UNOD_DKV_OLC_ost
+Strakova;Ing.;Eva;Straková;strakova@dkv.olc.cd.cz;606,641,954;cd1436;CD_GR_UNOD_DKV_OLC_ost
+Trubelova;;Šárka;Trubelová;trubelova@dkv.plz.cd.cz;972,543,865;cd1934;CD_GR_UNOD_DKV_OLC_ost
+Tvarohova;;Jaroslava;Tvarohová;tvarohova@dkv.plz.cd.cz;972,443,475;cd1920;CD_GR_UNOD_DKV_OLC_ost
+Vak;;Radoslav;Vaněk;vak@epos.cd.cz;724,200,039;cd1518;CD_GR_UNOD_DKV_OLC_ost
+Vcelakova;;Jana;Včeláková;vcelakova@dkv.plz.cd.cz;972,552,796;cd1942;CD_GR_UNOD_DKV_OLC_ost
+Vrbikova;;Jana;Vrbíková;vrbikova@epos.cd.cz;972,740,477;cd1953;CD_GR_UNOD_DKV_OLC_ost
+ZabranskyKarel;;Karel;Zábranský;zabranskykarel@epos.cd.cz;724,960,583;cd1657;CD_GR_UNOD_DKV_OLC_ost
+Zazvorka;Ing.;Miroslav;Zázvorka;zazvorka@dkv.olc.cd.cz;602,161,386;cd1254;CD_GR_UNOD_DKV_OLC_ost
+Skrivanova;Ing.;Květuše;Skřivanová;Skrivanova@dkv.plz.cz;602,418,280;cd1302;CD_GR_UNOD_DKV_OLC_red
+Heindl;Bc.;Michal;Heindl;Heindl@dkv.plz.cd.cz;724,757,308;cd1596;CD_GR_UNOD_DKV_OLC_ved
+Krumpolcova;;Ivana;Krumpolcová;krumpolcova@dkv.olc.cd.cz;606,720,379;cd1444;CD_GR_UNOD_DKV_OLC_ved
+Ryznar;Ing.;Jan;Rýznar;ryznar@dkv.olc.cd.cz;602,540,245;cd1332;CD_GR_UNOD_DKV_OLC_ved
+Sladek;Ing.;Štěpán;Sládek;Sladek@dkv.plz.cd.cz;602,931,243;cd1403;CD_GR_UNOD_DKV_OLC_ved
+Svobodova;Bc.;Jiřina;Svobodová;Svobodova@dkv.plz.cd.cz;602,557,071;cd1340;CD_GR_UNOD_DKV_OLC_ved
+Boehmova;Bc.;Věra;Boehmová;boehmova@dkv.olc.cd.cz;725,524,735;cd1769;CD_GR_UNOD_DKV_OLC_ved
+Bucher;;Pavel;Bucher;bucher@epos.cd.cz;606,641,386;cd1434;CD_GR_UNOD_DKV_OLC_ved
+Jerabek;Ing.;Michal;Jeřábek;jerabek@dkv.olc.cd.cz;724,981,471;cd1660;CD_GR_UNOD_DKV_OLC_ved
+Kviderova;Ing. ;Eva;Kvíderová;Kviderova@dkv.plz.cd.cz;724,341,632;cd1541;CD_GR_UNOD_DKV_OLC_ved
+Mik;Ing.;Stanislav;Mik;mik@dkv.olc.cd.cz;724,751,821;cd1592;CD_GR_UNOD_DKV_OLC_ved
+Molenda;Ing.;Tomáš;Molenda;molenda@dkv.olc.cd.cz;606,640,934;cd1433;CD_GR_UNOD_DKV_OLC_ved
+Sigmund;;Vilém;Sigmund;sigmund@dkv.olc.cd.cz;602,540,249;cd1334;CD_GR_UNOD_DKV_OLC_ved
+Slimar;Ing.;Martin;Šlímar;slimar@dkv.olc.cd.cz;725,063,906;cd1675;CD_GR_UNOD_DKV_OLC_ved
+Vlkova;;Zdeňka;Vlková;vlkova@dkv.olc.cd.cz;972,741,159;cd1954;CD_GR_UNOD_DKV_OLC_ved
+Zrnka;Ing.;Zdeněk;Zrnka;zrnka@dkv.olc.cd.cz;606,749,980;cd1455;CD_GR_UNOD_DKV_OLC_ved
+Trojak;Ing.;Milan;Troják;TrojakM@mail.cd.cz;602,110,091;cd1240;CD_GR_UNOD_DKV_PHA_man
+NovakMil;Ing.;Milan;Novák;NovakMil@mail.cd.cz;972,229,018;cd1871;CD_GR_UNOD_DKV_PHA_ost
+Olsa;;Vratislav;Olša;Olsa@mail.cd.cz;602,316,052;cd1291;CD_GR_UNOD_DKV_PHA_ost
+VorelJ;;Jiří;Vorel;VorelJ@mail.cd.cz;724,173,089;cd1513;CD_GR_UNOD_DKV_PHA_ost
+Vysoky;;František;Vysoký;Vysoky@mail.cd.cz;724,245,206;cd1524;CD_GR_UNOD_DKV_PHA_ost
+FilipJ;;Jiří;Filip;FilipJ@mail.cd.cz;602,308,450;cd1288;CD_GR_UNOD_DKV_PHA_ved
+Kratkaa;;Alena;Krátká;Kratkaa@mail.cd.cz;724,248,513;cd1526;CD_GR_UNOD_DKV_PHA_ved
+Zitka;Ing.;Miloš;Zítka;Zitka@mail.cd.cz;602,316,077;cd1292;CD_GR_UNOD_DKV_PHA_ved
+Fousek;;Miroslav;Fousek;Fousek@mail.cd.cz;602,463,306;cd1307;CD_GR_UNOD_DKV_PHA_ved
+Husa;;Zbyněk;Husa;Husa@mail.cd.cz;724,173,098;cd1515;CD_GR_UNOD_DKV_PHA_ved
+NovakJi;Ing.;Jindřich;Novák;NovakJi@mail.cd.cz;602,316,102;cd1293;CD_GR_UNOD_DKV_PHA_ved
+Strelka;;Jan;Střelka;Strelka@mail.cd.cz;724,173,099;cd1516;CD_GR_UNOD_DKV_PHA_ved
+Vacek;;Emanuel;Vaněček;Vacek@mail.cd.cz;724,173,091;cd1514;CD_GR_UNOD_DKV_PHA_ved
+Hladky;Mgr.;Jiří ;Hladký;Hladky@kcod.cd.cz;724,256,839;cd1531;CD_GR_UNOD_KCOD_BRN_ost
+Marcisinova;;Dana;Marcišinová;Marcisinova@kcod.cd.cz;602,528,218;cd1323;CD_GR_UNOD_KCOD_BRN_ost
+Novotny;Ing. ;Petr;Novotný;Novotny@kcod.cd.cz;606,793,652;cd1465;CD_GR_UNOD_KCOD_BRN_ost
+Teplik;Ing. ;Michal ;Teplík;Teplik@kcod.cd.cz;607,709,649;cd1475;CD_GR_UNOD_KCOD_BRN_ost
+Zhorova;;Milena;Zhořová;Zhorova@kcod.cd.cz;606,871,883;cd1469;CD_GR_UNOD_KCOD_BRN_ost
+Kotrman;Ing. ;Jiří ;Kotrman;Kotrman@kcod.cd.cz;602,570,681;cd1346;CD_GR_UNOD_KCOD_BRN_ved
+Matyskova;;Věra;Matysková;matyskova@kcod.cd.cz;602,172,379;cd1256;CD_GR_UNOD_KCOD_HKR_ost
+FialaT;;Tomáš;Fiala;fiala@kcod.cd.cz;725,552,380;cd1778;CD_GR_UNOD_KCOD_HKR_ved
+HofmanovaBarakova;;Dana;Hofmanová Baráková;HofmanovaBarakova@kcod.cd.cz;602,239,613;cd1265;CD_GR_UNOD_KCOD_JHL_ost
+Pavlickova;;Jaroslava;Pavlíčková;pavlickova@kcod.cd.cz;602,239,784;cd1266;CD_GR_UNOD_KCOD_JHL_ost
+Fligl;;Zbyněk;Flígl;fligl@kcod.cd.cz;724,251,948;cd1528;CD_GR_UNOD_KCOD_KVR_ost
+Slapkova;;Jana ;Šlapová;slapova@kcod.cd.cz;724,163,964;cd1509;CD_GR_UNOD_KCOD_KVR_ost
+Simuk;Ing.;Jan;Šimůk;Simuk@kcod.cd.cz;602,289,012;cd1275;CD_GR_UNOD_KCOD_LBC_ost
+Kot;;Radek;Kot;kot@kcod.cd.cz;606,793,649;cd1464;CD_GR_UNOD_KCOD_OLC_ost
+Novakova;Ing.;Marta;Nováková;novakova@kcod.cd.cz;725,757,876;cd1830;CD_GR_UNOD_KCOD_OLC_ost
+Motykova;Ing.;Hana;Motyková;motykova@kcod.cd.cz;724,995,408;cd1662;CD_GR_UNOD_KCOD_OLC_red
+Divisova;Ing. ;Kateřina;Divišová;divisova@kcod.cd.cz;724,748,682;cd1591;CD_GR_UNOD_KCOD_OST_ost
+Doubkova;Bc. ;Libuše ;Doubková;doubkova@kcod.cd.cz;606,603,238;cd1426;CD_GR_UNOD_KCOD_OST_ost
+Kasa;Ing. ;Milan;Kaša;kasa@kcod.cd.cz;972,762,407;cd1961;CD_GR_UNOD_KCOD_OST_ost
+Semradova;;Jana;Semrádová;semradova@kcod.cd.cz;725,557,113;cd1786;CD_GR_UNOD_KCOD_OST_ost
+Schindlerova;;Libuše ;Schindlerová;schindlerova@kcod.cd.cz;606,603,240;cd1427;CD_GR_UNOD_KCOD_OST_ost
+Svojanovsky;;Adam;Svojanovský;Svojanovsky@kcod.cd.cz;606,762,527;cd1457;CD_GR_UNOD_KCOD_OST_ost
+Trckova;;Ilona ;Trčková;trckova@kcod.cd.cz;972,762,256;cd1960;CD_GR_UNOD_KCOD_OST_ost
+Gavenda;;Jindřich;Gavenda;gavenda@kcod.cd.cz;602,592,967;cd1354;CD_GR_UNOD_KCOD_OST_ved
+Chlebkova;;Alena;Chlebková;chlebkova@kcod.cd.cz;602,140,487;cd1249;CD_GR_UNOD_KCOD_OST_ved
+Jurakova;Ing.;Šárka ;Juráková;Jurakova@kcod.cd.cz;602,783,532;cd1397;CD_GR_UNOD_KCOD_OST_ved
+Mendrok;Ing.;Luboš;Mendrok;mendrok@kcod.cd.cz;606,733,971;cd1449;CD_GR_UNOD_KCOD_OST_ved
+Pejskova;Ing.;Svatava;Pejšková;pejskova@kcod.cd.cz;602,140,687;cd1250;CD_GR_UNOD_KCOD_OST_ved
+Wasserbauerova;;Sylva ;Wasserbauerová;wasserbauerova@kcod.cd.cz;602,696,687;cd1376;CD_GR_UNOD_KCOD_OST_ved
+Meduna;;Petr;Meduna;Meduna@kcod.cd.cz;725,593,927;cd1807;CD_GR_UNOD_KCOD_PDB_ost
+Pleningerova;;Alena;Pleningerová;Pleningerova@kcod.cd.cz;725,581,849;cd1797;CD_GR_UNOD_KCOD_PDB_ost
+Sivek;Ing.;Jan;Sívek;Sivek@kcod.cd.cz;602,237,487;cd1264;CD_GR_UNOD_KCOD_PDB_ved
+Tolicky;Ing.;Tomáš;Tolický;tolicky@kcod.cd.cz;724,504,809;cd1560;CD_GR_UNOD_KCOD_PDB_ved
+Golias;Ing.;Jakub;Goliáš;Golias@kcod.cd.cz;602,227,855;cd1260;CD_GR_UNOD_KCOD_PHA_man
+Adamkova;;Zdena;Adámková;Adamkova@kcod.cd.cz;725,583,986;cd1800;CD_GR_UNOD_KCOD_PHA_ost
+Flekac;;Petr;Flekač;Flekac@kcod.cd.cz;602,233,415;cd1261;CD_GR_UNOD_KCOD_PHA_ost
+Chyla;;Karel;Chýla;Chyla@kcod.cd.cz;725,583,992;cd1801;CD_GR_UNOD_KCOD_PHA_ost
+KuceraM;;Miloš;Kučera;Kucera@kcod.cd.cz;725,746,478;cd1826;CD_GR_UNOD_KCOD_PHA_ost
+Lemberk;;Josef;Lemberk;Lemberk@kcod.cd.cz;724,849,489;cd1630;CD_GR_UNOD_KCOD_PHA_ost
+Zelinka;Bc.;Pavel;Zelinka;Zelinka@kcod.cd.cz;602,646,230;cd1365;CD_GR_UNOD_KCOD_PHA_ost
+Kaspar ;;Alois;Kašpar;Kaspar@kcod.cd.cz;602,101,843;cd1238;CD_GR_UNOD_KCOD_PHA_red
+Cikr;;Pavel;Cikr;Cikr@kcod.cd.cz;724,849,475;cd1629;CD_GR_UNOD_KCOD_PHA_ved
+Hrebikova;;Irena;Hřebíková;Hrebikova@kcod.cd.cz;725,819,964;cd1842;CD_GR_UNOD_KCOD_PHA_ved
+Hus;;Jan;Hus;Hus@kcod.cd.cz;725,591,207;cd1803;CD_GR_UNOD_KCOD_PHA_ved
+Lipovcan;;David ;Lipovčan;Lipovcan@kcod.cd.cz;723,652,667;cd1482;CD_GR_UNOD_KCOD_PHA_ved
+Puta;;Jaromír;Půta;puta@kcod.cd.cz;725,592,695;cd1805;CD_GR_UNOD_KCOD_PLZ_man
+Borikova;;Jaroslava;Boříková;borikova@kcod.cd.cz;972,522,435;cd1925;CD_GR_UNOD_KCOD_PLZ_ost
+Matous;Ing. ;Ladislav;Matouš;matous@kcod.cd.cz;602,289,089;cd1278;CD_GR_UNOD_KCOD_PLZ_ost
+Plochy;Ing.;Marek;Plochý;plochy@kcod.cd.cz;724,900,737;cd1653;CD_GR_UNOD_KCOD_PLZ_ost
+Slajerova;;Vlasta;Šlajerová;slajerova@kcod.cd.cz;725,592,695;cd1806;CD_GR_UNOD_KCOD_PLZ_ost
+Kostelny;Ing.;Vladimír;Kostelný;kostelny@kcod.cd.cz;724,083,057;cd1500;CD_GR_UNOD_KCOD_PLZ_red
+Dvorska;Ing.;Lucie;Dvorská;dvorska@kcod.cd.cz;972,422,497;cd1913;CD_GR_UNOD_KCOD_UNL_ost
+Kacer;;Stanislav;Kačer;kacer@kcod.cd.cz;972,424,072;cd1914;CD_GR_UNOD_KCOD_UNL_ost
+Lahovska;;Miroslava;Lahovská;lahovska@kcod.cd.cz;972,422,120;cd1909;CD_GR_UNOD_KCOD_UNL_ost
+Malinova;;Dana;Malinová;malinova@kcod.cd.cz;972,422,230;cd1910;CD_GR_UNOD_KCOD_UNL_ost
+Stochl;Ing.;Vladimír;Štochl;stochl@kcod.cd.cz;602,655,538;cd1367;CD_GR_UNOD_KCOD_UNL_ved
+Bartl;;Petr ;Bartl;Bartl@kcod.cd.cz;724,126,185;cd1502;CD_GR_UNOD_KCOD_ZNL_ost
+Hanakova;;Romana ;Hanáková;Hanakova@kcod.cd.cz;725,547,162;cd1777;CD_GR_UNOD_KCOD_ZNL_ost
+Jahodova;;Irena ;Jahodová;Jahodova@kcod.cd.cz;972,725,120;cd1951;CD_GR_UNOD_KCOD_ZNL_ost
+KesrJ;Ing.;Jiří;Kešr;KesrJ@gr.cd.cz;724,132,477;cd1505;CD_GR_UNOD_KNOD_red
+KotheraM;Ing.;Miloslav;Kothera;KotheraM@gr.cd.cz;602,289,046;cd1277;CD_GR_UNOD_O12_man
+Plomer;Ing.;Jan;Plomer;Plomer@gr.cd.cz;602,931,233;cd1402;CD_GR_UNOD_O12_man
+NovakR;Ing.;Rostislav ;Novák;NovakR@gr.cd.cz;602,532,690;cd1328;CD_GR_UNOD_O12_red
+EflerL;Ing.;Efler;Lukáš;eflerl@gr.cd.cz;724,573,214;cd1570;CD_GR_UNOD_O12_ved
+Chroust;Ing.;Jan;Chroust;Chroust@gr.cd.cz;602,182,986;cd1257;CD_GR_UNOD_O12_ved
+JedlickaR;Ing.;Rudolf;Jedlička;JedlickaR@gr.cd.cz;724,071,340;cd1498;CD_GR_UNOD_O12_ved
+KocnyJ;Ing.;Jiří;Kočný;KocnyJ@gr.cd.cz;602,289,293;cd1283;CD_GR_UNOD_O12_ved
+LosselV;Ing.;Vítězslav;Lossel;LosselV@gr.cd.cz;602,570,689;cd1347;CD_GR_UNOD_O12_ved
+Mrlik;Ing.;Pavel;Mrlík;Mrlik@gr.cd.cz;607,507,673;cd1474;CD_GR_UNOD_O12_ved
+Hnulikova;Ing.;Luďka;Hnulíková;hnulikova@gr.cd.cz;724,020,381;cd1488;CD_GR_UNOD_O16_red
+Bastian;Ing.;Libor;Bastián;Bastian@gr.cd.cz;602,289,277;cd1282;CD_GR_UNOD_O16_ved
+Brand;Ing.;Radko;Brand;Brand@gr.cd.cz;602,158,636;cd1252;CD_GR_UNOD_O16_ved
+Davidek;Ing.;František;Davídek;Davidek@gr.cd.cz;602,337,089;cd1296;CD_GR_UNOD_O16_ved
+Gregor;Ing.;Petr ;Gregor;Gregor@gr.cd.cz;602,592,984;cd1355;CD_GR_UNOD_O16_ved
+MeckovaJ;;Jarmila;Němečková;meckovaJ@gr.cd.cz;606,677,879;cd1441;CD_GR_UNOD_O16_ved
+Sablik;Ing.;Milan;Sáblík;sablik@gr.cd.cz;606,871,913;cd1470;CD_GR_UNOD_O16_ved
+Samonil;;Miroslav;Šamonil;Samonil@gr.cd.cz;606,793,648;cd1463;CD_GR_UNOD_O16_ved
+Stocek;;Petr ;Štoček;Stocek@gr.cd.cz;602,241,296;cd1267;CD_GR_UNOD_O16_ved
+Zastera;;Lukáš;Zástěra;Zastera@gr.cd.cz;602,234,044;cd1262;CD_GR_UNOD_O16_ved
+Bartheldi;Ing.;Aleš;Bartheldi;Bartheldi@gr.cd.cz;724,574,440;cd1573;CD_GR_UNOD_O20_red
+Bednarova;;Jana;Bednářová;bednarova@vdod.cd.cz;725,563,274;cd1793;CD_GR_UNOD_VDOD_CENT_ost
+Beranova;Ing.;Radomila ;Beranová;beranova@vdod.cd.cz;725,578,973;cd1796;CD_GR_UNOD_VDOD_CENT_ost
+Baroch;Ing.;Petr;Baroch;baroch@vdod.cd.cz;602,486,791;cd1309;CD_GR_UNOD_VDOD_CENT_red
+Sebena;Ing.;Miroslav;Šebeňa;Sebena@gr.cd.cz;972,232,541;cd1883;CD_GR_UNOM
+Mateova;Bc.;Elen;Mátéová;Mateova@gr.cd.cz;725,539,538;cd1774;CD_GR_UNOM_KNOM_ost
+Privratska;;Renata;Přívratská;Privratska@gr.cd.cz;972,232,076;cd1874;CD_GR_UNOM_KNOM_ost
+Safrankova;;Jitka ;Šafránková;Safrankova@gr.cd.cz;724,736,169;cd1588;CD_GR_UNOM_KNOM_ost
+Vincourova;;Andrea;Vincourová;Vincourova@gr.cd.cz;725,785,747;cd1836;CD_GR_UNOM_KNOM_ost
+Jeseta;Ing.;Jiří ;Ješeta;Jeseta@gr.cd.cz;606,222,468;cd1422;CD_GR_UNOM_KNOM_red
+Joklik;Mgr.;Radek;Joklík;Joklik@gr.cd.cz;724,845,091;cd1628;CD_GR_UNOM_O26_red
+Baxa;Ing.;Richard;Baxa;Baxa@gr.cd.cz;725,779,943;cd1833;CD_GR_UNOM_O28_ost
+Berankova;Ing.;Lenka ;Beránková;Berankova@gr.cd.cz;725,850,108;cd1844;CD_GR_UNOM_O28_ost
+Bruckner;;Martin ;Brückner;Bruckner@gr.cd.cz;602,552,874;cd1337;CD_GR_UNOM_O28_ost
+Bystricky;;Jan ;Bystřický;Bystricky@gr.cd.cz;725,189,467;cd1713;CD_GR_UNOM_O28_ost
+Fidrmucova;;Dana;Fidrmucová;Fidrmucova@gr.cd.cz;725,135,572;cd1680;CD_GR_UNOM_O28_ost
+Katanska;Bc.;Martina;Katanská;Katanska@gr.cd.cz;725,032,133;cd1664;CD_GR_UNOM_O28_ost
+Korselt;;Radek;Korselt;Korselt@gr.cd.cz;725,178,272;cd1709;CD_GR_UNOM_O28_ost
+Macounova;;Marie;Macounová;Macounova@gr.cd.cz;724,336,811;cd1539;CD_GR_UNOM_O28_ost
+NovakP2;;Petr ;Novák;Novak@gr.cd.cz;777,835,855;cd1867;CD_GR_UNOM_O28_ost
+PospisilovaLi;Ing.;Libuše;Pospíšilová;Pospisilovali@gr.cd.cz;602,315,477;cd1290;CD_GR_UNOM_O28_ost
+Rihova;;Libuše ;Říhová;Rihova@gr.cd.cz;602,289,268;cd1281;CD_GR_UNOM_O28_ost
+Stanclova;;Jana ;Štanclová;Stanclova@gr.cd.cz;725,307,514;cd1756;CD_GR_UNOM_O28_ost
+Suchomel;;Karel;Suchomel;Suchomel@gr.cd.cz;602,556,333;cd1338;CD_GR_UNOM_O28_ost
+Vondracek;;Petr ;Vondráček;Vondracek@gr.cd.cz;602,395,845;cd1301;CD_GR_UNOM_O28_ost
+Vychodil.Petr;Ing. ;Petr;Vychodil;vychodil.petr@gr.cd.cz;602,379,793;cd1299;CD_GR_UNOM_O28_ost
+Pelesek;Ing.;Vladimír;Peléšek;Pelesek@gr.cd.cz;602,540,243;cd1331;CD_GR_UNOM_O28_red
+Kocyanova;Ing.;Jitka;Kocyanová;Kocyanova@gr.cd.cz;602,271,644;cd1272;CD_GR_UNOM_O28_ved
+Nalevka;Ing.,Mgr.;Jiří ;Nálevka;Nalevka@gr.cd.cz;728,865,241;cd1863;CD_GR_UNOM_O28_ved
+Tomasek;;Radek;Tomášek;Tomasek@gr.cd.cz;725,307,513;cd1755;CD_GR_UNOM_O28_ved
+Perkner;Mgr.,M.B.A.;Ladislav;Perkner;Perkner@gr.cd.cz;972,232,318;cd1879;CD_GR_UNOM_O29_red
+HofmanovaA;Mgr.;Andrea;Hofmanová;HofmanovaA@gr.cd.cz;602,294,970;cd1286;CD_GR_UNOM_O29_ved
+Kozeny;Ing.;Pavel;Kožený;Kozeny@gr.cd.cz;606,578,151;cd1424;CD_GR_UNOM_O29_ved
+Ston;Ing.;Zdeněk;Ston;Ston@gr.cd.cz;724,526,135;cd1563;CD_GR_UNOM_O29_ved
+Svagr;Ing.,CSc.;Pavel;Švagr;Svagr@gr.cd.cz;972,232,369;cd1881;CD_GR_UNPZ
+Heglas;;Jan;Heglas;Heglas@gr.cd.cz;725,730,931;cd1821;CD_GR_UNPZ_KNPZ_red
+Kristova;;Jaroslava ;Kristová;Kristova@gr.cd.cz ;724,705,990;cd1583;CD_GR_UNPZ_O10_ost
+LukesJ;Bc. ;Jiří ;Lukeš;Lukes@gr.cd.cz;724,827,874;cd1624;CD_GR_UNPZ_O10_ost
+Nadejova;Mgr. ;Věra;Nadějová;Nadejova@gr.cd.cz;725,507,790;cd1768;CD_GR_UNPZ_O10_ost
+Sistkovam;;Markéta ;Šístková;Sistkovam@gr.cd.cz;606,069,109;cd1410;CD_GR_UNPZ_O10_ost
+Vtipilova;Ing. ;Kateřina;Vtípilová;Vtipilova@gr.cd.cz;725,856,994;cd1848;CD_GR_UNPZ_O10_ost
+BerankovaL;PaeDr.;Ludmila;Beránková;BerankovaL@gr.cd.cz;725,090,464;cd1677;CD_GR_UNPZ_O10_red
+HavelkovaB;Mgr.;Blanka;Havelková;HavelkovaB@gr.cd.cz;725,758,728;cd1831;CD_GR_UNPZ_O10_ved
+Skabrouthova;;Lenka;Skabrouthová;Skabrouthova@gr.cd.cz;725,813,614;cd1838;CD_GR_UNPZ_O10_ved
+Bauerova;Ing.;Lucie;Bauerová;Bauerova@gr.cd.cz;724,579,412;cd1575;CD_GR_UNPZ_O9_ost
+Plocek;;Lubomír ;Plocek ;Plocek@gr.cd.cz;607,774,736;cd1476;CD_GR_UNPZ_O9_ost
+PupikovaS;;Šárka;Pupíková;PupikovaS@gr.cd.cz;606,796,074;cd1467;CD_GR_UNPZ_O9_ost
+RysovaR;;Rita;Rysová;RysovaR@gr.cd.cz;605,812,645;cd1408;CD_GR_UNPZ_O9_ost
+CermakJ;Mgr.;Jan;Čermák;Cermakj@gr.cd.cz;602,217,636;cd1259;CD_GR_UNPZ_O9_red
+Ivo.Vesely;JUDr.;Ivo;Veselý;Ivo.Vesely@cdcargo.cz;602,688,859;cd1375;CD_GR_UNPZ_O9_ved
+Kaleta;Ing. ;Radomír;Kaleta;Kaleta@gr.cd.cz;606,796,071;cd1466;CD_GR_UNPZ_O9_ved
+RuzickaM;;Milan;Růžička;RuzickaM@gr.cd.cz;724,539,952;cd1564;CD_GR_UNPZ_O9_ved
+Matzenauer;Ing.;Milan;Matzenauer;Matzenauer@gr.cd.cz;972,232,002;cd1872;CD_GR_UNSM
+CermakM;Ing.;Milan;Čermák;CermakM@gr.cd.cz;602,335,770;cd1295;CD_GR_UNSM_KNSM_red
+Bosacek;Ing.;Josef;Bosáček;Bosacek@gr.cd.cz;724,027,626;cd1489;CD_GR_UNSM_O31_ost
+Cerha;;Jan ;Cerha;Cerha@gr.cd.cz;725,186,854;cd1711;CD_GR_UNSM_O31_ost
+DolejsovaZ;DiS.;Zuzana ;Dolejšová;DolejsovaZ@gr.cd.cz;725,159,173;cd1682;CD_GR_UNSM_O31_ost
+Fidlerova;;Tamara;Fidlerová;Fidlerova@gr.cd.cz;725,037,287;cd1668;CD_GR_UNSM_O31_ost
+Fiedler;Ing.;Lukáš;Fiedler ;Fiedler@gr.cd.cz;724,170,535;cd1511;CD_GR_UNSM_O31_ost
+Gajdosova;Bc.;Eva ;Gajdošová;Gajdosova@gr.cd.cz;725,186,855;cd1712;CD_GR_UNSM_O31_ost
+Houdkova;;Jana;Houdková;Houdkova@gr.cd.cz;724,834,896;cd1627;CD_GR_UNSM_O31_ost
+Kameny;Ing.;Václav;Kamenný;Kameny@gr.cd.cz;725,123,049;cd1679;CD_GR_UNSM_O31_ost
+Menza;Ing.;Vladimír;Menza;Menza@gr.cd.cz;724,071,344;cd1499;CD_GR_UNSM_O31_ost
+Ohnutkova;;Soňa ;Ohnutková;Ohnutkova@gr.cd.cz;725,736,212;cd1823;CD_GR_UNSM_O31_ost
+Pecinova;;Jana;Pecinová;Pecinova@gr.cd.cz;602,710,214;cd1378;CD_GR_UNSM_O31_ost
+Pucandlova;Ing.;Klára;Pucandlová;Pucandlova@gr.cd.cz;724,952,866;cd1655;CD_GR_UNSM_O31_ost
+Stasko;Ing.;Miroslav;Staško;Stasko@gr.cd.cz;725,159,172;cd1681;CD_GR_UNSM_O31_ost
+Tomak;;Libor;Tomák;Tomak@gr.cd.cz;724,769,587;cd1602;CD_GR_UNSM_O31_ost
+VerrT;Ing. ;Tomáš ;Verr;VerrT@gr.cd.cz;602,234,120;cd1263;CD_GR_UNSM_O31_ost
+Vosecky;Ing.;Martin;Vosecký;Vosecky@gr.cd.cz;724,563,236;cd1568;CD_GR_UNSM_O31_ost
+PetrasekV;Ing.,M.B.A.;Václav;Petrášek;PetrasekV@gr.cd.cz;972,233,050;cd1887;CD_GR_UNSM_O31_red
+Loskot;Ing.;Pavel;Loskot;Loskot@gr.cd.cz;602,294,832;cd1285;CD_GR_UNSM_O31_ved
+SterbaS;Ing.;Stanislav;Štěrba;SterbaS@gr.cd.cz;725,843,415;cd1843;CD_GR_UNSM_O31_ved
+StulovaJ;Bc.;Jana;Štůlová;StulovaJ@gr.cd.cz;724,342,784;cd1543;CD_GR_UNSM_O31_ved
+Vrany;Ing.;Jan;Vraný;Vrany@gr.cd.cz;724,145,467;cd1507;CD_GR_UNSM_O31_ved
+Balga;Bc.;František;Balga;Balga@rsm.cd.cz;724,863,057;cd1645;CD_GR_UNSM_RSM_BRN_ost
+Bartonova;;Jiřina;Bartoňová;Bartonova@rsm.cd.cz;972,632,790;cd1948;CD_GR_UNSM_RSM_BRN_ost
+Bernatova;;Bronislava;Bernátová;Bernatova@rsm.cd.cz;724,878,427;cd1650;CD_GR_UNSM_RSM_BRN_ost
+Bozkova;;Helena ;Bozková;Bozkova@rsm.cd.cz;972,632,793;cd1949;CD_GR_UNSM_RSM_BRN_ost
+Dajc;;Petr;Dajč;Dajc@rsm.cd.cz;724,775,859;cd1606;CD_GR_UNSM_RSM_BRN_ost
+Dockalova;Ing.;Karla;Dočkalová;Dockalova@rsm.cd.cz;724,878,426;cd1649;CD_GR_UNSM_RSM_BRN_ost
+DockalVl;;Vladimír;Dočkal;Dockal@rsm.cd.cz;724,862,928;cd1643;CD_GR_UNSM_RSM_BRN_ost
+Doubek;Ing.;Libor;Doubek;Doubek@rsm.cd.cz;724,221,015;cd1523;CD_GR_UNSM_RSM_BRN_ost
+Glabasna;Ing.;Martin;Glabasňa;Glabasna@rsm.cd.cz;724,862,835;cd1642;CD_GR_UNSM_RSM_BRN_ost
+Hemala;Ing.;Jan;Hemala;Hemala@rsm.cd.cz;602,561,092;cd1341;CD_GR_UNSM_RSM_BRN_ost
+Kejdova;;Alena;Kejdová;Kejdova@rsm.cd.cz;602,743,444;cd1389;CD_GR_UNSM_RSM_BRN_ost
+Kejikova;Ing.;Ivana;Kejíková;Kejikova@rsm.cd.cz;725,817,344;cd1840;CD_GR_UNSM_RSM_BRN_ost
+Koukal;;Aleš;Koukal;Koukal@rsm.cd.cz;725,222,957;cd1733;CD_GR_UNSM_RSM_BRN_ost
+Kovarikova;Ing.Arch;Tereza;Kovaříková;Kovarikova@rsm.cd.cz;725,184,561;cd1710;CD_GR_UNSM_RSM_BRN_ost
+Literakova;;Jana;Literáková;Literakova@rsm.cd.cz;972,621,014;cd1944;CD_GR_UNSM_RSM_BRN_ost
+Lukuvka;;Josef;Lukuvka;Lukuvka@rsm.cd.cz;725,122,770;cd1678;CD_GR_UNSM_RSM_BRN_ost
+Mahovska;;Jaroslava;Mahovská;Mahovska@rsm.cd.cz;724,875,116;cd1646;CD_GR_UNSM_RSM_BRN_ost
+Melski;;Oldřich;Melski;Melski@rsm.cd.cz;724,875,873;cd1647;CD_GR_UNSM_RSM_BRN_ost
+Michalik;;Pavel;Michalík;Michalik@rsm.cd.cz;724,256,832;cd1530;CD_GR_UNSM_RSM_BRN_ost
+Mikes;;Jiří;Mikeš;Mikes@rsm.cd.cz;725,784,851;cd1835;CD_GR_UNSM_RSM_BRN_ost
+NovakP;;Petr;Novák;NovakP@rsm.cd.cz;724,862,929;cd1644;CD_GR_UNSM_RSM_BRN_ost
+Picmaus;;roman ;Picmaus;Picmaus@rsm.cd.cz;724,775,855;cd1605;CD_GR_UNSM_RSM_BRN_ost
+Plchova;;Lenka;Plchová ;Plchova@rsm.cd.cz;972,621,063;cd1945;CD_GR_UNSM_RSM_BRN_ost
+Rychla;;Hana;Rychlá;Rychla@rsm.cd.cz;724,879,037;cd1651;CD_GR_UNSM_RSM_BRN_ost
+Vavra;Ing.;Ondřej;Vávra;Vavra@rsm.cd.cz;724,539,984;cd1565;CD_GR_UNSM_RSM_BRN_ost
+Vejchododva;;Renáta ;Vejchodová;Vejchododva@rsm.cd.cz;972,621,064;cd1946;CD_GR_UNSM_RSM_BRN_ost
+Vejrosta;;Vítězslav;Vejrosta;Vejrosta@rsm.cd.cz;972,632,897;cd1950;CD_GR_UNSM_RSM_BRN_ost
+Vesely;Bc.;Zbyšek;Veselý ;Vesely@rsm.cd.cz;725,817,343;cd1839;CD_GR_UNSM_RSM_BRN_ost
+Vich;;Jiří;Vich;Vich@rsm.cd.cz;602,562,328;cd1342;CD_GR_UNSM_RSM_BRN_ost
+Vitouch;;Petr;Vitouch;Vitouch@rsm.cd.cz;602,562,339;cd1343;CD_GR_UNSM_RSM_BRN_ost
+Vitula;;Pavel;Vitula;Vitula@rsm.cd.cz;724,913,461;cd1654;CD_GR_UNSM_RSM_BRN_ost
+Waldsberger;;Petr;Waldsberger;Waldsberger@rsm.cd.cz;724,878,423;cd1648;CD_GR_UNSM_RSM_BRN_ost
+Karsulin;Ing.;Pavel;Karšulín;Karsulin@kcod.cd.cz;602,783,537;cd1398;CD_GR_UNSM_RSM_BRN_red
+Cevela;Ing.;Vladimír;Čevela;Cevela@rsm.cd.cz;602,331,390;cd1294;CD_GR_UNSM_RSM_BRN_ved
+Matejka;Ing.;Josef;Matějka;Matejka@rsm.cd.cz;602,520,284;cd1316;CD_GR_UNSM_RSM_BRN_ved
+Ugebauer;Ing.Arch;Tomáš;Ugebauer;Ugebauer@rsm.cd.cz;724,205,773;cd1520;CD_GR_UNSM_RSM_BRN_ved
+BerakP;;Pavel ;Berák;berak@rsm.cd.cz;724,791,417;cd1608;CD_GR_UNSM_RSM_HKR_ost
+Bulin;;Martin;Bulíř;bulir@rsm.cd.cz;725,501,971;cd1767;CD_GR_UNSM_RSM_HKR_ost
+Dostal;;Roman ;Dostál;dostal@rsm.cd.cz;725,529,047;cd1771;CD_GR_UNSM_RSM_HKR_ost
+Dostalek;;Jaroslav;Dostálek;dostalek@rsm.cd.cz;728,375,399;cd1860;CD_GR_UNSM_RSM_HKR_ost
+Grygera;Ing.;Tomáš;Grygera;grygera@rsm.cd.cz;725,529,037;cd1770;CD_GR_UNSM_RSM_HKR_ost
+Hindrakova;Ing.;Martina;Hindráková;hindrakova@rsm.cd.cz;724,826,634;cd1623;CD_GR_UNSM_RSM_HKR_ost
+Horacek;;Pavel;Horáček;horacek@rsm.cd.cz;728,471,053;cd1861;CD_GR_UNSM_RSM_HKR_ost
+Jezkova;;Michaela;Ježková;jezkova@rsm.cd.cz;725,501,967;cd1766;CD_GR_UNSM_RSM_HKR_ost
+Kalhous;;Roman ;Kalhous;kalhous@rsm.cd.cz;724,759,581;cd1599;CD_GR_UNSM_RSM_HKR_ost
+Kohout;Ing.;Karel;Kohout;kohout@rsm.cd.cz;602,456,922;cd1305;CD_GR_UNSM_RSM_HKR_ost
+Krizova;;Martina;Křížová;krizova@rsm.cd.cz;724,590,157;cd1576;CD_GR_UNSM_RSM_HKR_ost
+Krtek;;Stanislav;Krtek;krtek@rsm.cd.cz;728,835,567;cd1862;CD_GR_UNSM_RSM_HKR_ost
+Kylar;Ing.;Petr ;Kylar;kylar@rsm.cd.cz;723,715,482;cd1483;CD_GR_UNSM_RSM_HKR_ost
+Lehky;;Martin ;Lehký;lehky@rsm.cd.cz;724,806,096;cd1618;CD_GR_UNSM_RSM_HKR_ost
+Lowova;Dis.;Monika;Löwová;lowova@rsm.cd.cz;606,256,568;cd1423;CD_GR_UNSM_RSM_HKR_ost
+Marousek;;Zbyněk;Maroušek;marousek@rsm.cd.cz;724,564,839;cd1569;CD_GR_UNSM_RSM_HKR_ost
+Mysakova;;Veronika;Myšáková;mysakova@rsm.cd.cz;724,550,299;cd1566;CD_GR_UNSM_RSM_HKR_ost
+Obrucova;;Táňa ;Obručová;obrucova@rsm.cd.cz;724,791,438;cd1611;CD_GR_UNSM_RSM_HKR_ost
+Paryzek;;Ondřej;Parýzek;paryzek@rsm.cd.cz;724,759,570;cd1598;CD_GR_UNSM_RSM_HKR_ost
+Pavlousek;;Milan;Pavlousek;pavlousek@rsm.cd.cz;724,753,084;cd1594;CD_GR_UNSM_RSM_HKR_ost
+Petr;;Aleš ;Petr;petr@rsm.cd.cz;606,934,291;cd1472;CD_GR_UNSM_RSM_HKR_ost
+Plhak;;Jiří;Plhák;plhak@rsm.cd.cz;724,791,421;cd1609;CD_GR_UNSM_RSM_HKR_ost
+SuchaM;;Markéta;Suchá;sucha@rsm.cd.cz;602,135,205;cd1248;CD_GR_UNSM_RSM_HKR_ost
+Tihon;Ing.;Michal;Tihon;tihon@rsm.cd.cz;724,806,095;cd1617;CD_GR_UNSM_RSM_HKR_ost
+Vdovicik;;Jaroslav;Vdovičík;vdovicik@rsm.cd.cz;602,771,324;cd1394;CD_GR_UNSM_RSM_HKR_ost
+Vejrych;;Tomáš;Vejrych;vejrych@rsm.cd.cz;724,791,430;cd1610;CD_GR_UNSM_RSM_HKR_ost
+Vik;;Michal;Vik;vik@rsm.cd.cz;724,791,452;cd1612;CD_GR_UNSM_RSM_HKR_ost
+ZakP;;Pavel;Žák;zak@rsm.cd.cz;606,847,335;cd1468;CD_GR_UNSM_RSM_HKR_ost
+Zalisova;;Táňa ;Zálišová;zalisova@rsm.cd.cz;724,754,489;cd1595;CD_GR_UNSM_RSM_HKR_ost
+Fikr;;Václav;Fikr;fikr@rsm.cd.cz;602,114,800;cd1242;CD_GR_UNSM_RSM_HKR_red
+Spina;Ing.;Jaroslav;Špína;spina@rsm.cd.cz;724,369,095;cd1546;CD_GR_UNSM_RSM_HKR_ved
+Bedlivy;Ing.;Petr ;Bedlivý;bedlivy@rsm.cd.cz;607,886,926;cd1477;CD_GR_UNSM_RSM_HKR_ved
+Rybova;;Marie ;Rybová;rybova@rsm.cd.cz;723,647,405;cd1481;CD_GR_UNSM_RSM_HKR_ved
+Bartak;;František;Barták;Bartak@rsm.cd.cz;602,530,403;cd1326;CD_GR_UNSM_RSM_OLC_ost
+Bebarova;;Věra;Bébarová;bebarova@rsm.cd.cz;972,741,845;cd1955;CD_GR_UNSM_RSM_OLC_ost
+Billova;;Věra;Billavá;billova@rsm.cd.cz;602,529,439;cd1325;CD_GR_UNSM_RSM_OLC_ost
+CechovaP;Ing. ;Petra;Čechová;Cechova@rsm.cd.cz;602,524,572;cd1320;CD_GR_UNSM_RSM_OLC_ost
+Divin;;Pavel;Divín;divin@rsm.cd.cz;725,855,090;cd1847;CD_GR_UNSM_RSM_OLC_ost
+Doubravska;;Zdeňka;Doubravská;Doubravska@rsm.cd.cz;724,006,845;cd1486;CD_GR_UNSM_RSM_OLC_ost
+Drimalkova;;Olga;Dřímalková;drimalkova@rsm.cd.cz;602,525,947;cd1322;CD_GR_UNSM_RSM_OLC_ost
+Ducho;Bc. ;Dušan;Ducho;Ducho@rsm.cd.cz;606,720,426;cd1445;CD_GR_UNSM_RSM_OLC_ost
+Gajdosikova;Ing. ;Zlata;Gajdošíková;Gajdosikova@rsm.cd.cz;602,603,445;cd1363;CD_GR_UNSM_RSM_OLC_ost
+Hamalova;Ing.;Šárka ;Hamalová;hamalova@rsm.cd.cz;602,749,328;cd1390;CD_GR_UNSM_RSM_OLC_ost
+Chlapek;;Radomír;Chlápek;Chlapek@rsm.cd.cz;606,709,542;cd1442;CD_GR_UNSM_RSM_OLC_ost
+Jurcik;Ing.;Pavel ;Jurčík;Jurcik@rsm.cd.cz;724,815,543;cd1622;CD_GR_UNSM_RSM_OLC_ost
+Kofron;;Zdeněk;Kofroň;Kofron@rsm.cd.cz;602,502,643;cd1314;CD_GR_UNSM_RSM_OLC_ost
+Konvickova;Ing.;Edita;Konvičková;konvickova@rsm.cd.cz;602,532,199;cd1327;CD_GR_UNSM_RSM_OLC_ost
+Kotoulek;;Josef;Kotoulek;Kotoulek@rsm.cd.cz;602,161,469;cd1255;CD_GR_UNSM_RSM_OLC_ost
+Kubica;Ing.;Vít;Kubica;kubica@rsm.cd.cz;602,049,624;cd1234;CD_GR_UNSM_RSM_OLC_ost
+KudelaT;Ing.;Tomáš;Kudela;KudelaT@rsm.cd.cz;602,603,439;cd1361;CD_GR_UNSM_RSM_OLC_ost
+Kutalek;;Stanislav;Kutálek;Kutalek@rsm.cd.cz;602,713,686;cd1386;CD_GR_UNSM_RSM_OLC_ost
+Lucan;;Ivan;Lučan;Lucan@rsm.cd.cz;725,554,617;cd1785;CD_GR_UNSM_RSM_OLC_ost
+Machac;;Martin;Macháč;Machac@rsm.cd.cz;724,164,063;cd1510;CD_GR_UNSM_RSM_OLC_ost
+MartincovaD;;Daniela;Martincová;martincovad@rsm.cd.cz;602,781,239;cd1395;CD_GR_UNSM_RSM_OLC_ost
+MecJ;;Jiří ;Němec;mecJ@rsm.cd.cz;724,028,342;cd1490;CD_GR_UNSM_RSM_OLC_ost
+Micka;;Jiří;Mička;micka@rsm.cd.cz;602,712,385;cd1379;CD_GR_UNSM_RSM_OLC_ost
+Mirijovska;Mgr.;Marta ;Miřijovská;mirijovska@rsm.cd.cz;602,603,438;cd1360;CD_GR_UNSM_RSM_OLC_ost
+Motyka;;Jan;Motyka;Motyka@rsm.cd.cz;725,716,694;cd1819;CD_GR_UNSM_RSM_OLC_ost
+Nosalek;;Zbyněk;Nosálek;Nosalek@rsm.cd.cz;725,554,616;cd1784;CD_GR_UNSM_RSM_OLC_ost
+Pardy;;Petr;Pardy;Pardy@rsm.cd.cz;602,713,591;cd1384;CD_GR_UNSM_RSM_OLC_ost
+Pernicky;;Stanislav;Pernický;Pernicky@rsm.cd.cz;602,522,348;cd1317;CD_GR_UNSM_RSM_OLC_ost
+Pisalova;Mgr.;Hana;Píšalová;Pisalova@rsm.cd.cz;602,749,357;cd1391;CD_GR_UNSM_RSM_OLC_ost
+Polach;;Leo;Polách;Polach@rsm.cd.cz;602,712,579;cd1380;CD_GR_UNSM_RSM_OLC_ost
+Polak;;Michal ;Polák;polak@rsm.cd.cz;972,741,847;cd1956;CD_GR_UNSM_RSM_OLC_ost
+Pop;;Jiří ;Pop;Pop@rsm.cd.cz;602,500,403;cd1312;CD_GR_UNSM_RSM_OLC_ost
+Prikrylova;;Alena;Přikrylová;Prikrylova@rsm.cd.cz;602,603,437;cd1359;CD_GR_UNSM_RSM_OLC_ost
+ProchazkaF;;František;Procházka;ProchazkaF@rsm.cd.cz;602,603,429;cd1358;CD_GR_UNSM_RSM_OLC_ost
+Rihoskova;;Helena ;Říhošková;Rihoskova@rsm.cd.cz;725,716,689;cd1818;CD_GR_UNSM_RSM_OLC_ost
+Schwarzer;;Jiří;Schwarzer;schwarzer@rsm.cd.cz;602,523,975;cd1319;CD_GR_UNSM_RSM_OLC_ost
+SkladalM;Ing.;Miloš;Skládal;skladal@rsm.cd.cz;724,815,524;cd1621;CD_GR_UNSM_RSM_OLC_ost
+Skloud;;Petr;Školoud;Skloud@rsm.cd.cz;602,522,831;cd1318;CD_GR_UNSM_RSM_OLC_ost
+Stryk;;Luboš;Stryk;stryk@rsm.cd.cz;725,554,615;cd1783;CD_GR_UNSM_RSM_OLC_ost
+SvobodaR;Bc. ;Roman ;Svoboda;SovobodaR@rsm.cd.cz;602,603,418;cd1356;CD_GR_UNSM_RSM_OLC_ost
+Szabova;Ing. ;Zdeňka;Szabová;szabova@rsm.cd.cz;602,529,151;cd1324;CD_GR_UNSM_RSM_OLC_ost
+Toman;Ing.;Miloslav;Toman;Toman@rsm.cd.cz;602,603,441;cd1362;CD_GR_UNSM_RSM_OLC_ost
+Tomek;Ing. ;Jiří;Tomek;tomek@rsm.cd.cz;602,571,913;cd1349;CD_GR_UNSM_RSM_OLC_ost
+Tylecek;;Petr;Tyleček;tylecek@rsm.cd.cz;602,603,419;cd1357;CD_GR_UNSM_RSM_OLC_ost
+Vodickova;;Libuše;Vodičková;Vodickova@rsm.cd.cz;606,720,427;cd1446;CD_GR_UNSM_RSM_OLC_ost
+Vojtkova;;Hana;Vojtková;vojtkova@rsm.cd.cz;602,713,572;cd1383;CD_GR_UNSM_RSM_OLC_ost
+Volfl;Ing.;Zdeněk;Vőlfl;Volfl@rsm.cd.cz;602,500,473;cd1313;CD_GR_UNSM_RSM_OLC_ost
+Vyroubalova;;Lenka;Vyroubalová;vyroubalova@rsm.cd.cz;602,713,541;cd1382;CD_GR_UNSM_RSM_OLC_ost
+Zaboj;Bc.;Marek;Záboj;zaboj@rsm.cd.cz;602,713,439;cd1381;CD_GR_UNSM_RSM_OLC_ost
+ZavadilR;;Roman ;Zavadil;ZavadilR@rsm.cd.cz;602,713,643;cd1385;CD_GR_UNSM_RSM_OLC_ost
+Zavesicky;;František;Závěšický;zavesicky@rsm.cd.cz;602,516,599;cd1315;CD_GR_UNSM_RSM_OLC_ost
+Jursa;Ing.;Gabriel;Jursa;Jursa@rsm.cd.cz;602,708,647;cd1377;CD_GR_UNSM_RSM_OLC_red
+Dosedel;Ing.;Petr;Doseděl;Dosedel@rsm.cd.cz;602,264,106;cd1271;CD_GR_UNSM_RSM_OLC_ved
+Horak;Bc.;Ivo;Horák;Horak@rsm.cd.cz;602,789,201;cd1400;CD_GR_UNSM_RSM_OLC_ved
+Ondracek;Ing.;Libor;Ondráček;ondracek@rsm.cd.cz;724,248,756;cd1527;CD_GR_UNSM_RSM_OLC_ved
+Zapletal;Ing.;Vladimír;Zapletal;zapletal@rsm.cd.cz;725,788,214;cd1837;CD_GR_UNSM_RSM_OLC_ved
+ProchazkovaE;;Eva;Procházková;ProchazkovaE@rsm.cd.cz;725,547,058;cd1776;CD_GR_UNSM_RSM_PHA_ost
+Skalicky;Ing. ;Jan ;Skalický ;Skalicky@rsm.cd.cz;602,604,764;cd1364;CD_GR_UNSM_RSM_PHA_red
+Antosova;;Kateřina;Valouchová;antosova@rsm.cd.cz;972,544,344;cd1937;CD_GR_UNSM_RSM_PLZ_ost
+Bedikt;;Zdeněk;Bedikt;bedikt@rsm.cd.cz;725,535,573;cd1772;CD_GR_UNSM_RSM_PLZ_ost
+Bicek;Ing.;Jiří;Bicek;bicek@rsm.cd.cz;724,129,338;cd1503;CD_GR_UNSM_RSM_PLZ_ost
+Blatsky;;Libor;Blatský;blatsky@rsm.cd.cz;972,544,910;cd1940;CD_GR_UNSM_RSM_PLZ_ost
+Bouda;;Pavel;Bouda;bouda@rsm.cd.cz;724,852,437;cd1634;CD_GR_UNSM_RSM_PLZ_ost
+Bouzkova;;Libuše;Bouzková;bouzkova@rsm.cd.cz;725,707,692;cd1816;CD_GR_UNSM_RSM_PLZ_ost
+BraunovaZ;;Zdena;Braunová;braunova@rsm.cd.cz;723,069,197;cd1479;CD_GR_UNSM_RSM_PLZ_ost
+Cimpova;;Květoslava;Cimpová;cimpova@rsm.cd.cz;725,399,468;cd1758;CD_GR_UNSM_RSM_PLZ_ost
+Drhovska;Mgr.;Lucie;Drhovská;drhovska@rsm.cd.cz;724,852,439;cd1636;CD_GR_UNSM_RSM_PLZ_ost
+FormankovaJ;;Jitka;Formánková;formankovaJ@rsm.cd.cz;972,544,426;cd1938;CD_GR_UNSM_RSM_PLZ_ost
+Gabriel;;Miroslav;Gabriel;gabriel@rsm.cd.cz;972,524,167;cd1928;CD_GR_UNSM_RSM_PLZ_ost
+Hajekl;;Ladislav ;Hájek;hajek@rsm.cd.cz;725,557,987;cd1788;CD_GR_UNSM_RSM_PLZ_ost
+Hubkova;;Květoslava;Hubková;hubkova@rsm.cd.cz;725,399,471;cd1760;CD_GR_UNSM_RSM_PLZ_ost
+Jahn;;Štěpán;Jahn;jahn@rsm.cd.cz;724,269,210;cd1533;CD_GR_UNSM_RSM_PLZ_ost
+KotrbaB;Bc.;Bohumil;Kotrba;kotrba@rsm.cd.cz;725,557,986;cd1787;CD_GR_UNSM_RSM_PLZ_ost
+Krauskopf;;Jiří;Krauskopf;krauskopf@rsm.cd.cz;725,752,510;cd1828;CD_GR_UNSM_RSM_PLZ_ost
+Krutina;Mgr.;Miroslav;Krutina;krutina@rsm.cd.cz;724,769,567;cd1600;CD_GR_UNSM_RSM_PLZ_ost
+Mainzer;JUDr.;František;Mainzer;mainzer@rsm.cd.cz;724,852,434;cd1632;CD_GR_UNSM_RSM_PLZ_ost
+Marsa;;Pavel;Marsa;marsa@rsm.cd.cz;972,544,159;cd1935;CD_GR_UNSM_RSM_PLZ_ost
+Matouskova;;Zdeňka;Matoušková;matouskova@rsm.cd.cz;725,736,052;cd1822;CD_GR_UNSM_RSM_PLZ_ost
+Melka;Ing.;Václav;Melka;melka@rsm.cd.cz;724,852,432;cd1631;CD_GR_UNSM_RSM_PLZ_ost
+Meszarasova;;Alena;Mészárosová;meszarosova@rsm.cd.cz;972,522,388;cd1922;CD_GR_UNSM_RSM_PLZ_ost
+Panska;Ing. ;Hana;Panská;panska@rsm.cd.cz;724,852,444;cd1640;CD_GR_UNSM_RSM_PLZ_ost
+Pilecek;;Karel;Pileček;pilecek@rsm.cd.cz;724,852,447;cd1641;CD_GR_UNSM_RSM_PLZ_ost
+Polcar;;Michal;Polcar;polcar@rsm.cd.cz;602,184,560;cd1258;CD_GR_UNSM_RSM_PLZ_ost
+PribylovaJ;;Jarmila;Přibylová;pribylovaJ@rsm.cd.cz;724,852,436;cd1633;CD_GR_UNSM_RSM_PLZ_ost
+ProkopovaM;;Marta;Prokopová;prokopovaM@rsm.cd.cz;972,522,388;cd1923;CD_GR_UNSM_RSM_PLZ_ost
+Rom;;Miroslav;Rom;rom@rsm.cd.cz;725,753,633;cd1829;CD_GR_UNSM_RSM_PLZ_ost
+Roubin;;Zdeněk;Roubín;roubin@rsm.cd.cz;606,648,539;cd1439;CD_GR_UNSM_RSM_PLZ_ost
+Salkova;;Vlasta;Šálková;salkova@rsm.cd.cz;972,544,540;cd1939;CD_GR_UNSM_RSM_PLZ_ost
+Schlesissova;;Ivanka;Schleissová;schleissova@rsm.cd.cz;725,399,469;cd1759;CD_GR_UNSM_RSM_PLZ_ost
+Siska;Ing.;Karel;Šiška;siska@rsm.cd.cz;606,775,941;cd1458;CD_GR_UNSM_RSM_PLZ_ost
+Skala;Ing.;Roman;Skala;skala@rsm.cd.cz;725,707,689;cd1814;CD_GR_UNSM_RSM_PLZ_ost
+Smitka;;Pavel;Smitka;smitka@rsm.cd.cz;972,522,432;cd1924;CD_GR_UNSM_RSM_PLZ_ost
+Smitkova;;Zdeňka;Smitková;smitkova@rsm.cd.cz;972,524,694;cd1931;CD_GR_UNSM_RSM_PLZ_ost
+Strasser;;Jan;Strasser;strasser@rsm.cd.cz;724,852,441;cd1638;CD_GR_UNSM_RSM_PLZ_ost
+Stychova;;Pavla;Štychová;stychova@rsm.cd.cz;972,522,759;cd1926;CD_GR_UNSM_RSM_PLZ_ost
+Tolarova;Bc.;Pavlína;Tolarová;tolarova@rsm.cd.cz;725,399,472;cd1761;CD_GR_UNSM_RSM_PLZ_ost
+Toserova;;Lenka;Tošerová;toserova@rsm.cd.cz;725,707,688;cd1813;CD_GR_UNSM_RSM_PLZ_ost
+Trtilek;;Pavel;Trtílek;trtilek@rsm.cd.cz;724,852,440;cd1637;CD_GR_UNSM_RSM_PLZ_ost
+Tyemnyak;;Šimon;Tyemnyák;tyemnyak@rsm.cd.cz;725,455,220;cd1763;CD_GR_UNSM_RSM_PLZ_ost
+Vojtech;Ing.;Jiří;Vojtěch;vojtech@rsm.cd.cz;725,707,691;cd1815;CD_GR_UNSM_RSM_PLZ_ost
+Vorackova;;Milena;Voráčková;vorackova@rsm.cd.cz;724,852,443;cd1639;CD_GR_UNSM_RSM_PLZ_ost
+Zdek;;František;Zdeněk;zdek@rsm.cd.cz;724,852,438;cd1635;CD_GR_UNSM_RSM_PLZ_ost
+Stuna;Ing.;Jiří;Stuna;stuna@rsm.cd.cz;724,965,322;cd1659;CD_GR_UNSM_RSM_PLZ_red
+Paveza;Ing. ;Miloš;Paveza;paveza@rsm.cd.cz;602,668,265;cd1371;CD_GR_UNSM_RSM_PLZ_ved
+Safrak;Ing.;Petr;Šafrák;safrak@rsm.cd.cz;606,754,938;cd1456;CD_GR_UNSM_RSM_PLZ_ved
+Vocadlo;Ing.;Josef;Vočadlo;vocadlo@rsm.cd.cz;724,203,833;cd1519;CD_GR_UNSM_RSM_PLZ_ved
+Barton;Ing.;Milan;Bartoň;barton@rsm.cd.cz;602,495,707;cd1311;CD_GR_UNSM_RSM_UNL_ost
+BecvarR;;Karel;Bečvář;becvar@rsm.cd.cz;724,803,963;cd1613;CD_GR_UNSM_RSM_UNL_ost
+Beniskova;;Jitka;Beníšková;beniskova@rsm.cd.cz;602,129,882;cd1244;CD_GR_UNSM_RSM_UNL_ost
+Bozek;;Ondřej;Bozek;bozek@rsm.cd.cz;724,298,091;cd1536;CD_GR_UNSM_RSM_UNL_ost
+Brustmann;;Miloslav;Brustmann;brustmann@rsm.cd.cz;724,496,781;cd1558;CD_GR_UNSM_RSM_UNL_ost
+Dovicak;;Jaroslav;Dovičák;dovicak@rsm.cd.cz;721,860,809;cd1478;CD_GR_UNSM_RSM_UNL_ost
+Drexler;;Zdeněk;Drexler;drexler@rsm.cd.cz;724,016,793;cd1487;CD_GR_UNSM_RSM_UNL_ost
+DvorakS;;Stanislav;Dvořák;dvoraks@rsm.cd.cz;724,805,798;cd1616;CD_GR_UNSM_RSM_UNL_ost
+Farkasova;;Jaroslava;Farkašová;farkasova@rsm.cd.cz;724,131,135;cd1504;CD_GR_UNSM_RSM_UNL_ost
+FialaV;Ing.;Vladimír;Fiala;fiala@rsm.cd.cz;724,496,778;cd1556;CD_GR_UNSM_RSM_UNL_ost
+Fryc;DiS;Michal;Fryc;fryc@rsm.cd.cz;602,310,428;cd1289;CD_GR_UNSM_RSM_UNL_ost
+Gallert;;Miloš;Gallert;gallert@rsm.cd.cz;602,129,891;cd1245;CD_GR_UNSM_RSM_UNL_ost
+Grisova;;Markéta;Grisová;grisova@rsm.cd.cz;972,424,649;cd1916;CD_GR_UNSM_RSM_UNL_ost
+Haak;;Miroslav;Haak;haak@rsm.cd.cz;725,405,026;cd1762;CD_GR_UNSM_RSM_UNL_ost
+Haipetr;;Roman;Haipetr;haipetr@rsm.cd.cz;724,496,780;cd1557;CD_GR_UNSM_RSM_UNL_ost
+Harbist;;Petr;Harbist;harbist@rsm.cd.cz;724,496,782;cd1559;CD_GR_UNSM_RSM_UNL_ost
+Holubova;;Iva;Holubová;holubova@rsm.cd.cz;724,805,796;cd1614;CD_GR_UNSM_RSM_UNL_ost
+Hyklova;Ing.;Šárka;Hyklová;hyklova@rsm.cd.cz;602,155,812;cd1251;CD_GR_UNSM_RSM_UNL_ost
+Jonasova;Ing.;Monika;Jonášová;jonasova@rsm.cd.cz;724,093,690;cd1501;CD_GR_UNSM_RSM_UNL_ost
+Klimova;Ing.;Stanislava;Klímová;klimova@rsm.cd.cz;724,482,888;cd1551;CD_GR_UNSM_RSM_UNL_ost
+Krizkova;;Ivana;Křížková;krizkova@rsm.cd.cz;602,100,939;cd1236;CD_GR_UNSM_RSM_UNL_ost
+Kusova;;Jitka;Kušová;kusova@rsm.cd.cz;602,666,512;cd1370;CD_GR_UNSM_RSM_UNL_ost
+Lastovka;;Václav;Laštovka;lastovka@rsm.cd.cz;724,805,797;cd1615;CD_GR_UNSM_RSM_UNL_ost
+Martincova;;Leona;Martincová;martincova@rsm.cd.cz;972,422,248;cd1911;CD_GR_UNSM_RSM_UNL_ost
+Matasova;;Michaela;Maťašová;matasova@rsm.cd.cz;724,496,761;cd1554;CD_GR_UNSM_RSM_UNL_ost
+Nadrchal;DiS.;Aleš;Nadrchal;nadrchal@rsm.cd.cz;724,339,556;cd1540;CD_GR_UNSM_RSM_UNL_ost
+NovakV;Ing.;Václav;Novák;novakv@rsm.cd.cz;724,220,562;cd1522;CD_GR_UNSM_RSM_UNL_ost
+Ondrichova;;Vladimíra;Ondřichová;ondrichova@rsm.cd.cz;724,216,779;cd1521;CD_GR_UNSM_RSM_UNL_ost
+Pilouskova;;Irena;Piloušková;pilouskova@rsm.cd.cz;972,442,572;cd1918;CD_GR_UNSM_RSM_UNL_ost
+Pospisilova;Ing.;Jana;Pospíšilová;pospisilova@rsm.cd.cz;724,269,962;cd1534;CD_GR_UNSM_RSM_UNL_ost
+Poulova;;Jaroslava;Poulová;poulova@rsm.cd.cz;972,424,364;cd1915;CD_GR_UNSM_RSM_UNL_ost
+Rehakova;;Šárka;Řeháková ;rehakova@rsm.cd.cz;724,960,837;cd1658;CD_GR_UNSM_RSM_UNL_ost
+Sevic;;Jaroslav;Ševic;sevic@rsm.cd.cz;606,602,555;cd1425;CD_GR_UNSM_RSM_UNL_ost
+Schwarz;;Jiří;Schwarz;schwarz@rsm.cd.cz;602,100,905;cd1235;CD_GR_UNSM_RSM_UNL_ost
+Soukup;;Stanislav;Soukup;soukup@rsm.cd.cz;725,559,904;cd1790;CD_GR_UNSM_RSM_UNL_ost
+Stibor;;Pavel;Stibor;stibor@rsm.cd.cz;602,129,375;cd1243;CD_GR_UNSM_RSM_UNL_ost
+Straka;Ing.;Milan;Straka;straka@rsm.cd.cz;773,990,545;cd1864;CD_GR_UNSM_RSM_UNL_ost
+Svoboda;;Miloš;Svoboda;svoboda@rsm.cd.cz;606,648,261;cd1438;CD_GR_UNSM_RSM_UNL_ost
+TichaI;DiS.;Iveta;Tichá;tichai@rsm.cd.cz;972,422,259;cd1912;CD_GR_UNSM_RSM_UNL_ost
+Tomasu;;Zdeněk;Tomášů;tomasu@rsm.cd.cz;724,834,738;cd1626;CD_GR_UNSM_RSM_UNL_ost
+Viletova;;Petra;Viletová;viletova@rsm.cd.cz;725,541,537;cd1775;CD_GR_UNSM_RSM_UNL_ost
+Zachulova;DiS.;Petra;Zachulová;zachulova@rsm.cd.cz;602,100,947;cd1237;CD_GR_UNSM_RSM_UNL_ost
+Zihova;;Miroslava;Žíhová;zihova@rsm.cd.cz;724,496,776;cd1555;CD_GR_UNSM_RSM_UNL_ost
+Zoha;DiS.;Martin;Žoha;zoha@rsm.cd.cz;602,491,161;cd1310;CD_GR_UNSM_RSM_UNL_ost
+Konopasek;Ing.;Patrik;Konopásek;konopasek@rsm.cd.cz;602,244,960;cd1268;CD_GR_UNSM_RSM_UNL_red
+DvorakP;Ing.;Pavel;Dvořák;dvorakp@rsm.cd.cz;602,973,781;cd1404;CD_GR_UNSM_RSM_UNL_ved
+Zavadil;Ing.;Miroslav;Zavadil;zavadil@rsm.cd.cz;606,610,598;cd1431;CD_GR_UNSM_RSM_UNL_ved

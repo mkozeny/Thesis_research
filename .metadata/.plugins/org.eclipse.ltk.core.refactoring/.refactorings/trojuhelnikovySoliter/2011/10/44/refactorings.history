@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;SoliterSolver.java&apos; to &apos;testSquander/src/main&apos;&#x0A;- Original project: &apos;trojuhelnikovySoliter&apos;&#x0A;- Destination element: &apos;testSquander/src/main&apos;&#x0A;- Original element: &apos;game.SoliterSolver.java&apos;" description="Copy compilation unit" destination="=testSquander/src&lt;main" element1="/src&lt;game{SoliterSolver.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1319821747983" units="1" version="1.0"/>
+</session>

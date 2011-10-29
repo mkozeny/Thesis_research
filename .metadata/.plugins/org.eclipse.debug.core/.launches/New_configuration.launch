@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.hyades.trace.ui.internal.launcher.localJavaProcess">
+<stringAttribute key="org.eclipse.hyades.trace.ui.ATTR_DESTINATION_MONITOR" value="DefaultMonitor"/>
+<stringAttribute key="org.eclipse.hyades.trace.ui.ATTR_DESTINATION_PROJECT" value="ProfileProject"/>
+<stringAttribute key="org.eclipse.hyades.trace.ui.ATTR_HOSTNAME" value="localhost"/>
+<intAttribute key="org.eclipse.hyades.trace.ui.ATTR_PORT" value="10002"/>
+</launchConfiguration>

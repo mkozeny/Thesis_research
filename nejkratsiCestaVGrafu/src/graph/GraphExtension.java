@@ -107,12 +107,12 @@ public class GraphExtension extends Graph {
 	@Ensures( {
 		"return[int] in this.edges.elts",
 	    "return[int].(src + dest) in this.nodes.elts",
-	    "return.length = 3",
+	    //"return.length <= 20",
 	    "all e1: return[int] | all e2: (return[int] - e1) | (e1.id!=e2.id)",
 	    "all i : int | i >= 0 && i < return.length - 1 => (return[i].dest = return[i+1].src || return[i].src = return[i+1].dest)",
 	    "startNode = return[0].src || startNode = return[0].dest",
 	    "endNode = return[return.length-1].src || endNode = return[return.length-1].dest",
-	    "(sum i : int | return[i].cost) <= 0"
+	    "(sum i : int | return[i].cost) <= s"
 	})
 	@Modifies ({ "return.length" , "return.elems" })
 	@FreshObjects ( cls = Edge[].class , num = 1 )

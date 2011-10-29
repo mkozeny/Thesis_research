@@ -14,7 +14,7 @@ public class KnapSack {
 	}
 	
 	@Ensures({"(sum e: result.elts | (e.choosed?e.v:0)) <= capacity",
-		"(sum e: result.elts | (e.choosed?e.c:0)) > minCost"
+		"(sum e: result.elts | (e.choosed?e.c:0)) = minCost"
 		})
 	@Modifies ({
 		"Thing.choosed"
@@ -24,8 +24,8 @@ public class KnapSack {
 		Squander.exe(this, result, n, capacity , minCost);
 	}
 	
-	@Ensures({"(sum e: result.elts | (e.choosed?e.v:0)) <= capacity",
-		"(sum e: result.elts | (e.choosed?e.c:0)) > minCost"
+	/*@Ensures({"(sum i:int | (result[i].choosed?result[i].v:0)) <= capacity",
+		"(sum i:int | (result[i].choosed?result[i].c:0)) > minCost"
 		})
 	@Modifies ({
 		"Thing.choosed"
@@ -33,7 +33,7 @@ public class KnapSack {
 	public void solveKnapSackProblem(Thing [] result, int n, int capacity, int minCost)
 	{
 		Squander.exe(this, result, n, capacity , minCost);
-	}
+	}*/
 	/*@Ensures({"(sum e: result[int] | (e.choosed?e.v:0)) <= capacity",
 		"(sum e: result[int] | (e.choosed?e.c:0)) > minCost"
 		})

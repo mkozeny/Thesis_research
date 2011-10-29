@@ -1,0 +1,1 @@
+ActionListenerInstaller.processAnnotations(this);

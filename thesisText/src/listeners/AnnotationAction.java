@@ -1,0 +1,1 @@
+@ActionListenerFor(source="myButton") void doSomething() { . . . }

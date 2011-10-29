@@ -35,7 +35,7 @@ public class GraphExtension extends Graph {
 		"(((e.src in resultA.elts) && (e.dest in resultN.elts) || " +
 		"(e.dest in resultA.elts) && (e.src in resultN.elts))?(e in commonEdges.elts):(e !in commonEdges.elts))"})
 	@Modifies ({ "resultA.elts" , "resultN.elts", "commonEdges.elts", "commonEdges.length" })
-	@Options(ensureAllInts = true)
+	//@Options(ensureAllInts = true)
 	public void solveZobecnenaBisekcniSirkaGrafuProblem(Set<Node> resultA, Set<Node> resultN, Set<Edge> commonEdges, int a, int treshold)
 	{
 		Squander.exe(this, resultA, resultN, commonEdges, a, treshold);

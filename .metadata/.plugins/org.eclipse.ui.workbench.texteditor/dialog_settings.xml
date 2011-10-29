@@ -3,24 +3,33 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="310" key="DIALOG_WIDTH"/>
 		<item value="160" key="DIALOG_Y_ORIGIN"/>
-		<item value="430" key="DIALOG_HEIGHT"/>
 		<item value="108" key="DIALOG_X_ORIGIN"/>
+		<item value="430" key="DIALOG_HEIGHT"/>
 		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="return" key="selection"/>
+		<item value="NODE: 26" key="selection"/>
 		<list key="findhistory">
-			<item value="return"/>
-			<item value="4"/>
-			<item value="2"/>
-			<item value="actualN"/>
+			<item value="NODE: 26"/>
+			<item value="18"/>
+			<item value="space"/>
+			<item value="\uv"/>
+			<item value="arity"/>
+			<item value="order"/>
+			<item value="hight order"/>
+			<item value="hight-order"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
+			<item value="[i-1]"/>
+			<item value="int"/>
+			<item value="this"/>
+			<item value=":&quot;-&quot;"/>
 			<item value="result"/>
 		</list>
 	</section>

@@ -130,7 +130,7 @@ public class Test {
 		}
 	}*/
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		Number n1 = new Number(1);
 		Number n2 = new Number(2);
 		Number n3 = new Number(3);
@@ -168,5 +168,5 @@ public class Test {
 		}
 				
 				
-	}
+	}*/
 }

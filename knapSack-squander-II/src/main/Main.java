@@ -51,7 +51,7 @@ public class Main {
 			KnapSack kn = new KnapSack();
 			try
 			{
-				kn.solveKnapSackProblem(result, result.size(), capacity, resCost-1);
+				kn.solveKnapSackProblem(result, result.size(), capacity, resCost);
 				//kn.solveKnapSackProblem(result, result.length, capacity, resCost-1);
 				//Collections.sort((List<Thing>) result);
 				int price = 0;

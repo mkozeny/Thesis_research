@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="32" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="0" y="24">
+<window height="771" maximized="true" width="1020" x="310" y="99">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -10,21 +10,29 @@
 <coolItem id="group.file" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="124" y="34"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="116" y="34"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="52" y="34"/>
+<coolItem id="org.eclipse.hyades.trace.executionViewActionSet" itemType="typeToolBarContribution" x="44" y="34"/>
+<coolItem id="org.eclipse.hyades.trace.profileViewActionSet" itemType="typeToolBarContribution" x="92" y="34"/>
+<coolItem id="org.eclipse.hyades.trace.referenceViewActionSet" itemType="typeToolBarContribution" x="44" y="34"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="76" y="34"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="124" y="34"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="100" y="34"/>
 <coolItem id="org.eclipse.team.cvs.ui.CVSActionSet" itemType="typeToolBarContribution" x="44" y="34"/>
 <coolItem id="org.eclipse.team.ui.actionSet" itemType="typeToolBarContribution" x="52" y="34"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="116" y="34"/>
+<coolItem id="org.eclipse.tptp.trace.jvmti.profilingActionSet" itemType="typeToolBarContribution" x="92" y="34"/>
+<coolItem id="org.eclipse.tptp.trace.jvmti.threadActionSet" itemType="typeToolBarContribution" x="68" y="34"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="68" y="34"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="172" y="34"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="net.sourceforge.texlipse.bibeditor.BibEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="net.sourceforge.texlipse.TexEditor" itemType="typeToolBarContribution" x="188" y="34"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1311588953974" focus="true" label="Workspace - Java">
+<page aggregateWorkingSetId="Aggregate for window 1311588953974" focus="true" label="Workspace - LaTeX">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
@@ -39,120 +47,45 @@
 <part id="6"/>
 <part id="7"/>
 <part id="8"/>
-<part id="9"/>
-<part id="10"/>
-<part id="11"/>
-<part id="12"/>
-<part id="13"/>
-<part id="14"/>
-<part id="15"/>
-<part id="16"/>
-<part id="17"/>
-<part id="18"/>
-<part id="19"/>
-<part id="20"/>
-<part id="21"/>
-<part id="22"/>
-<part id="23"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="/home/kozenym/Desktop/DP/squander_workspace/testSquander/src/main/Test.java" title="Test.java" tooltip="testSquander/src/main/Test.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/testSquander/src/main/Test.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1246" selectionTopPixel="325"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Graph.java" partName="Graph.java" path="/home/kozenym/Desktop/DP/squander_workspace/testSquander/src/main/Graph.java" title="Graph.java" tooltip="testSquander/src/main/Graph.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/testSquander/src/main/Graph.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1081" selectionTopPixel="283"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Edge.java" partName="Edge.java" path="/home/kozenym/Desktop/DP/squander_workspace/testSquander/src/main/Edge.java" title="Edge.java" tooltip="testSquander/src/main/Edge.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/testSquander/src/main/Edge.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KnapSack.java" partName="KnapSack.java" path="/home/kozenym/Desktop/DP/squander_workspace/knapSack-squander/src/main/KnapSack.java" title="KnapSack.java" tooltip="knapSack-squander/src/main/KnapSack.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/knapSack-squander/src/main/KnapSack.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1209" selectionTopPixel="250"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/kozenym/Desktop/DP/squander_workspace/knapSack-squander/src/main/Main.java" title="Main.java" tooltip="knapSack-squander/src/main/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/knapSack-squander/src/main/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="986" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NQueensProblemSolver.java" partName="NQueensProblemSolver.java" path="/home/kozenym/Desktop/DP/squander_workspace/nQueens-squander/src/main/NQueensProblemSolver.java" title="NQueensProblemSolver.java" tooltip="nQueens-squander/src/main/NQueensProblemSolver.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/nQueens-squander/src/main/NQueensProblemSolver.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="142" selectionOffset="493" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/kozenym/Desktop/DP/squander_workspace/nQueens/src/main/Main.java" title="Main.java" tooltip="nQueens/src/main/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/nQueens/src/main/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NQueensProblemSolver.java" partName="NQueensProblemSolver.java" path="/home/kozenym/Desktop/DP/squander_workspace/nQueens/src/main/NQueensProblemSolver.java" title="NQueensProblemSolver.java" tooltip="nQueens/src/main/NQueensProblemSolver.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/nQueens/src/main/NQueensProblemSolver.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="91" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphExtension.java" partName="GraphExtension.java" path="/home/kozenym/Desktop/DP/squander_workspace/lDominantniMnozinaGrafu-squander/src/graph/GraphExtension.java" title="GraphExtension.java" tooltip="lDominantniMnozinaGrafu-squander/src/graph/GraphExtension.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lDominantniMnozinaGrafu-squander/src/graph/GraphExtension.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5567" selectionTopPixel="1297"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExtendedNode.java" partName="ExtendedNode.java" path="/home/kozenym/Desktop/DP/squander_workspace/lDominantniMnozinaGrafu-squander/src/graph/ExtendedNode.java" title="ExtendedNode.java" tooltip="lDominantniMnozinaGrafu-squander/src/graph/ExtendedNode.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lDominantniMnozinaGrafu-squander/src/graph/ExtendedNode.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="274" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphExecutor.java" partName="GraphExecutor.java" path="/home/kozenym/Desktop/DP/squander_workspace/lDominantniMnozinaGrafu-squander/src/main/GraphExecutor.java" title="GraphExecutor.java" tooltip="lDominantniMnozinaGrafu-squander/src/main/GraphExecutor.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lDominantniMnozinaGrafu-squander/src/main/GraphExecutor.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="1" selectionOffset="672" selectionTopPixel="114"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/kozenym/Desktop/DP/squander_workspace/lDominantniMnozinaGrafu-squander/src/main/Main.java" title="Main.java" tooltip="lDominantniMnozinaGrafu-squander/src/main/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/lDominantniMnozinaGrafu-squander/src/main/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="207" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Graph.java" partName="Graph.java" path="/home/kozenym/Desktop/DP/squander_workspace/commonGraphUtils/src/graph/Graph.java" title="Graph.java" tooltip="commonGraphUtils/src/graph/Graph.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/commonGraphUtils/src/graph/Graph.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="1983" selectionTopPixel="945"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphExecutor.java" partName="GraphExecutor.java" path="/home/kozenym/Desktop/DP/squander_workspace/hamiltonianPath-squander/src/main/GraphExecutor.java" title="GraphExecutor.java" tooltip="hamiltonianPath-squander/src/main/GraphExecutor.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hamiltonianPath-squander/src/main/GraphExecutor.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="747" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Node.java" partName="Node.java" path="/home/kozenym/Desktop/DP/squander_workspace/commonGraphUtils/src/graph/Node.java" title="Node.java" tooltip="commonGraphUtils/src/graph/Node.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/commonGraphUtils/src/graph/Node.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphExtension.java" partName="GraphExtension.java" path="/home/kozenym/Desktop/DP/squander_workspace/nejkratsiCestaVGrafu/src/graph/GraphExtension.java" title="GraphExtension.java" tooltip="nejkratsiCestaVGrafu/src/graph/GraphExtension.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/nejkratsiCestaVGrafu/src/graph/GraphExtension.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="37" selectionOffset="3755" selectionTopPixel="1222"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/kozenym/Desktop/DP/squander_workspace/nejkratsiCestaVGrafu/src/main/Main.java" title="Main.java" tooltip="nejkratsiCestaVGrafu/src/main/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/nejkratsiCestaVGrafu/src/main/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="39" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Edge.java" partName="Edge.java" path="/home/kozenym/Desktop/DP/squander_workspace/commonGraphUtils/src/graph/Edge.java" title="Edge.java" tooltip="commonGraphUtils/src/graph/Edge.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/commonGraphUtils/src/graph/Edge.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="770" selectionTopPixel="34"/>
-</editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SoliterSolver.java" partName="SoliterSolver.java" path="/home/kozenym/Desktop/DP/squander_workspace/trojuhelnikovySoliter/src/game/SoliterSolver.java" title="SoliterSolver.java" tooltip="trojuhelnikovySoliter/src/game/SoliterSolver.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/trojuhelnikovySoliter/src/game/SoliterSolver.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="538" selectionTopPixel="262"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1638" selectionTopPixel="398"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameField.java" partName="GameField.java" path="/home/kozenym/Desktop/DP/squander_workspace/trojuhelnikovySoliter/src/game/GameField.java" title="GameField.java" tooltip="trojuhelnikovySoliter/src/game/GameField.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/trojuhelnikovySoliter/src/game/GameField.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4667" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="State.java" partName="State.java" path="/home/kozenym/Desktop/DP/squander_workspace/trojuhelnikovySoliter/src/game/State.java" title="State.java" tooltip="trojuhelnikovySoliter/src/game/State.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/trojuhelnikovySoliter/src/game/State.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="1468" selectionOffset="43" selectionTopPixel="1213"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="/home/kozenym/Desktop/DP/squander_workspace/trojuhelnikovySoliter/src/main/Main.java" title="Main.java" tooltip="trojuhelnikovySoliter/src/main/Main.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/trojuhelnikovySoliter/src/main/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="328" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FollowersSolver.java" partName="FollowersSolver.java" path="/home/kozenym/Desktop/DP/squander_workspace/testSquander/src/main/FollowersSolver.java" title="FollowersSolver.java" tooltip="testSquander/src/main/FollowersSolver.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/testSquander/src/main/FollowersSolver.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="354" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="407" selectionOffset="84" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Cell.java" partName="Cell.java" path="/home/kozenym/Desktop/DP/squander_workspace/trojuhelnikovySoliter/src/game/Cell.java" title="Cell.java" tooltip="trojuhelnikovySoliter/src/game/Cell.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/trojuhelnikovySoliter/src/game/Cell.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="407" selectionTopPixel="30"/>
+<editorState selectionHorizontalPixel="0" selectionLength="1429" selectionOffset="45" selectionTopPixel="928"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="State.java" partName="State.java" path="/home/kozenym/Desktop/DP/squander_workspace/trojuhelnikovySoliter/src/game/State.java" title="State.java" tooltip="trojuhelnikovySoliter/src/game/State.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/trojuhelnikovySoliter/src/game/State.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="151" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sudoku1.java" partName="Sudoku1.java" path="/home/kozenym/Desktop/DP/squander_workspace/testSquander/src/main/Sudoku1.java" title="Sudoku1.java" tooltip="testSquander/src/main/Sudoku1.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/testSquander/src/main/Sudoku1.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="2098"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="/home/kozenym/Desktop/DP/squander_workspace/testSquander/src/main/Test.java" title="Test.java" tooltip="testSquander/src/main/Test.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/testSquander/src/main/Test.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1888"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TriSol.java" partName="TriSol.java" path="/home/kozenym/Desktop/DP/squander_workspace/testSquander/src/main/TriSol.java" title="TriSol.java" tooltip="testSquander/src/main/TriSol.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/testSquander/src/main/TriSol.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="460" selectionOffset="3896" selectionTopPixel="1363"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SoliterSolver.java" partName="SoliterSolver.java" path="/home/kozenym/Desktop/DP/squander_workspace/testSquander/src/main/SoliterSolver.java" title="SoliterSolver.java" tooltip="testSquander/src/main/SoliterSolver.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/testSquander/src/main/SoliterSolver.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="713" selectionTopPixel="1396"/>
+</editor>
+<editor activePart="true" focus="true" id="net.sourceforge.texlipse.TexEditor" name="thesis.tex" partName="thesis.tex" path="/home/kozenym/Desktop/DP/squander_workspace/thesisText/thesis.tex" title="thesis.tex" tooltip="thesisText/thesis.tex" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/thesisText/thesis.tex"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="88779" selectionTopPixel="32708"/>
 </editor>
 </editors>
 <views>
@@ -162,11 +95,17 @@
 <view id="org.eclipse.team.sync.views.SynchronizeView" partName="Synchronize">
 <viewState/>
 </view>
+<view id="org.eclipse.ui.views.ProgressView" partName="Progress">
+<viewState/>
+</view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
 </view>
-<view id="org.eclipse.egit.ui.RepositoriesView" partName="Git Repositories">
-<viewState CommonNavigator.LINKING_ENABLED="0"/>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
 </view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
 <view id="org.eclipse.team.ccvs.ui.RepositoriesView" partName="CVS Repositories">
@@ -175,12 +114,39 @@
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
+<view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" currentWorkingSetName="Aggregate for window 1311588953974" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
 <viewState/>
 </view>
+<view id="org.eclipse.ui.views.ResourceNavigator" partName="Navigator">
+<viewState LINK_NAVIGATOR_TO_EDITOR="0" sorter="1">
+<filters>&#x0A;<filter element="*.class" isEnabled="false"/>
+<filter element=".*" isEnabled="false"/>
+<filter element="*.aux" isEnabled="false"/>
+<filter element="*.log" isEnabled="false"/>
+<filter element="*.toc" isEnabled="false"/>
+<filter element="*.dvi" isEnabled="false"/>
+<filter element="*.ps" isEnabled="false"/>
+<filter element="*.bbl" isEnabled="false"/>
+<filter element="*.blg" isEnabled="false"/>
+<filter element="*.ind" isEnabled="false"/>
+<filter element="*.ilg" isEnabled="false"/>
+<filter element="*.lot" isEnabled="false"/>
+<filter element="*.lof" isEnabled="false"/>
+</filters>
+</viewState>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<columnWidths org.eclipse.ui.ide.locationField="73" org.eclipse.ui.ide.markerType="571" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.resourceField="108" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
+<expanded>
+<category IMemento.internal.id="Warnings (72 items)"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="73" org.eclipse.ui.ide.markerType="571" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.resourceField="108" org.eclipse.ui.ide.severityAndDescriptionField="818"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -188,11 +154,12 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
 </view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1311588953974">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
 <child filterId="org.eclipse.pde.ui.ExternalPluginLibrariesFilter1" isEnabled="true"/>
@@ -217,13 +184,10 @@
 </customFilters>
 </viewState>
 </view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
-</view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="net.sourceforge.texlipse.TexEditor" activePerspective="net.sourceforge.texlipse.TexlipsePerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
@@ -233,10 +197,7 @@
 <alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
-<alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
-<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
-<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
 <alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
 <alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
 <alwaysOnActionSet id="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>
@@ -244,6 +205,10 @@
 <alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
 <alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
 <alwaysOnActionSet id="org.eclipse.jdt.junit.JUnitActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.profileActionSet"/>
+<alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
 <alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
 <show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
 <show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
@@ -279,68 +244,56 @@
 <perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.team.sync.views.SynchronizeView"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="left">
-<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="left">&#x0A;<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1254" ratioRight="418" relationship="2" relative="left">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1254" ratioRight="418" relationship="2" relative="left">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="418" ratioRight="1254" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.6876457" ratioLeft="590" ratioRight="268" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<info folder="true" part="bottom" ratio="0.6876457" ratioLeft="590" ratioRight="268" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.team.sync.views.SynchronizeView" label="Synchronize"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1f00415" ratio="0.7496013" ratioLeft="940" ratioRight="314" relationship="2" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1f00415" ratio="0.7496013" ratioLeft="940" ratioRight="314" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="right" ratio="0.4992248" ratioLeft="322" ratioRight="323" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1f00415">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="right" ratio="0.4992248" ratioLeft="322" ratioRight="323" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1f00415">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -359,6 +312,9 @@
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
 <alwaysOnActionSet id="org.eclipse.team.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
 <show_view_action id="org.eclipse.team.sync.views.SynchronizeView"/>
 <show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <show_view_action id="org.eclipse.ui.views.ContentOutline"/>
@@ -465,7 +421,7 @@
 <show_view_action id="org.eclipse.egit.ui.StagingView"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.egit.ui.RepositoriesView"/>
+<view id="org.eclipse.egit.ui.RepositoriesView" removed="true"/>
 <view id="org.eclipse.ui.views.PropertySheet"/>
 <fastViewBars/>
 <layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.ui.internal.ViewStack@16f551d">&#x0A;<folder activePageID="org.eclipse.egit.ui.RepositoriesView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.egit.ui.RepositoriesView" label="Git Repositories"/>
@@ -488,178 +444,408 @@
 </mainWindow>
 </layout>
 </perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="net.sourceforge.texlipse.TexPerspectiveFactory" id="net.sourceforge.texlipse.TexlipsePerspective" label="LaTeX"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<show_view_action id="org.eclipse.ui.views.BookmarkView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="net.sourceforge.texlipse.FullOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="net.sourceforge.texlipse.TableView"/>
+<new_wizard_action id="net.sourceforge.texlipse.TexProjectWizard"/>
+<new_wizard_action id="net.sourceforge.texlipse.wizards.TexlipseNewTexFileWizard"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.views.ProgressView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1b278f1">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1254" ratioRight="418" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1b278f1">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="418" ratioRight="1254" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1b278f1"/>
+<info folder="true" part="bottom" ratio="0.699187" ratioLeft="602" ratioRight="259" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ProgressView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
+<page content="net.sourceforge.texlipse.TableView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.egit.ui.RepositoriesView" ratio="0.5" ratioLeft="627" ratioRight="627" relationship="2" relative="bottom"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1f79ab5" ratio="0.7496013" ratioLeft="940" ratioRight="314" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="left" ratio="0.49941927" ratioLeft="430" ratioRight="431" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1b278f1">
+<folder activePageID="net.sourceforge.texlipse.FullOutline" appearance="2" expanded="2">
+<page content="net.sourceforge.texlipse.FullOutline" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.eclipse.jdt.debug.ui.DisplayView"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="org.eclipse.debug.ui.ExpressionView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<fastViewBars/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1254" ratioRight="418" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74912894" ratioLeft="645" ratioRight="216" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
+<page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.egit.ui.RepositoriesView" ratio="0.5" ratioLeft="836" ratioRight="836" relationship="2" relative="org.eclipse.debug.internal.ui.ConsoleFolderView"/>
+<info part="org.eclipse.ui.editorss" ratio="0.4496124" ratioLeft="290" ratioRight="355" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1254" ratioRight="418" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="836" ratioRight="836" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="0" fixed="0" version="0.016">
+<descriptor descriptor="org.eclipse.hyades.trace.internal.ui.tracePerspective" id="&lt;Profiling_and_Logging&gt;" label="&lt;Profiling and Logging&gt;"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.profileActionSet"/>
+<alwaysOnActionSet id="org.eclipse.egit.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="com.yourkit.profiler.profileActionSet"/>
+<show_view_action id="org.eclipse.hyades.trace.internal.ui.PDProjectExplorer"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.hyades.trace.views.adapter.internal.PackageStatisticViewer"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<perspective_action id="org.eclipse.hyades.ui.perspective.TestPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.views.ResourceNavigator"/>
+<fastViewBars/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.eclipse.ui.views.ResourceNavigator" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ResourceNavigator" label="Navigator"/>
+<page content="org.eclipse.hyades.trace.internal.ui.PDProjectExplorer" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1254" ratioRight="418" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.74912894" ratioLeft="645" ratioRight="216" relationship="4" relative="topLeft"/>
+<info folder="true" part="topRight" ratio="0.25" ratioLeft="418" ratioRight="1254" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.hyades.trace.views.adapter.internal.ExecutionStatisticViewer2" label="LabelNotFound"/>
+<page content="org.eclipse.hyades.trace.views.adapter.internal.CoverageStatisticViewer" label="LabelNotFound"/>
+<page content="org.eclipse.hyades.trace.views.adapter.internal.MemoryStatisticViewer" label="LabelNotFound"/>
+<page content="org.eclipse.hyades.trace.views.adapter.internal.PatternViewer" label="LabelNotFound"/>
+<page content="org.eclipse.hyades.trace.views.adapter.internal.SinglePatternViewer" label="LabelNotFound"/>
+<page content="org.eclipse.hyades.trace.views.adapter.internal.MethodDetailsViewer" label="LabelNotFound"/>
+<page content="org.eclipse.hyades.trace.views.adapter.internal.ReferenceTableViewer" label="LabelNotFound"/>
+<page content="org.eclipse.hyades.uml2sd.trace.view.TraceSDView" label="LabelNotFound"/>
+<page content="org.eclipse.tptp.trace.jvmti.internal.client.views.ThreadAnalysisViewer" label="LabelNotFound"/>
+<page content="org.eclipse.tptp.trace.jvmti.internal.client.views.MemoryAnalysisViewer" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="bottomRight" ratio="0.6992248" ratioLeft="451" ratioRight="194" relationship="4" relative="topRight">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.tptp.trace.jvmti.internal.client.views.CallStackViewer" ratio="0.4992248" ratioLeft="322" ratioRight="323" relationship="4" relative="topRight"/>
+</mainWindow>
+</layout>
+</perspective>
 </perspectives>
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/zobecnenaBisekcniSirka-squander/src/graph/GraphExtension.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/nejkratsiCestaVGrafu/src/graph/GraphExtension.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/nejkratsiCestaVGrafu/src/main/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/commonGraphUtils/src/graph/Graph.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/commonGraphUtils/src/graph/Edge.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/commonGraphUtils/src/graph/Node.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/lDominantniMnozinaGrafu-squander/src/graph/GraphExtension.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/nejkratsiCestaVGrafu/src/graph/GraphExtension.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/trojuhelnikovySoliter/src/game/SoliterSolver.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/trojuhelnikovySoliter/src/game/GameField.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/trojuhelnikovySoliter/src/main/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/testSquander/src/main/Test.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/testSquander/src/main/FollowersSolver.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/nejkratsiCestaVGrafu/src/graph/GraphExtension.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/trojuhelnikovySoliter/src/game/GameField.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/trojuhelnikovySoliter/src/game/SoliterSolver.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/trojuhelnikovySoliter/src/game/Cell.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/trojuhelnikovySoliter/src/game/State.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/trojuhelnikovySoliter/src/main/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/hamiltonianPath-squander/src/main/GraphExecutor.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/trojuhelnikovySoliter/src/game/Cell.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/testSquander/src/main/Sudoku1.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/testSquander/src/main/Test.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/testSquander/src/main/TriSol.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/testSquander/src/main/SoliterSolver.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" path="/thesisText/thesis.tex"/>
 </editors>
-<item historyLabel="GraphExtension.java" index="0">
+<item historyLabel="State.java" index="1">
+<position info="not_deleted" x="88" y="0"/>
+</item>
+<item historyLabel="Main.java" index="2">
+<position info="not_deleted" x="115" y="1"/>
+</item>
+<item historyLabel="State.java" index="1">
+<position info="not_deleted" x="76" y="0"/>
+</item>
+<item historyLabel="SoliterSolver.java" index="0">
+<position info="not_deleted" x="521" y="0"/>
+</item>
+<item historyLabel="State.java" index="1">
+<position info="not_deleted" x="66" y="0"/>
+</item>
+<item historyLabel="Main.java" index="2">
+<position info="not_deleted" x="115" y="1"/>
+</item>
+<item historyLabel="GraphExecutor.java" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Graph.java" index="3">
-<position info="not_deleted" x="1613" y="0"/>
-</item>
-<item historyLabel="Graph.java" index="3">
-<position info="not_deleted" x="141" y="5"/>
-</item>
-<item historyLabel="Edge.java" index="4">
-<position info="not_deleted" x="107" y="0"/>
+<item historyLabel="SoliterSolver.java" index="0">
+<position info="not_deleted" x="276" y="0"/>
 </item>
 <item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="673" y="0"/>
+<position info="not_deleted" x="84" y="407"/>
 </item>
-<item historyLabel="Graph.java" index="3">
-<position info="not_deleted" x="141" y="5"/>
+<item historyLabel="State.java" index="1">
+<position info="not_deleted" x="43" y="1766"/>
 </item>
-<item historyLabel="Edge.java" index="4">
-<position info="not_deleted" x="107" y="0"/>
+<item historyLabel="SoliterSolver.java" index="0">
+<position info="not_deleted" x="276" y="0"/>
 </item>
-<item historyLabel="Node.java" index="5">
+<item historyLabel="Main.java" index="2">
+<position info="not_deleted" x="84" y="0"/>
+</item>
+<item historyLabel="GraphExecutor.java" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Edge.java" index="4">
-<position info="not_deleted" x="418" y="0"/>
-</item>
 <item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="673" y="0"/>
+<position info="not_deleted" x="84" y="0"/>
 </item>
-<item historyLabel="GraphExtension.java" index="0">
-<position info="not_deleted" x="269" y="0"/>
-</item>
-<item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="673" y="0"/>
-</item>
-<item historyLabel="GraphExtension.java" index="1">
-<position info="not_deleted" x="3791" y="0"/>
-</item>
-<item historyLabel="Edge.java" index="4">
+<item historyLabel="SoliterSolver.java" index="0">
 <position/>
 </item>
-<item historyLabel="Graph.java" index="3">
-<position info="not_deleted" x="141" y="5"/>
+<item historyLabel="Main.java" index="2">
+<position info="not_deleted" x="121" y="370"/>
 </item>
-<item historyLabel="Graph.java" index="3">
-<position info="not_deleted" x="2320" y="0"/>
+<item historyLabel="State.java" index="1">
+<position info="not_deleted" x="206" y="0"/>
 </item>
-<item historyLabel="Edge.java" index="4">
-<position info="not_deleted" x="280" y="0"/>
+<item historyLabel="SoliterSolver.java" index="0">
+<position/>
 </item>
-<item historyLabel="Graph.java" index="3">
-<position info="not_deleted" x="1567" y="0"/>
+<item historyLabel="SoliterSolver.java" index="0">
+<position info="not_deleted" x="1785" y="0"/>
+</item>
+<item historyLabel="SoliterSolver.java" index="0">
+<position/>
+</item>
+<item historyLabel="Cell.java" index="4">
+<position info="not_deleted" x="45" y="1429"/>
+</item>
+<item historyLabel="SoliterSolver.java" index="0">
+<position/>
+</item>
+<item historyLabel="Cell.java" index="4">
+<position info="not_deleted" x="94" y="1374"/>
+</item>
+<item historyLabel="SoliterSolver.java" index="0">
+<position/>
+</item>
+<item historyLabel="Cell.java" index="4">
+<position info="not_deleted" x="62" y="0"/>
+</item>
+<item historyLabel="SoliterSolver.java" index="0">
+<position/>
+</item>
+<item historyLabel="Cell.java" index="4">
+<position info="not_deleted" x="94" y="0"/>
+</item>
+<item historyLabel="State.java" index="1">
+<position info="not_deleted" x="66" y="0"/>
+</item>
+<item historyLabel="SoliterSolver.java" index="0">
+<position info="not_deleted" x="276" y="0"/>
 </item>
 <item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="39" y="0"/>
+<position info="not_deleted" x="121" y="0"/>
 </item>
-<item historyLabel="GraphExtension.java" index="1">
-<position info="not_deleted" x="3791" y="0"/>
-</item>
-<item historyLabel="Edge.java" index="4">
-<position info="not_deleted" x="770" y="0"/>
-</item>
-<item historyLabel="Graph.java" index="3">
-<position info="not_deleted" x="1983" y="12"/>
+<item historyLabel="SoliterSolver.java" index="0">
+<position info="not_deleted" x="1708" y="2"/>
 </item>
 <item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="39" y="0"/>
+<position info="not_deleted" x="121" y="370"/>
 </item>
-<item historyLabel="GraphExtension.java" index="1">
-<position info="not_deleted" x="3393" y="0"/>
+<item historyLabel="SoliterSolver.java" index="0">
+<position/>
 </item>
 <item historyLabel="Main.java" index="2">
-<position info="not_deleted" x="39" y="0"/>
+<position info="not_deleted" x="84" y="407"/>
 </item>
-<item historyLabel="GraphExtension.java" index="1">
-<position info="not_deleted" x="3393" y="0"/>
+<item historyLabel="SoliterSolver.java" index="0">
+<position/>
 </item>
-<item historyLabel="GraphExtension.java" index="6">
-<position info="not_deleted" x="5625" y="0"/>
+<item historyLabel="State.java" index="1">
+<position info="not_deleted" x="43" y="1468"/>
 </item>
-<item historyLabel="GraphExtension.java" index="7">
-<position info="not_deleted" x="3811" y="18"/>
+<item historyLabel="SoliterSolver.java" index="0">
+<position/>
 </item>
-<item historyLabel="SoliterSolver.java" index="8">
-<position info="not_deleted" x="423" y="5"/>
+<item historyLabel="Cell.java" index="4">
+<position info="not_deleted" x="45" y="1429"/>
 </item>
-<item historyLabel="GameField.java" index="9">
+<item historyLabel="SoliterSolver.java" index="0">
+<position info="not_deleted" x="277" y="0"/>
+</item>
+<item historyLabel="Sudoku1.java" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="GameField.java" index="9">
-<position info="not_deleted" x="1074" y="0"/>
-</item>
-<item historyLabel="GameField.java" index="9">
-<position info="not_deleted" x="233" y="0"/>
-</item>
-<item historyLabel="Main.java" index="10">
-<position info="not_deleted" x="328" y="0"/>
-</item>
-<item historyLabel="SoliterSolver.java" index="8">
-<position info="not_deleted" x="538" y="0"/>
-</item>
-<item historyLabel="GameField.java" index="9">
-<position info="not_deleted" x="233" y="0"/>
-</item>
-<item historyLabel="GameField.java" index="9">
-<position info="not_deleted" x="9364" y="0"/>
-</item>
-<item historyLabel="GameField.java" index="9">
-<position info="not_deleted" x="4889" y="0"/>
-</item>
-<item historyLabel="GameField.java" index="9">
-<position info="not_deleted" x="1893" y="0"/>
-</item>
-<item historyLabel="GameField.java" index="9">
-<position info="not_deleted" x="4600" y="0"/>
-</item>
-<item historyLabel="GameField.java" index="9">
-<position info="not_deleted" x="3564" y="0"/>
-</item>
-<item historyLabel="GameField.java" index="9">
-<position info="not_deleted" x="4667" y="0"/>
-</item>
-<item historyLabel="SoliterSolver.java" index="8">
-<position info="not_deleted" x="538" y="0"/>
-</item>
-<item historyLabel="Test.java" index="11">
-<position info="not_deleted" x="1246" y="0"/>
-</item>
-<item historyLabel="FollowersSolver.java" index="12">
+<item historyLabel="Test.java" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="GraphExtension.java" index="13">
-<position info="not_deleted" x="3811" y="18"/>
+<item historyLabel="TriSol.java" index="7">
+<position info="not_deleted" x="3896" y="460"/>
 </item>
-<item historyLabel="GameField.java" index="14">
-<position info="not_deleted" x="4667" y="0"/>
+<item historyLabel="SoliterSolver.java" index="8">
+<position info="not_deleted" x="713" y="0"/>
 </item>
-<item historyLabel="SoliterSolver.java" index="15">
-<position info="not_deleted" x="538" y="0"/>
+<item historyLabel="SoliterSolver.java" index="0">
+<position info="not_deleted" x="277" y="0"/>
 </item>
-<item historyLabel="Cell.java" index="16">
-<position info="not_deleted" x="407" y="0"/>
-</item>
-<item historyLabel="State.java" index="17">
+<item historyLabel="thesis.tex" index="9">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="State.java" index="17">
-<position info="not_deleted" x="151" y="0"/>
+<item historyLabel="thesis.tex" index="9">
+<position info="not_deleted" x="88172" y="0"/>
+</item>
+<item historyLabel="thesis.tex" index="9">
+<position info="not_deleted" x="88152" y="0"/>
+</item>
+<item historyLabel="thesis.tex" index="9">
+<position info="not_deleted" x="88340" y="0"/>
+</item>
+<item historyLabel="thesis.tex" index="9">
+<position info="not_deleted" x="88776" y="0"/>
+</item>
+<item active="true" historyLabel="thesis.tex" index="9">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -679,41 +865,41 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="State.java" tooltip="trojuhelnikovySoliter/src/game/State.java">
-<persistable path="/trojuhelnikovySoliter/src/game/State.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="thesis.pdf" tooltip="thesisText/thesis.pdf">
+<persistable path="/thesisText/thesis.pdf"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="net.sourceforge.texlipse.TexEditor" name="thesis.tex" tooltip="thesisText/thesis.tex">
+<persistable path="/thesisText/thesis.tex"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SoliterSolver.java" tooltip="testSquander/src/main/SoliterSolver.java">
+<persistable path="/testSquander/src/main/SoliterSolver.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TriSol.java" tooltip="testSquander/src/main/TriSol.java">
+<persistable path="/testSquander/src/main/TriSol.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="testSquander/src/main/Test.java">
+<persistable path="/testSquander/src/main/Test.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sudoku1.java" tooltip="testSquander/src/main/Sudoku1.java">
+<persistable path="/testSquander/src/main/Sudoku1.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Cell.java" tooltip="trojuhelnikovySoliter/src/game/Cell.java">
 <persistable path="/trojuhelnikovySoliter/src/game/Cell.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FollowersSolver.java" tooltip="testSquander/src/main/FollowersSolver.java">
-<persistable path="/testSquander/src/main/FollowersSolver.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Frame.class" tooltip="edu.mit.csail.sdg.squander.spec.Frame">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=nejkratsiCestaVGrafu/\/home\/kozenym\/Desktop\/DP\/squander\/new_version\/squander.jar&lt;edu.mit.csail.sdg.squander.spec(Frame.class"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Source.class" tooltip="edu.mit.csail.sdg.squander.spec.Source">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=nejkratsiCestaVGrafu/\/home\/kozenym\/Desktop\/DP\/squander\/new_version\/squander.jar&lt;edu.mit.csail.sdg.squander.spec(Source.class"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Visitor.class" tooltip="edu.mit.csail.sdg.squander.spec.Visitor">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=nejkratsiCestaVGrafu/\/home\/kozenym\/Desktop\/DP\/squander\/new_version\/squander.jar&lt;edu.mit.csail.sdg.squander.spec(Visitor.class"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="trojuhelnikovySoliter/src/main/Main.java">
 <persistable path="/trojuhelnikovySoliter/src/main/Main.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameField.java" tooltip="trojuhelnikovySoliter/src/game/GameField.java">
-<persistable path="/trojuhelnikovySoliter/src/game/GameField.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SoliterSolver.java" tooltip="trojuhelnikovySoliter/src/game/SoliterSolver.java">
-<persistable path="/trojuhelnikovySoliter/src/game/SoliterSolver.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Edge.java" tooltip="commonGraphUtils/src/graph/Edge.java">
-<persistable path="/commonGraphUtils/src/graph/Edge.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="nejkratsiCestaVGrafu/src/main/Main.java">
-<persistable path="/nejkratsiCestaVGrafu/src/main/Main.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphExtension.java" tooltip="nejkratsiCestaVGrafu/src/graph/GraphExtension.java">
-<persistable path="/nejkratsiCestaVGrafu/src/graph/GraphExtension.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphExtension.java" tooltip="zobecnenaBisekcniSirka-squander/src/graph/GraphExtension.java">
-<persistable path="/zobecnenaBisekcniSirka-squander/src/graph/GraphExtension.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Node.java" tooltip="commonGraphUtils/src/graph/Node.java">
-<persistable path="/commonGraphUtils/src/graph/Node.java"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="SquanderImpl.class" tooltip="edu.mit.csail.sdg.squander.engine.SquanderImpl">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=hamiltonianPath-squander/\/home\/kozenym\/Desktop\/DP\/squander\/squander\/squander.jar&lt;edu.mit.csail.sdg.squander.engine(SquanderImpl.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="State.java" tooltip="trojuhelnikovySoliter/src/game/State.java">
+<persistable path="/trojuhelnikovySoliter/src/game/State.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GraphExecutor.java" tooltip="hamiltonianPath-squander/src/main/GraphExecutor.java">
 <persistable path="/hamiltonianPath-squander/src/main/GraphExecutor.java"/>
@@ -721,8 +907,8 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Graph.java" tooltip="commonGraphUtils/src/graph/Graph.java">
 <persistable path="/commonGraphUtils/src/graph/Graph.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="lDominantniMnozinaGrafu-squander/src/main/Main.java">
-<persistable path="/lDominantniMnozinaGrafu-squander/src/main/Main.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SoliterSolver.java" tooltip="trojuhelnikovySoliter/src/game/SoliterSolver.java">
+<persistable path="/trojuhelnikovySoliter/src/game/SoliterSolver.java"/>
 </file>
 </mruList>
 </workbench>

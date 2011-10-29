@@ -18,40 +18,24 @@ public class KnapSack {
 	
 	private int [] c;
 
-	public KnapSack(int capacity, int n) {
+	public KnapSack(int capacity, int n, int [] c, int [] v) {
 		super();
 		this.capacity = capacity;
 		this.n = n;
+		this.c = c;
+		this.v = v;
 	}
-	@Requires({//"all i: int | i>=0 && i<this.n => return[i]=0",
-		"return[int] in {0}"
-	})
-	@Invariant({"this.v", "this.c", "this.capacity", "this.n"})
-	@Ensures({ "return[int] in {0,1}",
-		//"return[int] ==1 || return[int] == 0",
-		//"all i: int | i>=0 && i<this.n => return[i]=0 || return[i]=1",
-		//"all i: int | i>=0 && i<this.n => return[i]=0 ||  return[i]=1",
-		"return.length = this.n ",
-		"(sum i: int | this.v[i]*return[i]) <= this.capacity",
-		"(sum i: int | this.c[i]*return[i]) > minCost"
-		//"(sum i: int | this.c[i]*return[i]) > this.minCost",
-		
+	@Ensures({"return.length = this.n ",
+		"(sum i: int | (return[i]?this.v[i]:0)) <= this.capacity",
+		"(sum i: int | (return[i]?this.c[i]:0)) = minCost"
 		})
-	@Modifies ({ "return.length" , "return.elems" })
-	@FreshObjects ( cls = Integer[].class , num = 1 )
-	@Options(//ensureAllInts = true,
-		bitwidth = 9)
-	public Integer [] solveKnapSackProblem(int minCost)
+	@Modifies ({"return.length",
+		"return.elems" })
+	@FreshObjects ( cls = Boolean[].class , num = 1 )
+	public Boolean [] solveKnapSackProblem(int minCost)
 	{
 		return Squander.exe(this, minCost);
 	}
-	/*@Ensures({ "(sum i: int | return[i]*this.c[i]) > minCost",
-		"(sum i: int | return[i]*this.v[i]) <= this.capacity"})
-	@Modifies ({ "return.length" , "return.elems" })
-	public void solveKnapSackProblem(int [] result, int minCost)
-	{
-		Squander.exe(this, result, minCost);
-	}*/
 	
 	public void setC(int[] c) {
 		this.c = c;

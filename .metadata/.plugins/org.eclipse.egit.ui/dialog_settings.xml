@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="true" key="CommitDialog.showUntracked"/>
+	<list key="CommitDialog.authorValues">
+		<item value="Martin Kozeny &lt;martin.kozeny@ample.cz&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="Martin Kozeny &lt;martin.kozeny@ample.cz&gt;"/>
+	</list>
+	<section name="GitCommitMessageComponent">
+	</section>
+</section>

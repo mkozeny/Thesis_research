@@ -156,7 +156,7 @@ public class Sudoku1 {
         return sudoku;
     }
     
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
 //        Sudoku1 sudoku = Sudoku1.parse("4 | 0 1 0 0 | 0 0 3 0 | 0 3 0 0 | 0 0 4 0");
 //        Sudoku1 sudoku = Sudoku1.parse("9 | 8 0 0 6 0 0 0 0 2 |" +
 //                                         "| 0 4 0 0 5 0 0 1 0 |" +
@@ -180,6 +180,6 @@ public class Sudoku1 {
         System.out.println(sudoku);
         sudoku.solve();
         System.out.println(sudoku);
-    }
+    }*/
 }
 /*! @} */

@@ -1,3 +1,4 @@
-#Sat Sep 24 01:27:35 CEST 2011
+#Sun Oct 23 17:48:46 CEST 2011
 prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="StrictMath.pow(base,arity)"/>\n<expression enabled\="true" text\="universe.size()"/>\n<expression enabled\="true" text\="Integer.MAX_VALUE"/>\n<expression enabled\="true" text\="leftNeighbors.get(cell)"/>\n</watchExpressions>\n
 eclipse.preferences.version=1
+org.eclipse.debug.core.PREF_BREAKPOINT_MANAGER_ENABLED_STATE=false
