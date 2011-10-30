@@ -1718,8 +1718,8 @@ allowing to modify only \verb|boolean choosed| symptom. Summation logic is the
 same as in first version and variable \verb|position| is used for sorting
 resulted set of object in order to have better interpretation of the solution.
 
-In this example we use experience from the previous one and declare variable
-\verb|minCost| as the real maximum cost of possible solution and write it to the
+In this example we also use experience from the previous one and declare
+variable \verb|minCost| as the real maximum cost of possible solution and write it to the
 specification (sum of cost should be equal to \verb|minCost|), so best
 solution value will not disappear in higher \verb|Integer| bitwidth.
 
@@ -1733,7 +1733,6 @@ of variable \verb|minCost|, because there are not so many relations created.
 Implementation was successfuly tested for $40$ things in one instance at most.
 
 \section{General bisection breadth}
-
 \label{sec:gbb}
 This problem is taken from course \textit{Parallel Systems and Algorithms}
 lectured at Faculty of Electrical Engeneering of Czech Technical University in
@@ -2102,8 +2101,6 @@ field (side length 6). For larger instances was timeout treshold exceeded.
 \newpage
 \lstinputlisting[label=ts3,caption=Final implementation of
 Triangular solitaire algorithm]{src/solitaire/TriSol3.java}
-
-
 %*****************************************************************************
 \chapter{Comparison}
 

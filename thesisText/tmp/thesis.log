@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  29 OCT 2011 23:57
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  30 OCT 2011 09:24
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -1316,7 +1316,7 @@ Chapter 5.
 (./src/knapsack/KnapSack5.java) [36] (./src/knapsack/KnapSack6.java) [37]
 (./src/knapsack/KnapSack7.java) [38] [39]
 (./src/generalBisectionBreadth/Gbb1.java)
-Overfull \hbox (8.59026pt too wide) in paragraph at lines 1807--1812
+Overfull \hbox (8.59026pt too wide) in paragraph at lines 1808--1813
 [][]\T1/cmr/m/n/10.95 Then we can add con-straints about what we ex-pect af-ter
  ex-e-cu-tion by an-no-ta-tion []\T1/cmtt/m/n/10.95 @Ensures\T1/cmr/m/n/10.95 .
 
@@ -1338,7 +1338,7 @@ Chapter 7.
 [51] [52
 
 ]
-Overfull \hbox (11.49219pt too wide) in paragraph at lines 2147--2149
+Overfull \hbox (11.49219pt too wide) in paragraph at lines 2150--2152
 []\T1/cmtt/m/n/10.95 http://download.oracle.com/javase/1,5.0/docs/guide/languag
 e/annotations.html 
  []
@@ -1349,48 +1349,48 @@ No file thesis.bbl.
 ]
 Appendix A.
 
-Package natbib Warning: Citation `CSTUG' on page 55 undefined on input line 218
-9.
+Package natbib Warning: Citation `CSTUG' on page 55 undefined on input line 219
+2.
 
 
 Package natbib Warning: Citation `latexdocweb' on page 55 undefined on input li
-ne 2189.
+ne 2192.
 
 
 Package natbib Warning: Citation `latexwiki' on page 55 undefined on input line
- 2189.
+ 2192.
 
 File: figures/LogoCVUT.pdf Graphic file (type pdf)
 <use figures/LogoCVUT.pdf> [55]
 
-Package natbib Warning: Citation `ipe' on page 56 undefined on input line 2221.
+Package natbib Warning: Citation `ipe' on page 56 undefined on input line 2224.
 
 
 [56] [57] [58]
 
-Package natbib Warning: Citation `kniha' on page 59 undefined on input line 236
-8.
+Package natbib Warning: Citation `kniha' on page 59 undefined on input line 237
+1.
 
 
 Package natbib Warning: Citation `clanek' on page 59 undefined on input line 23
-68.
+71.
 
 
 Package natbib Warning: Citation `sbornik' on page 59 undefined on input line 2
-368.
+371.
 
 
-Package natbib Warning: Citation `www' on page 59 undefined on input line 2368.
+Package natbib Warning: Citation `www' on page 59 undefined on input line 2371.
 
 
 [59]
 
 Package natbib Warning: Citation `wiki:framework' on page 60 undefined on input
- line 2370.
+ line 2373.
 
 
 Package natbib Warning: Citation `wiki:orm' on page 60 undefined on input line 
-2370.
+2373.
 
 [60] [61] [62]
 Appendix B.
@@ -1410,7 +1410,7 @@ Appendix D.
 Appendix E.
 
 Package natbib Warning: Citation `infodp' on page 69 undefined on input line 24
-63.
+66.
 
 <figures/seznamcd.pdf, id=1267, 793.96625pt x 539.01375pt>
 File: figures/seznamcd.pdf Graphic file (type pdf)
@@ -1464,7 +1464,7 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/pub
 lic/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on thesis.pdf (86 pages, 887826 bytes).
+Output written on thesis.pdf (86 pages, 887811 bytes).
 PDF statistics:
  2360 PDF objects out of 2487 (max. 8388607)
  661 named destinations out of 1000 (max. 500000)

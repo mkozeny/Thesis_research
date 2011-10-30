@@ -1713,13 +1713,18 @@ Fields of entity \verb|Thing| look like this:
   (for performance reasons)
 \end{itemize}
 
+<<<<<<< HEAD
 For a specification of Squander, we create \verb|Set| of objects \verb|Thing|,
 allowing to modify only \verb|boolean choosed| symptom. Summation logic is the
 same as in first version and variable \verb|position| is used for sorting
 resulted set of object in order to have better interpretation of the solution.
 
+In this example we also use experience from the previous one and declare
+variable \verb|minCost| as the real maximum cost of possible solution and write it to the
+=======
 In this example we use experience from the previous one and declare variable
 \verb|minCost| as the real maximum cost of possible solution and write it to the
+>>>>>>> 35c4f6a87645de9d2b514032587b3affcf0f162f
 specification (sum of cost should be equal to \verb|minCost|), so best
 solution value will not disappear in higher \verb|Integer| bitwidth.
 
@@ -1733,7 +1738,7 @@ of variable \verb|minCost|, because there are not so many relations created.
 Implementation was successfuly tested for $40$ things in one instance at most.
 
 \section{General bisection breadth}
-
+<<<<<<< HEAD
 \label{sec:gbb}
 This problem is taken from course \textit{Parallel Systems and Algorithms}
 lectured at Faculty of Electrical Engeneering of Czech Technical University in
@@ -2102,8 +2107,15 @@ field (side length 6). For larger instances was timeout treshold exceeded.
 \newpage
 \lstinputlisting[label=ts3,caption=Final implementation of
 Triangular solitaire algorithm]{src/solitaire/TriSol3.java}
-
-
+=======
+This algorithm is taken from subject \textit{Parallel Systems and Algorithms}
+lectured at Faculty of Electrical Engeneering of Czech Technical University in
+Prague. It is a graph algorithm and task for that algorithm is to find two
+groups of nodes - number of nodes in one group is exactly define - such, that
+count of edges connecting these two groups are minimal. Because of using first
+order logic in Squander (\ref{sub:apps}), it is necessary again to define some
+maximum treshold of counts of edges connecting groups of nodes.
+>>>>>>> 35c4f6a87645de9d2b514032587b3affcf0f162f
 %*****************************************************************************
 \chapter{Comparison}
 
