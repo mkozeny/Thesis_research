@@ -26,9 +26,9 @@ public class GraphExtension extends Graph {
 	
 	public void solveLDominantniMnozinaGrafuProblem()
 	{
-		while(!stateStack.empty())
+		while(!this.stateStack.empty())
 		{
-			State actualState = stateStack.pop();
+			State actualState = this.stateStack.pop();
 			System.out.println("---POPPING STATE---");
 			printStateInfo(actualState);
 			generateFollowers(actualState);
@@ -61,7 +61,7 @@ public class GraphExtension extends Graph {
 					{
 						if(coverageTmp[j])
 						{
-							for(int k = 0; k < matrixOfIncidency[j].length; k++ )
+							for(int k = 0; k < this.matrixOfIncidency[j].length; k++ )
 								newCoverage[k] = newCoverage[k] || this.matrixOfIncidency[j][k];
 						}
 					}

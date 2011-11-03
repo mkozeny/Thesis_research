@@ -96,6 +96,7 @@ public class Graph {
 		{
 			System.out.println("Edge src: "+e.getSrc().getValue()+", dest: "+e.getDest().getValue()+", cost: "+e.getCost());
 		}
+		System.out.println();
 		System.out.println("---MATRIX OF INCIDENCY---");
 		for(int i=0; i < n; i++)
 		{
@@ -105,6 +106,7 @@ public class Graph {
 			}
 			System.out.println();
 		}
+		System.out.println();
 	}
 	
 	/*public void solveHamiltonianPathRecursively()

@@ -1,0 +1,22 @@
+package graph;
+
+import java.util.Stack;
+
+public class GraphExtension extends Graph{
+
+	private int a;
+	
+	public GraphExtension(int n, int a) {
+		super(n);
+		this.a = a;
+	}
+	
+	public void solveZobecnenaBisekcniSirkaGrafuProblem()
+	{
+		State initState = new State(this.n, this.a);
+		initState.init();
+		Stack<State> stateStack = new Stack<State>();
+	}
+
+	
+}

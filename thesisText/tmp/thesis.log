@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  30 OCT 2011 15:54
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  3 NOV 2011 16:33
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -1316,7 +1316,7 @@ Chapter 5.
 (./src/knapsack/KnapSack5.java) [36] (./src/knapsack/KnapSack6.java) [37]
 (./src/knapsack/KnapSack7.java) [38] [39]
 (./src/generalBisectionBreadth/Gbb1.java)
-Overfull \hbox (8.59026pt too wide) in paragraph at lines 1810--1815
+Overfull \hbox (8.59026pt too wide) in paragraph at lines 1813--1818
 [][]\T1/cmr/m/n/10.95 Then we can add con-straints about what we ex-pect af-ter
  ex-e-cu-tion by an-no-ta-tion []\T1/cmtt/m/n/10.95 @Ensures\T1/cmr/m/n/10.95 .
 
@@ -1329,7 +1329,7 @@ Overfull \hbox (8.59026pt too wide) in paragraph at lines 1810--1815
 [44] [45] (./src/solitaire/TriSol1.java) [46] (./src/solitaire/TriSol2.java)
 [47] (./src/solitaire/TriSol3.java) [48]
 Chapter 6.
-<figures/pf.png, id=1180, 702.625pt x 309.155pt>
+<figures/pf.png, id=1183, 702.625pt x 309.155pt>
 File: figures/pf.png Graphic file (type png)
  <use figures/pf.png> [49
 
@@ -1340,7 +1340,7 @@ Chapter 7.
 [51] [52
 
 ]
-Overfull \hbox (11.49219pt too wide) in paragraph at lines 2163--2165
+Overfull \hbox (11.49219pt too wide) in paragraph at lines 2166--2168
 []\T1/cmtt/m/n/10.95 http://download.oracle.com/javase/1,5.0/docs/guide/languag
 e/annotations.html 
  []
@@ -1352,47 +1352,47 @@ No file thesis.bbl.
 Appendix A.
 
 Package natbib Warning: Citation `CSTUG' on page 55 undefined on input line 220
-5.
+8.
 
 
 Package natbib Warning: Citation `latexdocweb' on page 55 undefined on input li
-ne 2205.
+ne 2208.
 
 
 Package natbib Warning: Citation `latexwiki' on page 55 undefined on input line
- 2205.
+ 2208.
 
 File: figures/LogoCVUT.pdf Graphic file (type pdf)
 <use figures/LogoCVUT.pdf> [55]
 
-Package natbib Warning: Citation `ipe' on page 56 undefined on input line 2237.
+Package natbib Warning: Citation `ipe' on page 56 undefined on input line 2240.
 
 
 [56] [57] [58]
 
 Package natbib Warning: Citation `kniha' on page 59 undefined on input line 238
-4.
+7.
 
 
 Package natbib Warning: Citation `clanek' on page 59 undefined on input line 23
-84.
+87.
 
 
 Package natbib Warning: Citation `sbornik' on page 59 undefined on input line 2
-384.
+387.
 
 
-Package natbib Warning: Citation `www' on page 59 undefined on input line 2384.
+Package natbib Warning: Citation `www' on page 59 undefined on input line 2387.
 
 
 [59]
 
 Package natbib Warning: Citation `wiki:framework' on page 60 undefined on input
- line 2386.
+ line 2389.
 
 
 Package natbib Warning: Citation `wiki:orm' on page 60 undefined on input line 
-2386.
+2389.
 
 [60] [61] [62]
 Appendix B.
@@ -1412,9 +1412,9 @@ Appendix D.
 Appendix E.
 
 Package natbib Warning: Citation `infodp' on page 69 undefined on input line 24
-79.
+82.
 
-<figures/seznamcd.pdf, id=1272, 793.96625pt x 539.01375pt>
+<figures/seznamcd.pdf, id=1275, 793.96625pt x 539.01375pt>
 File: figures/seznamcd.pdf Graphic file (type pdf)
 
 <use figures/seznamcd.pdf>
@@ -1431,9 +1431,9 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18604 strings out of 495027
- 285253 string characters out of 1181419
- 674283 words of memory out of 3000000
+ 18607 strings out of 495027
+ 285301 string characters out of 1181419
+ 682283 words of memory out of 3000000
  20598 multiletter control sequences out of 15000+50000
  28279 words of font info for 69 fonts, out of 3000000 for 9000
  42 hyphenation exceptions out of 8191
@@ -1466,9 +1466,9 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/pub
 lic/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on thesis.pdf (86 pages, 901322 bytes).
+Output written on thesis.pdf (86 pages, 902546 bytes).
 PDF statistics:
- 2366 PDF objects out of 2487 (max. 8388607)
- 662 named destinations out of 1000 (max. 500000)
+ 2369 PDF objects out of 2487 (max. 8388607)
+ 665 named destinations out of 1000 (max. 500000)
  507 words of extra memory for PDF output out of 10000 (max. 10000000)
 

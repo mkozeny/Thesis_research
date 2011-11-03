@@ -1,0 +1,33 @@
+package graph;
+
+import java.util.Stack;
+
+public class GraphExtension extends Graph{
+
+	private int a;
+	
+	private Stack<State> stateStack;
+	
+	public GraphExtension(int n, int a) {
+		super(n);
+		this.a = a;
+	}
+	
+	public void solveZobecnenaBisekcniSirkaGrafuProblem()
+	{
+		State initState = new State(this.n, this.a);
+		initState.init();
+		this.stateStack = new Stack<State>();
+		this.stateStack.push(initState);
+		while(!this.stateStack.empty())
+		{
+			State actualState = stateStack.pop();
+		}
+	}
+
+	public int countOfCommonEdges(State actualState)
+	{
+		return 0;
+	}
+	
+}

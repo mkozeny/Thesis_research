@@ -1,3 +1,4 @@
+@Requires("a <= this.n")
 @Modifies ({ "resultA.elts" , "resultN.elts", "commonEdges.elts",
 				     "commonEdges.length" })
 public void solveZobecnenaBisekcniSirkaGrafuProblem(Set<Node> resultA, 

@@ -1,0 +1,52 @@
+package graph;
+
+import java.util.Stack;
+
+public class GraphExtension extends Graph{
+
+	private int a;
+	
+	private Stack<State> stateStack;
+	
+	private State bestConfiguration;
+	
+	public GraphExtension(int n, int a) {
+		super(n);
+		this.a = a;
+		State initState = new State(n, a);
+		initState.init();
+		this.stateStack = new Stack<State>();
+		this.stateStack.push(initState);
+	}
+	
+	public void solveZobecnenaBisekcniSirkaGrafuProblem()
+	{
+		
+		while(!this.stateStack.empty())
+		{
+			State actualState = stateStack.pop();
+			actualState.setCountOfCommonEdges(countOfCommonEdges(actualState));
+			if(this.bestConfiguration.getCountOfCommonEdges()<=actualState.getCountOfCommonEdges())
+				this.bestConfiguration = actualState;
+		}
+	}
+
+	public int countOfCommonEdges(State actualState)
+	{
+		int countOfCommonEdges = 0;
+		boolean [] configuration = actualState.getConfiguration();
+		for(int i=0; i< configuration.length; i++)
+		{
+			if(configuration[i])
+			{
+				for(int j= 0; j < this.matrixOfIncidency[i].length; j++)
+				{
+					if(this.matrixOfIncidency[i][j] && !configuration[j])
+						countOfCommonEdges++;
+				}
+			}
+		}
+		return countOfCommonEdges;
+	}
+	
+}

@@ -1,0 +1,17 @@
+package graph;
+
+public class GraphExtension extends Graph{
+
+	private int a;
+	
+	public GraphExtension(int n, int a) {
+		super(n);
+		this.a = a;
+	}
+	
+	public void solveZobecnenaBisekcniSirkaGrafuProblem()
+	{
+		
+	}
+
+}

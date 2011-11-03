@@ -1,3 +1,4 @@
+@Requires("a <= this.n")
 @Ensures ({"resultA.elts in this.nodes.elts" ,
 			     "#resultA.elts == a" ,
 			     "resultN.elts in this.nodes.elts" ,

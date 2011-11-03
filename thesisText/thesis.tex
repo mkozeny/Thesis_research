@@ -1797,10 +1797,13 @@ structures and objects:
   from one set of nodes and ending in the other one
 \end{itemize}
 
-Again we started defining what we allow to modify. The answer is easy, because
-all data structures we need to change are both main set of nodes \verb|resultA|
-and \verb|resultN| and set of \verb|commonEdges| also with its length, because
-we want also to find set of fewer common edges than treshold is:
+Again we started defining what we allow to modify and what are the
+prerequisities. The answer is easy, because all data structures we need to
+change are both main set of nodes \verb|resultA| and \verb|resultN| and set of
+\verb|commonEdges| also with its length, because we want also to find set of
+fewer common edges than treshold is. After that we add constraint that
+variable \verb|a|, which symbolizes count of nodes in set \verb|resultA|, has
+to be lower or equal to total count of nodes \verb|n|:
 
 
 \lstinputlisting[label=gbb1,caption=Declaration
