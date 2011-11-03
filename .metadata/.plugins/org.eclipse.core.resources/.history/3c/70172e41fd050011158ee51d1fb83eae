@@ -1,0 +1,54 @@
+package graph;
+
+import java.util.Arrays;
+import java.util.Stack;
+
+public class GraphExtension extends Graph {
+
+	private int l;
+	
+	private int treshold;
+	
+	private State bestConfiguration;
+	
+	public GraphExtension(int n, int l, int treshold) {
+		super(n);
+		this.l = l;
+		this.treshold = treshold;
+		this.bestConfiguration = new State(this.n);
+	}
+
+	
+	public void solveLDominantniMnozinaGrafuProblem()
+	{
+		State initState = new State(this.n);
+		Stack<State> stateStack = new Stack<State>();
+		stateStack.push(initState);
+		while(!stateStack.empty())
+		{
+			State actualState = stateStack.pop();
+			
+			if(actualState.isCoveringAllNodes() 
+					&& actualState.countOfNodes()<this.bestConfiguration.countOfNodes())
+				this.bestConfiguration = actualState;
+		}
+	}
+	
+	private void generateFollowers(State actualState)
+	{
+		boolean [] configuration = actualState.getConfiguration();
+		boolean [] actualConfigurationOfAllNodes = new boolean [configuration.length];
+		if(this.l > 0)
+		{
+			for(int i = 0; i<configuration.length; i++)
+			{
+				if(configuration[i])
+				{
+					for(int j = 0; j < matrixOfIncidency[i].length; j++ )
+						actualConfigurationOfAllNodes[j] = this.matrixOfIncidency[i][j];
+				}
+			}
+		}
+		
+	}
+}

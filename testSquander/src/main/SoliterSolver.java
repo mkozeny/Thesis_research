@@ -1,5 +1,7 @@
 package main;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Random;
 
 import edu.mit.csail.sdg.annotations.Ensures;
@@ -13,7 +15,7 @@ public class SoliterSolver {
 static final int triangleSide= 5;
 	
 	public static void main(String[] args) {
-		State s = new State(triangleSide);
+		/*State s = new State(triangleSide);
 		s.initState();
 		SoliterSolver ss = new SoliterSolver(s,triangleSide);
 		State [] states = ss.generateStates();
@@ -22,8 +24,11 @@ static final int triangleSide= 5;
 		{
 			System.out.println("---STATE: "+(i+1)+"---");
 			result[i].toString();
-		}
-				
+		}*/
+		boolean [] test1 = new boolean[4];
+		boolean [] test2 = new boolean[4];
+		//System.out.println(test1 && test2);
+		
 	}
 	
 	private int n;

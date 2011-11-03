@@ -1,0 +1,26 @@
+package graph;
+
+public class State {
+
+	private boolean [] coverage;
+	
+	private boolean [] configuration;
+	
+	private int n;
+	
+	
+	
+	public State(int n) {
+		super();
+		this.n = n;
+		this.coverage = new boolean[n];
+		this.configuration = new boolean[n];
+	}
+
+
+
+	public boolean isCoveringAllNodes()
+	{
+		return false;
+	}
+}

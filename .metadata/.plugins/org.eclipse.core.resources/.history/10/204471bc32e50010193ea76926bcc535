@@ -1,9 +1,0 @@
-package game;
-
-import java.util.HashSet;
-import java.util.Set;
-
-public class State {
-
-	Set<Cell> cells = new HashSet<Cell>();
-}

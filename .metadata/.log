@@ -7052,3 +7052,21 @@ Command-line arguments:  -os linux -ws gtk -arch x86
 
 !ENTRY net.sourceforge.texlipse 4 4 2011-10-29 12:27:52.042
 !MESSAGE Error while parsing the LaTeX output. Please consult the console output
+!SESSION 2011-11-01 23:20:22.517 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2011-11-01 23:20:37.312
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2011-11-03 07:21:42.738 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2011-11-03 07:22:02.206
+!MESSAGE No search provider was registed. Tasks search is not available.

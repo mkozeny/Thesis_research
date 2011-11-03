@@ -1,0 +1,24 @@
+package graph;
+
+public class GraphExtension extends Graph {
+
+	private int l;
+	
+	private int treshold;
+	
+	private State bestConfiguration;
+	
+	public GraphExtension(int n, int l, int treshold) {
+		super(n);
+		this.l = l;
+		this.treshold = treshold;
+	}
+
+	
+	public void solveLDominantniMnozinaGrafuProblem()
+	{
+		State initState = new State(this.n);
+	}
+	
+	
+}

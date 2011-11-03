@@ -1,0 +1,15 @@
+package graph;
+
+public class State {
+
+	private boolean [] coverage;
+	
+	private boolean [] configuration;
+	
+	private int n;
+	
+	public boolean isCoveringAllNodes()
+	{
+		return null;
+	}
+}

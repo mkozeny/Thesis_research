@@ -188,7 +188,7 @@ public class GraphExtension extends Graph {
 		Set<ExtendedNode> directNeghbours = new HashSet<ExtendedNode>();
 		for(ExtendedNode n:actualNodes)
 		{
-			if(this.matrixOfIncidency[tmp.getValue()][n.getValue()]==1)
+			if(this.matrixOfIncidency[tmp.getValue()][n.getValue()])
 				directNeghbours.add(n);
 			
 		}

@@ -3,26 +3,26 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="310" key="DIALOG_WIDTH"/>
 		<item value="160" key="DIALOG_Y_ORIGIN"/>
-		<item value="108" key="DIALOG_X_ORIGIN"/>
 		<item value="430" key="DIALOG_HEIGHT"/>
+		<item value="108" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="NODE: 26" key="selection"/>
+		<item value="graph" key="selection"/>
 		<list key="findhistory">
-			<item value="NODE: 26"/>
-			<item value="18"/>
-			<item value="space"/>
-			<item value="\uv"/>
-			<item value="arity"/>
-			<item value="order"/>
-			<item value="hight order"/>
-			<item value="hight-order"/>
+			<item value="graph"/>
+			<item value="course \textit{Parallel Systems and Algorithms}"/>
+			<item value="subject \textit{Parallel Systems and Algorithms}"/>
+			<item value="is taken from subject \textit{Parallel Systems and Algorithms}"/>
+			<item value="This algorithm is taken from subject \textit{Parallel Systems and Algorithms}"/>
+			<item value="=="/>
+			<item value="==="/>
+			<item value="&gt;&gt;"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

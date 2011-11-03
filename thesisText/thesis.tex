@@ -1721,7 +1721,9 @@ resulted set of object in order to have better interpretation of the solution.
 In this example we use experience from the previous one and declare variable
 \verb|minCost| as the real maximum cost of possible solution and write it to the
 specification (sum of cost should be equal to \verb|minCost|), so best
-solution value will not disappear in higher \verb|Integer| bitwidth.
+solution value will not disappear in higher \verb|Integer| bitwidth. On the
+other hand, this implementation is not very usable, because we almost always do
+not know exact highest total price.
 
 \lstinputlisting[label=knapSack7,caption=Improving
 implementation of Knapsack using previous
@@ -2106,12 +2108,23 @@ Triangular solitaire algorithm]{src/solitaire/TriSol3.java}
 
 %*****************************************************************************
 \chapter{Comparison}
+For meausurement of some metrics (execution time and memory analysis) is
+used Java profiler \textit{Test} \& \textit{Performance Tools Platform (TPTP)},
+which is Eclipse plugin profiling tool. This tool is highly integrated with Eclipse, so
+it allows profiling of applications running from within Eclipse - see Figure
+\ref{fig:pfMonitor}. I also try to use another Eclipse profiler called
+\textit{Colorer}, but developing of this profiler was cancelled in 2008
+and also there was quite a lot of problems to use it in oldest available Eclipse
+Europa.
 
-\begin{itemize}
- \item Způsob, průběh a výsledky testování.
- \item Srovnání s existujícími řešeními, pokud jsou známy.
-\end{itemize}
 
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[width=14cm]{figures/pf}
+\caption{Profiling monitor}
+\label{fig:pfMonitor}
+\end{center}
+\end{figure}
 
 %*****************************************************************************
 \chapter{Conclusion}

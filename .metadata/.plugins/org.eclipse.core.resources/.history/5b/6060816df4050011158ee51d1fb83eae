@@ -1,0 +1,35 @@
+package graph;
+
+import java.util.Arrays;
+
+public class State {
+
+	private boolean [] coverage;
+	
+	private boolean [] configuration;
+	
+	private boolean [] coveredGraph;
+	
+	private int n;
+	
+	
+	
+	public State(int n) {
+		super();
+		this.n = n;
+		this.coverage = new boolean[n];
+		this.configuration = new boolean[n];
+		this.coveredGraph = new boolean[n];
+		for(int i = 0; i< this.coveredGraph.length; i++)
+		{
+			coveredGraph[i] = true;
+		}
+	}
+
+
+
+	public boolean isCoveringAllNodes()
+	{
+		return Arrays.equals(this.coverage, this.coveredGraph);
+	}
+}

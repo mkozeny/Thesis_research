@@ -15,8 +15,8 @@ public class GraphExecutor extends Graph {
 			for(int j=0; j< n; j++)
 			{
 				//if((matrixOfFollowers[j][i]==1 && result[0]==null) ||(matrixOfFollowers[j][i]==1 && pointer > 0 && result[pointer-1].getDest().equals(new Node(j)) && doesResultNotContainNode(new Node(i))))
-				if(((matrixOfFollowers[j][i]==1 && result[0]==null) 
-						||(matrixOfFollowers[j][i]==1 && pointer > 0 
+				if(((matrixOfFollowers[j][i] && result[0]==null) 
+						||(matrixOfFollowers[j][i] && pointer > 0 
 						&& result[pointer-1].getDest().getValue()==j && doesResultNotContainNode(i))) 
 						&& i!=j)
 				{
