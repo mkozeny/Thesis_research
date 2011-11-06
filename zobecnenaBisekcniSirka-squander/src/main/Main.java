@@ -13,7 +13,7 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		GraphExtension ge = new GraphExtension(25);
+		GraphExtension ge = new GraphExtension(25, 3);
 		ge.generateGraph();
 		Set<Node> resultA = new HashSet<Node>();
 		Set<Node> resultN = new HashSet<Node>();

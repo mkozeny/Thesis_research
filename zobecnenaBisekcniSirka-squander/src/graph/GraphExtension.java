@@ -11,8 +11,8 @@ public class GraphExtension extends Graph {
 
 
 	
-	public GraphExtension(int n) {
-		super(n);
+	public GraphExtension(int n, int maxGrade) {
+		super(n, maxGrade);
 	}
 	@Ensures ( {
 		"resultA.elts in this.nodes.elts" ,

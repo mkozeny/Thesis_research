@@ -1,31 +1,35 @@
 package graph;
 
-import java.lang.reflect.Constructor;
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
-public class Graph {
+public class Graph implements Serializable{
 	
+	
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5459389589910754422L;
+
 	protected int n;
 	
 	protected boolean [] [] matrixOfFollowers;
 	
 	protected boolean [] [] matrixOfIncidency;
 	
-	protected Edge [] result;
+	protected int maxGrade;
 	
-	protected int pointer;
-	
-	public Graph(int n) {
+	public Graph(int n, int maxGrade) {
 		super();
 		this.n = n;
 		this.nodes = new HashSet<Node>();
 		this.edges = new HashSet<Edge>();
 		this.matrixOfFollowers = new boolean [n][n];
 		this.matrixOfIncidency = new boolean [n][n];
-		this.result = new Edge [n-1];
-		this.pointer = 0;
+		this.maxGrade = maxGrade;
 	}
 
 	protected Set<Node> nodes;
@@ -59,11 +63,11 @@ public class Graph {
 		{
 			choosedNode = nodeChooser.nextInt(this.nodes.size()-1);
 			Node firstNode = arrayOfNodes[choosedNode];
-			if(getGradeOfNode(firstNode)>=3)
+			if(getGradeOfNode(firstNode)>=this.maxGrade)
 				continue;
 			choosedNode = nodeChooser.nextInt(this.nodes.size()-1);
 			Node secondNode = arrayOfNodes[choosedNode];
-			if(getGradeOfNode(secondNode)>=3)
+			if(getGradeOfNode(secondNode)>=this.maxGrade)
 				continue;
 			Edge e = new Edge(firstNode, secondNode);
 			this.edges.add(e);
@@ -109,36 +113,6 @@ public class Graph {
 		System.out.println();
 	}
 	
-	/*public void solveHamiltonianPathRecursively()
-	{
-		for(int i=0; i< n; i++)
-		{
-			for(int j=0; j< n; j++)
-			{
-				//if((matrixOfFollowers[j][i]==1 && result[0]==null) ||(matrixOfFollowers[j][i]==1 && pointer > 0 && result[pointer-1].getDest().equals(new Node(j)) && doesResultNotContainNode(new Node(i))))
-				if(((matrixOfFollowers[j][i]==1 && result[0]==null) 
-						||(matrixOfFollowers[j][i]==1 && pointer > 0 
-						&& result[pointer-1].getDest().getValue()==j && doesResultNotContainNode(i))) 
-						&& i!=j)
-				{
-					//result[pointer]=new Edge(new Node(j), new Node(i));
-					result[pointer]=findEdge(j, i);
-					if(pointer == n - 2)
-						return;
-					++pointer;
-					
-					solveHamiltonianPathRecursively();
-					if (pointer < n - 2 || result[pointer] == null)
-						result[--pointer]=null;
-				}
-			}
-		}
-	}*/
-	public Edge [] getResult()
-	{
-		return result;
-	}
-
 	public Set<Node> getNodes() {
 		return nodes;
 	}
@@ -157,31 +131,39 @@ public class Graph {
 	
 	
 	
-	/*private boolean doesResultNotContainNode(int value)
-	{
-		for(int i=0; i< this.n-1; i++)
-		{
-			if(this.result[i]!=null)
-			{
-				if(result[i].getSrc().getValue() == value || result[i].getDest().getValue()==value)
-					return false;
-			}
-			else
-				break;
-		}
-		return true;
+	public int getN() {
+		return n;
 	}
+
+	public void setN(int n) {
+		this.n = n;
+	}
+
+	public boolean[][] getMatrixOfFollowers() {
+		return matrixOfFollowers;
+	}
+
+	public void setMatrixOfFollowers(boolean[][] matrixOfFollowers) {
+		this.matrixOfFollowers = matrixOfFollowers;
+	}
+
+	public int getMaxGrade() {
+		return maxGrade;
+	}
+
+	public void setMaxGrade(int maxGrade) {
+		this.maxGrade = maxGrade;
+	}
+
+	public void setMatrixOfIncidency(boolean[][] matrixOfIncidency) {
+		this.matrixOfIncidency = matrixOfIncidency;
+	}
+
+	public boolean[][] getMatrixOfIncidency() {
+		return matrixOfIncidency;
+	}
+
 	
-	private Edge findEdge(int srcValue,int destValue)
-	{
-		for(Edge e:this.edges)
-		{
-			if(e.getSrc().getValue() == srcValue && e.getDest().getValue()==destValue)
-				return e;
-			
-		}
-		return null;
-	}*/
 	protected int getGradeOfNode(Node node)
 	{
 		int grade = 0;

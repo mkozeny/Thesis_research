@@ -1,6 +1,8 @@
 package graph;
 
-public class Node implements Comparable<Node>{
+import java.io.Serializable;
+
+public class Node implements Comparable<Node>, Serializable{
     protected final int value;
     public Node(int value) { this.value = value; }
 	@Override

@@ -9,8 +9,8 @@ import graph.Graph;
 
 public class GraphExecutor extends Graph {
 
-	public GraphExecutor(int n) {
-		super(n);
+	public GraphExecutor(int n, int maxGrade) {
+		super(n, maxGrade);
 	}
 	@Ensures ( {
 		"return[int] in this.edges.elts" ,

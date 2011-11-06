@@ -5,8 +5,14 @@ import graph.Graph;
 
 public class GraphExecutor extends Graph {
 
-	public GraphExecutor(int n) {
-		super(n);
+	private Edge [] result;
+	
+	private int pointer;
+	
+	public GraphExecutor(int n, int maxGrade) {
+		super(n, maxGrade);
+		this.pointer = 0;
+		this.result = new Edge[n-1];
 	}
 	public void solveHamiltonianPathRecursively()
 	{
@@ -59,4 +65,8 @@ public class GraphExecutor extends Graph {
 		}
 		return null;
 	}
+	public Edge[] getResult() {
+		return result;
+	}
+	
 }

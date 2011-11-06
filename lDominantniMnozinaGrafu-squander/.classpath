@@ -3,13 +3,14 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/commonGraphUtils"/>
-	<classpathentry kind="lib" path="/home/kozenym/Desktop/DP/squander/squander/squander.jar"/>
-	<classpathentry kind="lib" path="/home/kozenym/Desktop/DP/squander/squander/lib/sdg-util-independent.jar"/>
-	<classpathentry kind="lib" path="/home/kozenym/Desktop/DP/squander/squander/lib/sat4j-v2.2.1.jar"/>
-	<classpathentry kind="lib" path="/home/kozenym/Desktop/DP/squander/squander/lib/paranamer-2.2.jar"/>
 	<classpathentry kind="lib" path="/home/kozenym/Desktop/DP/squander/squander/lib/kodkod.jar"/>
-	<classpathentry kind="lib" path="/home/kozenym/Desktop/DP/squander/squander/lib/jforge-annotations.jar"/>
-	<classpathentry kind="lib" path="/home/kozenym/Desktop/DP/squander/squander/lib/forge.jar"/>
-	<classpathentry kind="lib" path="/home/kozenym/Desktop/DP/squander/squander/lib/antlr-runtime-3.2.jar"/>
+	<classpathentry kind="lib" path="/home/kozenym/Desktop/DP/squander/new_version/squander.jar"/>
+	<classpathentry kind="lib" path="/home/kozenym/Desktop/DP/squander/new_version/lib/sdg-util-independent.jar"/>
+	<classpathentry kind="lib" path="/home/kozenym/Desktop/DP/squander/new_version/lib/sat4j-v2.2.1.jar"/>
+	<classpathentry kind="lib" path="/home/kozenym/Desktop/DP/squander/new_version/lib/paranamer-2.2.jar"/>
+	<classpathentry kind="lib" path="/home/kozenym/Desktop/DP/squander/new_version/lib/junit-4.7.jar"/>
+	<classpathentry kind="lib" path="/home/kozenym/Desktop/DP/squander/new_version/lib/jforge-annotations.jar"/>
+	<classpathentry kind="lib" path="/home/kozenym/Desktop/DP/squander/new_version/lib/forge.jar"/>
+	<classpathentry kind="lib" path="/home/kozenym/Desktop/DP/squander/new_version/lib/antlr-runtime-3.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

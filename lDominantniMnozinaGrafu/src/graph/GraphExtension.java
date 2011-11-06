@@ -13,8 +13,8 @@ public class GraphExtension extends Graph {
 	
 	private Stack<State> stateStack;
 	
-	public GraphExtension(int n, int l, int treshold) {
-		super(n);
+	public GraphExtension(int n, int l, int treshold, int maxGrade) {
+		super(n, maxGrade);
 		this.l = l;
 		this.treshold = treshold;
 		this.bestConfiguration = new State(this.n);
@@ -29,8 +29,8 @@ public class GraphExtension extends Graph {
 		while(!this.stateStack.empty())
 		{
 			State actualState = this.stateStack.pop();
-			System.out.println("---POPPING STATE---");
-			printStateInfo(actualState);
+			//System.out.println("---POPPING STATE---");
+			//printStateInfo(actualState);
 			generateFollowers(actualState);
 		}
 	}
@@ -68,10 +68,12 @@ public class GraphExtension extends Graph {
 					coverageTmp = Arrays.copyOf(newCoverage,newCoverage.length);
 				}
 				newState.setCoverage(newCoverage);
-				System.out.println("---PUSHING STATE---");
-				printStateInfo(newState);
+				//System.out.println("---PUSHING STATE---");
+				//printStateInfo(newState);
 				if(newState.isCoveringAllNodes() 
-						&& newState.countOfNodes()<=this.bestConfiguration.countOfNodes())
+						&& newState.countOfNodes()<=//this.treshold
+						this.bestConfiguration.countOfNodes()
+						)
 					this.bestConfiguration = newState;
 				this.stateStack.push(newState);
 			}
@@ -94,7 +96,7 @@ public class GraphExtension extends Graph {
 		return bestConfiguration;
 	}
 	
-	private void printStateInfo(State actualState)
+	/*private void printStateInfo(State actualState)
 	{
 		System.out.println("1) ACTUAL CONFIGURATION");
 		boolean [] configuration = actualState.getConfiguration();
@@ -112,5 +114,5 @@ public class GraphExtension extends Graph {
 		}
 		System.out.println();
 		System.out.println();
-	}
+	}*/
 }

@@ -109,16 +109,16 @@ public class GraphExtension extends Graph {
 	
 	private Set<ExtendedNode> extendedNodes;
 	
-	public GraphExtension(int n, int l, int treshold) {
-		super(n);
+	public GraphExtension(int n, int l, int treshold, int maxGrade) {
+		super(n, maxGrade);
 		this.l = l;
 		this.treshold = treshold;
 		this.extendedNodes = new HashSet<ExtendedNode>();
 	}
-	@Override
-	public void generateGraph()
+	public void generateGraph(boolean fromPredecessor)
 	{
-		super.generateGraph();
+		if(fromPredecessor)
+			super.generateGraph();
 		System.out.println("---EDGES---");
 		for(Edge e:this.edges)
 		{
