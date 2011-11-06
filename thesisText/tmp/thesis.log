@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  3 NOV 2011 16:33
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  6 NOV 2011 17:19
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -1127,31 +1127,31 @@ LaTeX Warning: Label `ldomset2' multiply defined.
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 178.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 178.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 179.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 179.
 
  (/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 178.
-LaTeX Font Info:    ... okay on input line 178.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
 
-(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+(/usr/share/texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count147
 \scratchdimen=\dimen197
@@ -1169,7 +1169,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count152
-Package hyperref Info: Link coloring ON on input line 178.
+Package hyperref Info: Link coloring ON on input line 179.
  (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
@@ -1178,8 +1178,8 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count153
 )
-LaTeX Info: Redefining \ref on input line 178.
-LaTeX Info: Redefining \pageref on input line 178.
+LaTeX Info: Redefining \ref on input line 179.
+LaTeX Info: Redefining \pageref on input line 179.
  (./thesis.out)
 (./thesis.out)
 \@outlinefile=\write4
@@ -1241,13 +1241,13 @@ File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 
 [13
 
-] [14
-
-] (./thesis.lot)
+] [14] (./thesis.lot)
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
- [15] [16
+ [15
+
+] [16
 
 ]
 Chapter 1.
@@ -1258,12 +1258,12 @@ Chapter 1.
 ]
 Chapter 2.
 [3] [4] [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 620--623
+Underfull \hbox (badness 10000) in paragraph at lines 621--624
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 620--623
+Underfull \hbox (badness 10000) in paragraph at lines 621--624
 
  []
 
@@ -1281,11 +1281,11 @@ Chapter 3.
 Chapter 4.
 [17
 
-] <figures/architecture-diagram.png, id=738, 531.9875pt x 150.5625pt>
+] <figures/architecture-diagram.png, id=774, 531.9875pt x 150.5625pt>
 File: figures/architecture-diagram.png Graphic file (type png)
 
 <use figures/architecture-diagram.png>
-Overfull \hbox (5.75848pt too wide) in paragraph at lines 855--858
+Overfull \hbox (5.75848pt too wide) in paragraph at lines 856--859
 \T1/cmr/m/n/10.95 prob-lems (trav-el-ing sales-man prob-lem, Hamil-to-nian path
 , gen-eral bi-sec-tion breadth,...),
  []
@@ -1293,17 +1293,17 @@ Overfull \hbox (5.75848pt too wide) in paragraph at lines 855--858
 [18 <./figures/architecture-diagram.png (PNG copy)>] [19] [20] [21] [22]
 [23] [24]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1190.
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1191.
  (./src/bst/BST.java) [25] (./src/bst/Operations.java)
-<figures/bst.png, id=809, 327.2225pt x 254.9525pt>
+<figures/bst.png, id=845, 327.2225pt x 254.9525pt>
 File: figures/bst.png Graphic file (type png)
  <use figures/bst.png>
 [26 <./figures/bst.png (PNG copy)>] (./src/bst/ModifiedOperations.java [27])
-Overfull \hbox (6.66414pt too wide) in paragraph at lines 1315--1328
+Overfull \hbox (6.66414pt too wide) in paragraph at lines 1316--1329
  [][] 
  []
 
-[28] [29] <figures/kodkodpart.png, id=861, 573.14125pt x 180.675pt>
+[28] [29] <figures/kodkodpart.png, id=897, 573.14125pt x 180.675pt>
 File: figures/kodkodpart.png Graphic file (type png)
 
 <use figures/kodkodpart.png> [30] [31 <./figures/kodkodpart.png (PNG copy)>]
@@ -1316,7 +1316,7 @@ Chapter 5.
 (./src/knapsack/KnapSack5.java) [36] (./src/knapsack/KnapSack6.java) [37]
 (./src/knapsack/KnapSack7.java) [38] [39]
 (./src/generalBisectionBreadth/Gbb1.java)
-Overfull \hbox (8.59026pt too wide) in paragraph at lines 1813--1818
+Overfull \hbox (8.59026pt too wide) in paragraph at lines 1814--1819
 [][]\T1/cmr/m/n/10.95 Then we can add con-straints about what we ex-pect af-ter
  ex-e-cu-tion by an-no-ta-tion []\T1/cmtt/m/n/10.95 @Ensures\T1/cmr/m/n/10.95 .
 
@@ -1329,99 +1329,153 @@ Overfull \hbox (8.59026pt too wide) in paragraph at lines 1813--1818
 [44] [45] (./src/solitaire/TriSol1.java) [46] (./src/solitaire/TriSol2.java)
 [47] (./src/solitaire/TriSol3.java) [48]
 Chapter 6.
-<figures/pf.png, id=1183, 702.625pt x 309.155pt>
+<figures/pf.png, id=1219, 702.625pt x 309.155pt>
 File: figures/pf.png Graphic file (type png)
- <use figures/pf.png> [49
+ <use figures/pf.png>
+(./figures/graphs/hp/imp/40-5/heap.tex
+<figures/heap-hp-i-40-5.pdf, id=1220, 361.35pt x 252.945pt>
+File: figures/heap-hp-i-40-5.pdf Graphic file (type pdf)
 
- <./figures/pf.png (PNG copy)>] [50
+<use figures/heap-hp-i-40-5.pdf>) (./figures/graphs/hp/imp/40-5/cpu.tex
+<figures/cpu-hp-i-40-5.pdf, id=1221, 361.35pt x 252.945pt>
+File: figures/cpu-hp-i-40-5.pdf Graphic file (type pdf)
+
+<use figures/cpu-hp-i-40-5.pdf>) (./figures/graphs/hp/squander/40-5/heap.tex
+<figures/heap-hp-s-40-5.pdf, id=1222, 361.35pt x 252.945pt>
+File: figures/heap-hp-s-40-5.pdf Graphic file (type pdf)
+
+<use figures/heap-hp-s-40-5.pdf>) (./figures/graphs/hp/squander/40-5/cpu.tex
+<figures/cpu-hp-s-40-5.pdf, id=1223, 361.35pt x 252.945pt>
+File: figures/cpu-hp-s-40-5.pdf Graphic file (type pdf)
+
+<use figures/cpu-hp-s-40-5.pdf>) (./figures/graphs/hp/imp/50-4/heap.tex
+<figures/heap-hp-i-50-4.pdf, id=1224, 361.35pt x 252.945pt>
+File: figures/heap-hp-i-50-4.pdf Graphic file (type pdf)
+
+<use figures/heap-hp-i-50-4.pdf>) (./figures/graphs/hp/imp/50-4/cpu.tex
+<figures/cpu-hp-i-50-4.pdf, id=1225, 361.35pt x 252.945pt>
+File: figures/cpu-hp-i-50-4.pdf Graphic file (type pdf)
+
+<use figures/cpu-hp-i-50-4.pdf>) (./figures/graphs/hp/squander/50-4/heap.tex
+<figures/heap-hp-s-50-4.pdf, id=1226, 361.35pt x 252.945pt>
+File: figures/heap-hp-s-50-4.pdf Graphic file (type pdf)
+
+<use figures/heap-hp-s-50-4.pdf>) (./figures/graphs/hp/squander/50-4/cpu.tex
+<figures/cpu-hp-s-50-4.pdf, id=1227, 361.35pt x 252.945pt>
+File: figures/cpu-hp-s-50-4.pdf Graphic file (type pdf)
+
+<use figures/cpu-hp-s-50-4.pdf>) (./figures/graphs/hp/imp/80-3/heap.tex
+<figures/heap-hp-i-80-3.pdf, id=1228, 361.35pt x 252.945pt>
+File: figures/heap-hp-i-80-3.pdf Graphic file (type pdf)
+
+<use figures/heap-hp-i-80-3.pdf>) (./figures/graphs/hp/imp/80-3/cpu.tex
+<figures/cpu-hp-i-80-3.pdf, id=1229, 361.35pt x 252.945pt>
+File: figures/cpu-hp-i-80-3.pdf Graphic file (type pdf)
+
+<use figures/cpu-hp-i-80-3.pdf>) (./figures/graphs/hp/squander/80-3/heap.tex
+<figures/heap-hp-s-80-3.pdf, id=1230, 361.35pt x 252.945pt>
+File: figures/heap-hp-s-80-3.pdf Graphic file (type pdf)
+
+<use figures/heap-hp-s-80-3.pdf>) (./figures/graphs/hp/squander/80-3/cpu.tex
+<figures/cpu-hp-s-80-3.pdf, id=1231, 361.35pt x 252.945pt>
+File: figures/cpu-hp-s-80-3.pdf Graphic file (type pdf)
+
+<use figures/cpu-hp-s-80-3.pdf>) [49
+
+ <./figures/pf.png (PNG copy)>] [50 <./figures/heap-hp-i-40-5.pdf> <./figures/c
+pu-hp-i-40-5.pdf>] [51 <./figures/heap-hp-s-40-5.pdf> <./figures/cpu-hp-s-40-5.
+pdf>] [52 <./figures/heap-hp-i-50-4.pdf> <./figures/cpu-hp-i-50-4.pdf>] [53 <./
+figures/heap-hp-s-50-4.pdf> <./figures/cpu-hp-s-50-4.pdf>] [54 <./figures/heap-
+hp-i-80-3.pdf> <./figures/cpu-hp-i-80-3.pdf>] [55 <./figures/heap-hp-s-80-3.pdf
+> <./figures/cpu-hp-s-80-3.pdf>] [56
 
 ]
 Chapter 7.
-[51] [52
+[57] [58
 
 ]
-Overfull \hbox (11.49219pt too wide) in paragraph at lines 2166--2168
+Overfull \hbox (11.49219pt too wide) in paragraph at lines 2288--2290
 []\T1/cmtt/m/n/10.95 http://download.oracle.com/javase/1,5.0/docs/guide/languag
 e/annotations.html 
  []
 
 No file thesis.bbl.
-[53] [54
+[59] [60
 
 ]
 Appendix A.
 
-Package natbib Warning: Citation `CSTUG' on page 55 undefined on input line 220
-8.
+Package natbib Warning: Citation `CSTUG' on page 61 undefined on input line 233
+0.
 
 
-Package natbib Warning: Citation `latexdocweb' on page 55 undefined on input li
-ne 2208.
+Package natbib Warning: Citation `latexdocweb' on page 61 undefined on input li
+ne 2330.
 
 
-Package natbib Warning: Citation `latexwiki' on page 55 undefined on input line
- 2208.
+Package natbib Warning: Citation `latexwiki' on page 61 undefined on input line
+ 2330.
 
 File: figures/LogoCVUT.pdf Graphic file (type pdf)
-<use figures/LogoCVUT.pdf> [55]
+<use figures/LogoCVUT.pdf> [61]
 
-Package natbib Warning: Citation `ipe' on page 56 undefined on input line 2240.
-
-
-[56] [57] [58]
-
-Package natbib Warning: Citation `kniha' on page 59 undefined on input line 238
-7.
+Package natbib Warning: Citation `ipe' on page 62 undefined on input line 2362.
 
 
-Package natbib Warning: Citation `clanek' on page 59 undefined on input line 23
-87.
+[62] [63] [64]
+
+Package natbib Warning: Citation `kniha' on page 65 undefined on input line 250
+9.
 
 
-Package natbib Warning: Citation `sbornik' on page 59 undefined on input line 2
-387.
+Package natbib Warning: Citation `clanek' on page 65 undefined on input line 25
+09.
 
 
-Package natbib Warning: Citation `www' on page 59 undefined on input line 2387.
+Package natbib Warning: Citation `sbornik' on page 65 undefined on input line 2
+509.
 
 
-[59]
-
-Package natbib Warning: Citation `wiki:framework' on page 60 undefined on input
- line 2389.
+Package natbib Warning: Citation `www' on page 65 undefined on input line 2509.
 
 
-Package natbib Warning: Citation `wiki:orm' on page 60 undefined on input line 
-2389.
+[65]
 
-[60] [61] [62]
+Package natbib Warning: Citation `wiki:framework' on page 66 undefined on input
+ line 2511.
+
+
+Package natbib Warning: Citation `wiki:orm' on page 66 undefined on input line 
+2511.
+
+[66] [67] [68]
 Appendix B.
-[63
+[69
 
-] [64
+] [70
 
 ]
 Appendix C.
-[65] [66
+[71] [72
 
 ]
 Appendix D.
-[67] [68
+[73] [74
 
 ]
 Appendix E.
 
-Package natbib Warning: Citation `infodp' on page 69 undefined on input line 24
-82.
+Package natbib Warning: Citation `infodp' on page 75 undefined on input line 26
+04.
 
-<figures/seznamcd.pdf, id=1275, 793.96625pt x 539.01375pt>
+<figures/seznamcd.pdf, id=1372, 793.96625pt x 539.01375pt>
 File: figures/seznamcd.pdf Graphic file (type pdf)
 
 <use figures/seznamcd.pdf>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[69] [70 <./figures/seznamcd.pdf>]
+[75] [76 <./figures/seznamcd.pdf>]
 
 Package natbib Warning: There were undefined citations.
 
@@ -1431,10 +1485,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18607 strings out of 495027
- 285301 string characters out of 1181419
- 682283 words of memory out of 3000000
- 20598 multiletter control sequences out of 15000+50000
+ 18741 strings out of 495027
+ 288594 string characters out of 1181419
+ 683767 words of memory out of 3000000
+ 20670 multiletter control sequences out of 15000+50000
  28279 words of font info for 69 fonts, out of 3000000 for 9000
  42 hyphenation exceptions out of 8191
  47i,13n,57p,602b,1832s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1466,9 +1520,9 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/pub
 lic/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on thesis.pdf (86 pages, 902546 bytes).
+Output written on thesis.pdf (92 pages, 934988 bytes).
 PDF statistics:
- 2369 PDF objects out of 2487 (max. 8388607)
- 665 named destinations out of 1000 (max. 500000)
- 507 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2470 PDF objects out of 2487 (max. 8388607)
+ 683 named destinations out of 1000 (max. 500000)
+ 567 words of extra memory for PDF output out of 10000 (max. 10000000)
 
