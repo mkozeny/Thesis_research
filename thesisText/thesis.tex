@@ -15,7 +15,7 @@
 %=-=-=-=-=-=-=-=-=-=-=-=--=%
 % The user of this template may find useful to have an alternative to these 
 % officially suggested packages:
-\usepackage[czech, english]{babel}
+\usepackage[english]{babel}
 \usepackage[T1]{fontenc} % pouzije EC fonty 
 % pripadne pisete-li cesky, pak lze zkusit take:
 % \usepackage[OT1]{fontenc} 
@@ -24,7 +24,7 @@
 % In case of problems with PDF fonts, one may try to uncomment this line:
 %\usepackage{lmodern}
 %=-=-=-=-=-=-=-=-=-=-=-=--=%
-%=-=-=-=-=-=-=-=-=-=-=-=--=%
+%=-=-=-=-=-=-=-=-=-=-=-=--=%!b!p!
 % Depending on your particular TeX distribution and version of conversion tools 
 % (dvips/dvipdf/ps2pdf), some (advanced | desperate) users may prefer to use 
 % different settings.
@@ -40,6 +40,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx}
 \usepackage{tabularx,colortbl}
+%\usepackage{tabularx}
 %\usepackage{indentfirst} %1. odstavec jako v cestine.
 \usepackage{qtree}
 \usepackage{tikz}
@@ -51,6 +52,9 @@
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{fixltx2e}
+\usepackage{multirow}
+
+
 %\usepackage{epstopdf}
 %\usepackage{hyperref}
 \definecolor{listinggray}{gray}{0.9}
@@ -2130,6 +2134,68 @@ Europa.
 \end{center}
 \end{figure}
 
+
+
+
+
+
+
+
+
+\begin{table}[ht]
+\caption{Execution times of Hamiltonian Path algorithm implementation in $\mu$s}
+\begin{center}
+\begin{tabular}{l|l|l|l|l|l|l|l|l|l|} \cline{2-10}
+
+\multirow{4}{*}{} & 
+\multicolumn{9}{>{\cellcolor[gray]{.8}}c|}{Number of nodes
+in the graph} \\ \cline{2-10} 
+&  \multicolumn{4}{c|}{40} &
+\multicolumn{2}{c|}{50} &
+\multicolumn{3}{c|}{60}\\ \cline{2-10}
+ & \multicolumn{4}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{3}{>{\cellcolor[gray]{.8}}c|}{max grade}\\ \cline{2-10}
+ &  3 & 4 & 5 & 6 & 3 & 4 & 2 & 3 & 4  \\ \hline
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Imperatively} & 180 &
+4 220 & 39 910 & 772 860 & 120 & 60 390
+& 10 & 440 & 780 \\ \hline
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Squander} & 3 200 & 33 510 &
+660 600 & \textbf{t/o} & 3 270 & 581 590 & 3 540 & 6 380 & \textbf{t/o}
+\\
+\hline
+\end{tabular}
+%\label{fig:hpIMem405}
+\end{center}
+\end{table}
+
+
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{l|l|l|l|l|l|l|l|l|l|} \cline{2-10}
+
+\multirow{4}{*}{} & 
+\multicolumn{9}{>{\cellcolor[gray]{.8}}c|}{Number of nodes
+in the graph} \\ \cline{2-10} 
+
+&  \multicolumn{3}{c|}{70} & \multicolumn{2}{c|}{80} &
+ \multicolumn{2}{c|}{90} & \multicolumn{2}{c|}{100}\\ \cline{2-10}
+ & \multicolumn{3}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{max grade}\\ \cline{2-10}
+&  2 & 3 & 4 & 2 & 3 & 2 & 3 & 2 & 3  \\ \hline
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Imperatively}  & 30 & 3 940
+& \textbf{t/o} & 20 & 14 920 & 70 & 173 090 & 40 &
+ \textbf{t/o}\\ \hline 
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Squander} & 3 940 & 5 100 &
+\textbf{t/o} & 4 060 & 50 460 & 5 080 & \textbf{t/o} & 4 700 &
+\textbf{t/o}\\ \hline
+\end{tabular}
+\label{fig:hpIMem405}
+\end{center}
+\end{table}
 
 
 \begin{figure}[ht]
