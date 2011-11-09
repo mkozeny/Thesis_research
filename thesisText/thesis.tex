@@ -1898,7 +1898,8 @@ of graph algorithm]{src/lDominantSet/LDomSet3.java}
 
 This implementation works with instances with up to 60 nodes.
 
-\section{Hamiltonian path}
+\section{Hamiltonian Path}
+\label{sec:hp}
 Algorithm \textit{Hamiltonian path} is quite well known. Core of this algorithm
 is to find path which covers all nodes in the graph and visit no node twice or
 more. It is last graph algorithm presented in this thesis using similar data
@@ -2116,34 +2117,105 @@ Triangular solitaire algorithm]{src/solitaire/TriSol3.java}
 
 %*****************************************************************************
 \chapter{Comparison}
-For meausurement of some metrics (execution time and memory analysis) is
-used Java profiler \textit{Test} \& \textit{Performance Tools Platform (TPTP)},
-which is Eclipse plugin profiling tool. This tool is highly integrated with Eclipse, so
+For meausurement of some metrics (execution time and memory analysis) I have
+tried to use Java profiler \textit{Test} \& \textit{Performance Tools Platform
+(TPTP)}, which is Eclipse plugin profiling tool. This tool is highly integrated with Eclipse, so
 it allows profiling of applications running from within Eclipse - see Figure
-\ref{fig:pfMonitor}. I also try to use another Eclipse profiler called
-\textit{Colorer}, but developing of this profiler was cancelled in 2008
-and also there was quite a lot of problems to use it in oldest available Eclipse
-Europa.
+\ref{fig:pfMonitor}. This profiler had a big overhead when measuring Squnder
+implementation and this led to situation, that every instance in Squander
+reached time out. I have also tried another Eclipse profiler called
+\textit{Colorer}, but developing of this profiler was cancelled in 2008 and also
+there was quite a lot of problems to use it in oldest available Eclipse Europa.
 
 
 \begin{figure}[ht]
 \begin{center}
 \includegraphics[width=14cm]{figures/pf}
-\caption{Profiling monitor}
+\caption{TPTP profiling monitor}
 \label{fig:pfMonitor}
 \end{center}
 \end{figure}
 
+After that I decided to use tools provided by JVM, concretely \textit{JConsole}
+(see Figure \ref{fig:pfJC}). This console can connect to any of running Java
+process and monitore its Heap memory usage, CPU usage, number of load classes or
+number of active threads. This data can be exported to csv file. It also
+provides some statistics like CPU time, compile time, which kind of garbage
+collector is used and how many collections were done etc.
+
+For all measurement presented here, we had 1 warmup run and 5 test runs. The
+purpose of the initial warmup run was to eliminate possible \uv{cold start}
+effects, such as JVM initialization and class loading. In the subsequent 5 test runs, I executed
+the operation under test on 3 same instances of a given
+size, measured the total execution time, and reported the
+average. The timeout threshold was set to 25 minutes for all experiments, and
+the maximum Java heap size was left to the default value of 256MB. All
+measurements were run a Linux box, with Intel\textsuperscript{\textregistered}
+Core\texttrademark 2 Duo CPU @ 2.1GHz, 4GB of RAM, running Ubuntu 10.4.
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[width=14cm]{figures/jconsole/overview}
+\caption{Profiling using JConsole}
+\label{fig:pfJC}
+\end{center}
+\end{figure}
 
 
+\subsection{Hamiltonian Path}
+
+I used for measurement of implementation of algorithm Hamiltonian Path Squnder
+implementation presented in \ref{sec:hp}. Impreative algorithm was implemented
+as simple backtracking. In main method for finding solution is algorithm
+iteratively going through matrix of followers row by row and when is resulted
+array of edges (length of this array is number of nodes - 1) empty, the actual
+egde is put at the beginning of the array. Another possibility is to put actual
+edge into resulted array to concrete position when this condition is satisfied:
+there is an edge between actual nodes in the iteration and in resulted array of
+edge does not appear source node of this edge. Rule that source and destination
+node af actual edge are different has to be fulfilled. After that if we are at
+the end of resulted array, then we are return back from the recursion, otherwise
+program is searching for the following edge in next recursive step. If program
+is returned from recursive step in depth $n$ and none of the edges occupies
+actual position in resulted array, then is edge from recursive step $n - 1$
+removed, because following edge for edge in depth $n-1$ does not exist.
+Implementation of algorithm with comments is in Listing \ref{hpImp}.
 
 
+\lstinputlisting[label=hpImp,caption=Imperative
+implementation of Hamiltonian Path algorithm]{src/hp/imp/GraphExecutor.java}
+
+For testing both implementations I implemented simple graph generator
+according to the rules mentioned in \ref{sec:gbb} and add restriction of maximal
+grade of node in the graph. I made class \verb|Graph| serizalizable in order to
+store it in some file and then load it into execution algorithm in order to run
+both implementations on the same data.
+
+In my test I have measured execution time of imperative backtrack method and
+Squander implementation via method \verb|getCurrentThreadCpuTime()| of
+\verb|ThreadMXBean| interface. According to \cite{oracle:javadoc}, a Java
+virtual machine has a single instance of the implementation class of this interface. This instance implementing this
+interface is an \verb|MXBean| that can be obtained by calling the
+\verb|ManagementFactory.getThreadMXBean()| method or from the platform
+\verb|MBeanServer| method. This method returns the total CPU time for the
+current thread in nanoseconds. Results of the measurement are in Table
+\ref{tab:hpTimes}.
+
+From that table is obvious, that common imperative way of programming reached
+better results than Squander implementation. In that point it is important to
+note, that in execution time for Squander is included time for travesing heap,
+checking preconditions and creating bounds for the universe, ensuring post
+condition, translating to CNF and solving this CNF. We can also see, that bigger
+influence on the execution time has maximal grade of node in the graph, mainly
+in imperative implementation, because it causes branching during
+backtracking.
 
 
 
 
 \begin{table}[ht]
 \caption{Execution times of Hamiltonian Path algorithm implementation in $\mu$s}
+\label{tab:hpTimes}
 \begin{center}
 \begin{tabular}{l|l|l|l|l|l|l|l|l|l|} \cline{2-10}
 
@@ -2171,8 +2243,8 @@ in the graph} \\ \cline{2-10}
 
 
 
-\begin{table}[ht]
-\begin{center}
+\begin{table}
+%\begin{center}
 \begin{tabular}{l|l|l|l|l|l|l|l|l|l|} \cline{2-10}
 
 \multirow{4}{*}{} & 
@@ -2193,8 +2265,8 @@ in the graph} \\ \cline{2-10}
 \textbf{t/o} & 4 060 & 50 460 & 5 080 & \textbf{t/o} & 4 700 &
 \textbf{t/o}\\ \hline
 \end{tabular}
-\label{fig:hpIMem405}
-\end{center}
+
+%\end{center}
 \end{table}
 
 
@@ -2357,6 +2429,9 @@ Orleans; \textit{Programming language structure - lectures}, 2011.
 \bibitem{web:mathIsFun}Math
 is fun
 web;\\\verb|http://www.mathsisfun.com/games/triangle-peg-solitaire/index.html#|
+
+\bibitem{oracle:javadoc}Oracle Java documentation;\\
+\verb|http://download.oracle.com/javase/1,5,0/docs/api/|
 
 \end{thebibliography}
 

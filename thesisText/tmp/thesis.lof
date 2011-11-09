@@ -11,24 +11,25 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Initialized game field and possible transitions\relax }}{45}{figure.caption.16}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Profiling monitor\relax }}{49}{figure.caption.17}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Heap memory usage in time - Hamiltonian Path imperative algorithm for graph of 40 nodes and maximal node grade 5\relax }}{50}{figure.caption.20}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces CPU usage in time - Hamiltonian Path imperative algorithm for graph of 40 nodes and maximal node grade 5\relax }}{51}{figure.caption.21}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Heap memory usage in time - Hamiltonian Path Squander algorithm for graph of 40 nodes and maximal node grade 5\relax }}{51}{figure.caption.22}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces CPU usage in time - Hamiltonian Path Squander algorithm for graph of 40 nodes and maximal node grade 5\relax }}{52}{figure.caption.23}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Heap memory usage in time - Hamiltonian Path imperative algorithm for graph of 50 nodes and maximal node grade 4\relax }}{52}{figure.caption.24}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces CPU usage in time - Hamiltonian Path imperative algorithm for graph of 50 nodes and maximal node grade 4\relax }}{53}{figure.caption.25}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Heap memory usage in time - Hamiltonian Path Sqaunder algorithm for graph of 50 nodes and maximal node grade 4\relax }}{53}{figure.caption.26}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces CPU usage in time - Hamiltonian Path Squander algorithm for graph of 50 nodes and maximal node grade 4\relax }}{54}{figure.caption.27}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Heap memory usage in time - Hamiltonian Path imperative algorithm for graph of 80 nodes and maximal node grade 3\relax }}{54}{figure.caption.28}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces CPU usage in time - Hamiltonian Path imperative algorithm for graph of 80 nodes and maximal node grade 3\relax }}{55}{figure.caption.29}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Heap memory usage in time - Hamiltonian Path Sqaunder algorithm for graph of 80 nodes and maximal node grade 3\relax }}{55}{figure.caption.30}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces CPU usage in time - Hamiltonian Path Squander algorithm for graph of 80 nodes and maximal node grade 3\relax }}{56}{figure.caption.31}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces TPTP profiling monitor\relax }}{49}{figure.caption.17}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Profiling using JConsole\relax }}{50}{figure.caption.18}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Heap memory usage in time - Hamiltonian Path imperative algorithm for graph of 40 nodes and maximal node grade 5\relax }}{53}{figure.caption.21}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces CPU usage in time - Hamiltonian Path imperative algorithm for graph of 40 nodes and maximal node grade 5\relax }}{53}{figure.caption.22}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Heap memory usage in time - Hamiltonian Path Squander algorithm for graph of 40 nodes and maximal node grade 5\relax }}{54}{figure.caption.23}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces CPU usage in time - Hamiltonian Path Squander algorithm for graph of 40 nodes and maximal node grade 5\relax }}{54}{figure.caption.24}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Heap memory usage in time - Hamiltonian Path imperative algorithm for graph of 50 nodes and maximal node grade 4\relax }}{55}{figure.caption.25}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces CPU usage in time - Hamiltonian Path imperative algorithm for graph of 50 nodes and maximal node grade 4\relax }}{55}{figure.caption.26}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Heap memory usage in time - Hamiltonian Path Sqaunder algorithm for graph of 50 nodes and maximal node grade 4\relax }}{56}{figure.caption.27}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces CPU usage in time - Hamiltonian Path Squander algorithm for graph of 50 nodes and maximal node grade 4\relax }}{56}{figure.caption.28}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Heap memory usage in time - Hamiltonian Path imperative algorithm for graph of 80 nodes and maximal node grade 3\relax }}{57}{figure.caption.29}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces CPU usage in time - Hamiltonian Path imperative algorithm for graph of 80 nodes and maximal node grade 3\relax }}{57}{figure.caption.30}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Heap memory usage in time - Hamiltonian Path Sqaunder algorithm for graph of 80 nodes and maximal node grade 3\relax }}{58}{figure.caption.31}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces CPU usage in time - Hamiltonian Path Squander algorithm for graph of 80 nodes and maximal node grade 3\relax }}{58}{figure.caption.32}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Popiska obr\IeC {\'a}zku\relax }}{62}{figure.caption.33}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Popiska obr\IeC {\'a}zku\relax }}{64}{figure.caption.34}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces Seznam p\IeC {\v r}ilo\IeC {\v z}en\IeC {\'e}ho CD --- p\IeC {\v r}\IeC {\'\i }klad\relax }}{76}{figure.caption.35}
+\contentsline {figure}{\numberline {E.1}{\ignorespaces Seznam p\IeC {\v r}ilo\IeC {\v z}en\IeC {\'e}ho CD --- p\IeC {\v r}\IeC {\'\i }klad\relax }}{78}{figure.caption.36}
