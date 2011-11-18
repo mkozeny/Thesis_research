@@ -1841,6 +1841,9 @@ instances up to $30$ nodes and never return bad solution on 50 instances.
 
 \section{L-dominant set of graph}
 \label{sec:ldsg}
+
+\subsection{First version}
+\label{sub:ldsFrstVer}
 Idea of this algorithm was also taken as \ref{sec:gbb} from the same course at
 CTU FEE. Also this algorithm is graph a algorithm and main idea is to find set
 of nodes in the graph, which will covered with its neighborhood of defined
@@ -1896,8 +1899,31 @@ neighborhood themselves:
 version of implementation L-Dominant set
 of graph algorithm]{src/lDominantSet/LDomSet3.java}
 
-This implementation works with instances with up to 60 nodes.
+This implementation works with instances with up to 60 nodes. During
+testing appears little failure, that in some cases result array contains some
+nodes more than once despite constraint \ref{ldomset4}. I have fix this failure
+in second version of implementation \ref{sub:ldsScndVer}.
 
+\lstinputlisting[label=ldomset4,caption=Constraint causing failure in
+implementation L-Dominant set of graph
+algorithm]{src/lDominantSet/LDomSet4.java}
+
+\subsection{Second version}
+\label{sub:ldsScndVer}
+
+This version of implementation algorithm L-dominant set of graph is modified
+from \ref{sub:ldsFrstVer} in return type of result. Here is used instead of
+array a set of class \verb|ExtendedNode|, so it is not necessary to check,
+whether result set contains concrete node or not, because from definition
+\cite{oracle:javadocSet} is \verb|java.util.Set| a collection, that contains no
+duplicate elements. The only thing I have needed for implementation is a help
+data structure \verb|allExtendedNodes| for checking, whether all nodes in result
+set with its neighborhood covered whole graph with precondition of empty set
+\ref{ldomset5}.
+
+\lstinputlisting[label=ldomset5,caption=Implementation L-Dominant set of graph
+algorithm using set as a return type of result]{src/lDominantSet/LDomSet5.java}
+ 
 \section{Hamiltonian Path}
 \label{sec:hp}
 Algorithm \textit{Hamiltonian path} is quite well known. Core of this algorithm
@@ -2151,7 +2177,7 @@ size, measured the total execution time, and reported the
 average. The timeout threshold was set to 25 minutes for all experiments, and
 the maximum Java heap size was left to the default value of 256MB. All
 measurements were run a Linux box, with Intel\textsuperscript{\textregistered}
-Core\texttrademark 2 Duo CPU @ 2.1GHz, 4GB of RAM, running Ubuntu 10.4.
+Core\texttrademark 2 Duo CPU @ 2.1GHz, 4GB of RAM, running Ubuntu 10.04.
 
 \begin{figure}[ht]
 \begin{center}
@@ -2162,7 +2188,7 @@ Core\texttrademark 2 Duo CPU @ 2.1GHz, 4GB of RAM, running Ubuntu 10.4.
 \end{figure}
 
 
-\subsection{Hamiltonian Path}
+\section{Hamiltonian Path}
 
 I used for measurement of implementation of algorithm Hamiltonian Path Squnder
 implementation presented in \ref{sec:hp}. Impreative algorithm was implemented
@@ -2206,18 +2232,18 @@ better results than Squander implementation. In that point it is important to
 note, that in execution time for Squander is included time for travesing heap,
 checking preconditions and creating bounds for the universe, ensuring post
 condition, translating to CNF and solving this CNF. We can also see, that bigger
-influence on the execution time has maximal grade of node in the graph, mainly
-in imperative implementation, because it causes branching during
-backtracking.
+influence on the execution time has maximal grade of node in the graph than
+total number of nodes, mainly in imperative implementation, because it causes
+branching during backtracking.
 
 
 
 
 \begin{table}[ht]
-\caption{Execution times of Hamiltonian Path algorithm implementation in $\mu$s}
+\caption{Execution times of Hamiltonian Path algorithm implementation in ms}
 \label{tab:hpTimes}
 \begin{center}
-\begin{tabular}{l|l|l|l|l|l|l|l|l|l|} \cline{2-10}
+\begin{tabular}{l|r|r|r|r|r|r|r|r|r|} \cline{2-10}
 
 \multirow{4}{*}{} & 
 \multicolumn{9}{>{\cellcolor[gray]{.8}}c|}{Number of nodes
@@ -2233,7 +2259,7 @@ in the graph} \\ \cline{2-10}
 4 220 & 39 910 & 772 860 & 120 & 60 390
 & 10 & 440 & 780 \\ \hline
 \multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Squander} & 3 200 & 33 510 &
-660 600 & \textbf{t/o} & 3 270 & 581 590 & 3 540 & 6 380 & \textbf{t/o}
+130 800 & \textbf{t/o} & 3 270 & 704 230 & 3 540 & 6 380 & \textbf{t/o}
 \\
 \hline
 \end{tabular}
@@ -2245,7 +2271,7 @@ in the graph} \\ \cline{2-10}
 
 \begin{table}
 %\begin{center}
-\begin{tabular}{l|l|l|l|l|l|l|l|l|l|} \cline{2-10}
+\begin{tabular}{l|r|r|r|r|r|r|r|r|r|} \cline{2-10}
 
 \multirow{4}{*}{} & 
 \multicolumn{9}{>{\cellcolor[gray]{.8}}c|}{Number of nodes
@@ -2262,28 +2288,111 @@ in the graph} \\ \cline{2-10}
 & \textbf{t/o} & 20 & 14 920 & 70 & 173 090 & 40 &
  \textbf{t/o}\\ \hline 
 \multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Squander} & 3 940 & 5 100 &
-\textbf{t/o} & 4 060 & 50 460 & 5 080 & \textbf{t/o} & 4 700 &
+\textbf{t/o} & 4 060 & 70 860 & 5 080 & \textbf{t/o} & 4 700 &
 \textbf{t/o}\\ \hline
 \end{tabular}
 
 %\end{center}
 \end{table}
+\newpage
+As was said before, I used for tracking execution of algorithm JConsole, which
+started measuring on key press. When using JConsole for measuring \textit{heap
+memory usage} and \textit{cpu usage}, I have extracted data into csv file and use them for generating graphs
+in GNUPlot\textsuperscript{\textregistered}, which is command-line driven
+graphing utility allowing to generate graphs into \LaTeX source code.
 
 
-\begin{figure}[ht]
+When looking at the graphs of heap memory usage of imperative implementation, we
+can see that there are some peaks in the graphs and those peak with biggest
+number of used memory symbolizes probably finding some solution in actual
+branch, which was not cut off, or some set of branches, that was not cut off or
+cut off in great depth before collection. In Squander implementation appears
+those peaks, when solving CNF and cleaning out clauses. Mainly is from graphs
+in selected tests obvious, that whereas imperative implementation uses around
+10 Mb of memory (highest peak is 40 Mb), Squander allocates around 50 Mb of memory with highest
+peak 115 Mb.
+
+Regarding graphs of CPU usage, Squander and also imperative implementation uses
+around 50 \% of CPU except graph instance of 40 nodes, maximal node grade 5
+when was used only 25 \% of CPU computation performance in imperative
+implementation.
+
+
+
+
+By using command line arguments \verb|-verbose:gc -XX:+PrintGCTimeStamps| I got
+the information about time when was the garbage collector performed, how much of
+the memory was reclaimed including total available memory space and how long
+does it take (performing garbage collector is highlighted in graphs via green
+point). We can see that in Squander implementation is garbage collector
+performed every time, when cleaning clauses in CNF, which is quite often
+contrary to imperative implementation. In Table \ref{tab:hpGcActivity} are
+presented quotients of garbage collector activity to total execution time of
+both implementation. This table shows, that whereas in imperative implementation
+is garbage collector time one hundredth percent, in Squander implementation
+reaches sometimes one percent or more of execution time. 
+
+
+\begin{table}[ht]
+
+
+\begin{center}
+\begin{tabular}{l|r|r|r|} \cline{2-4}
+
+\multirow{4}{*}{} & 
+\multicolumn{3}{>{\cellcolor[gray]{.8}}c|}{Number of nodes
+in the graph} \\ \cline{2-4} 
+
+&  40 & 50 &
+ 80\\ \cline{2-4}
+ & \multicolumn{1}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{1}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{1}{>{\cellcolor[gray]{.8}}c|}{max grade}\\ \cline{2-4}
+&  4 & 5 & 3 \\ \hline
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Imperatively}  & 0.01\%
+(0.005126 secs) & 0.01\%
+(0.006266 secs) & 0.008\% (0.00125 secs)\\ \hline 
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Squander} & 0.8\% (1.054949 secs) &
+0.3\% (1.908237 secs) & 1.2\% (0.851782 secs)\\ \hline
+\end{tabular}
+\end{center}
+\caption{Quotient of garbage collector activity to total execution time
+of Hamiltonian Path algorithm implementation}
+\label{tab:hpGcActivity}
+\end{table}
+
+\newpage
+
+
+\begin{figure}
 \begin{center}
 \input{figures/graphs/hp/imp/40-5/heap.tex}
-\caption{Heap memory usage in time - Hamiltonian Path imperative algorithm for
-graph of 40 nodes and maximal node grade 5}
+\caption{Heap memory usage in time - Hamiltonian Path imperative implementation for
+graph of 40 nodes, maximal node grade 5 with info (green points),
+when was GC performed}
 \label{fig:hpIMem405}
 \end{center}
 \end{figure}
 
 
-\begin{figure}[ht]
+
+
+
+\begin{figure}
+\begin{center}
+\input{figures/graphs/hp/squander/40-5/heap.tex}
+\caption{Heap memory usage in time - Hamiltonian Path Squander implementation for
+graph of 40 nodes, maximal node grade 5 with info (green points),
+when was GC performed}
+\label{fig:hpSMem405}
+\end{center}
+\end{figure}
+
+
+\begin{figure}
 \begin{center}
 \input{figures/graphs/hp/imp/40-5/cpu.tex}
-\caption{CPU usage in time - Hamiltonian Path imperative algorithm for graph
+\caption{CPU usage in time - Hamiltonian Path imperative implementation for graph
 of 40 nodes and maximal node grade 5}
 \label{fig:hpICpu405}
 \end{center}
@@ -2292,19 +2401,8 @@ of 40 nodes and maximal node grade 5}
 
 \begin{figure}[ht]
 \begin{center}
-\input{figures/graphs/hp/squander/40-5/heap.tex}
-\caption{Heap memory usage in time - Hamiltonian Path Squander algorithm for
-graph of 40 nodes and maximal node grade 5}
-\label{fig:hpSMem405}
-\end{center}
-\end{figure}
-
-
-
-\begin{figure}[ht]
-\begin{center}
 \input{figures/graphs/hp/squander/40-5/cpu.tex}
-\caption{CPU usage in time - Hamiltonian Path Squander algorithm for graph
+\caption{CPU usage in time - Hamiltonian Path Squander implementation for graph
 of 40 nodes and maximal node grade 5}
 \label{fig:hpSCpu405}
 \end{center}
@@ -2315,16 +2413,30 @@ of 40 nodes and maximal node grade 5}
 \begin{figure}[ht]
 \begin{center}
 \input{figures/graphs/hp/imp/50-4/heap.tex}
-\caption{Heap memory usage in time - Hamiltonian Path imperative algorithm for
-graph of 50 nodes and maximal node grade 4}
+\caption{Heap memory usage in time - Hamiltonian Path imperative implementation for
+graph of 50 nodes, maximal node grade 4 with info (green points),
+when was GC performed}
 \label{fig:hpIMem504}
+\end{center}
+\end{figure}
+
+
+
+
+\begin{figure}[ht]
+\begin{center}
+\input{figures/graphs/hp/squander/50-4/heap.tex}
+\caption{Heap memory usage in time - Hamiltonian Path Sqaunder implementation for
+graph of 50 nodes, maximal node grade 4 with info (green points),
+when was GC performed}
+\label{fig:hpSMem504}
 \end{center}
 \end{figure}
 
 \begin{figure}[ht]
 \begin{center}
 \input{figures/graphs/hp/imp/50-4/cpu.tex}
-\caption{CPU usage in time - Hamiltonian Path imperative algorithm for graph
+\caption{CPU usage in time - Hamiltonian Path imperative implementation for graph
 of 50 nodes and maximal node grade 4}
 \label{fig:hpICpu504}
 \end{center}
@@ -2333,18 +2445,8 @@ of 50 nodes and maximal node grade 4}
 
 \begin{figure}[ht]
 \begin{center}
-\input{figures/graphs/hp/squander/50-4/heap.tex}
-\caption{Heap memory usage in time - Hamiltonian Path Sqaunder algorithm for
-graph of 50 nodes and maximal node grade 4}
-\label{fig:hpSMem504}
-\end{center}
-\end{figure}
-
-
-\begin{figure}[ht]
-\begin{center}
 \input{figures/graphs/hp/squander/50-4/cpu.tex}
-\caption{CPU usage in time - Hamiltonian Path Squander algorithm for graph
+\caption{CPU usage in time - Hamiltonian Path Squander implementation for graph
 of 50 nodes and maximal node grade 4}
 \label{fig:hpSCpu504}
 \end{center}
@@ -2354,27 +2456,22 @@ of 50 nodes and maximal node grade 4}
 \begin{figure}[ht]
 \begin{center}
 \input{figures/graphs/hp/imp/80-3/heap.tex}
-\caption{Heap memory usage in time - Hamiltonian Path imperative algorithm for
-graph of 80 nodes and maximal node grade 3}
+\caption{Heap memory usage in time - Hamiltonian Path imperative implementation for
+graph of 80 nodes, maximal node grade 3 with info (green points),
+when was GC performed}
 \label{fig:hpIMem803}
 \end{center}
 \end{figure}
 
-\begin{figure}[ht]
-\begin{center}
-\input{figures/graphs/hp/imp/80-3/cpu.tex}
-\caption{CPU usage in time - Hamiltonian Path imperative algorithm for graph
-of 80 nodes and maximal node grade 3}
-\label{fig:hpICpu803}
-\end{center}
-\end{figure}
+
 
 
 \begin{figure}[ht]
 \begin{center}
 \input{figures/graphs/hp/squander/80-3/heap.tex}
-\caption{Heap memory usage in time - Hamiltonian Path Sqaunder algorithm for
-graph of 80 nodes and maximal node grade 3}
+\caption{Heap memory usage in time - Hamiltonian Path Sqaunder implementation for
+graph of 80 nodes, maximal node grade 3 with info (green points),
+when was GC performed}
 \label{fig:hpSMem803}
 \end{center}
 \end{figure}
@@ -2382,13 +2479,183 @@ graph of 80 nodes and maximal node grade 3}
 
 \begin{figure}[ht]
 \begin{center}
+\input{figures/graphs/hp/imp/80-3/cpu.tex}
+\caption{CPU usage in time - Hamiltonian Path imperative implementation for graph
+of 80 nodes and maximal node grade 3}
+\label{fig:hpICpu803}
+\end{center}
+\end{figure}
+
+\begin{figure}[ht]
+\begin{center}
 \input{figures/graphs/hp/squander/80-3/cpu.tex}
-\caption{CPU usage in time - Hamiltonian Path Squander algorithm for graph
+\caption{CPU usage in time - Hamiltonian Path Squander implementation for graph
 of 80 nodes and maximal node grade 3}
 \label{fig:hpSCpu803}
 \end{center}
 \end{figure}
+\clearpage 
+\section{Knapsack Problem}
 
+Imperative implementation of Knapsack algorithm can be done in many ways like
+brute force with or without branch \& bounds criterium, dynamic programming or
+by some heuristic (e.g. quotient price to weight of actual thing), which could
+be sometimes inaccurate. I have choosed for those tests probably most common way
+of implementation by brute force branch \& bounds depth first search (BB-DFS) -
+see Listings \ref{ksImp}. Object \verb|pw| is instance of
+class\verb|PriceWeight| and holds actual weight and price for the configuration.
+
+\lstinputlisting[label=ksImp,caption=Imperative
+implementation of Knapsack Problem
+algorithm]{src/knapsack/imp/Knapsack.java}
+
+When measuring Knapsack implementation, it is important to emphasize, that
+execution time depends on resulted configuration of things in knapsack. What
+does it exactly means? E.g. when computing configuration fulfilling treshold
+condition on set of things, from which is in the resulted configuration only
+last thing, imperative algorithm implemented by branch and
+bounds-brute force has to search almost whole state space (except for branches,
+that are cut off) whereas Squander implementation started with empty
+configuration of things and test this configuration adding one thing after
+another when he finishes with all possibilities of actual number of things. Let
+us look at execution times in Table \ref{tab:ksTimes}.
+
+\begin{table}
+\caption{Execution times of Knapsack algorithm implementation in ms for
+instances with \uv{one last thing in solution}}
+\label{tab:ksTimes}
+\begin{center}
+\begin{tabular}{l|r|r|r|r|r|r|r|} \cline{2-8}
+
+\multirow{2}{*}{} & 
+\multicolumn{7}{>{\cellcolor[gray]{.8}}c|}{Number of things
+to choose from} \\ \cline{2-8} 
+ &  25 & 27 & 30 & 32 & 35 & 37 & 40 \\ \hline
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Imperatively} & 8 220 &
+35 130 & 300 910 & 1 314 750 & 10 952 150 & \textbf{t/o}& \textbf{t/o} \\
+\hline \multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Squander} & 1 440 & 1
+440 & 1 460 & 1 640 & 1 530 & 3 010 & 3 130 \\
+\hline
+\end{tabular}
+%\label{fig:hpIMem405}
+\end{center}
+\end{table}
+
+That was extreme example of execution instance with \uv{one last thing in
+solution}, but let us compare average time of execution on 50 instances - see
+Table \ref{tab:ksAvgTimes}. For imperative implementation is average
+execution time growing according to size of problem instance but this is not
+true for Squander.
+
+
+\begin{table}[h]
+\caption{Average execution times of Knapsack algorithm implementation in ms}
+\label{tab:ksAvgTimes}
+\begin{center}
+\begin{tabular}{l|r|r|r|r|r|r|r|} \cline{2-8}
+
+\multirow{2}{*}{} & 
+\multicolumn{7}{>{\cellcolor[gray]{.8}}c|}{Number of things
+to choose from} \\ \cline{2-8} 
+ &  20 & 22 & 25 & 27 & 30 & 32 & 35 \\ \hline
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Imperatively} & 1.8 &
+3.2 & 167.2 & 700.4 & 5 989.2 & 25 586.6 & 219 212.2\\
+\hline \multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Squander} & 25 408.8 &
+28 298.6 & 26 361.8 & 28 922.4 & 26 626.0 & 26 907.7 & 30 680.0 \\
+\hline
+\end{tabular}
+%\label{fig:hpIMem405}
+\end{center}
+\end{table}
+
+It appears that in Squander implementation does not depend on size of the
+instance so much. Let us look at following Table \ref{tab:ksDependency}. From
+that table is obvious, that in Squander implementation depends
+execution time on number of choosed things in final solution more than on number of things to
+choose from. Table \ref{tab:ksTimes} gives us also information, that execution
+time of Squander implementation for instances with \uv{one last thing in
+solution} is little bit \uv{suspiciously} short.
+
+\begin{table}[ht]
+\caption{Dependency of execution times to number of things in final solution in
+Knapsack algorithm Squander implementation}
+\label{tab:ksDependency}
+\begin{center}
+\begin{tabular}{l|r|r|r|r|r|r|r|r|r|r|} \cline{2-11}
+
+\multirow{4}{*}{} & 
+\multicolumn{10}{>{\cellcolor[gray]{.8}}c|}{Number of things to choose from} \\
+\cline{2-11} &  \multicolumn{4}{c|}{20} &
+\multicolumn{3}{c|}{27} &
+\multicolumn{3}{c|}{32}\\ \cline{2-11}
+ & \multicolumn{4}{>{\cellcolor[gray]{.8}}c|}{number of ch. things} &
+ \multicolumn{3}{>{\cellcolor[gray]{.8}}c|}{number of ch. things} & \multicolumn{3}{>{\cellcolor[gray]{.8}}c|}{number of ch. things}\\
+\cline{2-11} &  1 & 14 & 16 & 17 & 1 & 20 & 23 & 1 & 24 & 25  \\ \hline
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Time(ms)} & 1 060 & 7 970 &
+27 520 & 29 130 & 1 550 & 28 700 & 30 110 & 1 460 & 27 600 & 29 940
+\\
+\hline
+\end{tabular}
+%\label{fig:hpIMem405}
+\end{center}
+\end{table}
+
+
+\begin{figure}
+\begin{center}
+\input{figures/graphs/ks/imp/40/heap.tex}
+\caption{Heap memory usage in time - Hamiltonian Path imperative implementation
+for instance with 40 things and info (green points), when was GC performed}
+\label{fig:ksIMem40}
+\end{center}
+\end{figure}
+
+
+
+
+
+\begin{figure}
+\begin{center}
+\input{figures/graphs/ks/squander/40/heap.tex}
+\caption{Heap memory usage in time - Knapsack Problem Squander implementation
+for instance with 40 things and info (green points),
+when was GC performed}
+\label{fig:ksSMem40}
+\end{center}
+\end{figure}
+
+
+\begin{figure}
+\begin{center}
+\input{figures/graphs/ks/imp/40/cpu.tex}
+\caption{CPU usage in time - Knapsack Problem imperative implementation for instance with 40 things}
+\label{fig:ksICpu40}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[ht]
+\begin{center}
+\input{figures/graphs/ks/squander/40/cpu.tex}
+\caption{CPU usage in time - Hamiltonian Path Squander implementation for instance with 40 things}
+\label{fig:ksSCpu40}
+\end{center}
+\end{figure}
+\clearpage 
+
+Now look at statistics about memory heap usage and CPU usage of both
+implementations of Knapsack Problem. CPU usage is for imperative implementation
+and Squander implementation little bit under level of 50 \% almost all the time
+of execution, whereas heap memory uses Squander implementation much more than imperative
+implementation. In Squander implementation used memory reaches before the end of
+execution 520 Mb in constrast with imperative implementation, where is used 75
+Mb of memory for heap at most. Garbage collector in Squander is also used many
+times - 2.6 \% of execution time, whereas in imperative implementation it is
+0.9 \% in average! On the other hand Squander implementation holds maximum of
+the execution time for all instances around 30 seconds, but for some instances throws
+\verb|outOfMemory Exception|, which is quite unpleasant.
+
+\section{L-dominant set of graph}
 %*****************************************************************************
 \chapter{Conclusion}
 
@@ -2430,8 +2697,11 @@ Orleans; \textit{Programming language structure - lectures}, 2011.
 is fun
 web;\\\verb|http://www.mathsisfun.com/games/triangle-peg-solitaire/index.html#|
 
-\bibitem{oracle:javadoc}Oracle Java documentation;\\
+\bibitem{oracle:javadoc}Oracle Java documentation - \verb|ThreadMXBean|;\\
 \verb|http://download.oracle.com/javase/1,5,0/docs/api/|
+
+\bibitem{oracle:javadocSet}Oracle Java documentation - \verb|java.util.Set|;\\
+\verb|http://download.oracle.com/javase/6/docs/api/java/util/Set.html|
 
 \end{thebibliography}
 
