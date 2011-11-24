@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  18 NOV 2011 11:16
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  24 NOV 2011 03:30
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -1121,6 +1121,15 @@ LaTeX Warning: Label `ActionListener' multiply defined.
 
 LaTeX Warning: Label `ldomset2' multiply defined.
 
+
+LaTeX Warning: Label `tab:hpTimes' multiply defined.
+
+
+LaTeX Warning: Label `tab:hpTimes' multiply defined.
+
+
+LaTeX Warning: Label `tab:hpTimes' multiply defined.
+
 )
 \openout1 = `thesis.aux'.
 
@@ -1200,7 +1209,7 @@ Supervisor: Ing. Ji\IeC {\v r}\IeC {\'\i } Dan\IeC {\v e}\IeC {\v c}ek
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-<figures/LogoCVUT.pdf, id=267, 93.34875pt x 70.2625pt>
+<figures/LogoCVUT.pdf, id=271, 93.34875pt x 70.2625pt>
 File: figures/LogoCVUT.pdf Graphic file (type pdf)
 
 <use figures/LogoCVUT.pdf> [3 <./figures/LogoCVUT.pdf>] [4
@@ -1234,17 +1243,17 @@ File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
  [12] (./thesis.lof
 [13
 
-])
+] [14])
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
- [14] (./thesis.lot)
+ [15] [16
+
+] (./thesis.lot)
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
- [15
-
-] [16
+ [17] [18
 
 ]
 Chapter 1.
@@ -1278,7 +1287,7 @@ Chapter 3.
 Chapter 4.
 [17
 
-] <figures/architecture-diagram.png, id=827, 531.9875pt x 150.5625pt>
+] <figures/architecture-diagram.png, id=891, 531.9875pt x 150.5625pt>
 File: figures/architecture-diagram.png Graphic file (type png)
 
 <use figures/architecture-diagram.png>
@@ -1292,7 +1301,7 @@ Overfull \hbox (5.75848pt too wide) in paragraph at lines 860--863
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 1195.
  (./src/bst/BST.java) [25] (./src/bst/Operations.java)
-<figures/bst.png, id=898, 327.2225pt x 254.9525pt>
+<figures/bst.png, id=963, 327.2225pt x 254.9525pt>
 File: figures/bst.png Graphic file (type png)
  <use figures/bst.png>
 [26 <./figures/bst.png (PNG copy)>] (./src/bst/ModifiedOperations.java [27])
@@ -1300,7 +1309,7 @@ Overfull \hbox (6.66414pt too wide) in paragraph at lines 1320--1333
  [][] 
  []
 
-[28] [29] <figures/kodkodpart.png, id=950, 573.14125pt x 180.675pt>
+[28] [29] <figures/kodkodpart.png, id=1014, 573.14125pt x 180.675pt>
 File: figures/kodkodpart.png Graphic file (type png)
 
 <use figures/kodkodpart.png> [30] [31 <./figures/kodkodpart.png (PNG copy)>]
@@ -1329,67 +1338,76 @@ Overfull \hbox (8.59026pt too wide) in paragraph at lines 1818--1823
 
 ]
 Chapter 6.
-<figures/pf.png, id=1306, 702.625pt x 309.155pt>
+<figures/pf.png, id=1367, 702.625pt x 309.155pt>
 File: figures/pf.png Graphic file (type png)
  <use figures/pf.png> [51 <./figures/pf.png (PNG copy)>]
-<figures/jconsole/overview.png, id=1314, 1684.2925pt x 923.45pt>
+<figures/jconsole/overview.png, id=1374, 1684.2925pt x 923.45pt>
 File: figures/jconsole/overview.png Graphic file (type png)
 
 <use figures/jconsole/overview.png> [52 <./figures/jconsole/overview.png (PNG c
 opy)>] (./src/hp/imp/GraphExecutor.java) [53]
-Overfull \hbox (7.80403pt too wide) in paragraph at lines 2246--2267
+
+Package caption Warning: \label before \caption on input line 2804.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:hpTimes' on page 54 undefined on input line 2225.
+
+
+
+Overfull \hbox (7.80403pt too wide) in paragraph at lines 2243--2264
  [][] 
  []
 
 [54] [55] (./figures/graphs/hp/imp/40-5/heap.tex
-<figures/heap-hp-i-40-5-gc.pdf, id=1389, 361.35pt x 252.945pt>
+<figures/heap-hp-i-40-5-gc.pdf, id=1451, 361.35pt x 252.945pt>
 File: figures/heap-hp-i-40-5-gc.pdf Graphic file (type pdf)
 
 <use figures/heap-hp-i-40-5-gc.pdf>)
 (./figures/graphs/hp/squander/40-5/heap.tex
-<figures/heap-hp-s-40-5-gc.pdf, id=1390, 361.35pt x 252.945pt>
+<figures/heap-hp-s-40-5-gc.pdf, id=1452, 361.35pt x 252.945pt>
 File: figures/heap-hp-s-40-5-gc.pdf Graphic file (type pdf)
 
 <use figures/heap-hp-s-40-5-gc.pdf>) (./figures/graphs/hp/imp/40-5/cpu.tex
-<figures/cpu-hp-i-40-5.pdf, id=1391, 361.35pt x 252.945pt>
+<figures/cpu-hp-i-40-5.pdf, id=1453, 361.35pt x 252.945pt>
 File: figures/cpu-hp-i-40-5.pdf Graphic file (type pdf)
 
 <use figures/cpu-hp-i-40-5.pdf>) (./figures/graphs/hp/squander/40-5/cpu.tex
-<figures/cpu-hp-s-40-5-gc.pdf, id=1392, 361.35pt x 252.945pt>
+<figures/cpu-hp-s-40-5-gc.pdf, id=1454, 361.35pt x 252.945pt>
 File: figures/cpu-hp-s-40-5-gc.pdf Graphic file (type pdf)
 
 <use figures/cpu-hp-s-40-5-gc.pdf>) (./figures/graphs/hp/imp/50-4/heap.tex
-<figures/heap-hp-i-50-4-gc.pdf, id=1393, 361.35pt x 252.945pt>
+<figures/heap-hp-i-50-4-gc.pdf, id=1455, 361.35pt x 252.945pt>
 File: figures/heap-hp-i-50-4-gc.pdf Graphic file (type pdf)
 
 <use figures/heap-hp-i-50-4-gc.pdf>)
 (./figures/graphs/hp/squander/50-4/heap.tex
-<figures/heap-hp-s-50-4-gc.pdf, id=1394, 361.35pt x 252.945pt>
+<figures/heap-hp-s-50-4-gc.pdf, id=1456, 361.35pt x 252.945pt>
 File: figures/heap-hp-s-50-4-gc.pdf Graphic file (type pdf)
 
 <use figures/heap-hp-s-50-4-gc.pdf>) (./figures/graphs/hp/imp/50-4/cpu.tex
-<figures/cpu-hp-i-50-4.pdf, id=1395, 361.35pt x 252.945pt>
+<figures/cpu-hp-i-50-4.pdf, id=1457, 361.35pt x 252.945pt>
 File: figures/cpu-hp-i-50-4.pdf Graphic file (type pdf)
 
 <use figures/cpu-hp-i-50-4.pdf>) (./figures/graphs/hp/squander/50-4/cpu.tex
-<figures/cpu-hp-s-50-4-gc.pdf, id=1396, 361.35pt x 252.945pt>
+<figures/cpu-hp-s-50-4-gc.pdf, id=1458, 361.35pt x 252.945pt>
 File: figures/cpu-hp-s-50-4-gc.pdf Graphic file (type pdf)
 
 <use figures/cpu-hp-s-50-4-gc.pdf>) (./figures/graphs/hp/imp/80-3/heap.tex
-<figures/heap-hp-i-80-3-gc.pdf, id=1397, 361.35pt x 252.945pt>
+<figures/heap-hp-i-80-3-gc.pdf, id=1459, 361.35pt x 252.945pt>
 File: figures/heap-hp-i-80-3-gc.pdf Graphic file (type pdf)
 
 <use figures/heap-hp-i-80-3-gc.pdf>)
 (./figures/graphs/hp/squander/80-3/heap.tex
-<figures/heap-hp-s-80-3-gc.pdf, id=1398, 361.35pt x 252.945pt>
+<figures/heap-hp-s-80-3-gc.pdf, id=1460, 361.35pt x 252.945pt>
 File: figures/heap-hp-s-80-3-gc.pdf Graphic file (type pdf)
 
 <use figures/heap-hp-s-80-3-gc.pdf>) (./figures/graphs/hp/imp/80-3/cpu.tex
-<figures/cpu-hp-i-80-3.pdf, id=1399, 361.35pt x 252.945pt>
+<figures/cpu-hp-i-80-3.pdf, id=1461, 361.35pt x 252.945pt>
 File: figures/cpu-hp-i-80-3.pdf Graphic file (type pdf)
 
 <use figures/cpu-hp-i-80-3.pdf>) (./figures/graphs/hp/squander/80-3/cpu.tex
-<figures/cpu-hp-s-80-3-gc.pdf, id=1400, 361.35pt x 252.945pt>
+<figures/cpu-hp-s-80-3-gc.pdf, id=1462, 361.35pt x 252.945pt>
 File: figures/cpu-hp-s-80-3-gc.pdf Graphic file (type pdf)
 
 <use figures/cpu-hp-s-80-3-gc.pdf>) [56 <./figures/heap-hp-i-40-5-gc.pdf> <./fi
@@ -1401,137 +1419,217 @@ hp-s-40-5-gc.pdf>] [58 <./figures/heap-hp-i-50-4-gc.pdf> <./figures/heap-hp-s-5
 (./src/knapsack/imp/Knapsack.java) [62
 
 ]
-Overfull \hbox (4.95694pt too wide) in paragraph at lines 2555--2568
+Overfull \hbox (4.95694pt too wide) in paragraph at lines 2552--2565
  [][] 
  []
 
 
-Overfull \hbox (34.64566pt too wide) in paragraph at lines 2584--2600
+Overfull \hbox (34.64566pt too wide) in paragraph at lines 2581--2597
  [][] 
  []
 
 (./figures/graphs/ks/imp/40/heap.tex
-<figures/heap-ks-i-40.pdf, id=1487, 361.35pt x 252.945pt>
+<figures/heap-ks-i-40.pdf, id=1549, 361.35pt x 252.945pt>
 File: figures/heap-ks-i-40.pdf Graphic file (type pdf)
 
 <use figures/heap-ks-i-40.pdf>) (./figures/graphs/ks/squander/40/heap.tex
-<figures/heap-ks-s-40.pdf, id=1488, 361.35pt x 252.945pt>
+<figures/heap-ks-s-40.pdf, id=1550, 361.35pt x 252.945pt>
 File: figures/heap-ks-s-40.pdf Graphic file (type pdf)
 
 <use figures/heap-ks-s-40.pdf>) (./figures/graphs/ks/imp/40/cpu.tex
-<figures/cpu-ks-i-40.pdf, id=1489, 361.35pt x 252.945pt>
+<figures/cpu-ks-i-40.pdf, id=1551, 361.35pt x 252.945pt>
 File: figures/cpu-ks-i-40.pdf Graphic file (type pdf)
 
 <use figures/cpu-ks-i-40.pdf>) (./figures/graphs/ks/squander/40/cpu.tex
-<figures/cpu-ks-s-40.pdf, id=1490, 361.35pt x 252.945pt>
+<figures/cpu-ks-s-40.pdf, id=1552, 361.35pt x 252.945pt>
 File: figures/cpu-ks-s-40.pdf Graphic file (type pdf)
 
 <use figures/cpu-ks-s-40.pdf>) [63] [64 <./figures/heap-ks-i-40.pdf> <./figures
 /heap-ks-s-40.pdf>] [65 <./figures/cpu-ks-i-40.pdf> <./figures/cpu-ks-s-40.pdf>
-] [66
+]
+Overfull \hbox (7.66754pt too wide) in paragraph at lines 2662--2682
+[][][] 
+ []
+
+[66
+
+]
+Overfull \hbox (2.2236pt too wide) in paragraph at lines 2721--2740
+[][][] 
+ []
+
+[67]
+Overfull \hbox (15.53407pt too wide) in paragraph at lines 2779--2798
+[][][] 
+ []
+
+[68] (./src/lDominantSet/imp/LDomSet.java)
+(./figures/graphs/ldsg/imp/50-2/2/heap.tex
+<figures/heap-ldsg-i-50-2-2.pdf, id=1588, 361.35pt x 252.945pt>
+File: figures/heap-ldsg-i-50-2-2.pdf Graphic file (type pdf)
+
+<use figures/heap-ldsg-i-50-2-2.pdf>)
+(./figures/graphs/ldsg/squander/50-2/2/heap.tex
+<figures/heap-ldsg-s-50-2-2.pdf, id=1589, 361.35pt x 252.945pt>
+File: figures/heap-ldsg-s-50-2-2.pdf Graphic file (type pdf)
+
+<use figures/heap-ldsg-s-50-2-2.pdf>) (./figures/graphs/ldsg/imp/50-2/2/cpu.tex
+<figures/cpu-ldsg-i-50-2-2.pdf, id=1590, 361.35pt x 252.945pt>
+File: figures/cpu-ldsg-i-50-2-2.pdf Graphic file (type pdf)
+
+<use figures/cpu-ldsg-i-50-2-2.pdf>)
+(./figures/graphs/ldsg/squander/50-2/2/cpu.tex
+<figures/cpu-ldsg-s-50-2-2.pdf, id=1591, 361.35pt x 252.945pt>
+File: figures/cpu-ldsg-s-50-2-2.pdf Graphic file (type pdf)
+
+<use figures/cpu-ldsg-s-50-2-2.pdf>) (./figures/graphs/ldsg/imp/50-2/3/heap.tex
+<figures/heap-ldsg-i-50-2-3.pdf, id=1592, 361.35pt x 252.945pt>
+File: figures/heap-ldsg-i-50-2-3.pdf Graphic file (type pdf)
+
+<use figures/heap-ldsg-i-50-2-3.pdf>)
+(./figures/graphs/ldsg/squander/50-2/3/heap.tex
+<figures/heap-ldsg-s-50-2-3.pdf, id=1593, 361.35pt x 252.945pt>
+File: figures/heap-ldsg-s-50-2-3.pdf Graphic file (type pdf)
+
+<use figures/heap-ldsg-s-50-2-3.pdf>) (./figures/graphs/ldsg/imp/50-2/3/cpu.tex
+<figures/cpu-ldsg-i-50-2-3.pdf, id=1594, 361.35pt x 252.945pt>
+File: figures/cpu-ldsg-i-50-2-3.pdf Graphic file (type pdf)
+
+<use figures/cpu-ldsg-i-50-2-3.pdf>)
+(./figures/graphs/ldsg/squander/50-2/3/cpu.tex
+<figures/cpu-ldsg-s-50-2-3.pdf, id=1595, 361.35pt x 252.945pt>
+File: figures/cpu-ldsg-s-50-2-3.pdf Graphic file (type pdf)
+
+<use figures/cpu-ldsg-s-50-2-3.pdf>) (./figures/graphs/ldsg/imp/50-2/4/heap.tex
+<figures/heap-ldsg-i-50-2-4.pdf, id=1596, 361.35pt x 252.945pt>
+File: figures/heap-ldsg-i-50-2-4.pdf Graphic file (type pdf)
+
+<use figures/heap-ldsg-i-50-2-4.pdf>)
+(./figures/graphs/ldsg/squander/50-2/4/heap.tex
+<figures/heap-ldsg-s-50-2-4.pdf, id=1597, 361.35pt x 252.945pt>
+File: figures/heap-ldsg-s-50-2-4.pdf Graphic file (type pdf)
+
+<use figures/heap-ldsg-s-50-2-4.pdf>) (./figures/graphs/ldsg/imp/50-2/4/cpu.tex
+<figures/cpu-ldsg-i-50-2-4.pdf, id=1598, 361.35pt x 252.945pt>
+File: figures/cpu-ldsg-i-50-2-4.pdf Graphic file (type pdf)
+
+<use figures/cpu-ldsg-i-50-2-4.pdf>)
+(./figures/graphs/ldsg/squander/50-2/4/cpu.tex
+<figures/cpu-ldsg-s-50-2-4.pdf, id=1599, 361.35pt x 252.945pt>
+File: figures/cpu-ldsg-s-50-2-4.pdf Graphic file (type pdf)
+
+<use figures/cpu-ldsg-s-50-2-4.pdf>) [69] [70 <./figures/heap-ldsg-i-50-2-2.pdf
+> <./figures/heap-ldsg-s-50-2-2.pdf>] [71 <./figures/cpu-ldsg-i-50-2-2.pdf> <./
+figures/cpu-ldsg-s-50-2-2.pdf>] [72 <./figures/heap-ldsg-i-50-2-3.pdf> <./figur
+es/heap-ldsg-s-50-2-3.pdf>] [73 <./figures/cpu-ldsg-i-50-2-3.pdf> <./figures/cp
+u-ldsg-s-50-2-3.pdf>] [74 <./figures/heap-ldsg-i-50-2-4.pdf> <./figures/heap-ld
+sg-s-50-2-4.pdf>] [75 <./figures/cpu-ldsg-i-50-2-4.pdf> <./figures/cpu-ldsg-s-5
+0-2-4.pdf>] [76
+
 
 ]
 Chapter 7.
-[67
-
-] [68
+[77] [78
 
 ]
-Overfull \hbox (11.49219pt too wide) in paragraph at lines 2693--2695
+Overfull \hbox (11.49219pt too wide) in paragraph at lines 3007--3009
 []\T1/cmtt/m/n/10.95 http://download.oracle.com/javase/1,5.0/docs/guide/languag
 e/annotations.html 
  []
 
 No file thesis.bbl.
-[69] [70
+[79] [80
 
 ]
 Appendix A.
 
-Package natbib Warning: Citation `CSTUG' on page 71 undefined on input line 274
-1.
+Package natbib Warning: Citation `CSTUG' on page 81 undefined on input line 305
+5.
 
 
-Package natbib Warning: Citation `latexdocweb' on page 71 undefined on input li
-ne 2741.
+Package natbib Warning: Citation `latexdocweb' on page 81 undefined on input li
+ne 3055.
 
 
-Package natbib Warning: Citation `latexwiki' on page 71 undefined on input line
- 2741.
+Package natbib Warning: Citation `latexwiki' on page 81 undefined on input line
+ 3055.
 
 File: figures/LogoCVUT.pdf Graphic file (type pdf)
-<use figures/LogoCVUT.pdf> [71]
+<use figures/LogoCVUT.pdf> [81]
 
-Package natbib Warning: Citation `ipe' on page 72 undefined on input line 2773.
-
-
-[72] [73] [74]
-
-Package natbib Warning: Citation `kniha' on page 75 undefined on input line 292
-0.
+Package natbib Warning: Citation `ipe' on page 82 undefined on input line 3087.
 
 
-Package natbib Warning: Citation `clanek' on page 75 undefined on input line 29
-20.
+[82] [83] [84]
+
+Package natbib Warning: Citation `kniha' on page 85 undefined on input line 323
+4.
 
 
-Package natbib Warning: Citation `sbornik' on page 75 undefined on input line 2
-920.
+Package natbib Warning: Citation `clanek' on page 85 undefined on input line 32
+34.
 
 
-Package natbib Warning: Citation `www' on page 75 undefined on input line 2920.
+Package natbib Warning: Citation `sbornik' on page 85 undefined on input line 3
+234.
 
 
-[75]
-
-Package natbib Warning: Citation `wiki:framework' on page 76 undefined on input
- line 2922.
+Package natbib Warning: Citation `www' on page 85 undefined on input line 3234.
 
 
-Package natbib Warning: Citation `wiki:orm' on page 76 undefined on input line 
-2922.
+[85]
 
-[76] [77] [78]
+Package natbib Warning: Citation `wiki:framework' on page 86 undefined on input
+ line 3236.
+
+
+Package natbib Warning: Citation `wiki:orm' on page 86 undefined on input line 
+3236.
+
+[86] [87] [88]
 Appendix B.
-[79
+[89
 
-] [80
+] [90
 
 ]
 Appendix C.
-[81] [82
+[91] [92
 
 ]
 Appendix D.
-[83] [84
+[93] [94
 
 ]
 Appendix E.
 
-Package natbib Warning: Citation `infodp' on page 85 undefined on input line 30
-15.
+Package natbib Warning: Citation `infodp' on page 95 undefined on input line 33
+29.
 
-<figures/seznamcd.pdf, id=1598, 793.96625pt x 539.01375pt>
+<figures/seznamcd.pdf, id=1787, 793.96625pt x 539.01375pt>
 File: figures/seznamcd.pdf Graphic file (type pdf)
 
 <use figures/seznamcd.pdf>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[85] [86 <./figures/seznamcd.pdf>]
+[95] [96 <./figures/seznamcd.pdf>]
 
 Package natbib Warning: There were undefined citations.
 
 (./thesis.aux)
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18878 strings out of 495027
- 291839 string characters out of 1181419
- 685602 words of memory out of 3000000
- 20651 multiletter control sequences out of 15000+50000
+ 19085 strings out of 495027
+ 296763 string characters out of 1181419
+ 691254 words of memory out of 3000000
+ 20737 multiletter control sequences out of 15000+50000
  28616 words of font info for 70 fonts, out of 3000000 for 9000
  42 hyphenation exceptions out of 8191
  47i,13n,57p,602b,1833s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1564,9 +1662,9 @@ onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
 nts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb>
-Output written on thesis.pdf (102 pages, 1096819 bytes).
+Output written on thesis.pdf (114 pages, 1154767 bytes).
 PDF statistics:
- 2731 PDF objects out of 2984 (max. 8388607)
- 807 named destinations out of 1000 (max. 500000)
- 624 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2937 PDF objects out of 2984 (max. 8388607)
+ 882 named destinations out of 1000 (max. 500000)
+ 692 words of extra memory for PDF output out of 10000 (max. 10000000)
 
