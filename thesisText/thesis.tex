@@ -1741,6 +1741,8 @@ Implementation was successfuly tested for $40$ things in one instance at most.
 
 \section{General bisection breadth}
 
+\subsection{First version}
+
 \label{sec:gbb}
 This problem is taken from course \textit{Parallel Systems and Algorithms}
 lectured at Faculty of Electrical Engeneering of Czech Technical University in
@@ -1820,7 +1822,7 @@ Then we can add constraints about what we expect after execution by annotation
 \verb|resultA| and \verb|resultN| are subsets of set of nodes in the graph,
 information that size of set \verb|resultA| is \verb|a| and size of set
 \verb|resultN| is \verb|n - a|:
-\newpage
+
 \lstinputlisting[label=gbb2,caption=Declaration
 of both sets of nodes]{src/generalBisectionBreadth/Gbb2.java}
 
@@ -1837,8 +1839,26 @@ version of implementation General
 bisection breadth algorithm]{src/generalBisectionBreadth/Gbb3.java}
 
 During testing testing this Squander implementation was able to deal with
-instances up to $30$ nodes and never return bad solution on 50 instances.
+instances up to $30$ nodes but there was sometimes problem when using
+constraints on \verb|commonEdges|, which does not always work properly -
+sometimes returns \verb|RuntimeException: No solution|, when solution was found
+in previous test.
 
+\subsection{Second version}
+In implementation of second version of General bisection breadth algorithm was
+removed declaration of \uv{help} set \verb|commonEdges| and instead of that
+is used direct summation of edges connecting both set of nodes. This summation
+was implemented via transformation of set of \verb|edges| (all edges in the
+graph) into array, which is necessary to use when using summation in Squander.
+In summation is via ternary operator decided if actual edge connects both set of
+nodes and according to that counted number of connecting edges - see Listing
+\ref{gbb4}
+
+\lstinputlisting[label=gbb4,caption=Alternative
+version of implementation General
+bisection breadth algorithm]{src/generalBisectionBreadth/Gbb4.java}
+
+\newpage
 \section{L-dominant set of graph}
 \label{sec:ldsg}
 
@@ -2148,7 +2168,7 @@ it allows profiling of applications running from within Eclipse - see Figure
 implementation and this led to situation, that every instance in Squander
 reached time out. I have also tried another Eclipse profiler called
 \textit{Colorer}, but developing of this profiler was cancelled in 2008 and also
-there was quite a lot of problems to use it in oldest available Eclipse Europa.
+there were quite a lot of problems to use it in oldest available Eclipse Europa.
 
 
 \begin{figure}[ht]
@@ -2653,11 +2673,66 @@ the execution time for all instances around 30 seconds, but for some instances t
 \verb|outOfMemory Exception|, which is quite unpleasant.
 
 \section{L-dominant set of graph}
+\label{sec:ldsgComp}
+For comparison was implemented imperative version of L-dominant set of graph
+algorithm of type branch \& bounds depth first search with depth restricted to
+number of edges. In this implementation is main data structure stack, which is
+initialized by empty set of nodes and actual best configuration of nodes
+covering with its l-neighborhood whole graph is set to all nodes in the graph.
+When is some state from stack popped, followers of that state are created (if
+exist) and it is checked, whether have sense to push actual generated state to
+stack, when actual state is not covering all nodes in the graph and this state
+contains more selected nodes than state with best configuration. It means that
+this branch is cut off.
+
+
+Generating of new states itself is done such that into configuration of set of
+nodes for new state is put first node which is not covered by set of nodes in
+configuration of actual state. Then is computed coverage of this new set of
+nodes via matrix of incidency. Coverage is computed by ORing of configuration of
+set of nodes in actual state with all rows in matrix of incidency which are
+assigned in that configuration. ORing is done as many times as great is the
+number l symbolizing length of neighborhood. Implementation is presented in
+Listing \ref{lDomSetImp}.
+\newpage
+\lstinputlisting[label=lDomSetImp,caption=Imperative
+implementation of L-dominant set of graph
+algorithm]{src/lDominantSet/imp/LDomSet.java}
+\newpage
+When measuring execution times for set of graph configuration, we change
+l-neighborhood value as a parameter. It is almost obvious, that for imperative
+implementation when increasing number of l-neighborhood, execution time is
+decreasing. This is obvious from Tables \ref{tab:ldsgTimes2},
+\ref{tab:ldsgTimes3} and \ref{tab:ldsgTimes4}. Let us compare execution
+times e.g. for instances of 40 nodes a maximal node grade 2 - for l=2 is
+execution time 17 020 ms, l=3 is 1 670 ms and for l=4 is 520 ms. More significant
+difference is for instance with 70 nodes and maximal node grade 3, where for
+l=2 is execution time 74 840 ms, for l=3 is 6 530 ms and for l=4 is 190 ms.
+Also when maximal grade of node is increased, execution time is decreasing,
+because when increasing maximal node grade same neighborhood l contains more
+nodes so search space of imperative algorithm is reduced and not very suprising
+discovery that for graphs with more nodes is execution time bigger than for
+graphs with less nodes.
+
+Now let us look at execution times for Squander implementation. Here is
+dependency on size of l-neighborhood slightly different, because algorithm is
+implemented in a way, that every node is holding its neighborhood and Squander
+is only comparing if some set of nodes with its neighborhood is covering whole
+graph and whether is fulfilled treshold condition. When comparing execution
+times e.g. for instance with 40 nodes, maximal node grade 2 we can see that for
+l=2 is execution time 5 050 ms, for l=3 is 6 670 ms and for l=4 is 3 990 ms.
+Moreover e.g. for instance with 60 nodes, maximal node grade 4 is execution
+time increasing with size of l-neighborhood. From measurement is also obvious
+that there is not so strong contraint between execution times of two instances
+with same number of nodes and different maximal grade as was in imperative
+implementation.
+
 
 
 \begin{table}[ht]
 \caption{Execution times of L-dominant set of graph algorithm implementation in ms for
 l-neighborhood = 2}
+\label{tab:ldsgTimes2}
 %\begin{center}
 \begin{tabular}{l|r|r|r|r|r|r|r|r|r|r|} \cline{2-11}
 
@@ -2712,11 +2787,11 @@ in the graph} \\ \cline{2-9}
 \end{center}
 \end{table}
 
-
 \newpage
-\begin{table}[ht]
+\begin{table}[p!]
 \caption{Execution times of L-dominant set of graph algorithm implementation in ms for
 l-neighborhood = 3}
+\label{tab:ldsgTimes3}
 %\begin{center}
 \begin{tabular}{l|r|r|r|r|r|r|r|r|r|r|} \cline{2-11}
 
@@ -2742,8 +2817,8 @@ in the graph} \\ \cline{2-11}
 \end{table}
 
 
-\begin{table}
-\label{tab:hpTimes}
+\begin{table}[p!]
+%\label{tab:hpTimes}
 \begin{center}
 \begin{tabular}{l|r|r|r|r|r|r|r|r|} \cline{2-9}
 
@@ -2771,10 +2846,11 @@ in the graph} \\ \cline{2-9}
 
 
 
-\newpage
-\begin{table}[ht]
+%\newpage
+\begin{table}[p!]
 \caption{Execution times of L-dominant set of graph algorithm implementation in ms for
 l-neighborhood = 4}
+\label{tab:ldsgTimes4}
 %\begin{center}
 \begin{tabular}{l|r|r|r|r|r|r|r|r|r|r|} \cline{2-11}
 
@@ -2800,8 +2876,8 @@ in the graph} \\ \cline{2-11}
 \end{table}
 
 
-\begin{table}
-\label{tab:hpTimes}
+\begin{table}[p!]
+%\label{tab:hpTimes}
 \begin{center}
 \begin{tabular}{l|r|r|r|r|r|r|r|r|} \cline{2-9}
 
@@ -2826,12 +2902,27 @@ in the graph} \\ \cline{2-9}
 %\label{fig:hpIMem405}
 \end{center}
 \end{table}
+\clearpage
+Execution times of Squander implementation are usually better for instances with
+more nodes, lower maximal grade of nodes and lower size of l-neighborhood. For
+smaller instances is Squander slower than imperative implementation, because
+imperative implementation is finished before Squander creates the universe,
+establishes bounds and starts kodkod engine.
 
 
-\newpage
-\lstinputlisting[label=lDomSetImp,caption=Imperative
-implementation of L-dominant set of graph
-algorithm]{src/lDominantSet/imp/LDomSet.java}
+Regarding loading through computation system, graphs shows, that for imperative
+implementation was heap memory usage around 25 Mb peak value whereas for
+Squander implementation was from 12 Mb to 80 Mb. More significant difference was
+measured for CPU usage, when imperative implementation took about 50 \% of its
+performance, whereas Squander implementation tooks around 80 \%.
+
+
+Garbage collector in Squander is not used as many times as in previous
+comparisons - only 0.03 \% of execution time and in imperative
+implementation it is 0.015 \% in average, which is better result than in
+Squander implementation but not very significantly.
+
+\clearpage
 
 
 \begin{figure}
@@ -2970,6 +3061,365 @@ implementation, l=4 for graph with 50 nodes, max. grade 2}
 \end{figure}
 
 \clearpage 
+
+\section{General bisection breadth}
+
+Imperative version of General bisection breadth algorithm was implimented in
+similar way like imperative version of L-dominant set of graph algorithm in
+Listing \ref{lDomSetImp}. State space is searched using Depth first search
+algorithm extended by branch \& bounds criterium. At first state with empty configuration
+and maximal price (number of bounds connecting two sets in th graph, which is
+necessary to minimize) is pushed onto stack. For every state popped from stack
+are generated its followers and if configuration of actual follower does not
+contain demanded number of nodes it is pushed onto stack. Otherwise is generated
+follower tested if its configuration is better (contains less edges connecting
+two groups of nodes) than actual best state and if yes, it is marked as actual
+best state. Branch \& bounds criterium is implemented such, that when actual
+state has more or equal edges connecting nodes in its confuguration than
+actual best state's configuration, its branch is cut off, because there is no
+way to find configuration in its branch containing less connecting edges than
+actual best state's configuration.
+
+\lstinputlisting[label=GbbImp,caption=Imperative
+implementation of General bisection breadth
+algorithm]{src/generalBisectionBreadth/imp/Gbb.java}
+\newpage
+For measuring characteristics of imperative and Squander implementation was used
+similar set of graphs as in previous algorithm measurement in
+section \ref{sec:ldsgComp}. Instead of changing parameter of size
+of neighborhood is changed number of nodes in set A. From that measurement is
+obvious information that when increasing maximal node grade in the graph
+instance, execution time for imperative implementation is longer. This is also
+almost always true for Squander implementation, except for some instances where
+is execution time with maximal node grade decreasing - instance with 70 nodes
+and 14 nodes in set A - or instances where it looks like, that not depends on
+maximal node grade so much - graph with 40 nodes and 8 nodes in set A. We can
+see from execution times also, that longest execution times have
+such configuration fo nodes, where in set A has to be exactly half of total
+number of nodes.
+
+
+When comparing both implementation it is obvious, that execution of Squander's
+implementation of algorithm takes more time than execution using DFS algorithm
+with branch and bounds criterium, probably thanks to constraint checking number
+of edges connecting both sets of nodes in Squander implemenation.
+
+\begin{table}[ht]
+\caption{Execution times of General bisection breadth algorithm implementation
+in ms for $\frac{1}{5}$ nodes in one node set}
+\label{tab:gbbTimes15}
+%\begin{center}
+\begin{tabular}{l|r|r|r|r|r|r|r|r|r|r|} \cline{2-11}
+
+\multirow{4}{*}{} & 
+\multicolumn{10}{>{\cellcolor[gray]{.8}}c|}{Number of nodes
+in the graph} \\ \cline{2-11} 
+
+&  \multicolumn{2}{c|}{10} & \multicolumn{2}{c|}{20} &
+ \multicolumn{3}{c|}{30} & \multicolumn{3}{c|}{40}\\ \cline{2-11}
+ & \multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{set A} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{set A} &
+\multicolumn{3}{>{\cellcolor[gray]{.8}}c|}{set A} &
+\multicolumn{3}{>{\cellcolor[gray]{.8}}c|}{set A}\\ \cline{2-11}
+&  \multicolumn{2}{c|}{2} & \multicolumn{2}{c|}{4} & \multicolumn{3}{c|}{6} &
+\multicolumn{3}{c|}{8}  \\ \cline{2-11}
+ & \multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{3}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{3}{>{\cellcolor[gray]{.8}}c|}{max grade}\\ \cline{2-11} 
+&  2 & 3 & 2 & 3 & 2 & 3 & 4 & 2 & 3 & 4  \\ \hline
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Imperatively}  & 1 & 1
+& 1 & 10 & 20 & 30 & 40 & 10 &
+ 170 & 700\\ \hline 
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Squander} & 900 & 770 &
+1 090 & 1 060 & 1 810 & 3 080 & 2 970 & 2 980 &
+15 010 & 7 880\\ \hline
+\end{tabular}
+
+%\end{center}
+\end{table}
+
+
+\begin{table}
+\label{tab:hpTimes}
+\begin{center}
+\begin{tabular}{l|r|r|r|r|r|r|r|r|} \cline{2-9}
+
+\multirow{4}{*}{} & 
+\multicolumn{8}{>{\cellcolor[gray]{.8}}c|}{Number of nodes
+in the graph} \\ \cline{2-9} 
+&  \multicolumn{4}{c|}{50} &
+\multicolumn{2}{c|}{60} &
+\multicolumn{2}{c|}{70}\\ \cline{2-9}
+   & \multicolumn{4}{>{\cellcolor[gray]{.8}}c|}{set A} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{set A} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{set A}\\ \cline{2-9}
+&  \multicolumn{4}{c|}{10} & \multicolumn{2}{c|}{12} & \multicolumn{2}{c|}{14}
+\\ \cline{2-9}
+ & \multicolumn{4}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{max grade}\\ \cline{2-9}
+  & 2 & 3 & 4 & 5 & 2 & 3 & 2 & 3  \\\hline 
+
+ \multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Imperatively} &
+20 & 240 & 830 & 110 & 20
+& 20 & 2 010 & 1 260 \\ \hline
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Squander} & 3 500 &
+81 410 & \textbf{t/o} & \textbf{t/o} & 12 880 & 254 570 & 8 510  &
+311 930
+\\
+\hline
+\end{tabular}
+%\label{fig:hpIMem405}
+\end{center}
+\end{table}
+
+\newpage
+\begin{table}[p!]
+\caption{Execution times of General bisection breadth algorithm implementation
+in ms for $\frac{1}{3}$ nodes in one node set}
+\label{tab:gbbTimes13}
+%\begin{center}
+\begin{tabular}{l|r|r|r|r|r|r|r|r|r|r|} \cline{2-11}
+
+\multirow{4}{*}{} & 
+\multicolumn{10}{>{\cellcolor[gray]{.8}}c|}{Number of nodes
+in the graph} \\ \cline{2-11} 
+
+&  \multicolumn{2}{c|}{10} & \multicolumn{2}{c|}{20} &
+ \multicolumn{3}{c|}{30} & \multicolumn{3}{c|}{40}\\ \cline{2-11}
+ & \multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{set A} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{set A} &
+\multicolumn{3}{>{\cellcolor[gray]{.8}}c|}{set A} &
+\multicolumn{3}{>{\cellcolor[gray]{.8}}c|}{set A}\\ \cline{2-11}
+&  \multicolumn{2}{c|}{3} & \multicolumn{2}{c|}{7} & \multicolumn{3}{c|}{10} &
+\multicolumn{3}{c|}{13}  \\ \cline{2-11}
+ & \multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{3}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{3}{>{\cellcolor[gray]{.8}}c|}{max grade}\\ \cline{2-11}
+&  2 & 3 & 2 & 3 & 2 & 3 & 4 & 2 & 3 & 4  \\ \hline
+
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Imperatively}  & 1 & 1 & 10 & 10 &
+30 & 120 & 170 & 80 & 900 & 3 530\\ \hline 
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Squander} & 720 & 780 &
+1 010 & 1 330 & 1 780 & 7 840 & 59 080 & 2 970 &
+111 040 & \textbf{t/o}\\ \hline
+\end{tabular}
+
+%\end{center}
+\end{table}
+
+
+\begin{table}[p!]
+%\label{tab:hpTimes}
+\begin{center}
+\begin{tabular}{l|r|r|r|r|r|r|r|r|} \cline{2-9}
+
+\multirow{4}{*}{} & 
+\multicolumn{8}{>{\cellcolor[gray]{.8}}c|}{Number of nodes
+in the graph} \\ \cline{2-9} 
+&  \multicolumn{4}{c|}{50} &
+\multicolumn{2}{c|}{60} &
+\multicolumn{2}{c|}{70}\\ \cline{2-9}
+   & \multicolumn{4}{>{\cellcolor[gray]{.8}}c|}{set A} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{set A} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{set A}\\ \cline{2-9}
+&  \multicolumn{4}{c|}{17} & \multicolumn{2}{c|}{20} & \multicolumn{2}{c|}{23}
+\\ \cline{2-9}
+ & \multicolumn{4}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{max grade}\\ \cline{2-9}
+  & 2 & 3 & 4 & 5 & 2 & 3 & 2 & 3  \\ \hline
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Imperatively} &
+330 & 1 590 & 29 400 & \textbf{t/o} & 350
+& \textbf{t/o} & 25 160 & \textbf{t/o} \\ \hline
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Squander} & 13 350 & \textbf{t/o} & \textbf{t/o} &
+\textbf{t/o} & 82 140 & \textbf{t/o} & 172 220 & \textbf{t/o}
+\\
+\hline
+\end{tabular}
+%\label{fig:hpIMem405}
+\end{center}
+\end{table}
+
+
+
+%\newpage
+\begin{table}[p!]
+\caption{Execution times of General bisection breadth algorithm implementation
+in ms for $\frac{1}{2}$ nodes in one node set}
+\label{tab:gbbTimes12}
+%\begin{center}
+\begin{tabular}{l|r|r|r|r|r|r|r|r|r|r|} \cline{2-11}
+
+\multirow{4}{*}{} & 
+\multicolumn{10}{>{\cellcolor[gray]{.8}}c|}{Number of nodes
+in the graph} \\ \cline{2-11} 
+
+&  \multicolumn{2}{c|}{10} & \multicolumn{2}{c|}{20} &
+ \multicolumn{3}{c|}{30} & \multicolumn{3}{c|}{40}\\ \cline{2-11}
+ & \multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{set A} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{set A} &
+\multicolumn{3}{>{\cellcolor[gray]{.8}}c|}{set A} &
+\multicolumn{3}{>{\cellcolor[gray]{.8}}c|}{set A}\\ \cline{2-11}
+&  \multicolumn{2}{c|}{5} & \multicolumn{2}{c|}{10} & \multicolumn{3}{c|}{15} &
+\multicolumn{3}{c|}{20}  \\ \cline{2-11}
+ & \multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{3}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{3}{>{\cellcolor[gray]{.8}}c|}{max grade}\\ \cline{2-11}
+&  2 & 3 & 2 & 3 & 2 & 3 & 4 & 2 & 3 & 4  \\ \hline
+
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Imperatively}  & 1 & 10 & 20 & 20 &
+110 & 310 & 510 & 2 140 & 8 120 & 22 500\\ \hline 
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Squander} & 750 & 750 &
+1 210 & 1 400 & 2 010 & 38 610 & 40 870 & 9 850 &
+\textbf{t/o} & \textbf{t/o}\\ \hline
+\end{tabular}
+
+%\end{center}
+\end{table}
+
+
+\begin{table}[p!]
+%\label{tab:hpTimes}
+\begin{center}
+\begin{tabular}{l|r|r|r|r|r|r|r|r|} \cline{2-9}
+
+\multirow{4}{*}{} & 
+\multicolumn{8}{>{\cellcolor[gray]{.8}}c|}{Number of nodes
+in the graph} \\ \cline{2-9} 
+&  \multicolumn{4}{c|}{50} &
+\multicolumn{2}{c|}{60} &
+\multicolumn{2}{c|}{70}\\ \cline{2-9}
+   & \multicolumn{4}{>{\cellcolor[gray]{.8}}c|}{set A} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{set A} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{set A}\\ \cline{2-9}
+&  \multicolumn{4}{c|}{25} & \multicolumn{2}{c|}{30} & \multicolumn{2}{c|}{35}
+\\ \cline{2-9}
+ & \multicolumn{4}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{max grade} &
+\multicolumn{2}{>{\cellcolor[gray]{.8}}c|}{max grade}\\ \cline{2-9}
+  & 2 & 3 & 4 & 5 & 2 & 3 & 2 & 3  \\ \hline
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Imperatively} &
+86 090 & 160 250 & 350 300 & \textbf{t/o} & \textbf{t/o}
+& \textbf{t/o} & \textbf{t/o} & \textbf{t/o} \\ \hline
+\multicolumn{1}{|>{\cellcolor[gray]{.8}}l|}{Squander} & 40 980 & \textbf{t/o} &
+\textbf{t/o} & \textbf{t/o} & \textbf{t/o} & \textbf{t/o} & \textbf{t/o} & \textbf{t/o}
+\\
+\hline
+\end{tabular}
+%\label{fig:hpIMem405}
+\end{center}
+\end{table}
+\clearpage
+When comparing heap memory usage in following graphs we can see that opposite to
+previous implementations of algorithms Squander's implementation has lower load
+on heap memory. Usually it is up to 15 Mb except for peak at the beginning when
+starts kodkod engine and universe is created, but also here heap memory does not
+occupied more than 25 Mb. Imperative implementation has also big peak at the
+beginnig of computation but then stabilizies memory usage under 10 Mb.
+
+CPU usage is as usual for both implementations around 50 \% except for Squander
+when starting kodkod engine.
+
+Garbage collector was used quite often in both version of implementation, in
+imperative 0.5 \% in average and in Squander 2.44 \% of execution time, which
+gives again better result for imperative implementation.
+\clearpage
+
+
+\begin{figure}
+\begin{center}
+\input{figures/graphs/gbb/imp/70-2-1-3/heap.tex}
+\caption{Heap memory usage in time - General bisection breadth imperative
+implementation, set A=$\frac{1}{3}$ for graph with 70 nodes, max. grade 2 and
+info, when was GC performed}
+\label{fig:gbbIHeap90213}
+\end{center}
+\end{figure}
+
+
+\begin{figure}
+\begin{center}
+\input{figures/graphs/gbb/squander/70-2-1-3/heap.tex}
+\caption{Heap memory usage in time - General bisection breadth Squander
+implementation, set A=$\frac{1}{3}$ for graph with 70 nodes, max. grade 2 and
+info, when was GC performed}
+\label{fig:gbbSHeap90213}
+\end{center}
+\end{figure}
+
+
+
+\begin{figure}
+\begin{center}
+\input{figures/graphs/gbb/imp/70-2-1-3/cpu.tex}
+\caption{CPU usage in time - General bisection breadth imperative
+implementation, set A=$\frac{1}{3}$ for graph with 70 nodes, max. grade 2 and
+info, when was GC performed}
+\label{fig:gbbICpu70213}
+\end{center}
+\end{figure}
+
+
+
+
+\begin{figure}
+\begin{center}
+\input{figures/graphs/gbb/squander/70-2-1-3/cpu.tex}
+\caption{CPU usage in time - General bisection breadth Squander
+implementation, set A=$\frac{1}{3}$ for graph with 70 nodes, max. grade 2 and
+info, when was GC performed}
+\label{fig:gbbSCpu70213}
+\end{center}
+\end{figure}
+
+
+\begin{figure}
+\begin{center}
+\input{figures/graphs/gbb/imp/50-2-1-2/heap.tex}
+\caption{Heap memory usage in time - General bisection breadth imperative
+implementation, set A=$\frac{1}{2}$ for graph with 50 nodes, max. grade 2 and
+info, when was GC performed}
+\label{fig:gbbIHeap50212}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\input{figures/graphs/gbb/squander/50-2-1-2/heap.tex}
+\caption{Heap memory usage in time - General bisection breadth Squander
+implementation, set A=$\frac{1}{2}$ for graph with 50 nodes, max. grade 2 and
+info, when was GC performed}
+\label{fig:gbbSHeap50212}
+\end{center}
+\end{figure}
+
+
+
+\begin{figure}
+\begin{center}
+\input{figures/graphs/gbb/imp/50-2-1-2/cpu.tex}
+\caption{CPU usage in time - General bisection breadth imperative
+implementation, set A=$\frac{1}{2}$ for graph with 50 nodes, max. grade 2 and
+info, when was GC performed}
+\label{fig:gbbICpu50212}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\input{figures/graphs/gbb/squander/50-2-1-2/cpu.tex}
+\caption{CPU usage in time - General bisection breadth Squander
+implementation, set A=$\frac{1}{2}$ for graph with 50 nodes, max. grade 2 and
+info, when was GC performed}
+\label{fig:gbbSCpu50212}
+\end{center}
+\end{figure}
+
+
 %*****************************************************************************
 \chapter{Conclusion}
 
