@@ -808,6 +808,81 @@ the frame constructor.
 \newpage
 \lstinputlisting[label=actionListenerInstaller,
 caption=Action Listener Installer class]{src/listeners/ActionListenerInstaller.java}
+
+\chapter{Few terms from statistics}
+\label{ch:statistics}
+
+Due to computation of dependencies between input or output data and execution
+time in Chapter \ref{ch:comparison} Comaprison will be presented in this smaller
+chapter some statistic terms. At first we have to define term \textit{random
+variable}. As is defined in \cite{navara:mvt}, random variable is projection:
+$$X:\Omega \rightarrow R$$
+
+so, that for every $t\in R$ si valid:
+
+$$X^{-1}\left(\left(-\infty , t\right>\right) =
+\left\{\omega\in\Omega\mid X\left(\omega\right)\leq t \right\} \in
+\mathcal{A}.$$
+
+So random variable is \uv{assignment} real number to every possible result of
+experiment (it means every $\omega\in\Omega$) so, that it \uv{copies}
+probability rate from $\mathcal{A}$ na $\mathcal{B\left(R\right)}$. E.g. when we
+have an experiment with throwing a die. We can assign every side of die number
+from 1 to 6 according to number of points on that side but also we can assign
+those sides with 0 and 1 according to even or odd number of points on that side.
+
+Another necessary terms to define are \textit{median} and \textit{variance}.
+According to Navara \cite{navara:mvt}, when random variable $X$ has discrete distribution, then
+number:
+$$EX=\sum_i x_i\cdot P\left[X=x_i\right]=\sum_i x_i p_i$$
+
+Variance of random variable $X$ is number $var X = E(X-EX)^2$. Number $\sigma =
+\sqrt{var X}$ is called \textit{standard deviation}.
+
+Finally we can define terms which we will use for computing depedency between
+two random variables. It is so called \textit{covariance}, which is defined for two
+random variables as \cite{navara:mvt}:
+
+$$cov(Y,Z)=E\left[\left(Y-EY\right)\left(Z-EZ\right)\right]$$
+\newpage
+Clauses about covariance \cite{kulich:stat}:
+
+\begin{center}
+$cov(X,X)=var X$\\
+$cov(X,Y)=cov(Y,X)$\\
+$cov(X,Y)^2\leq var X \cdot var Y$\\
+$cov(X,Y) = EXY - EX\cdot EY$\\
+If $X$ and $Y$ are independent, then
+$cov\left(X,Y\right)=0 \rightarrow EXY=EX\cdot EY$\\
+\end{center}
+\begin{itemize}
+  \item If is covariance positive, it means, that random variables $X$ and
+$Y$ are dependent and that grater values of one variable are connected with
+greater values of the second variable (and lower values of one variable connected with
+lower values of the second variable). E.g.: human heigt and weight.
+  \item If is covariance negative, it means, that random variables $X$ and
+$Y$ are dependent and that greater values of one variable are connected with
+lower values of the second variable. E.g.: pattern depth
+of tyre and braking distance.
+\end{itemize}
+Values of covariance have bad interpretation. We know from given value
+$cov(X,Y)\neq0$ in which direction are $X$ and $Y$ dependent, but we do not know
+how strong dependence is. We define for that reason \textit{correlation}
+\cite{kulich:stat}:
+
+$$cor(X,Y)=\frac{cov(X,Y)}{\sqrt{var X}\sqrt{var Y}}$$ 
+
+Clauses about correlation \cite{kulich:stat}:
+
+\begin{center}
+Correlation $cor(X,Y)$ is always between -1 and 1. Correlation is zero just when
+$cov(X,Y)=0$\\
+If $X$ and $Y$ are independent, then $cor(X,Y)=0$\\
+$cor(X,Y)=1$ just when $Y=a+bX$; $a\in\mathbb{R}$ and $b>0$\\
+$cor(X,Y)=-1$ just when $Y=a+bX$; $a\in\mathbb{R}$ and $b<0$\\
+\end{center}
+
+
 %*****************************************************************************
 \chapter{Framework description}
 \label{chap:framework}
@@ -2160,6 +2235,7 @@ Triangular solitaire algorithm]{src/solitaire/TriSol3.java}
 
 %*****************************************************************************
 \chapter{Comparison}
+\label{ch:comparison}
 For meausurement of some metrics (execution time and memory analysis) I have
 tried to use Java profiler \textit{Test} \& \textit{Performance Tools Platform
 (TPTP)}, which is Eclipse plugin profiling tool. This tool is highly integrated with Eclipse, so
@@ -2512,6 +2588,171 @@ of 80 nodes and maximal node grade 3}
 \end{center}
 \end{figure}
 \clearpage 
+
+Now let us try to compute dependency between execution time and particular
+graph's parameters for Squander implementation. For this purpose we use
+statistic term called \textit{covariance} introduced in Chapter
+\ref{ch:statistics}. Let us define following random variables:
+
+\begin{enumerate}
+  \item $X$ as execution time of concrete graph instance
+  \item $Y$ as number of nodes in concrete graph instance
+  \item $Z$ as maximal node grade in concrete graph instance
+\end{enumerate}
+
+
+For that purpose were used graph instances with 40, 50, 60, 70, 80, 90, 100
+nodes and max. node grade 2, 3, 4. When exec. time reaches timeout (45
+min), exec. time is 1 hour.
+%median of random variable $X$, $Y$ and $Z$ will be computed as:
+%$$EX = \frac{3 200 + 33 510 + 130 800 + 3 270 + 704 230 + 3 540}{13} +$$
+%$$\frac{6 380 + 3 940 + 5 100 + 4 060 + 70 860 + 5 080 + 4 700}{13}=75282.31$$
+
+%$$EY = \frac{3}{13}\cdot 40 + \frac{2}{13}\cdot 50 + \frac{2}{13}\cdot 60 +
+%\frac{2}{13}\cdot 70 + \frac{2}{13}\cdot 80 + \frac{1}{13}\cdot 90 +
+%\frac{1}{13}\cdot 100=63.85$$
+
+
+%$$EZ = \frac{5}{13}\cdot 2 + \frac{5}{13}\cdot 3 + \frac{2}{13}\cdot 4 +
+%\frac{1}{13}\cdot 5=2.92$$
+
+%now we compute median $EXY$ and $EXZ$:
+
+%$$EXY=40\cdot 3 200 \cdot \frac{1}{13}+ 40 \cdot 33 510 \cdot\frac{1}{13}+ 40
+%\cdot  130 800 \cdot\frac{1}{13}+ 50 \cdot   3 270 \cdot\frac{1}{13}+50 \cdot  
+%704 230\cdot\frac{1}{13}+$$ 
+%$$60 \cdot   3 540 \cdot\frac{1}{13}+60\cdot   6 380 \cdot\frac{1}{13}+70\cdot 
+%3 940 \cdot\frac{1}{13}+70\cdot  5 100 \cdot\frac{1}{13}+80\cdot  4 060
+%\cdot\frac{1}{13}+$$ $$80\cdot 70 860\cdot\frac{1}{13}+90\cdot  5
+%080 \cdot\frac{1}{13}+100\cdot  4 700 \cdot\frac{1}{13}=386 3400$$
+
+%$$cov\left(X,Y\right)=EXY-\left(EX\right)\cdot \left(EY\right)=386
+%3400-75282.31\cdot 63.85= -943375.49$$
+
+
+%$$cov\left(X,Y\right)=E[\left(3200-75282.31\right)\left(40-63.85\right)+
+%\left(33510-75282.31\right)\left(63.85-40\right)+$$
+%$$\left(130800-75282.31\right)\left(40-63.85\right)+\left(3270-75282.31\right)\left(50-63.85\right)+\left(704230-75282.31\right)\left(50-63.85\right)+$$
+%$$\left(3540-75282.31\right)\left(63.85-60\right)+\left(6380-75282.31\right)\left(63.85-60\right)
+%+\left(3940-75282.31\right)\left(70-63.85\right)+$$$$\left(5100-75282.31\right)\left(70-63.85\right)+
+%\left(4060-75282.31\right)\left(80-63.85\right)+\left(70860-75282.31\right)\left(80-63.85\right)+$$
+%$$\left(5080-75282.31\right)\left(90-63.85\right)+\left(4700-75282.31\right)\left(100-63.85\right)]=
+%-1179662.93$$
+
+
+%new computation
+%median and variance of random variable $X$, $Y$ and $Z$ will be computed as:
+%$$EX = \frac{1}{14}\cdot(2 880 + 3 200 + 3 260 + 3 270 + 704 230 + 3 540+6 380
+%+ 3 940 + $$
+%$$5 100 + 4 060 + 70 860 + 5 080 + 3600 000+ 4
+%700 + 3600 000)=572 892.86$$
+
+%$$varX=E(X-EX)^2=\frac{1}{14}\cdot[\left(2 880-572
+%892.86\right)^2+\left(3200-572892.86\right)^2+\left(3260-572892.86\right)^2+$$
+%$$\left(3270-572892.86\right)^2+\left(704230-572892.86\right)^2+\left(3540-572892.86\right)^2+\left(6380-572892.86\right)^2+$$
+%$$\left(3940-572892.86\right)^2+\left(5100-572892.86\right)^2+\left(4060-572892.86\right)^2+\left(70860-572892.86\right)^2+$$
+%$$\left(5080-572892.86\right)^2+\left(3600000-572892.86\right)^2+\left(4700-572892.86\right)^2+\left(3600000-572892.86\right)^2]$$
+%$$=1582462793237.48$$
+
+%$$EY = \frac{1}{7}\cdot \left(40 +  50 +  60 +
+% 70 +  80 +  90 +
+%100\right)=70$$
+
+%$$varY=E(Y-EY)^2=\frac{1}{14}\cdot[\left(40 -70\right)^2+\left(50
+%-70\right)^2+\left(60 -70\right)^2+\left(70 -70\right)^2+$$
+%$$\left(80 -70\right)^2+\left(90 -70\right)^2+\left(100 -70\right)^2]=200$$
+
+%$$EZ = \frac{1}{2}\cdot \left(2 +  3\right)=2.5$$
+%$$varZ=E(Z-EZ)^2=\frac{1}{2}\cdot [\left(2 -  2.5\right)^2+\left(3 - 
+%2.5\right)^2]=0.25$$ 
+%now we compute median $EXY$ and $EXZ$:
+
+%$$EXY= \frac{1}{14}\cdot(40\cdot 2 880 + 40\cdot 3 200 +
+%50 \cdot  3 260+ 50 \cdot   3 270 +60 \cdot   3 540 +60\cdot   6 380 +$$ 
+%$$70\cdot 
+%3 940 +70\cdot  5 100 +80\cdot  4 060
+%+80\cdot 70 860+90\cdot  5
+%080 +90\cdot  3 600 000 +$$ $$100\cdot  4 700
+%+100\cdot  3 600 000)=49 479 892.86$$
+
+%$$cov\left(X,Y\right)=EXY-\left(EX\right)\cdot \left(EY\right)=49 479 892.86
+%-572892.86\cdot 70= 9377392.66$$
+
+%$$cor(X,Y)=\frac{cov(X,Y)}{\sqrt{varX}\sqrt{varY}}=\frac{9377392.66}{\sqrt{1582462793237.48}\sqrt{200}}=0.53$$
+%\newpage
+
+%$$EXZ=2\cdot\frac{1}{14}\cdot\left(2880 + 3260 + 3 540 + 3 940 + 4 060 + 5 080 
+%+ 4 700\right)$$
+%$$3\cdot\frac{1}{14}\cdot\left(3 200  + 3 270  + 6 380  + 5 100 + 70 860  + 3
+%600 000 + 3 600 000\right) = 1565810.71$$
+
+%$$cov\left(X,Z\right)=EXZ-\left(EX\right)\cdot \left(EZ\right)=1565810.71
+%-572892.86\cdot 2.5=133578.56$$
+
+%$$cor(X,Z)=\frac{cov(X,Z)}{\sqrt{varX}\sqrt{varZ}}=\frac{133578.56}{\sqrt{1582462793237.48}\sqrt{0.25}}=0.11$$
+
+%never computation
+median and variance of random variable $X$, $Y$ and $Z$ will be computed as:
+$$EX = \frac{1}{21}\cdot(2 880 + 3 200 +33 510  + 3 260 + 3 270 
+ + 704 230 + 3
+540+6 380 +3600000 + 3 940 +$$
+$$ 5 100+3600000 + 4 060 + 70 860+3600000 + 5 080 + 3600 000+3600000+ 4
+700 +$$
+$$ 3600 000+3600000)=1240667.14$$
+
+$$varX=E(X-EX)^2=\frac{1}{21}\cdot[\left(2 880-1240667.14
+\right)^2+\left(3200-1240667.14\right)^2+\left(33510 -1240667.14\right)^2+$$
+$$\left(3260-1240667.14\right)^2+\left(3270-1240667.14\right)^2+\left(704230-1240667.14\right)^2+\left(3540-1240667.14\right)^2+$$
+$$\left(6380-1240667.14\right)^2+\left(3600000-1240667.14\right)^2+\left(3940-1240667.14\right)^2+\left(5100-1240667.14\right)^2+$$
+$$\left( 3600000
+-1240667.14\right)^2+\left(4060-1240667.14\right)^2+\left(70860-1240667.14\right)^2+\left(3600000-1240667.14\right)^2+$$
+$$\left(5080-1240667.14\right)^2+\left(3600000-1240667.14\right)^2+\left(3600000-1240667.14\right)^2+\left(4700-572892.86\right)^2+$$
+$$\left(3600000-572892.86\right)^2+\left(3600000-1240667.14\right)^2]=2918575393247$$
+
+$$EY = \frac{1}{7}\cdot \left(40 +  50 +  60 +
+ 70 +  80 +  90 +
+100\right)=70$$
+
+$$varY=E(Y-EY)^2=\frac{1}{14}\cdot[\left(40 -70\right)^2+\left(50
+-70\right)^2+\left(60 -70\right)^2+\left(70 -70\right)^2+$$
+$$\left(80 -70\right)^2+\left(90 -70\right)^2+\left(100 -70\right)^2]=200$$
+
+$$EZ = \frac{1}{3}\cdot \left(2 +  3 + 4\right)=3$$
+$$varZ=E(Z-EZ)^2=\frac{1}{3}\cdot [\left(2 -  3\right)^2+\left(3 - 
+3\right)^2+\left(4 -  3\right)^2]=0.33$$ 
+now we compute median $EXY$ and $EXZ$, $cov(X,Y)$ and $cov(X,Z)$, $cor(X,Y)$
+and $cor(X,Z)$:
+
+$$EXY= \frac{1}{21}\cdot(40\cdot 2 880 + 40\cdot 3 200  + 40\cdot 33510 +
+50 \cdot  3 260+ 50 \cdot   3 270+ 50 \cdot   704230 +60 \cdot   3 540 +60\cdot  
+6 380+$$ $$60 \cdot   3600000  +70\cdot 
+3 940 +70\cdot  5 100 +70\cdot  3600000 +80\cdot  4 060
++80\cdot 70 860 +80\cdot  3600000+90\cdot  5
+080 +90\cdot  3 600 000 +$$ $$90\cdot  3600000 +100\cdot  4 700
++100\cdot  3 600 000 +100\cdot  3600000)=103298590.5$$
+
+$$cov\left(X,Y\right)=EXY-\left(EX\right)\cdot \left(EY\right)=119791888.1
+-1240667.14\cdot 70= 16451890.7$$
+
+$$cor(X,Y)=\frac{cov(X,Y)}{\sqrt{varX}\sqrt{varY}}=\frac{16451890.7}{\sqrt{2918575393247}\sqrt{200}}=0.68$$
+%\newpage
+
+$$EXZ=2\cdot\frac{1}{21}\cdot\left(2880 + 3260 + 3 540 + 3 940 + 4 060 + 5 080 
++ 4 700\right)+$$
+$$3\cdot\frac{1}{21}\cdot\left(3 200  + 3 270  + 6 380  + 5 100 + 70 860  + 3
+600 000 + 3 600 000\right)+$$
+$$4\cdot\frac{1}{21}\cdot\left(33 510   + 704 230   + 3600000  + 3600000 + 3600000 
++ 3 600 000 + 3 600 000\right) = 4612967.14$$
+
+$$cov\left(X,Z\right)=EXZ-\left(EX\right)\cdot \left(EZ\right)=4612967.14
+-1240667.14\cdot 3=890965.72$$
+
+$$cor(X,Z)=\frac{cov(X,Z)}{\sqrt{varX}\sqrt{varZ}}=\frac{890965.72}{\sqrt{2918575393247}\sqrt{0.33}}=0.91$$
+
+According to computed correlation depends execution time more on node grade,
+where is correlation with execution time 0.91, than node number of nodes, where
+is correlation 0.68.
+\newpage
 \section{Knapsack Problem}
 
 Imperative implementation of Knapsack algorithm can be done in many ways like
@@ -3449,6 +3690,16 @@ Petr Jirků a kol.; \textit{Programování v jazyku Prolog}, 1991.
 
 \bibitem{kolar:jui}
 doc. RNDr. Josef Kolář, CSc.; \textit{Jazyky pro umělou inteligenci}, 1994.
+
+
+\bibitem{navara:mvt}
+prof. Ing. Mirko Navara, DrSc.; \textit{Pravděpodobnost a matematická
+statistika}, 2007.
+
+\bibitem{kulich:stat}
+Doc. Mgr. Milan Kulich, PhD.; MFF
+Univerzity Karlovy; \textit{Matematická statistika - lectures}, summer 2011.
+
 
 \bibitem{nino:pls}
 Dr. Jaime Niño, Associate Professor of Computer Science; University of New
