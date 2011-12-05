@@ -844,7 +844,6 @@ two random variables. It is so called \textit{covariance}, which is defined for 
 random variables as \cite{navara:mvt}:
 
 $$cov(Y,Z)=E\left[\left(Y-EY\right)\left(Z-EZ\right)\right]$$
-\newpage
 Clauses about covariance \cite{kulich:stat}:
 
 \begin{center}
@@ -882,6 +881,9 @@ $cor(X,Y)=1$ just when $Y=a+bX$; $a\in\mathbb{R}$ and $b>0$\\
 $cor(X,Y)=-1$ just when $Y=a+bX$; $a\in\mathbb{R}$ and $b<0$\\
 \end{center}
 
+Indepedent variables have always zero correlation. But when is correlation
+zero, it does not mean, that random variables $X$ and $Y$ are independent
+necessarily.
 
 %*****************************************************************************
 \chapter{Framework description}
@@ -2713,9 +2715,9 @@ $$EY = \frac{1}{7}\cdot \left(40 +  50 +  60 +
  70 +  80 +  90 +
 100\right)=70$$
 
-$$varY=E(Y-EY)^2=\frac{1}{14}\cdot[\left(40 -70\right)^2+\left(50
+$$varY=E(Y-EY)^2=\frac{1}{7}\cdot[\left(40 -70\right)^2+\left(50
 -70\right)^2+\left(60 -70\right)^2+\left(70 -70\right)^2+$$
-$$\left(80 -70\right)^2+\left(90 -70\right)^2+\left(100 -70\right)^2]=200$$
+$$\left(80 -70\right)^2+\left(90 -70\right)^2+\left(100 -70\right)^2]=400$$
 
 $$EZ = \frac{1}{3}\cdot \left(2 +  3 + 4\right)=3$$
 $$varZ=E(Z-EZ)^2=\frac{1}{3}\cdot [\left(2 -  3\right)^2+\left(3 - 
@@ -2734,7 +2736,7 @@ $$EXY= \frac{1}{21}\cdot(40\cdot 2 880 + 40\cdot 3 200  + 40\cdot 33510 +
 $$cov\left(X,Y\right)=EXY-\left(EX\right)\cdot \left(EY\right)=119791888.1
 -1240667.14\cdot 70= 16451890.7$$
 
-$$cor(X,Y)=\frac{cov(X,Y)}{\sqrt{varX}\sqrt{varY}}=\frac{16451890.7}{\sqrt{2918575393247}\sqrt{200}}=0.68$$
+$$cor(X,Y)=\frac{cov(X,Y)}{\sqrt{varX}\sqrt{varY}}=\frac{16451890.7}{\sqrt{2918575393247}\sqrt{400}}=0.48$$
 %\newpage
 
 $$EXZ=2\cdot\frac{1}{21}\cdot\left(2880 + 3260 + 3 540 + 3 940 + 4 060 + 5 080 
@@ -2749,9 +2751,9 @@ $$cov\left(X,Z\right)=EXZ-\left(EX\right)\cdot \left(EZ\right)=4612967.14
 
 $$cor(X,Z)=\frac{cov(X,Z)}{\sqrt{varX}\sqrt{varZ}}=\frac{890965.72}{\sqrt{2918575393247}\sqrt{0.33}}=0.91$$
 
-According to computed correlation depends execution time more on node grade,
-where is correlation with execution time 0.91, than node number of nodes, where
-is correlation 0.68.
+According to computed correlation execution time directly depends more on node
+grade, where is correlation with execution time 0.91, than node number of nodes, where
+is correlation 0.48.
 \newpage
 \section{Knapsack Problem}
 
@@ -3302,7 +3304,178 @@ implementation, l=4 for graph with 50 nodes, max. grade 2}
 \end{figure}
 
 \clearpage 
+We can now compute how strong are dependencies between input data and execution
+time for Squander implementation. We define for that purpose random following
+variables:
+\begin{enumerate}
+  \item $X$ as execution time of concrete graph instance
+  \item $Y$ as number of nodes in concrete graph instance
+  \item $Z$ as maximal node grade in concrete graph instance
+  \item $W$ as size of l-neighborhood for concrete computation
+\end{enumerate}
+For the computation were used graph instances with 10, 20, 30, 40, 50, 60, 70
+nodes, max. node grade 2, 3, 4 and l-neighborhood  2, 3, 4. When exec. time
+reaches timeout (45 min), exec. time is 1 hour.
 
+$$EX = \frac{1}{63}\cdot(960  + 900  +1 070  + 2 520  + 2 230  
+ + 2 740 + 3 820+ 3 520 + 3 520 + 5 050 + 4 590 + 4 130
++$$
+$$4 780 + 6 510 +5 310+62 354+29 780+ 5 680 + 250 180+176 360 +32 380+ 900 +$$
+ $$960 + 1 070 + 2 280 +2 360 + 1 930 +2 690 +3 130 +3 060 +6 670 +4 280+ 5
+ 280 +4 910 +$$
+ $$4 920 +6 460+22 341 +13 970 +9 820+14 378 +10 820 + 12 150 +1 110+ 1 040+ 1
+ 150+$$ $$ 1 800 +2 230 + 2 050 +2 540 +3 020 +3 010 +3 990 +5 120+
+ 5 250+4 170 +5 840 +10 090+$$ 
+ $$13 580+9 260+ 14 650+27 290 +11 400 +24 190) =14214.97$$
+
+%here I am
+
+
+$$varX=E(X-EX)^2=\frac{1}{63}\cdot[\left(960-14214.97
+\right)^2+\left(900-14214.97\right)^2+\left(1070 -14214.97\right)^2+$$
+$$\left(2520-14214.97\right)^2+\left(2230-14214.97\right)^2+\left(2740-14214.97\right)^2+\left(3820-14214.97\right)^2+$$
+$$\left(3520-14214.97\right)^2+\left(3520-14214.97\right)^2+\left(5050-14214.97\right)^2+\left(4590-14214.97\right)^2+$$
+$$\left( 4130
+-14214.97\right)^2+\left(4780-14214.97\right)^2+\left(6510-14214.97\right)^2+\left(5310-14214.97\right)^2+$$
+$$\left(62354-14214.97\right)^2+\left(29780-14214.97\right)^2+\left(5680-14214.97\right)^2+\left(25180-14214.97\right)^2+$$
+$$\left(176360-14214.97\right)^2+\left(32380-14214.97\right)^2+\left(900-14214.97
+\right)^2+\left(960-14214.97\right)^2+$$
+%TADY
+$$\left(1070
+-14214.97\right)^2+\left(2280-14214.97\right)^2+\left(2360-14214.97\right)^2+\left(1930-14214.97\right)^2+$$ $$\left(2690-14214.97\right)^2+\left(3130-14214.97\right)^2+\left(3060-14214.97\right)^2+\left(6670-14214.97\right)^2+$$
+$$\left(4280-14214.97\right)^2+\left( 5280
+-14214.97\right)^2+\left(4910-14214.97\right)^2+\left(4920-14214.97\right)^2+$$
+$$\left(6460-14214.97\right)^2+\left(22341-14214.97\right)^2+\left(13970-14214.97\right)^2+\left(9820-14214.97\right)^2+$$
+$$\left(14378-14214.97\right)^2+\left(10820-14214.97\right)^2+\left(12150-14214.97\right)^2+\left(1110-14214.97
+\right)^2+$$
+$$\left(1040-14214.97\right)^2+\left(1150
+-14214.97\right)^2+\left(1800-14214.97\right)^2+\left(2230-14214.97\right)^2+$$
+%TADY
+$$\left(2050-14214.97\right)^2+\left(2540-14214.97\right)^2+\left(3020-14214.97\right)^2+\left(3010-14214.97\right)^2+$$
+$$\left(3990-14214.97\right)^2+\left(5120-14214.97\right)^2+\left( 5250
+-14214.97\right)^2+\left(4170-14214.97\right)^2+$$
+$$\left(5840-14214.97\right)^2+\left(10090-14214.97\right)^2+\left(13580-14214.97\right)^2+\left(9260-14214.97\right)^2+$$
+$$\left(14650-14214.97\right)^2+\left(27290-14214.97\right)^2+\left(11400-14214.97\right)^2+\left(24190-14214.97\right)^2]$$
+$$=565226301.39$$
+
+
+$$EY = \frac{1}{7}\cdot \left(10 + 20+ 30 + 40 +  50 +  60 +
+ 70\right)=40$$
+
+$$varY=E(Y-EY)^2=\frac{1}{7}\cdot[\left(10 -40\right)^2+\left(20
+-40\right)^2+\left(30 -40\right)^2+\left(40 -40\right)^2+$$
+$$\left(50 -40\right)^2+\left(60 -40\right)^2+\left(70 -40\right)^2]=400$$
+
+$$EZ = \frac{1}{3}\cdot \left(2 +  3 + 4\right)=3$$
+$$varZ=E(Z-EZ)^2=\frac{1}{3}\cdot [\left(2 -  3\right)^2+\left(3 - 
+3\right)^2+\left(4 -  3\right)^2]=0.33$$
+
+$$EW = \frac{1}{3}\cdot \left(2 +  3 + 4\right)=3$$
+$$varW=E(W-EW)^2=\frac{1}{3}\cdot [\left(2 -  3\right)^2+\left(3 - 
+3\right)^2+\left(4 -  3\right)^2]=0.33$$  
+now we compute median $EXY$ and $EXZ$, $cov(X,Y)$ and $cov(X,Z)$, $cor(X,Y)$
+and $cor(X,Z)$:
+
+$$EXY= \frac{1}{63}\cdot(10\cdot 960  + 10\cdot  900  + 10\cdot  1070 +
+20 \cdot  2520+ 20 \cdot   2230+ 20 \cdot  2740  +30 \cdot   3820 +30\cdot  
+ 3520+$$ $$30 \cdot  3520 +40\cdot 
+5050 +40\cdot  4590 +40\cdot 4130 +50\cdot  4780
++50\cdot   6510 +50\cdot 5310+60\cdot  62354
+ +60\cdot  29780 +$$ $$60\cdot   5680  +70\cdot  250180
++70\cdot   176360 +70\cdot 32380 +10\cdot 900
+ +10\cdot 960 +10\cdot  1070 + 20 \cdot 2280+$$
+ $$20\cdot   2360  +20\cdot  1930
++30\cdot   2690 +30\cdot  3130 +30\cdot 3060
+ +40\cdot 6670 +40\cdot  4280 + 40 \cdot  5280+$$
+ $$50\cdot  4910  +50\cdot 4920
++50\cdot 6460 +60\cdot  22341 +60\cdot 13970
+ +60\cdot  9820 +70\cdot  14378 + 70 \cdot  10820+$$
+ $$70\cdot  12150  +10\cdot 1110
++10\cdot  1040 +10\cdot  1150 +20\cdot 1800
+ +20\cdot 2230 +20\cdot   2050 + 30 \cdot  2540+$$
+ $$30\cdot   3020  +30\cdot  3010
++40\cdot  3990 +40\cdot   5120 +40\cdot  5250
+ +50\cdot 4170 +50\cdot   5840 + 50 \cdot  10090+$$
+$$60\cdot  13580  +60\cdot  9260
++60\cdot 14650  +70\cdot 27290 +70\cdot  11400
+ +70\cdot   24190)=885620$$
+
+$$cov\left(X,Y\right)=EXY-\left(EX\right)\cdot \left(EY\right)=885620
+-14214.97\cdot 40= 317021.2$$
+
+$$cor(X,Y)=\frac{cov(X,Y)}{\sqrt{varX}\sqrt{varY}}=\frac{317021.2}{\sqrt{565226301.39}\sqrt{400}}=0.67$$
+%\newpage
+
+$$EXZ= \frac{1}{63}\cdot(2\cdot 960  + 3\cdot  900  + 4\cdot  1070 +
+2 \cdot  2520+ 3 \cdot   2230+ 4 \cdot  2740  +2 \cdot   3820 +3\cdot  
+ 3520+$$ $$4 \cdot  3520 +2\cdot 
+5050 +3\cdot  4590 +4\cdot 4130 +2\cdot  4780
++3\cdot   6510 +4\cdot 5310+2\cdot  62354
+ +3\cdot  29780 +$$ $$4\cdot   5680  +2\cdot  250180
++3\cdot   176360 +4\cdot 32380 +2\cdot 900
+ +3\cdot 960 +4\cdot  1070 + 2 \cdot 2280+$$
+ $$3\cdot   2360  +4\cdot  1930
++2\cdot   2690 +3\cdot  3130 +4\cdot 3060
+ +2\cdot 6670 +3\cdot  4280 + 4 \cdot  5280+$$
+ $$2\cdot  4910  +3\cdot 4920
++4\cdot 6460 +2\cdot  22341 +3\cdot 13970
+ +4\cdot  9820 +2\cdot  14378 + 3 \cdot  10820+$$
+ $$4\cdot  12150  +2\cdot 1110
++3\cdot  1040 +4\cdot  1150 +2\cdot 1800
+ +3\cdot 2230 +4\cdot   2050 + 2 \cdot  2540+$$
+ $$3\cdot   3020  +4\cdot  3010
++2\cdot  3990 +3\cdot   5120 +4\cdot  5250
+ +2\cdot 4170 +3\cdot   5840 + 4 \cdot  10090+$$
+$$2\cdot  13580  +3\cdot  9260
++4\cdot 14650  +2\cdot 27290 +3\cdot  11400
+ +4\cdot   24190)=38147.71$$
+
+$$cov\left(X,Z\right)=EXZ-\left(EX\right)\cdot \left(EZ\right)=38147.71
+-14214.97\cdot 3=-4497.2$$
+
+$$cor(X,Z)=\frac{cov(X,Z)}{\sqrt{varX}\sqrt{varZ}}=\frac{-4497.2}{\sqrt{565226301.39}\sqrt{0.33}}=-0.33$$
+
+%\newpage
+
+$$EXW= \frac{1}{63}\cdot(2\cdot 960  + 2\cdot  900  + 2\cdot  1070 +
+2 \cdot  2520+ 2 \cdot   2230+ 2 \cdot  2740  +2 \cdot   3820 +2\cdot  
+ 3520+$$ $$2 \cdot  3520 +2\cdot 
+5050 +2\cdot  4590 +2\cdot 4130 +2\cdot  4780
++2\cdot   6510 +2\cdot 5310+2\cdot  62354
+ +2\cdot  29780 +$$ $$2\cdot   5680  +2\cdot  250180
++2\cdot   176360 +2\cdot 32380 +3\cdot 900
+ +3\cdot 960 +3\cdot  1070 + 3 \cdot 2280+$$
+ $$3\cdot   2360  +3\cdot  1930
++3\cdot   2690 +3\cdot  3130 +3\cdot 3060
+ +3\cdot 6670 +3\cdot  4280 + 3 \cdot  5280+$$
+ $$3\cdot  4910  +3\cdot 4920
++3\cdot 6460 +3\cdot  22341 +3\cdot 13970
+ +3\cdot  9820 +3\cdot  14378 + 3 \cdot  10820+$$
+ $$3\cdot  12150  +4\cdot 1110
++4\cdot  1040 +4\cdot  1150 +4\cdot 1800
+ +4\cdot 2230 +4\cdot   2050 + 4 \cdot  2540+$$
+ $$4\cdot   3020  +4\cdot  3010
++4\cdot  3990 +4\cdot   5120 +4\cdot  5250
+ +4\cdot 4170 +4\cdot   5840 + 4 \cdot  10090+$$
+$$4\cdot  13580  +4\cdot  9260
++4\cdot 14650  +4\cdot 27290 +4\cdot  11400
+ +4\cdot   24190)=35413.1$$
+
+$$cov\left(X,W\right)=EXW-\left(EX\right)\cdot \left(EW\right)=35413.1
+-14214.97\cdot 3=-7231.81$$
+
+$$cor(X,W)=\frac{cov(X,W)}{\sqrt{varX}\sqrt{varW}}=\frac{-7231.81}{\sqrt{565226301.39}\sqrt{0.33}}=-0.53$$
+
+From computed correlations is obvious, that execution time depends most on
+number of nodes in the graph, where is correlation with execution time 0.67, in
+such sense, that with more nodes in the graph is execution time increasing.
+Correlations of other two paramaters tells us, that with higher node grade
+(size of l-neighborhood) is execution time shortening. More with size of
+l-neighborhood, where is correlation -0.53, than with maximal node grade, where
+is correlation -0.33.
+
+
+\newpage
 \section{General bisection breadth}
 
 Imperative version of General bisection breadth algorithm was implimented in
