@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  5 DEC 2011 01:21
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  6 DEC 2011 01:52
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -1653,95 +1653,186 @@ File: figures/cpu-gbb-s-50-2-1-2.pdf Graphic file (type pdf)
 igures/cpu-gbb-s-70-2-1-3.pdf>] [93 <./figures/heap-gbb-i-50-2-1-2.pdf> <./figu
 res/heap-gbb-s-50-2-1-2.pdf>] [94 <./figures/cpu-gbb-i-50-2-1-2.pdf> <./figures
 /cpu-gbb-s-50-2-1-2.pdf>]
-Chapter 8.
+Overfull \hbox (11.61057pt too wide) detected at line 3858
+\OT1/cmr/m/n/10.95 1210 + 1400 + 2240 + 2010 + 38610 + 40870 + 9850 + 3600000 +
+ 3600000 + 40980 + 3600000 + 3600000+
+ []
+
+
+Overfull \hbox (3.8437pt too wide) detected at line 3869
+[][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][] +
+ []
+
+
+Overfull \hbox (14.79372pt too wide) detected at line 3870
+[][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][] +
+ []
+
+
+Overfull \hbox (31.21873pt too wide) detected at line 3878
+[][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][] +
+ []
+
+
+Overfull \hbox (36.69374pt too wide) detected at line 3879
+[][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][] +
+ []
+
+
+Overfull \hbox (20.26872pt too wide) detected at line 3881
+[][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][] +
+ []
+
+
+Overfull \hbox (20.26872pt too wide) detected at line 3886
+[][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][] +
+ []
+
 [95
 
 
-] [96
+]
+Overfull \hbox (47.64375pt too wide) detected at line 3887
+[][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][] +
+ []
+
+
+Overfull \hbox (40.34377pt too wide) detected at line 3888
+[][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][]]
+ []
+
+
+Overfull \hbox (3.51749pt too wide) in paragraph at lines 3907--3910
+[]\T1/cmr/m/n/10.95 now we com-pute me-dian $\OML/cmm/m/it/10.95 EXY$ \T1/cmr/m
+/n/10.95 and $\OML/cmm/m/it/10.95 EXZ$\T1/cmr/m/n/10.95 , $\OML/cmm/m/it/10.95 
+cov\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X; Y\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/
+n/10.95 and $\OML/cmm/m/it/10.95 cov\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X; 
+Z\OT1/cmr/m/n/10.95 )$\T1/cmr/m/n/10.95 , $\OML/cmm/m/it/10.95 cor\OT1/cmr/m/n/
+10.95 (\OML/cmm/m/it/10.95 X; Y\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/n/10.95 and $\OM
+L/cmm/m/it/10.95 cor\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X; Z\OT1/cmr/m/n/10
+.95 )$\T1/cmr/m/n/10.95 : 
+ []
+
+
+Overfull \hbox (7.96053pt too wide) detected at line 3916
+\OT1/cmr/m/n/10.95 30 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 2970 + 40 \OMS
+/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 2980 + 40 \OMS/cmsy/m/n/10.95 ^^A \OT1/c
+mr/m/n/10.95 15010 + 40 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 7880 + 50 \O
+MS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 3500 + 50 \OMS/cmsy/m/n/10.95 ^^A \OT1
+/cmr/m/n/10.95 81410 + 50 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 3600000 + 
+60 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 12880 + 60 \OMS/cmsy/m/n/10.95 ^^
+A \OT1/cmr/m/n/10.95 254570+
+ []
+
+
+Overfull \hbox (23.77719pt too wide) detected at line 3924
+\OT1/cmr/m/n/10.95 50 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 13350 + 50 \OM
+S/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 3600000 + 50 \OMS/cmsy/m/n/10.95 ^^A \O
+T1/cmr/m/n/10.95 3600000 + 60 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 82140 
++ 60 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 3600000 + 60 \OMS/cmsy/m/n/10.9
+5 ^^A \OT1/cmr/m/n/10.95 3600000 + 70 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.9
+5 172220 + 70 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 3600000+
+ []
+
+
+Overfull \hbox (1.87717pt too wide) detected at line 3930
+\OT1/cmr/m/n/10.95 30 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 38610 + 30 \OM
+S/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 40870 + 40 \OMS/cmsy/m/n/10.95 ^^A \OT1
+/cmr/m/n/10.95 9850 + 40 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 3600000 + 4
+0 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 3600000 + 50 \OMS/cmsy/m/n/10.95 ^
+^A \OT1/cmr/m/n/10.95 40980 + 50 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 360
+0000 + 50 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 3600000+
+ []
+
+[96] [97] [98]
+Chapter 8.
+[99
+
+] [100
 
 ]
-Overfull \hbox (11.49219pt too wide) in paragraph at lines 3881--3883
+Overfull \hbox (11.49219pt too wide) in paragraph at lines 4054--4056
 []\T1/cmtt/m/n/10.95 http://download.oracle.com/javase/1,5.0/docs/guide/languag
 e/annotations.html 
  []
 
 No file thesis.bbl.
-[97] [98
+[101] [102
 
 ]
 Appendix A.
 
-Package natbib Warning: Citation `CSTUG' on page 99 undefined on input line 392
-9.
+Package natbib Warning: Citation `CSTUG' on page 103 undefined on input line 41
+02.
 
 
-Package natbib Warning: Citation `latexdocweb' on page 99 undefined on input li
-ne 3929.
+Package natbib Warning: Citation `latexdocweb' on page 103 undefined on input l
+ine 4102.
 
 
-Package natbib Warning: Citation `latexwiki' on page 99 undefined on input line
- 3929.
+Package natbib Warning: Citation `latexwiki' on page 103 undefined on input lin
+e 4102.
 
 File: figures/LogoCVUT.pdf Graphic file (type pdf)
-<use figures/LogoCVUT.pdf> [99]
+<use figures/LogoCVUT.pdf> [103]
 
-Package natbib Warning: Citation `ipe' on page 100 undefined on input line 3961
+Package natbib Warning: Citation `ipe' on page 104 undefined on input line 4134
 .
-
-[100] [101] [102]
-
-Package natbib Warning: Citation `kniha' on page 103 undefined on input line 41
-08.
-
-
-Package natbib Warning: Citation `clanek' on page 103 undefined on input line 4
-108.
-
-
-Package natbib Warning: Citation `sbornik' on page 103 undefined on input line 
-4108.
-
-
-Package natbib Warning: Citation `www' on page 103 undefined on input line 4108
-.
-
-[103]
-
-Package natbib Warning: Citation `wiki:framework' on page 104 undefined on inpu
-t line 4110.
-
-
-Package natbib Warning: Citation `wiki:orm' on page 104 undefined on input line
- 4110.
 
 [104] [105] [106]
-Appendix B.
-[107
 
-] [108
+Package natbib Warning: Citation `kniha' on page 107 undefined on input line 42
+81.
+
+
+Package natbib Warning: Citation `clanek' on page 107 undefined on input line 4
+281.
+
+
+Package natbib Warning: Citation `sbornik' on page 107 undefined on input line 
+4281.
+
+
+Package natbib Warning: Citation `www' on page 107 undefined on input line 4281
+.
+
+[107]
+
+Package natbib Warning: Citation `wiki:framework' on page 108 undefined on inpu
+t line 4283.
+
+
+Package natbib Warning: Citation `wiki:orm' on page 108 undefined on input line
+ 4283.
+
+[108] [109] [110]
+Appendix B.
+[111
+
+] [112
 
 ]
 Appendix C.
-[109] [110
+[113] [114
 
 ]
 Appendix D.
-[111] [112
+[115] [116
 
 ]
 Appendix E.
 
-Package natbib Warning: Citation `infodp' on page 113 undefined on input line 4
-203.
+Package natbib Warning: Citation `infodp' on page 117 undefined on input line 4
+376.
 
-<figures/seznamcd.pdf, id=2020, 793.96625pt x 539.01375pt>
+<figures/seznamcd.pdf, id=2041, 793.96625pt x 539.01375pt>
 File: figures/seznamcd.pdf Graphic file (type pdf)
 
 <use figures/seznamcd.pdf>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[113] [114 <./figures/seznamcd.pdf>]
+[117] [118 <./figures/seznamcd.pdf>]
 
 Package natbib Warning: There were undefined citations.
 
@@ -1754,8 +1845,8 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19280 strings out of 495027
- 300961 string characters out of 1181419
+ 19288 strings out of 495027
+ 301021 string characters out of 1181419
  697340 words of memory out of 3000000
  20804 multiletter control sequences out of 15000+50000
  28616 words of font info for 70 fonts, out of 3000000 for 9000
@@ -1790,9 +1881,9 @@ onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
 nts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb>
-Output written on thesis.pdf (132 pages, 1252938 bytes).
+Output written on thesis.pdf (136 pages, 1264711 bytes).
 PDF statistics:
- 3192 PDF objects out of 3580 (max. 8388607)
- 975 named destinations out of 1000 (max. 500000)
+ 3214 PDF objects out of 3580 (max. 8388607)
+ 983 named destinations out of 1000 (max. 500000)
  764 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3832,7 +3832,180 @@ info, when was GC performed}
 \label{fig:gbbSCpu50212}
 \end{center}
 \end{figure}
+\clearpage
+We can now compute how strong are dependencies between input data and execution
+time for Squander implementation. We define for that purpose random following
+variables:
+\begin{enumerate}
+  \item $X$ as execution time of concrete graph instance
+  \item $Y$ as number of nodes in concrete graph instance
+  \item $Z$ as maximal node grade in concrete graph instance
+  \item $W$ as ratio of the number of nodes of set A to the total number of
+  nodes of the graph for concrete computation
+\end{enumerate}
+For the computation were used graph instances with 10, 20, 30, 40, 50, 60, 70
+nodes, max. node grade 2, 3, 4 and ratio of the number of nodes of set A to the total number of
+  nodes of the graph  $\frac{1}{5}$, $\frac{1}{3}$, $\frac{1}{2}$. When exec.
+  time reaches timeout (45 min), exec. time is 1 hour.
 
+$$EX = \frac{1}{63}\cdot(900  + 770  +830  + 1090  + 1060  
+ + 2 120 + 1 810+ 3 060 + 2970 + 2 980 + 15 010 + 7 880
++$$
+$$3500 + 81 410 +3600000+12 880+254 570+ 3600000 + 8510+311 930 +3600000+ 720
++$$ $$780 + 860 + 1010 +1330 + 2110 +1780 +7840 +59 080 +2 970 +111 040+
+3600 000 +13 350 +$$ $$3600 000 +3600 000+82 140 +3600 000 +3600000+172 220 +3600
+000 + 3600000 +750+ 750+ 900+$$ $$ 1 210 +1400 + 2 240 +2 010 +38 610 +40
+870 +9850 +3600000+ 3600000+40 980 +3600000 +3600000+$$ $$3600000+3600000+
+3600000+3600000 +3600000 +3600000) =1163652.1$$
+
+%here I am
+
+
+$$varX=E(X-EX)^2=\frac{1}{63}\cdot[\left(900-1163652.1
+\right)^2+\left(770-1163652.1\right)^2+\left(830 -1163652.1\right)^2+$$
+$$\left(1090-1163652.1\right)^2+\left(1060-1163652.1\right)^2+\left(2120-1163652.1\right)^2+\left(1810-1163652.1\right)^2+$$
+$$\left(3060-1163652.1\right)^2+\left(2970-1163652.1\right)^2+\left(2980-1163652.1\right)^2+\left(15010-1163652.1\right)^2+$$
+$$\left( 7880
+-1163652.1\right)^2+\left(3500-1163652.1\right)^2+\left(81410-1163652.1\right)^2+\left(3600000-1163652.1\right)^2+$$
+$$\left(12880-1163652.1\right)^2+\left(254570-1163652.1\right)^2+\left(3600000-1163652.1\right)^2+\left(8510-1163652.1\right)^2+$$
+$$\left(311930-1163652.1\right)^2+\left(3600000-1163652.1\right)^2+\left(720-1163652.1
+\right)^2+\left(780-1163652.1\right)^2+$$
+%TADY
+$$\left(860
+-1163652.1\right)^2+\left(1010-1163652.1\right)^2+\left(1330-1163652.1\right)^2+\left(2110-1163652.1\right)^2+$$
+$$\left(1780-1163652.1\right)^2+\left(7840-1163652.1\right)^2+\left(59080-1163652.1\right)^2+\left(2970-1163652.1\right)^2+$$
+$$\left(111040-1163652.1\right)^2+\left( 3600000
+-1163652.1\right)^2+\left(13350-1163652.1\right)^2+\left(3600000-1163652.1\right)^2+$$
+$$\left(3600000-1163652.1\right)^2+\left(82140-1163652.1\right)^2+\left(3600000-1163652.1\right)^2+\left(3600000-1163652.1\right)^2+$$
+$$\left(172220-1163652.1\right)^2+\left(3600000-1163652.1\right)^2+\left(3600000-1163652.1\right)^2+\left(750-1163652.1
+\right)^2+$$ $$\left(750-1163652.1\right)^2+\left(900
+-1163652.1\right)^2+\left(1210-1163652.1\right)^2+\left(1400-1163652.1\right)^2+$$
+%TADY
+$$\left(2240-1163652.1\right)^2+\left(2010-1163652.1\right)^2+\left(38610-1163652.1\right)^2+\left(40870-1163652.1\right)^2+$$
+$$\left(9850-1163652.1\right)^2+\left(3600000-1163652.1\right)^2+\left( 3600000
+-1163652.1\right)^2+\left(40980-1163652.1\right)^2+$$
+$$\left(3600000-1163652.1\right)^2+\left(3600000-1163652.1\right)^2+\left(3600000-1163652.1\right)^2+\left(3600000-1163652.1\right)^2+$$
+$$\left(3600000-1163652.1\right)^2+\left(3600000-1163652.1\right)^2+\left(3600000-1163652.1\right)^2+\left(3600000-1163652.1\right)^2]$$
+$$=2763798806962.41$$
+
+
+$$EY = \frac{1}{7}\cdot \left(10 + 20+ 30 + 40 +  50 +  60 +
+ 70\right)=40$$
+
+$$varY=E(Y-EY)^2=\frac{1}{7}\cdot[\left(10 -40\right)^2+\left(20
+-40\right)^2+\left(30 -40\right)^2+\left(40 -40\right)^2+$$
+$$\left(50 -40\right)^2+\left(60 -40\right)^2+\left(70 -40\right)^2]=400$$
+
+$$EZ = \frac{1}{3}\cdot \left(2 +  3 + 4\right)=3$$
+$$varZ=E(Z-EZ)^2=\frac{1}{3}\cdot [\left(2 -  3\right)^2+\left(3 - 
+3\right)^2+\left(4 -  3\right)^2]=0.33$$
+
+$$EW = \frac{1}{3}\cdot \left(\frac{1}{5} +  \frac{1}{3} +
+\frac{1}{2}\right)=0.34$$ 
+$$varW=E(W-EW)^2=\frac{1}{3}\cdot [\left(\frac{1}{5} - 
+0.34\right)^2+\left(\frac{1}{3} - 0.34\right)^2+\left(\frac{1}{2} - 
+0.34\right)^2]=0.0151$$ 
+now we compute median $EXY$ and $EXZ$, $cov(X,Y)$ and $cov(X,Z)$, $cor(X,Y)$
+and $cor(X,Z)$:
+
+$$EXY= \frac{1}{63}\cdot(10\cdot 900  + 10\cdot  770  + 10\cdot  830 +
+20 \cdot  1090+ 20 \cdot   1060+ 20 \cdot  2120  +30 \cdot   1810 +30\cdot  
+ 3060+$$ $$30 \cdot  2970 +40\cdot 
+2980 +40\cdot  15010 +40\cdot 7880 +50\cdot  3500
++50\cdot   81410 +50\cdot 3600000+60\cdot  12880
+ +60\cdot  254570 +$$ $$60\cdot   3600000  +70\cdot  8510
++70\cdot   311930 +70\cdot 3600000 +10\cdot 720
+ +10\cdot 780 +10\cdot  860 + 20 \cdot 1010+$$
+ $$20\cdot   1330  +20\cdot  2110
++30\cdot   1780 +30\cdot  7840 +30\cdot 59080
+ +40\cdot 2970 +40\cdot  111040 + 40 \cdot  3600000+$$
+ $$50\cdot  13350  +50\cdot 3600000
++50\cdot 3600000 +60\cdot  82140 +60\cdot 3600000
+ +60\cdot  3600000 +70\cdot  172220 + 70 \cdot  3600000+$$
+ $$70\cdot  3600000  +10\cdot 750
++10\cdot  750 +10\cdot  900 +20\cdot 1210
+ +20\cdot 1400 +20\cdot   2240 + 30 \cdot  2010+$$
+ $$30\cdot   38610  +30\cdot  40870
++40\cdot  9850 +40\cdot   3600000 +40\cdot  3600000
+ +50\cdot 40980 +50\cdot   3600000 + 50 \cdot  3600000+$$
+$$60\cdot  3600000  +60\cdot  3600000
++60\cdot 3600000  +70\cdot 3600000 +70\cdot  3600000
+ +70\cdot   3600000)=66880915.87$$
+
+$$cov\left(X,Y\right)=EXY-\left(EX\right)\cdot \left(EY\right)=66880915.87
+-1163652.1\cdot 40= 20334831.87$$
+
+$$cor(X,Y)=\frac{cov(X,Y)}{\sqrt{varX}\sqrt{varY}}=\frac{20334831.87}{\sqrt{2763798806962.41}\sqrt{400}}=0.612$$
+%\newpage
+
+$$EXZ= \frac{1}{63}\cdot(2\cdot 900  + 3\cdot  770  + 4\cdot  830 +
+2 \cdot  1090+ 3 \cdot   1060+ 4 \cdot  2120  +2 \cdot   1810 +3\cdot  
+ 3060+$$ $$4 \cdot  2970 +2\cdot 
+2980 +3\cdot  15010 +4\cdot 7880 +2\cdot  3500
++3\cdot   81410 +4\cdot 3600000+2\cdot  12880
+ +3\cdot  254570 +$$ $$4\cdot   3600000  +2\cdot  8510
++3\cdot   311930 +4\cdot 3600000 +2\cdot 720
+ +3\cdot 780 +4\cdot  860 + 2 \cdot 1010+$$
+ $$3\cdot   1330  +4\cdot  2110
++2\cdot   1780 +3\cdot  7840 +4\cdot 59080
+ +2\cdot 2970 +3\cdot  111040 + 4 \cdot  3600000+$$
+ $$2\cdot  13350  +3\cdot 3600000
++4\cdot 3600000 +2\cdot  82140 +3\cdot 3600000
+ +4\cdot  3600000 +2\cdot  172220 + 3 \cdot  3600000+$$
+ $$4\cdot  3600000  +2\cdot 750
++3\cdot  750 +4\cdot  900 +2\cdot 1210
+ +3\cdot 1400 +4\cdot   2240 + 2 \cdot  2010+$$
+ $$3\cdot   38610  +4\cdot  40870
++2\cdot  9850 +3\cdot   3600000 +4\cdot  3600000
+ +2\cdot 40980 +3\cdot   3600000 + 4 \cdot  3600000+$$
+$$2\cdot  3600000  +3\cdot  3600000
++4\cdot 3600000  +2\cdot 3600000 +3\cdot  3600000
+ +4\cdot   3600000)=4001419.68$$
+
+$$cov\left(X,Z\right)=EXZ-\left(EX\right)\cdot \left(EZ\right)=4001419.68
+-1163652.1\cdot 3=510463.38$$
+
+$$cor(X,Z)=\frac{cov(X,Z)}{\sqrt{varX}\sqrt{varZ}}=\frac{510463.38}{\sqrt{2763798806962.41}\sqrt{0.33}}=0.53$$
+
+%\newpage
+
+$$EXW= \frac{1}{63}\cdot(\frac{1}{5}\cdot 900  + \frac{1}{3}\cdot  770  +
+\frac{1}{2}\cdot 830 + \frac{1}{5} \cdot  1090+ \frac{1}{3} \cdot   1060+
+\frac{1}{2} \cdot  2120  +\frac{1}{5} \cdot   1810 +\frac{1}{3}\cdot 3060+$$
+$$\frac{1}{2} \cdot  2970 +\frac{1}{5}\cdot 2980 +\frac{1}{3}\cdot  15010
++\frac{1}{2}\cdot 7880 +\frac{1}{5}\cdot  3500 +\frac{1}{3}\cdot   81410
++\frac{1}{2}\cdot 3600000+\frac{1}{5}\cdot 12880 +\frac{1}{3}\cdot  254570 +$$
+$$\frac{1}{2}\cdot   3600000  +\frac{1}{5}\cdot  8510 +\frac{1}{3}\cdot   311930
++\frac{1}{2}\cdot 3600000 +\frac{1}{5}\cdot 720 +\frac{1}{3}\cdot 780
++\frac{1}{2}\cdot 860 + \frac{1}{5} \cdot 1010+$$ $$\frac{1}{3}\cdot   1330 
++\frac{1}{2}\cdot  2110 +\frac{1}{5}\cdot   1780 +\frac{1}{3}\cdot  7840
++\frac{1}{2}\cdot 59080 +\frac{1}{5}\cdot 2970 +\frac{1}{3}\cdot  111040
++\frac{1}{2} \cdot  3600000+$$ $$\frac{1}{5}\cdot  13350  +\frac{1}{3}\cdot
+3600000 +\frac{1}{2}\cdot 3600000 +\frac{1}{5}\cdot  82140 +\frac{1}{3}\cdot
+3600000 +\frac{1}{2}\cdot  3600000 +\frac{1}{5}\cdot  172220 + \frac{1}{3} \cdot
+3600000+$$ $$\frac{1}{2}\cdot  3600000  +\frac{1}{5}\cdot 750
++\frac{1}{3}\cdot  750 +\frac{1}{2}\cdot  900 +\frac{1}{5}\cdot 1210
+ +\frac{1}{3}\cdot 1400 +\frac{1}{2}\cdot   2240 + \frac{1}{5} \cdot  2010+$$
+ $$\frac{1}{3}\cdot   38610  +\frac{1}{2}\cdot  40870
++\frac{1}{5}\cdot  9850 +\frac{1}{3}\cdot   3600000 +\frac{1}{2}\cdot  3600000
+ +\frac{1}{5}\cdot 40980 +\frac{1}{3}\cdot   3600000 + \frac{1}{2} \cdot 
+ 3600000+$$ $$\frac{1}{5}\cdot  3600000  +\frac{1}{3}\cdot  3600000
++\frac{1}{2}\cdot 3600000  +\frac{1}{5}\cdot 3600000 +\frac{1}{3}\cdot  3600000
+ +\frac{1}{2}\cdot   3600000)=476961.62$$
+ 
+$$cov\left(X,W\right)=EXW-\left(EX\right)\cdot \left(EW\right)=476961.62
+-1163652.1\cdot 0.34=81319.91$$
+
+$$cor(X,W)=\frac{cov(X,W)}{\sqrt{varX}\sqrt{varW}}=\frac{81319.91}{\sqrt{2763798806962.41}\sqrt{0.0151}}=0.4$$
+
+Computed correlations shows, that execution time directly depends most on
+number of nodes in the graph, where is correlation with execution time 0.612,
+but not very significantly in contrast with maximal node grade (correlation
+0.53) and ratio of the number of nodes of set A to the total number of nodes of
+the graph (correlation 0.4).
+
+
+%\newpage
 
 %*****************************************************************************
 \chapter{Conclusion}
