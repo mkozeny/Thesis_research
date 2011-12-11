@@ -30,31 +30,31 @@
 \contentsline {figure}{\numberline {7.16}{\ignorespaces Heap memory usage in time - Knapsack Problem Squander implementation for instance with 40 things and info (green points), when was GC performed\relax }}{70}{figure.caption.38}
 \contentsline {figure}{\numberline {7.17}{\ignorespaces CPU usage in time - Knapsack Problem imperative implementation for instance with 40 things\relax }}{71}{figure.caption.39}
 \contentsline {figure}{\numberline {7.18}{\ignorespaces CPU usage in time - Hamiltonian Path Squander implementation for instance with 40 things\relax }}{71}{figure.caption.40}
-\contentsline {figure}{\numberline {7.19}{\ignorespaces Heap memory usage in time - L-dominant set of graph imperative implementation, l=2 for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{77}{figure.caption.47}
-\contentsline {figure}{\numberline {7.20}{\ignorespaces Heap memory usage in time - L-dominant set of graph Squander implementation, l=2 for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{77}{figure.caption.48}
-\contentsline {figure}{\numberline {7.21}{\ignorespaces CPU usage in time - L-dominant set of graph imperative implementation, l=2 for graph with 50 nodes, max. grade 2\relax }}{78}{figure.caption.49}
-\contentsline {figure}{\numberline {7.22}{\ignorespaces CPU usage in time - L-dominant set of graph Squander implementation, l=2 for graph with 50 nodes, max. grade 2\relax }}{78}{figure.caption.50}
-\contentsline {figure}{\numberline {7.23}{\ignorespaces Heap memory usage in time - L-dominant set of graph imperative implementation, l=3 for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{79}{figure.caption.51}
-\contentsline {figure}{\numberline {7.24}{\ignorespaces Heap memory usage in time - L-dominant set of graph Squander implementation, l=3 for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{79}{figure.caption.52}
-\contentsline {figure}{\numberline {7.25}{\ignorespaces CPU usage in time - L-dominant set of graph imperative implementation, l=3 for graph with 50 nodes, max. grade 2\relax }}{80}{figure.caption.53}
-\contentsline {figure}{\numberline {7.26}{\ignorespaces CPU usage in time - L-dominant set of graph Squander implementation, l=3 for graph with 50 nodes, max. grade 2\relax }}{80}{figure.caption.54}
-\contentsline {figure}{\numberline {7.27}{\ignorespaces Heap memory usage in time - L-dominant set of graph imperative implementation, l=4 for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{81}{figure.caption.55}
-\contentsline {figure}{\numberline {7.28}{\ignorespaces Heap memory usage in time - L-dominant set of graph Squander implementation, l=4 for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{81}{figure.caption.56}
-\contentsline {figure}{\numberline {7.29}{\ignorespaces CPU usage in time - L-dominant set of graph imperative implementation, l=4 for graph with 50 nodes, max. grade 2\relax }}{82}{figure.caption.57}
-\contentsline {figure}{\numberline {7.30}{\ignorespaces CPU usage in time - L-dominant set of graph Squander implementation, l=4 for graph with 50 nodes, max. grade 2\relax }}{82}{figure.caption.58}
-\contentsline {figure}{\numberline {7.31}{\ignorespaces Heap memory usage in time - General bisection breadth imperative implementation, set A=$\frac {1}{3}$ for graph with 70 nodes, max. grade 2 and info, when was GC performed\relax }}{91}{figure.caption.65}
-\contentsline {figure}{\numberline {7.32}{\ignorespaces Heap memory usage in time - General bisection breadth Squander implementation, set A=$\frac {1}{3}$ for graph with 70 nodes, max. grade 2 and info, when was GC performed\relax }}{91}{figure.caption.66}
-\contentsline {figure}{\numberline {7.33}{\ignorespaces CPU usage in time - General bisection breadth imperative implementation, set A=$\frac {1}{3}$ for graph with 70 nodes, max. grade 2 and info, when was GC performed\relax }}{92}{figure.caption.67}
-\contentsline {figure}{\numberline {7.34}{\ignorespaces CPU usage in time - General bisection breadth Squander implementation, set A=$\frac {1}{3}$ for graph with 70 nodes, max. grade 2 and info, when was GC performed\relax }}{92}{figure.caption.68}
-\contentsline {figure}{\numberline {7.35}{\ignorespaces Heap memory usage in time - General bisection breadth imperative implementation, set A=$\frac {1}{2}$ for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{93}{figure.caption.69}
-\contentsline {figure}{\numberline {7.36}{\ignorespaces Heap memory usage in time - General bisection breadth Squander implementation, set A=$\frac {1}{2}$ for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{93}{figure.caption.70}
-\contentsline {figure}{\numberline {7.37}{\ignorespaces CPU usage in time - General bisection breadth imperative implementation, set A=$\frac {1}{2}$ for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{94}{figure.caption.71}
-\contentsline {figure}{\numberline {7.38}{\ignorespaces CPU usage in time - General bisection breadth Squander implementation, set A=$\frac {1}{2}$ for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{94}{figure.caption.72}
+\contentsline {figure}{\numberline {7.19}{\ignorespaces Heap memory usage in time - L-dominant set of graph imperative implementation, l=2 for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{80}{figure.caption.47}
+\contentsline {figure}{\numberline {7.20}{\ignorespaces Heap memory usage in time - L-dominant set of graph Squander implementation, l=2 for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{80}{figure.caption.48}
+\contentsline {figure}{\numberline {7.21}{\ignorespaces CPU usage in time - L-dominant set of graph imperative implementation, l=2 for graph with 50 nodes, max. grade 2\relax }}{81}{figure.caption.49}
+\contentsline {figure}{\numberline {7.22}{\ignorespaces CPU usage in time - L-dominant set of graph Squander implementation, l=2 for graph with 50 nodes, max. grade 2\relax }}{81}{figure.caption.50}
+\contentsline {figure}{\numberline {7.23}{\ignorespaces Heap memory usage in time - L-dominant set of graph imperative implementation, l=3 for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{82}{figure.caption.51}
+\contentsline {figure}{\numberline {7.24}{\ignorespaces Heap memory usage in time - L-dominant set of graph Squander implementation, l=3 for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{82}{figure.caption.52}
+\contentsline {figure}{\numberline {7.25}{\ignorespaces CPU usage in time - L-dominant set of graph imperative implementation, l=3 for graph with 50 nodes, max. grade 2\relax }}{83}{figure.caption.53}
+\contentsline {figure}{\numberline {7.26}{\ignorespaces CPU usage in time - L-dominant set of graph Squander implementation, l=3 for graph with 50 nodes, max. grade 2\relax }}{83}{figure.caption.54}
+\contentsline {figure}{\numberline {7.27}{\ignorespaces Heap memory usage in time - L-dominant set of graph imperative implementation, l=4 for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{84}{figure.caption.55}
+\contentsline {figure}{\numberline {7.28}{\ignorespaces Heap memory usage in time - L-dominant set of graph Squander implementation, l=4 for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{84}{figure.caption.56}
+\contentsline {figure}{\numberline {7.29}{\ignorespaces CPU usage in time - L-dominant set of graph imperative implementation, l=4 for graph with 50 nodes, max. grade 2\relax }}{85}{figure.caption.57}
+\contentsline {figure}{\numberline {7.30}{\ignorespaces CPU usage in time - L-dominant set of graph Squander implementation, l=4 for graph with 50 nodes, max. grade 2\relax }}{85}{figure.caption.58}
+\contentsline {figure}{\numberline {7.31}{\ignorespaces Heap memory usage in time - General bisection breadth imperative implementation, set A=$\frac {1}{3}$ for graph with 70 nodes, max. grade 2 and info, when was GC performed\relax }}{94}{figure.caption.65}
+\contentsline {figure}{\numberline {7.32}{\ignorespaces Heap memory usage in time - General bisection breadth Squander implementation, set A=$\frac {1}{3}$ for graph with 70 nodes, max. grade 2 and info, when was GC performed\relax }}{94}{figure.caption.66}
+\contentsline {figure}{\numberline {7.33}{\ignorespaces CPU usage in time - General bisection breadth imperative implementation, set A=$\frac {1}{3}$ for graph with 70 nodes, max. grade 2 and info, when was GC performed\relax }}{95}{figure.caption.67}
+\contentsline {figure}{\numberline {7.34}{\ignorespaces CPU usage in time - General bisection breadth Squander implementation, set A=$\frac {1}{3}$ for graph with 70 nodes, max. grade 2 and info, when was GC performed\relax }}{95}{figure.caption.68}
+\contentsline {figure}{\numberline {7.35}{\ignorespaces Heap memory usage in time - General bisection breadth imperative implementation, set A=$\frac {1}{2}$ for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{96}{figure.caption.69}
+\contentsline {figure}{\numberline {7.36}{\ignorespaces Heap memory usage in time - General bisection breadth Squander implementation, set A=$\frac {1}{2}$ for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{96}{figure.caption.70}
+\contentsline {figure}{\numberline {7.37}{\ignorespaces CPU usage in time - General bisection breadth imperative implementation, set A=$\frac {1}{2}$ for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{97}{figure.caption.71}
+\contentsline {figure}{\numberline {7.38}{\ignorespaces CPU usage in time - General bisection breadth Squander implementation, set A=$\frac {1}{2}$ for graph with 50 nodes, max. grade 2 and info, when was GC performed\relax }}{97}{figure.caption.72}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Popiska obr\IeC {\'a}zku\relax }}{104}{figure.caption.74}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Popiska obr\IeC {\'a}zku\relax }}{108}{figure.caption.74}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces Seznam p\IeC {\v r}ilo\IeC {\v z}en\IeC {\'e}ho CD --- p\IeC {\v r}\IeC {\'\i }klad\relax }}{118}{figure.caption.76}
+\contentsline {figure}{\numberline {E.1}{\ignorespaces Seznam p\IeC {\v r}ilo\IeC {\v z}en\IeC {\'e}ho CD --- p\IeC {\v r}\IeC {\'\i }klad\relax }}{122}{figure.caption.76}

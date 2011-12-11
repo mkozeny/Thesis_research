@@ -812,6 +812,7 @@ caption=Action Listener Installer class]{src/listeners/ActionListenerInstaller.j
 \chapter{Few terms from statistics}
 \label{ch:statistics}
 
+\section{Basic terms}
 Due to computation of dependencies between input or output data and execution
 time in Chapter \ref{ch:comparison} Comaprison will be presented in this smaller
 chapter some statistic terms. At first we have to define term \textit{random
@@ -839,6 +840,7 @@ $$EX=\sum_i x_i\cdot P\left[X=x_i\right]=\sum_i x_i p_i$$
 Variance of random variable $X$ is number $var X = E(X-EX)^2$. Number $\sigma =
 \sqrt{var X}$ is called \textit{standard deviation}.
 
+\section{Covariance}
 Finally we can define terms which we will use for computing depedency between
 two random variables. It is so called \textit{covariance}, which is defined for two
 random variables as \cite{navara:mvt}:
@@ -864,6 +866,8 @@ $Y$ are dependent and that greater values of one variable are connected with
 lower values of the second variable. E.g.: pattern depth
 of tyre and braking distance.
 \end{itemize}
+\section{Correlation}
+
 Values of covariance have bad interpretation. We know from given value
 $cov(X,Y)\neq0$ in which direction are $X$ and $Y$ dependent, but we do not know
 how strong dependence is. We define for that reason \textit{correlation}
@@ -2709,7 +2713,7 @@ $$\left(6380-1240667.14\right)^2+\left(3600000-1240667.14\right)^2+\left(3940-12
 $$\left( 3600000
 -1240667.14\right)^2+\left(4060-1240667.14\right)^2+\left(70860-1240667.14\right)^2+\left(3600000-1240667.14\right)^2+$$
 $$\left(5080-1240667.14\right)^2+\left(3600000-1240667.14\right)^2+\left(3600000-1240667.14\right)^2+\left(4700-572892.86\right)^2+$$
-$$\left(3600000-572892.86\right)^2+\left(3600000-1240667.14\right)^2]=2918575393247$$
+$$\left(3600000-1240667.14\right)^2+\left(3600000-1240667.14\right)^2]=2918575393247$$
 
 $$EY = \frac{1}{7}\cdot \left(40 +  50 +  60 +
  70 +  80 +  90 +
@@ -2915,6 +2919,111 @@ times - 2.6 \% of execution time, whereas in imperative implementation it is
 the execution time for all instances around 30 seconds, but for some instances throws
 \verb|outOfMemory Exception|, which is quite unpleasant.
 
+
+
+For the computation of dependency between execution time and particular
+were choosed following random variables:
+
+\begin{enumerate}
+  \item $X$ as execution time of concrete graph instance
+  \item $Y$ as number of things to choose from
+  \item $Z$ as number of selected things in knapsack in best solution for
+  concrete instance
+\end{enumerate}
+
+
+For that purpose were used knapsack instances with 20, 22, 25, 27, 30, 32, 35,
+37, 40 things. When exec. time reaches timeout (45
+min), exec. time is 1 hour.
+
+median and variance of random variable $X$, $Y$ and $Z$ will be computed as:
+$$EX = \frac{49}{466}\cdot 442 + \frac{49}{466}\cdot 5076 + \frac{50}{466}\cdot
+9828 + \frac{50}{466}\cdot 23238 +  \frac{50}{466}\cdot 28122 + \frac{50}{466}\cdot
+28643 + \frac{50}{466}\cdot 28123 +$$
+$$ \frac{48}{466}\cdot 30327 +\frac{23}{466}\cdot 27899 + \frac{27}{466}\cdot
+28171 +\frac{14}{466}\cdot 27380 +\frac{6}{466}\cdot 24840 =20511.66$$
+
+
+$$varX=E(X-EX)^2=\frac{49}{466}\cdot\left(442-20511.66
+\right)^2+\frac{49}{466}\cdot\left(5076-20511.66\right)^2+$$
+$$\frac{50}{466}\cdot\left(9828
+-20511.66\right)^2+\frac{50}{466}\cdot\left(23238-20511.66\right)^2+\frac{50}{466}\cdot\left(28122-20511.66\right)^2+$$
+$$\frac{50}{466}\cdot\left(28643-20511.66\right)^2+\frac{50}{466}\cdot\left(28123-20511.66\right)^2+\frac{48}{466}\cdot\left(30327-20511.66\right)^2+$$
+$$\frac{23}{466}\cdot\left(27899-20511.66\right)^2+\frac{27}{466}\cdot\left(28171-20511.66\right)^2+\frac{14}{466}\cdot\left(27380-20511.66\right)^2+$$
+$$\frac{6}{466}\cdot\left(24840-20511.66\right)^2=202361073.47$$
+
+$$EY =  \frac{49}{466}\cdot 4 + \frac{49}{466}\cdot 10 + \frac{50}{466}\cdot
+15 + \frac{50}{466}\cdot 20 +  \frac{50}{466}\cdot 22 +
+\frac{50}{466}\cdot 25 + \frac{50}{466}\cdot 27 +$$
+$$ \frac{48}{466}\cdot 30 +\frac{23}{466}\cdot 32 + \frac{27}{466}\cdot
+35 +\frac{14}{466}\cdot 37 +\frac{6}{466}\cdot 40 =21.49$$
+
+$$varY=E(Y-EY)^2=\frac{49}{466}\cdot\left(4-21.49
+\right)^2+\frac{49}{466}\cdot\left(10-21.49\right)^2+\frac{50}{466}\cdot\left(22-21.49\right)^2+$$
+$$\frac{50}{466}\cdot\left(15
+-21.49\right)^2+\frac{50}{466}\cdot\left(20-21.49\right)^2+\frac{50}{466}\cdot\left(25-21.49\right)^2+\frac{50}{466}\cdot\left(27-21.49\right)^2+$$
+$$\frac{48}{466}\cdot\left(30-21.49\right)^2+\frac{23}{466}\cdot\left(32-21.49\right)^2+\frac{27}{466}\cdot\left(35-21.49\right)^2+\frac{14}{466}\cdot\left(37-21.49\right)^2+$$
+$$\frac{6}{466}\cdot\left(40-21.49\right)^2=90.53$$
+$$$$
+
+$$EZ = \frac{18}{466}\cdot 1 + \frac{16}{466}\cdot 2 + \frac{22}{466}\cdot 3+
+\frac{4}{466}\cdot4 + \frac{2}{466}\cdot5 + \frac{8}{466}\cdot6 +
+\frac{17}{466}\cdot7+\frac{11}{466}\cdot8+\frac{9}{466}\cdot9+\frac{1}{466}\cdot10+$$
+$$\frac{2}{466}\cdot11+\frac{7}{466}\cdot12+\frac{17}{466}\cdot13+\frac{20}{466}\cdot14+\frac{25}{466}\cdot15+\frac{32}{466}\cdot16+\frac{31}{466}\cdot17+\frac{29}{466}\cdot18+\frac{17}{466}\cdot19+\frac{23}{466}\cdot20+\frac{28}{466}\cdot21+$$
+$$\frac{23}{466}\cdot22+\frac{27}{466}\cdot23+\frac{19}{466}\cdot24+\frac{16}{466}\cdot25+\frac{9}{466}\cdot26+\frac{7}{466}\cdot27+\frac{12}{466}\cdot28+\frac{7}{466}\cdot29+\frac{7}{466}\cdot30$$
+$$=16.22$$
+
+
+
+
+
+
+$$varZ=E(Z-EZ)^2=\frac{18}{466}\cdot \left(1 - 16.22\right)^2 +
+\frac{16}{466}\cdot \left(2-16.22\right)^2 + \frac{22}{466}\cdot
+\left(3-16.22\right)^2+ \frac{4}{466}\cdot\left(4-16.22\right)^2 +$$
+$$\frac{2}{466}\cdot\left(5-16.22\right)^2 +\frac{8}{466}\cdot\left(6-16.22\right)^2 +
+\frac{17}{466}\cdot\left(7-16.22\right)^2+\frac{11}{466}\cdot\left(8-16.22\right)^2+\frac{9}{466}\cdot\left(9-16.22\right)^2+$$
+$$\frac{1}{466}\cdot\left(10-16.22\right)^2+\frac{2}{466}\cdot\left(11-16.22\right)^2+\frac{7}{466}\cdot\left(12-16.22\right)^2+\frac{17}{466}\cdot\left(13-16.22\right)^2+\frac{20}{466}\cdot\left(14-16.22\right)^2+$$
+$$\frac{25}{466}\cdot\left(15-16.22\right)^2+\frac{32}{466}\cdot\left(16-16.22\right)^2+\frac{31}{466}\cdot\left(17-16.22\right)^2+\frac{29}{466}\cdot\left(18-16.22\right)^2+\frac{17}{466}\cdot\left(19-16.22\right)^2+$$
+$$\frac{23}{466}\cdot\left(20-16.22\right)^2+\frac{28}{466}\cdot\left(21-16.22\right)^2+\frac{23}{466}\cdot\left(22-16.22\right)^2+\frac{27}{466}\cdot\left(23-16.22\right)^2+\frac{19}{466}\cdot\left(24-16.22\right)^2+$$
+$$\frac{16}{466}\cdot\left(25-16.22\right)^2+\frac{9}{466}\cdot\left(26-16.22\right)^2+\frac{7}{466}\cdot\left(27-16.22\right)^2+\frac{12}{466}\cdot\left(28-16.22\right)^2+\frac{7}{466}\cdot\left(29-16.22\right)^2+$$
+$$\frac{7}{466}\cdot\left(30-16.22\right)^2=62.87$$
+
+ 
+now we compute median $EXY$ and $EXZ$, $cov(X,Y)$ and $cov(X,Z)$, $cor(X,Y)$
+and $cor(X,Z)$:
+
+$$EXY=\frac{49}{466}\cdot442\cdot 4
++\frac{49}{466}\cdot5076\cdot10+\frac{50}{466}\cdot9828
+\cdot15+\frac{50}{466}\cdot23238\cdot20+\frac{50}{466}\cdot28122\cdot22+$$
+$$\frac{50}{466}\cdot28643\cdot25+\frac{50}{466}\cdot28123\cdot27+\frac{48}{466}\cdot30327\cdot30+\frac{23}{466}\cdot27899\cdot32+\frac{27}{466}\cdot28171\cdot35+$$
+$$\frac{14}{466}\cdot27380\cdot37+\frac{6}{466}\cdot24840\cdot40=534028.86$$
+
+$$cov\left(X,Y\right)=EXY-\left(EX\right)\cdot \left(EY\right)=534028.86
+-20511.66\cdot 21.49= 93233.29$$
+
+$$cor(X,Y)=\frac{cov(X,Y)}{\sqrt{varX}\sqrt{varY}}=\frac{93233.29}{\sqrt{202361073.47}\sqrt{90.53}}=0.69$$
+%\newpage
+
+$$EXZ=\frac{18}{466}\cdot 1\cdot450.56 + \frac{16}{466}\cdot 2\cdot346.25 +
+\frac{22}{466}\cdot 3\cdot542.273+ \frac{4}{466}\cdot4\cdot922.5 +
+\frac{2}{466}\cdot5\cdot4370 + \frac{8}{466}\cdot6\cdot3186.25 +
+$$
+$$\frac{17}{466}\cdot7\cdot4839.412+\frac{11}{466}\cdot8\cdot6092.727+\frac{9}{466}\cdot9\cdot7028.889+\frac{1}{466}\cdot10\cdot6960+\frac{2}{466}\cdot11\cdot17810+\frac{7}{466}\cdot12\cdot6985.714+$$
+$$\frac{17}{466}\cdot13\cdot14619.412+\frac{20}{466}\cdot14\cdot7947.5+\frac{25}{466}\cdot15\cdot19156.4+\frac{32}{466}\cdot16\cdot27553.44+\frac{31}{466}\cdot17\cdot26966.22+$$
+$$\frac{29}{466}\cdot18\cdot28493.79+\frac{17}{466}\cdot19\cdot29205.88+\frac{23}{466}\cdot20\cdot28886.52+\frac{28}{466}\cdot21\cdot28967.86+\frac{23}{466}\cdot22\cdot29971.3+$$
+$$\frac{27}{466}\cdot23\cdot29967.78+\frac{19}{466}\cdot24\cdot30345.26+\frac{16}{466}\cdot25\cdot29588.13+\frac{9}{466}\cdot26\cdot29301.11+\frac{7}{466}\cdot27\cdot29518.57+$$
+$$\frac{12}{466}\cdot28\cdot29079.17+\frac{7}{466}\cdot29\cdot29228.57+\frac{7}{466}\cdot30\cdot29368.57=412741.63$$
+
+$$cov\left(X,Z\right)=EXZ-\left(EX\right)\cdot \left(EZ\right)=412741.63
+-20511.66\cdot 16.22=80042.51$$
+
+$$cor(X,Z)=\frac{cov(X,Z)}{\sqrt{varX}\sqrt{varZ}}=\frac{80042.51}{\sqrt{202361073.47}\sqrt{62.87}}=0.71$$
+
+According to computed correlation execution time directly depends little bit
+more on number of selected things, where is correlation with execution time
+0.71, than on number of things to choose from, where is correlation 0.69.
+%\newpage
 \section{L-dominant set of graph}
 \label{sec:ldsgComp}
 For comparison was implemented imperative version of L-dominant set of graph
