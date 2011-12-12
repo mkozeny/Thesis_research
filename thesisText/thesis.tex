@@ -2757,7 +2757,10 @@ $$cor(X,Z)=\frac{cov(X,Z)}{\sqrt{varX}\sqrt{varZ}}=\frac{890965.72}{\sqrt{291857
 
 According to computed correlation execution time directly depends more on node
 grade, where is correlation with execution time 0.91, than node number of nodes, where
-is correlation 0.48.
+is correlation 0.48. When compute these correlations similarly for imperative
+implementation, we can see that execution time depends directly little bit more
+on number of nodes (correlation 0.48) than on maximal node grade in the graph
+(correlation 0.44).
 \newpage
 \section{Knapsack Problem}
 
@@ -3022,7 +3025,11 @@ $$cor(X,Z)=\frac{cov(X,Z)}{\sqrt{varX}\sqrt{varZ}}=\frac{80042.51}{\sqrt{2023610
 
 According to computed correlation execution time directly depends little bit
 more on number of selected things, where is correlation with execution time
-0.71, than on number of things to choose from, where is correlation 0.69.
+0.71, than on number of things to choose from, where is correlation 0.69. For
+imperative implementation were correlations computed similarly and there is
+situation completely different, execution time directly depends more on number
+of things to choose from (correlation 0.622) than on number of selected things
+(correlation 0.014).
 %\newpage
 \section{L-dominant set of graph}
 \label{sec:ldsgComp}
@@ -3581,7 +3588,10 @@ such sense, that with more nodes in the graph is execution time increasing.
 Correlations of other two paramaters tells us, that with higher node grade
 (size of l-neighborhood) is execution time shortening. More with size of
 l-neighborhood, where is correlation -0.53, than with maximal node grade, where
-is correlation -0.33.
+is correlation -0.33. Correlations for imperative implementation told us, that
+execution time directly depends on all parameters, most on number of nodes
+(correlation 0.34), then on maximal node grade (correlation 0.2) and least
+depends on size of l-neighborhood (correlation 0.18).
 
 
 \newpage
@@ -3880,8 +3890,7 @@ info, when was GC performed}
 \begin{center}
 \input{figures/graphs/gbb/imp/70-2-1-3/cpu.tex}
 \caption{CPU usage in time - General bisection breadth imperative
-implementation, set A=$\frac{1}{3}$ for graph with 70 nodes, max. grade 2 and
-info, when was GC performed}
+implementation, set A=$\frac{1}{3}$ for graph with 70 nodes, max. grade 2}
 \label{fig:gbbICpu70213}
 \end{center}
 \end{figure}
@@ -3893,8 +3902,7 @@ info, when was GC performed}
 \begin{center}
 \input{figures/graphs/gbb/squander/70-2-1-3/cpu.tex}
 \caption{CPU usage in time - General bisection breadth Squander
-implementation, set A=$\frac{1}{3}$ for graph with 70 nodes, max. grade 2 and
-info, when was GC performed}
+implementation, set A=$\frac{1}{3}$ for graph with 70 nodes, max. grade 2}
 \label{fig:gbbSCpu70213}
 \end{center}
 \end{figure}
@@ -3926,8 +3934,7 @@ info, when was GC performed}
 \begin{center}
 \input{figures/graphs/gbb/imp/50-2-1-2/cpu.tex}
 \caption{CPU usage in time - General bisection breadth imperative
-implementation, set A=$\frac{1}{2}$ for graph with 50 nodes, max. grade 2 and
-info, when was GC performed}
+implementation, set A=$\frac{1}{2}$ for graph with 50 nodes, max. grade 2}
 \label{fig:gbbICpu50212}
 \end{center}
 \end{figure}
@@ -3936,8 +3943,7 @@ info, when was GC performed}
 \begin{center}
 \input{figures/graphs/gbb/squander/50-2-1-2/cpu.tex}
 \caption{CPU usage in time - General bisection breadth Squander
-implementation, set A=$\frac{1}{2}$ for graph with 50 nodes, max. grade 2 and
-info, when was GC performed}
+implementation, set A=$\frac{1}{2}$ for graph with 50 nodes, max. grade 2}
 \label{fig:gbbSCpu50212}
 \end{center}
 \end{figure}
@@ -4111,7 +4117,14 @@ Computed correlations shows, that execution time directly depends most on
 number of nodes in the graph, where is correlation with execution time 0.612,
 but not very significantly in contrast with maximal node grade (correlation
 0.53) and ratio of the number of nodes of set A to the total number of nodes of
-the graph (correlation 0.4).
+the graph (correlation 0.4). From correlations computed for imperative
+implementation is obvious, that also here is execution time the most directly
+dependent on number of nodes in the graph (correlation 0.39). That is the
+same situation like in Squander implementation, but in imperative implementation
+is execution time more dependent on ratio of the number of nodes in set A to the
+total number of nodes in the graph (correlation 0.38 - almost the same number
+like for number of nodes in the graph) than on maximal node grade (correlation
+0.33).
 
 
 %\newpage
@@ -4119,11 +4132,27 @@ the graph (correlation 0.4).
 %*****************************************************************************
 \chapter{Conclusion}
 
-\begin{itemize}
-\item Zhodnocení splnění cílů DP/BP a  vlastního přínosu práce (při formulaci je třeba vzít v potaz zadání práce).
-\item Diskuse dalšího možného pokračování práce.
-\end{itemize} 
+Framework Squander is really interesting tool that brings into classical Java
+new way for solving problems containing lot of constraints. Main
+advantage of that framework is, that programmer can smoothly switch between
+declarative logic and imperative programming. That was written in theoretical
+part and what are the experiences. Of course when using this framework,
+programme allocates more memory, sometimes throws out of memory exception,
+computes bad result and so on. But how elegant was declaring algorithm instead
+of writing lot of code telling system how to compute something. In my opinion
+Squander provides quality API for declaration of algorithms with wide range of
+operators and expressions provided by JSFL language. Sometimes is quite hard to
+declare problem easily, because some operators and expressions are missing
+(e.g. summation without possibility of declaring condition) but these problems
+can be solved by using another operators or expressions (e.g. Java ternary
+operators). Supporting only first order logic can be also \ldots 
 
+
+%Why people do not use logical programming.
+
+%Some problems
+%caused by bugs in framework could easily repaired, because
+%framework is still in development.
 %*****************************************************************************
 % Seznam literatury je v samostatnem souboru reference.bib. Ten
 % upravte dle vlastnich potreb, potom zpracujte (a do textu

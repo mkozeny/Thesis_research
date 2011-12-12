@@ -51,9 +51,9 @@
 \contentsline {section}{\numberline {6.6}Triangular solitaire}{51}{section.6.6}
 \contentsline {chapter}{\numberline {7}Comparison}{55}{chapter.7}
 \contentsline {section}{\numberline {7.1}Hamiltonian Path}{56}{section.7.1}
-\contentsline {section}{\numberline {7.2}Knapsack Problem}{68}{section.7.2}
-\contentsline {section}{\numberline {7.3}L-dominant set of graph}{75}{section.7.3}
-\contentsline {section}{\numberline {7.4}General bisection breadth}{90}{section.7.4}
+\contentsline {section}{\numberline {7.2}Knapsack Problem}{69}{section.7.2}
+\contentsline {section}{\numberline {7.3}L-dominant set of graph}{76}{section.7.3}
+\contentsline {section}{\numberline {7.4}General bisection breadth}{91}{section.7.4}
 \contentsline {chapter}{\numberline {8}Conclusion}{103}{chapter.8}
 \contentsline {chapter}{\numberline {A}Pokyny a n\IeC {\'a}vody k form\IeC {\'a}tov\IeC {\'a}n\IeC {\'\i } textu pr\IeC {\'a}ce}{107}{appendix.A}
 \contentsline {section}{\numberline {A.1}Vkl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i } obr\IeC {\'a}zk\IeC {\r u}}{107}{section.A.1}
