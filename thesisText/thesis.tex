@@ -285,14 +285,15 @@ common imperative way of programming.
 % abstrakt v cestine.
 \vglue60mm
 
-\noindent{\Huge \textbf{Abstrakt}}
-\vskip 2.75\baselineskip
+%\noindent{\Huge \textbf{Abstrakt}}
+%\vskip 2.75\baselineskip
 
-\noindent
-Abstrakt práce by měl velmi stručně vystihovat její podstatu. Tedy čím se práce zabývá a co je jejím výsledkem/přínosem.
+%\noindent
+%Abstrakt práce by měl velmi stručně vystihovat její podstatu. Tedy čím se práce
+%zabývá a co je jejím výsledkem/přínosem.
 
-\noindent
-Očekávají se cca 1 -- 2 odstavce, maximálně půl stránky.
+%\noindent
+%Očekávají se cca 1 -- 2 odstavce, maximálně půl stránky.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Obsah / Table of Contents 
 
@@ -337,14 +338,14 @@ Očekávají se cca 1 -- 2 odstavce, maximálně půl stránky.
 \chapter{Introduction}
 As was said in abstract, the main purpose of this thesis is to describe and use
 framework Squander developed at Massachusetts Institute of Technology (MIT) by Mr
-Aleksandar Milicevic. This framework brings to Java declarative
-constructs, which are useful for implementing programs that involve computations
+Aleksandar Milicevic. This framework brings into Java declarative
+constructs, which are useful for implementing programs involving computations
 that are relatively easy to specify but hard to solve algorithmically. In such
 cases is better to use declarative constraints to naturally express the core of
 the computation, whereas imperative code is natural choice to read input
 parameters and setting up data structures for the computation. This is
 big advantage of this framework, that programmer can smoothly switch between
-declarative logical and imperative programming.
+declarative logic and imperative programming.
 
 By ability of mixing imperative and declarative code can programmer easily
 express constraints of problem in terms of existing data structures and objects
@@ -352,26 +353,26 @@ on the heap. Despite having overhead of encoding and decoding, it is surprising
 how is competitive Squander's SAT-based solution with specialized heuristic
 developed for concrete problem.
 
-In first chapter I am going to describe basic principles of logical programming
+In first chapter I am going to describe basic principles of logic programming
 using language Prolog and in following one meaning of annotations, which are
-used to express logical constructions in framework Squander. Last chapters are
-devoted to framework itself and its comparison to common imperativ way of
+used to express logic constructions in framework Squander. Last chapters are
+devoted to framework itself and its comparison to common imperative way of
 programming.
 %*****************************************************************************
-\chapter{Logical programming principles}
+\chapter{Logic programming principles}
 \label{chap:logProgPrinc}
-The most known logical programming in the world is definitely Prolog and
-thereby we can describe properties of logical programming using this language.
+The most known logic programming in the world is definitely Prolog and
+thereby we can describe properties of logic programming using this language.
 His name is derived from term PROgramming in LOGic and was developed for
 programming of symbolic computation. His success led to formation new discipline
-in mathematical information technology - \textbf{logical programming}.
+in mathematical information technology - \textbf{logic programming}.
 
-Logical programming focus on description of relation's properties without need
+Logic programming focus on description of relation's properties without need
 to know how to do that.
 
-\section{Logical programming paradigm}
+\section{Logic programming paradigm}
 
-According to \cite{nino:pls}, logical programming differ from imperative
+According to \cite{nino:pls}, logic programming differ from imperative
 languages in following points:
 \begin{enumerate}
   \item no assignment statement
@@ -380,13 +381,13 @@ languages in following points:
   \item object is marked as \textit{variable}, which satisfies some set of
   conditions, that are being during computation more specified
 \end{enumerate}
-Logical programming is based on following concepts:
+Logic programming is based on following concepts:
 \begin{enumerate}
   \item declaring facts about objects and relations between objects
   \item declaring valid rules about objects and relations between thmeselves and
   computing queries
 \end{enumerate}
-In logical programming are \textit{facts} unconditional commands and
+In logic programming are \textit{facts} unconditional commands and
 \textit{rules} are conditional commands. Facts and rules are stored in one
 shared database. Language does not differ between program and data.
 
@@ -447,6 +448,7 @@ positive answer:
 \begin{verbatim}
                                  X = ann
 \end{verbatim}
+\newpage
 After that are all possible answers exhausted, so for the next command we get:
 
 \begin{verbatim}
@@ -488,7 +490,7 @@ big expansion of database. Despite having unlimited memory available, searching
 for relevant information would has been time consuming. For this reason Prolog
 provides conditional expressions - \textit{rules}.
 
-By investigating facts is possible to derived new rule based on logical or
+By investigating facts is possible to derived new rule based on logic or
 factual context. That knowledge allow us to express facts, which are not
 explicitly stored in database. Let us show it in following example:
 
@@ -505,7 +507,7 @@ In next example will be shown more complicated construct:
 \end{verbatim}
 Expression above means, that \verb|X| is brother of \verb|Y| if exists at least
 one object \verb|O|, which is common in relation \verb|parent| for both \verb|X|
-and \verb|Y| assuming \verb|X| is a man. Mathematical interpretation of teh
+and \verb|Y| assuming \verb|X| is a man. Mathematical interpretation of the
 rule is:
 \begin{center}
 \uv{For all arbitrary persons X and Y,\\
@@ -589,9 +591,9 @@ of following steps \cite{kolar:jui}:
   \item For non-empty sequence of targets, operation \textit{SEARCHING} is
   invoked.
   \item \textit{SEARCHING}: Clauses of the program from top to bottom are
-  searched till first clause $C$ occurence, whose head is successfuly
+  searched till first clause $C$ occurence, whose head is successfully
   unified with target $G_1$. If such clause is not found, evaluation ended
-  unsuccessfuly.
+  unsuccessfully.
   
   If is found clause $C$ in form
  \begin{center}
@@ -619,8 +621,8 @@ is:
 
 
 By recursive invoication procedure \verb|Evaluate| is evaulated this sequence of
-targets. If this evaluation ends successfuly, previous evaluation is treated as
-also successful. If this evaluation does not end successfuly, last sequence of
+targets. If this evaluation ends successfully, previous evaluation is treated as
+also successful. If this evaluation does not end successfully, last sequence of
 targets is left and it is made return to operation \textit{SEARCHING}, where is
 continued immediately behind clause $C$ in order to find some next usable
 clause.
@@ -629,15 +631,15 @@ Let us show evaulation in following rules, which used facts declared in
 subsection \ref{sec:facts}:\\
 \\
 \begin{verbatim}
-                          ancestor(X, Y) :- parent(X, Y).
-                          ancestor(X, Y) :- parent(X, Z), parent(Z, Y).
+                   (a)  ancestor(X, Y) :- parent(X, Y).
+                   (b)  ancestor(X, Y) :- parent(X, Z), parent(Z, Y).
 \end{verbatim}
 
 \setlength{\parskip}{1cm plus4mm minus3mm}
 
 
 \begin{figure}[ht]
-%\centering
+\centering
 %\begin{center}
 %\qtreecentertrue
 \begin{tikzpicture}
@@ -645,13 +647,15 @@ subsection \ref{sec:facts}:\\
 
 %\tikzset{level distance=42pt}
 
-\Tree [.\node(xh){$ancestor(david, jane)$}; \edge
-node[auto=right]{\textbf{a}};[\node(t){unsuccess}; ] .{$parent(david, jane)$}
-\edge node[auto=left]{\textbf{b}}; [ [[\edge
-node[auto=left]{\textbf{a}};[\node(u){success}; ].{$parent(john, jane)$}
-].{$ancestor(john, jane)$} ]  .\fbox{$Z = john$} ].\node(wh){$parent(david, Z),$\\ $parent(Z, jane)$};] 
+\Tree [ .\node(xh){$ancestor(david, jane)$}; \edge
+node[auto=right]{\textbf{a}};[ \node(t){unsuccess}; ] .{$parent(david, jane)$}
+\edge node[auto=left]{\textbf{b}}; [ [ [ \edge
+node[auto=left]{\textbf{a}};[ \node(u){success}; ].{$parent(john, jane)$}
+].{$ancestor(john, jane)$} ]  .\fbox{$Z = john$} ].\node(wh){$parent(david,
+Z), parent(Z, jane)$};]
+
 \draw[dashed,->] (t)..controls +(east:3.5) .. (wh);
-\draw[dashed,->] (u)..controls +(west:2.5)  .. (xh);
+\draw[dashed,->] (u)..controls +(west:2.5) .. (xh);
 \end{tikzpicture}
 %\end{center}
 \caption{Expression evaluation in Prolog}
@@ -660,7 +664,7 @@ node[auto=left]{\textbf{a}};[\node(u){success}; ].{$parent(john, jane)$}
 
 
 
-First of the queries is answered unsuccessfuly when applied rule \textbf{a},
+First of the queries is answered unsuccessfully when applied rule \textbf{a},
 rule \textbf{b} is then successful.
 
 
@@ -702,8 +706,7 @@ class files, or reflectively at runtime.
 
 \subsection{Field validation}
 
-Annotation type declarations are similar to normal interface declarations. An
-at-sign (\verb|@|) precedes the \verb|interface| keyword. Each method
+Annotation type declarations are similar to normal interface declarations. Each method
 declaration defines an \textit{element} of the annotation type. Method
 declarations must not have any parameters or a \verb|throws| clause. Return
 types are restricted to primitives, \verb|String|, \verb|Class|, \verb|enums|,
@@ -755,142 +758,66 @@ annotation]{src/RunTests.java}
 Role annotation]{src/TestRole.java}
 
 
-\subsection{Annotating Event Handlers}
-In this subsection is shown example presented in
-\cite{horstmannCornell:coreJava}. When programmer have to use in his code action
-listeners, it leads to write a lot of repetitive code. Listeners are usually declared:
+%\subsection{Annotating Event Handlers}
+%In this subsection is shown example presented in
+%\cite{horstmannCornell:coreJava}. When programmer have to use in his code
+%action listeners, it leads to write a lot of repetitive code. Listeners are
+%usually declared:
 
-\lstinputlisting[label=listener,caption=Action
-listener]{src/listeners/Button.java}
+%\lstinputlisting[label=listener,caption=Action
+%listener]{src/listeners/Button.java}
 
-Writing this boring code can be omitted by using annotations. Annotation will
-have form:
+%Writing this boring code can be omitted by using annotations. Annotation will
+%have form:
 
-\lstinputlisting[label=listenerAnnotation,caption=Annotation for
-performing action]{src/listeners/AnnotationAction.java}
+%\lstinputlisting[label=listenerAnnotation,caption=Annotation for
+%performing action]{src/listeners/AnnotationAction.java}
 
-Instead of calling action listener is every method tagged with annotation.
+%Instead of calling action listener is every method tagged with annotation.
 
-\lstinputlisting[label=usingListenerAnnotation,caption=Use annotation for
-performing action]{src/listeners/ButtonTest.java}
+%\lstinputlisting[label=usingListenerAnnotation,caption=Use annotation for
+%performing action]{src/listeners/ButtonTest.java}
 
-\lstinputlisting[label=ActionListener,caption=Declaration of annotation for
-performing action]{src/listeners/ActionListenerFor.java}
+%\lstinputlisting[label=ActionListener,caption=Declaration of annotation for
+%performing action]{src/listeners/ActionListenerFor.java}
 
-We now need a mechanism to analyze them and install action listeners. That is
-the job of the \verb|ActionListenerInstaller| class. The \verb|ButtonFrame|
-constructor calls
+%We now need a mechanism to analyze them and install action listeners. That is
+%the job of the \verb|ActionListenerInstaller| class. The \verb|ButtonFrame|
+%constructor calls
 
-\lstinputlisting[label=ActionListener,
-caption=Action Installer invocation]{src/listeners/InstallerCall.java}
+%\lstinputlisting[label=ActionListener,
+%caption=Action Installer invocation]{src/listeners/InstallerCall.java}
 
-The static \verb|processAnnotations| method enumerates all methods of the object
-that it received. For each method, it gets the \verb|ActionListenerFor|
-annotation object and processes it.
+%The static \verb|processAnnotations| method enumerates all methods of the
+%object that it received. For each method, it gets the \verb|ActionListenerFor|
+%annotation object and processes it.
 
-Here, we use the getAnnotation method that is defined in the
-\verb|AnnotatedElement| interface. The classes \verb|Method|,
-\verb|Constructor|, \verb|Field|, \verb|Class|, and \verb|Package| implement
-this interface. The name of the source field is stored in the annotation object.
-We retrieve it by calling the \verb|source| method, and then look up the
-matching field.
+%Here, we use the getAnnotation method that is defined in the
+%\verb|AnnotatedElement| interface. The classes \verb|Method|,
+%\verb|Constructor|, \verb|Field|, \verb|Class|, and \verb|Package| implement
+%this interface. The name of the source field is stored in the annotation
+%object. We retrieve it by calling the \verb|source| method, and then look up
+%the matching field.
 
-\lstinputlisting[label=findingField,
-caption=Looking up for field]{src/listeners/FindingField.java}
+%\lstinputlisting[label=findingField,
+%caption=Looking up for field]{src/listeners/FindingField.java}
 
-For each annotated method, we construct a proxy object that implements the\\
-\verb|ActionListener| interface and whose \verb|actionPerformed| method calls
-the annotated method. The details are not important. The key observation is that the functionality of the annotations was established
-by the \verb|processAnnotations| method.
-In Example \ref{actionListenerInstaller}, the annotations were processed at run
-time. It would also have been possible to process them at the source level. A
-source code generator might have produced the code for adding the listeners.
-Alternatively, the annotations might have been processed at the bytecode level.
-A bytecode editor might have injected the calls to \verb|addActionListener| into
-the frame constructor.
-\newpage
-\lstinputlisting[label=actionListenerInstaller,
-caption=Action Listener Installer class]{src/listeners/ActionListenerInstaller.java}
+%For each annotated method, we construct a proxy object that implements the\\
+%\verb|ActionListener| interface and whose \verb|actionPerformed| method calls
+%the annotated method. The details are not important. The key observation is
+%that the functionality of the annotations was established by the
+%\verb|processAnnotations| method. In Example \ref{actionListenerInstaller}, the
+%annotations were processed at run time. It would also have been possible to
+%process them at the source level. A source code generator might have produced
+%the code for adding the listeners. Alternatively, the annotations might have
+%been processed at the bytecode level. A bytecode editor might have injected the
+%calls to \verb|addActionListener| into the frame constructor.
+%\newpage
+%\lstinputlisting[label=actionListenerInstaller,
+%caption=Action Listener Installer
+%class]{src/listeners/ActionListenerInstaller.java}
 
-\chapter{Few terms from statistics}
-\label{ch:statistics}
 
-\section{Basic terms}
-Due to computation of dependencies between input or output data and execution
-time in Chapter \ref{ch:comparison} Comaprison will be presented in this smaller
-chapter some statistic terms. At first we have to define term \textit{random
-variable}. As is defined in \cite{navara:mvt}, random variable is projection:
-$$X:\Omega \rightarrow R$$
-
-so, that for every $t\in R$ si valid:
-
-$$X^{-1}\left(\left(-\infty , t\right>\right) =
-\left\{\omega\in\Omega\mid X\left(\omega\right)\leq t \right\} \in
-\mathcal{A}.$$
-
-So random variable is \uv{assignment} real number to every possible result of
-experiment (it means every $\omega\in\Omega$) so, that it \uv{copies}
-probability rate from $\mathcal{A}$ na $\mathcal{B\left(R\right)}$. E.g. when we
-have an experiment with throwing a die. We can assign every side of die number
-from 1 to 6 according to number of points on that side but also we can assign
-those sides with 0 and 1 according to even or odd number of points on that side.
-
-Another necessary terms to define are \textit{median} and \textit{variance}.
-According to Navara \cite{navara:mvt}, when random variable $X$ has discrete distribution, then
-number:
-$$EX=\sum_i x_i\cdot P\left[X=x_i\right]=\sum_i x_i p_i$$
-
-Variance of random variable $X$ is number $var X = E(X-EX)^2$. Number $\sigma =
-\sqrt{var X}$ is called \textit{standard deviation}.
-
-\section{Covariance}
-Finally we can define terms which we will use for computing depedency between
-two random variables. It is so called \textit{covariance}, which is defined for two
-random variables as \cite{navara:mvt}:
-
-$$cov(Y,Z)=E\left[\left(Y-EY\right)\left(Z-EZ\right)\right]$$
-Clauses about covariance \cite{kulich:stat}:
-
-\begin{center}
-$cov(X,X)=var X$\\
-$cov(X,Y)=cov(Y,X)$\\
-$cov(X,Y)^2\leq var X \cdot var Y$\\
-$cov(X,Y) = EXY - EX\cdot EY$\\
-If $X$ and $Y$ are independent, then
-$cov\left(X,Y\right)=0 \rightarrow EXY=EX\cdot EY$\\
-\end{center}
-\begin{itemize}
-  \item If is covariance positive, it means, that random variables $X$ and
-$Y$ are dependent and that grater values of one variable are connected with
-greater values of the second variable (and lower values of one variable connected with
-lower values of the second variable). E.g.: human heigt and weight.
-  \item If is covariance negative, it means, that random variables $X$ and
-$Y$ are dependent and that greater values of one variable are connected with
-lower values of the second variable. E.g.: pattern depth
-of tyre and braking distance.
-\end{itemize}
-\section{Correlation}
-
-Values of covariance have bad interpretation. We know from given value
-$cov(X,Y)\neq0$ in which direction are $X$ and $Y$ dependent, but we do not know
-how strong dependence is. We define for that reason \textit{correlation}
-\cite{kulich:stat}:
-
-$$cor(X,Y)=\frac{cov(X,Y)}{\sqrt{var X}\sqrt{var Y}}$$ 
-
-Clauses about correlation \cite{kulich:stat}:
-
-\begin{center}
-Correlation $cor(X,Y)$ is always between -1 and 1. Correlation is zero just when
-$cov(X,Y)=0$\\
-If $X$ and $Y$ are independent, then $cor(X,Y)=0$\\
-$cor(X,Y)=1$ just when $Y=a+bX$; $a\in\mathbb{R}$ and $b>0$\\
-$cor(X,Y)=-1$ just when $Y=a+bX$; $a\in\mathbb{R}$ and $b<0$\\
-\end{center}
-
-Indepedent variables have always zero correlation. But when is correlation
-zero, it does not mean, that random variables $X$ and $Y$ are independent
-necessarily.
 
 %*****************************************************************************
 \chapter{Framework description}
@@ -980,13 +907,13 @@ On the other hand, framework has some limitations:
 
 Information about framework presented in this section are taken from
 \cite{milicevic:executableSpecificationsForJavaPrograms}, where is
-thre background of Squander described in detail.
+the background of Squander described in detail.
 
 \subsection{Kodkod}
-Kodkod is a solver for relational logic. Kodkod requires bounded universe , a
+Kodkod is a solver for relational logic. Kodkod requires bounded universe, a
 set of untyped relations, bounds for every relation and relation formula. Then
 translates given problem into boolean satisfiability problem (SAT) and applies
-of-the- shelf SAT solverto search for satysfiyng solution, which is reflected
+of-the-shelf SAT solver to search for satysfiyng solution, which is reflected
 back if found.
 
 When are the relations in Kodkod created, they are untyped, meaning that every
@@ -1018,7 +945,7 @@ fields} which can be useful for specifying abstract data types.
 \subsubsection{JFSL expressions}
 
 JFSL expressions are evaluated into relations. JFSL provides common algebra
-operators, together with interger and boolean operators. Some of them are shown
+operators, together with integer and boolean operators. Some of them are shown
 in Table \ref{tab:unaryExpressions} and quantified operators, which are also
 provided by the framework, are shown in Table \ref{tab:quantifiedExpressions}.
 
@@ -1162,7 +1089,7 @@ method \verb|Squander.exe()| involving following steps:
 For discovering reachable portion of the heap, bread-first search algorithm is
 used, which started from the set of root objects and repeatedly visiting all
 children until all reachable objects have been visited. The most important part
-is how to enumerate childre, i.e. how to serialize a given object into a set of
+is how to enumerate children, i.e. how to serialize a given object into a set of
 field values.
 
 \subsection{Relations and bounds}
@@ -1334,9 +1261,9 @@ the upper bound is set the extent of the field's type.
 \begin{tabular}{ l l }
 	\textbf{BST}: & $\{t_1\}$\\
 	\textbf{N1}: & $\{n_1\}$\\
-	\textbf{N2}: & $\{n_1\}$\\
-	\textbf{N3}: & $\{n_1\}$\\
-	\textbf{N4}: & $\{n_1\}$\\
+	\textbf{N2}: & $\{n_2\}$\\
+	\textbf{N3}: & $\{n_3\}$\\
+	\textbf{N4}: & $\{n_4\}$\\
 	\textbf{null}: & $\{null\}$\\
 	\textbf{BST\textsubscript{--}this}: & $\{t_1\}$\\
 	\textbf{z}: & $\{n_4\}$\\
@@ -1348,9 +1275,9 @@ the upper bound is set the extent of the field's type.
 	\textbf{nodes\textsubscript{--}pre}: & $\{(t_1\rightarrow n_1),(t_1\rightarrow
 	n_2),(t_1\rightarrow n_3),(t_1\rightarrow n_4)\}$\\
 	\textbf{right\textsubscript{--}pre}: & $\{(n_1\rightarrow n_2),(n_2\rightarrow
-	0),(n_3\rightarrow null),(n_4\rightarrow null)\}$\\
+	null),(n_3\rightarrow null),(n_4\rightarrow null)\}$\\
 	\textbf{left\textsubscript{--}pre}: & $\{(n_1\rightarrow n_3),(n_2\rightarrow
-	0),(n_3\rightarrow null),(n_4\rightarrow null)\}$\\
+	null),(n_3\rightarrow null),(n_4\rightarrow null)\}$\\
 	\hline
 	\textbf{root}: & $\{\},\hspace{4mm}\{t_1\}\times\{n_1,n_2,n_3,n_4\}$\\
 	\textbf{nodes}: & $\{\},\hspace{4mm}\{t_1\}\times\{n_1,n_2,n_3,n_4\}$\\
@@ -1381,7 +1308,7 @@ for improving performance. Reducing search space by allowing modification only
 \verb|left| and \verb|right| pointers pointing to \verb|null| value improve
 performance significantly.
 
-Consider modified frame condition shown in Listng \ref{modifiedOperation}
+Consider modified frame condition shown in Listing \ref{modifiedOperation}
 specifying additional constraints on the modification of \verb|left| and \verb|right| fields. This
 frame condition shows idea specified in paragraph before and ensures, that all
 new nodes will be inserted at the leaf positions.
@@ -1601,7 +1528,7 @@ In summary, the actual implementation inside Squander works as follows:
 \end{enumerate}
 \section{Differences between Prolog and framework}
 
-Thing, which have both classical logical programming in Prolog and
+Thing, which have both classical logic programming in Prolog and
 programming using framework Squander in common, is defining what to compute
 instead of how. Both programming paradigms use set of rules for its computation,
 but here the analogy ends.
@@ -1821,7 +1748,7 @@ experince and reducing count of relations]{src/knapsack/KnapSack7.java}
 This way of implementation is suitable for instances with more things in
 knapsack, which means higher value of variable \verb|capacity| and higher value
 of variable \verb|minCost|, because there are not so many relations created.
-Implementation was successfuly tested for $40$ things in one instance at most.
+Implementation was successfully tested for $40$ things in one instance at most.
 
 \section{General bisection breadth}
 
@@ -2071,7 +1998,7 @@ path and for graphs with 10 nodes which do not contain Hamiltonian path.
 As last algorithm I tried to implement simple game called  \textit{Triangular
 solitaire}. Idea of that algorithm as idea of previous two graph
 algorithms (\ref{sec:gbb} and \ref{sec:ldsg}) was taken from course
-\textit{Parallel systems and algorithms} lectured at CTU FEE. Specification of
+\textit{Parallel algorithms and computing} lectured at CTU FEE. Specification of
 the algorithm was finaly changed according to \cite{web:mathIsFun}. Target of
 this algortihm is to leave only one occupied position on the game field by doing
 allowed transitions. Allowed transition between two states of game field is to
@@ -2173,9 +2100,9 @@ only one position occupied with peg, it is obvious that we need $N - 1$ steps to
 do that, where $N$ is count of positions in game field, because in every step we
 lose one peg ($N = \frac{n(n-+1)}{2}$, where $n$ is length of side of the game
 field, it is simple summmation of arithmetic progression). Now we should
-declare, what we want to return from our program. Of course it will be sequence of states of game field, which lead to solution,
-specifiyng occupation of concrete cell. Let us declare data structures, which
-are necessary for computation.
+declare, what we want to return from our program. Of course it will be sequence
+of states of game field, which lead to solution, specifying occupation of
+concrete cell. Let us declare data structures, which are necessary for computation.
 
 First one will be definitely \textit{class Cell} containing boolean field
 \verb|occupied| and maybe some information about its position in the game field
@@ -2398,9 +2325,9 @@ in the graph} \\ \cline{2-10}
 \newpage
 As was said before, I used for tracking execution of algorithm JConsole, which
 started measuring on key press. When using JConsole for measuring \textit{heap
-memory usage} and \textit{cpu usage}, I have extracted data into csv file and use them for generating graphs
-in GNUPlot\textsuperscript{\textregistered}, which is command-line driven
-graphing utility allowing to generate graphs into \LaTeX source code.
+memory usage} and \textit{cpu usage}, I have extracted data into csv file and
+use them for generating graphs in GNUPlot\textsuperscript{\textregistered},
+which is command-line driven graphing utility allowing to generate graphs into \LaTeX source code.
 
 
 When looking at the graphs of heap memory usage of imperative implementation, we
@@ -4177,7 +4104,7 @@ why do not use declarative programming.
 %According to Alireza Azem's PhD. thesis from
 %Universität Paderborn
 
-%Why people do not use logical programming.
+%Why people do not use logic programming.
 
 %Some problems
 %caused by bugs in framework could easily repaired, because
@@ -4302,12 +4229,90 @@ web;\\\verb|http://www.mathsisfun.com/games/triangle-peg-solitaire/index.html#|
 \item[BFS] Breadth First Search
 \item[CPU] Central Processor Unit
 \end{description}
-\vdots
+
 
 %*****************************************************************************
-\chapter{UML diagramy}
-\textbf{\large Tato příloha není povinná a zřejmě se neobjeví v každé práci. Máte-li ale větší množství podobných diagramů popisujících systém, není nutné všechny umísťovat do hlavního textu, zvláště pokud by to snižovalo jeho čitelnost.}
+\chapter{Few terms from statistics}
+\label{ch:statistics}
 
+\section{Basic terms}
+Due to computation of dependencies between input or output data and execution
+time in Chapter \ref{ch:comparison} Comaprison will be presented in this smaller
+chapter some statistic terms. At first we have to define term \textit{random
+variable}. As is defined in \cite{navara:mvt}, let $\mathcal{S}$ is a
+phenomenal field, $\Omega\in\mathcal{S}$ is a certain phenomenon, and
+$P$ probability of the phenomenal field $\mathcal{S}$. The real
+function: 
+\begin{center}
+$X:\Omega \rightarrow \mathbb{R}$,
+\end{center}
+
+for which the set
+
+$$\{E; E \subset \Omega, X\left(E\right) \leq x\} \in
+\mathcal{S}$$
+
+is for each value $x \in \mathbb{R}$ called a random variable. E.g. when we
+have an experiment with throwing a die. We can assign every side of die number
+from 1 to 6 according to number of points on that side but also we can assign
+those sides with 0 and 1 according to even or odd number of points on that side.
+
+Another necessary terms to define are \textit{median} and \textit{variance}.
+According to Navara \cite{navara:mvt}, when random variable $X$ has discrete distribution, then
+number:
+$$EX=\sum_i x_i\cdot P\left[X=x_i\right]=\sum_i x_i p_i$$
+
+Variance of random variable $X$ is number $var X = E(X-EX)^2$. Number $\sigma =
+\sqrt{var X}$ is called \textit{standard deviation}.
+
+\section{Covariance}
+Finally we can define terms which we will use for computing depedency between
+two random variables. It is so called \textit{covariance}, which is defined for two
+random variables as \cite{navara:mvt}:
+
+$$cov(Y,Z)=E\left[\left(Y-EY\right)\left(Z-EZ\right)\right]$$
+Clauses about covariance \cite{kulich:stat}:
+
+\begin{center}
+$cov(X,X)=var X$\\
+$cov(X,Y)=cov(Y,X)$\\
+$cov(X,Y)^2\leq var X \cdot var Y$\\
+$cov(X,Y) = EXY - EX\cdot EY$\\
+If $X$ and $Y$ are independent, then
+$cov\left(X,Y\right)=0 \rightarrow EXY=EX\cdot EY$\\
+\end{center}
+\begin{itemize}
+  \item If is covariance positive, it means, that random variables $X$ and
+$Y$ are dependent and that grater values of one variable are connected with
+greater values of the second variable (and lower values of one variable connected with
+lower values of the second variable). E.g.: human heigt and weight.
+  \item If is covariance negative, it means, that random variables $X$ and
+$Y$ are dependent and that greater values of one variable are connected with
+lower values of the second variable. E.g.: pattern depth
+of tyre and braking distance.
+\end{itemize}
+\section{Correlation}
+
+Values of covariance have bad interpretation. We know from given value
+$cov(X,Y)\neq0$ in which direction are $X$ and $Y$ dependent, but we do not know
+how strong dependence is. We define for that reason \textit{correlation}
+\cite{kulich:stat}:
+
+$$cor(X,Y)=\frac{cov(X,Y)}{\sqrt{var X}\sqrt{var Y}}$$ 
+
+Clauses about correlation \cite{kulich:stat}:
+
+\begin{center}
+Correlation $cor(X,Y)$ is always between -1 and 1. Correlation is zero just when
+$cov(X,Y)=0$\\
+If $X$ and $Y$ are independent, then $cor(X,Y)=0$\\
+$cor(X,Y)=1$ just when $Y=a+bX$; $a\in\mathbb{R}$ and $b>0$\\
+$cor(X,Y)=-1$ just when $Y=a+bX$; $a\in\mathbb{R}$ and $b<0$\\
+\end{center}
+
+Indepedent variables have always zero correlation. But when is correlation
+zero, it does not mean, that random variables $X$ and $Y$ are independent
+necessarily.
 %*****************************************************************************
 \chapter{Instalační a uživatelská příručka}
 \textbf{\large Tato příloha velmi žádoucí zejména u softwarových implementačních prací.}
