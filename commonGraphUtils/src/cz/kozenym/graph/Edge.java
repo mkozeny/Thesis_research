@@ -1,4 +1,4 @@
-package graph;
+package cz.kozenym.graph;
 
 import java.io.Serializable;
 
@@ -44,8 +44,8 @@ public class Edge implements Serializable{
 	public boolean equals(Object obj) {
 		if(obj == null || (!(obj instanceof Edge))) return false;
 		Edge e = (Edge)obj;
-		
-		return (e.getId()==this.getId());
+		if(this.getSrc()==null||this.getDest()==null)return false;
+		return (this.getSrc().equals(e.getSrc())&&this.getDest().equals(e.getDest()));
 	}
     
   }

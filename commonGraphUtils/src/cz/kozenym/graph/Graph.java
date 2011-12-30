@@ -1,4 +1,4 @@
-package graph;
+package cz.kozenym.graph;
 
 import java.io.Serializable;
 import java.util.HashSet;
