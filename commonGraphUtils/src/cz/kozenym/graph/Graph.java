@@ -92,25 +92,7 @@ public class Graph implements Serializable{
 			e.setCost(tmp == 0?1:tmp);
 			e.setId(id);
 			id++;
-			/*System.out.println(k+". Edge: src: " + ((e.getSrc()!=null)?e.getSrc().getValue():"") + ", dest: "
-					+ ((e.getDest()!=null)?e.getDest().getValue():""));*/
-			//k++;
 		}
-		for(Edge e:this.edges)
-		{
-			System.out.println("Edge src: "+e.getSrc().getValue()+", dest: "+e.getDest().getValue()+", cost: "+e.getCost());
-		}
-		System.out.println();
-		System.out.println("---MATRIX OF INCIDENCY---");
-		for(int i=0; i < n; i++)
-		{
-			for(int j=0; j < n; j++)
-			{
-				System.out.print((matrixOfIncidency[i][j]?1:0)+" ");
-			}
-			System.out.println();
-		}
-		System.out.println();
 	}
 	
 	public Set<Node> getNodes() {
