@@ -30,29 +30,30 @@
 \contentsline {subsection}{\numberline {4.2.7}Minimizing the universe size}{26}{subsection.4.2.7}
 \contentsline {subsubsection}{\numberline {4.2.7.1}\textit {KodkodPart} translation}{26}{subsubsection.4.2.7.1}
 \contentsline {subsubsection}{\numberline {4.2.7.2}Partitioning algorithm}{28}{subsubsection.4.2.7.2}
-\contentsline {section}{\numberline {4.3}Differences between Prolog and framework}{30}{section.4.3}
-\contentsline {chapter}{\numberline {5}Implementation of algorithms}{31}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{31}{section.5.1}
-\contentsline {section}{\numberline {5.2}Knapsack Problem}{32}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}First version}{32}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Second version}{35}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}General bisection breadth}{37}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}First version}{37}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Second version}{40}{subsection.5.3.2}
-\contentsline {section}{\numberline {5.4}L-dominant set of graph}{41}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}First version}{41}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Second version}{43}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Hamiltonian Path}{43}{section.5.5}
-\contentsline {section}{\numberline {5.6}Triangular solitaire}{45}{section.5.6}
-\contentsline {chapter}{\numberline {6}Comparison}{49}{chapter.6}
-\contentsline {section}{\numberline {6.1}Hamiltonian Path}{50}{section.6.1}
-\contentsline {section}{\numberline {6.2}Knapsack Problem}{63}{section.6.2}
-\contentsline {section}{\numberline {6.3}L-dominant set of graph}{70}{section.6.3}
-\contentsline {section}{\numberline {6.4}General bisection breadth}{85}{section.6.4}
-\contentsline {chapter}{\numberline {7}Conclusion}{97}{chapter.7}
-\contentsline {chapter}{\numberline {A}List of used shortcuts}{101}{appendix.A}
-\contentsline {chapter}{\numberline {B}Few terms from statistics}{103}{appendix.B}
-\contentsline {section}{\numberline {B.1}Basic terms}{103}{section.B.1}
-\contentsline {section}{\numberline {B.2}Covariance}{104}{section.B.2}
-\contentsline {section}{\numberline {B.3}Correlation}{105}{section.B.3}
-\contentsline {chapter}{\numberline {C}Obsah p\IeC {\v r}ilo\IeC {\v z}en\IeC {\'e}ho CD}{107}{appendix.C}
+\contentsline {section}{\numberline {4.3}From bounded relational logic to SAT}{30}{section.4.3}
+\contentsline {section}{\numberline {4.4}Differences between Prolog and framework}{30}{section.4.4}
+\contentsline {chapter}{\numberline {5}Implementation of algorithms}{33}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{33}{section.5.1}
+\contentsline {section}{\numberline {5.2}Knapsack Problem}{34}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}First version}{34}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Second version}{37}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}General bisection breadth}{39}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}First version}{39}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Second version}{42}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}L-dominant set of graph}{43}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}First version}{43}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Second version}{45}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Hamiltonian Path}{45}{section.5.5}
+\contentsline {section}{\numberline {5.6}Triangular solitaire}{47}{section.5.6}
+\contentsline {chapter}{\numberline {6}Comparison}{51}{chapter.6}
+\contentsline {section}{\numberline {6.1}Hamiltonian Path}{52}{section.6.1}
+\contentsline {section}{\numberline {6.2}Knapsack Problem}{65}{section.6.2}
+\contentsline {section}{\numberline {6.3}L-dominant set of graph}{72}{section.6.3}
+\contentsline {section}{\numberline {6.4}General bisection breadth}{87}{section.6.4}
+\contentsline {chapter}{\numberline {7}Conclusion}{99}{chapter.7}
+\contentsline {chapter}{\numberline {A}List of used shortcuts}{103}{appendix.A}
+\contentsline {chapter}{\numberline {B}Few terms from statistics}{105}{appendix.B}
+\contentsline {section}{\numberline {B.1}Basic terms}{105}{section.B.1}
+\contentsline {section}{\numberline {B.2}Covariance}{106}{section.B.2}
+\contentsline {section}{\numberline {B.3}Correlation}{107}{section.B.3}
+\contentsline {chapter}{\numberline {C}Contents of the attached CD}{109}{appendix.C}

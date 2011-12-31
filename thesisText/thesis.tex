@@ -1503,7 +1503,8 @@ In summary, the actual implementation inside Squander works as follows:
   \mathcal{D} \rightarrow \mathcal{P}\left(\mathcal{D}\right)$ express this:
   
   $$\delta\left(d\right) = \{d_1 \mid d_1 \neq d\ \wedge
-  \left(\left(\exists p \in \mathcal{T}\right)d_1 \in p\right)\} $$
+  \left(\left(\exists p \in \mathcal{T}\right)d_1 \in p\wedge d \in p\right)\}
+  $$
   \item The largest partition $p_{max}$ is found, such that
   $$\left(\nexists p\in \mathcal{T}\right) \abs{\psi\left(p\right)} >
   \abs{\psi\left(p_{max}\right)}$$
@@ -1526,6 +1527,13 @@ In summary, the actual implementation inside Squander works as follows:
   $$\mathcal{D}_d = \delta\left(d_l\right) \text{, where } d_l\in\mathcal{D}
   \wedge l_p \in \gamma\left(d_l\right)$$
 \end{enumerate}
+
+\section{From bounded relational logic to SAT}
+How does translating from relational logic to boolean logic works is described
+in detail in Torlak's Phd. thesis \cite{torlak:constraintSolver}. I will
+occupy with this issue no longer, because it is out of scope of this thesis.
+
+
 \section{Differences between Prolog and framework}
 
 Thing, which have both classical logic programming in Prolog and
@@ -4104,7 +4112,9 @@ treshold value for solution, which is \uv{good enough} for the programmer, or by
 implementing some heuristic, which will change treshold dynamically according to
 some dependency between input and output parameters - it could be good task
 for future work. Someone could suggest implementation of higher order logic into
-framework, but this could cause, that framework will has bad behaviour.%some explanation why
+framework, but it would be very difficult to implement a fully automatic solver
+for it. Even if everything is bounded, quantifying over all functions would be
+extremely inefficient, so the whole tool would not be very practical.
 
 Every programmer should have had ask why do not people (or programmers)
 use logic programming instead of imperative programming. And I have to answer
@@ -4137,6 +4147,13 @@ why do not use declarative programming.
 Aleksandar Milicevic; MASSACHUSETTS INSTITUTE OF TECHNOLOGY, Department of
 Electrical Engineering and Computer Science; \textit{Executable Specifications
 for Java Programs}, September 2010.
+
+\bibitem{torlak:constraintSolver}
+Emina Torlak; MASSACHUSETTS INSTITUTE OF TECHNOLOGY, Department of
+Electrical Engineering and Computer Science; \textit{A Constraint Solver for
+Software Engineering: Finding Models and Cores of Large Relational
+Specifications - PhD. thesis}, February 2009.
+
 
 \bibitem{horstmannCornell:coreJava}
 Cay Horstmann and Gary Cornell; \textit{Core Java}, 7th edition.
@@ -4335,25 +4352,29 @@ necessarily.
 %implementačních prací.}
 
 %*****************************************************************************
-\chapter{Obsah přiloženého CD}
-\textbf{\large Tato příloha je povinná pro každou práci. Každá práce musí totiž obsahovat přiložené CD. Viz dále.}
+\chapter{Contents of the attached CD}
+%\textbf{\large Tato příloha je povinná pro každou práci. Každá práce musí totiž
+%obsahovat přiložené CD. Viz dále.}
 
-Může vypadat například takto. Váš seznam samozřejmě bude odpovídat typu vaší práce. (viz \cite{infodp}):
+%Může vypadat například takto. Váš seznam samozřejmě bude odpovídat typu vaší
+%práce. (viz \cite{infodp}):
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=14cm]{figures/seznamcd}
-\caption{Seznam přiloženého CD --- příklad}
-\label{fig:seznamcd}
-\end{center}
-\end{figure}
+%\begin{figure}[h]
+%\begin{center}
+%\includegraphics[width=14cm]{figures/seznamcd}
+%\caption{Seznam přiloženého CD --- příklad}
+%\label{fig:seznamcd}
+%\end{center}
+%\end{figure}
 
-Na GNU/Linuxu si strukturu přiloženého CD můžete snadno vyrobit příkazem:\\ 
-\verb|$ tree . >tree.txt|\\
-Ve vzniklém souboru pak stačí pouze doplnit komentáře.
+%Na GNU/Linuxu si strukturu přiloženého CD můžete snadno vyrobit příkazem:\\ 
+%\verb|$ tree . >tree.txt|\\
+%Ve vzniklém souboru pak stačí pouze doplnit komentáře.
 
-Z \textbf{README.TXT} (případne index.html apod.)  musí být rovněž zřejmé, jak programy instalovat, spouštět a jaké požadavky mají tyto programy na hardware.
+%Z \textbf{README.TXT} (případne index.html apod.)  musí být rovněž zřejmé, jak
+%programy instalovat, spouštět a jaké požadavky mají tyto programy na hardware.
 
-Adresář \textbf{text}  musí obsahovat soubor s vlastním textem práce v PDF nebo PS formátu, který bude později použit pro prezentaci diplomové práce na WWW.
-
+%Adresář \textbf{text}  musí obsahovat soubor s vlastním textem práce v PDF nebo
+%PS formátu, který bude později použit pro prezentaci diplomové práce na WWW.
+\include{cd/tree}
 \end{document}
