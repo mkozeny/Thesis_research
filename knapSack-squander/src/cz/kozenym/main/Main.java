@@ -7,6 +7,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.StringTokenizer;
 
+import cz.kozenym.solver.KnapSack;
+
 public class Main {
 
 	private static final int capacity = 100;
@@ -18,9 +20,10 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		int [] v = new int[n];
 		int [] c = new int[n];
-		String inputTaskFile = "files/knap_4.txt";
-		String inputResFile = "files/knap_4_res.txt";
-		String outputFile = "files/knap_4_sol.txt";
+		String numberOfThings = args.length == 1 ? args[0]:"4";
+		String inputTaskFile = "files/knap_"+numberOfThings+".txt";
+		String inputResFile = "files/knap_"+numberOfThings+"_res.txt";
+		String outputFile = "files/knap_"+numberOfThings+"_sol.txt";
 		BufferedReader inTask = new BufferedReader(new FileReader(inputTaskFile));
 		BufferedReader inResult = new BufferedReader(new FileReader(inputResFile));
 		BufferedWriter out = new BufferedWriter(new FileWriter(outputFile));

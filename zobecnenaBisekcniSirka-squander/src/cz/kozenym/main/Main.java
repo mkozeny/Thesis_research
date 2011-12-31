@@ -33,18 +33,22 @@ public class Main {
 		int a = args.length>=2?Integer.parseInt(args[1]):3;
 		int treshold = args.length>=3?Integer.parseInt(args[2]):3;
 		int maxGrade = args.length>=4?Integer.parseInt(args[3]):4;
-		String useInputFile = args.length==5?args[4]:"yes";
-		if(args.length!=5)
+		String useInputFile = args.length>=5?args[4]:"yes";
+		String path = args.length>=6?args[5]:"/home/kozenym/Desktop/DP/measurement/graphs/";
+		String outputPath = args.length==7?args[6]:"/home/kozenym/Desktop/DP/measurement/data/zobecnenaBisekcniSirka/imperatively/";
+		if(args.length!=5 || args.length!=6 || args.length!=7)
 		{
 			System.out.println("First argument is count of nodes");
 			System.out.println("Second argument is a number - size of node set a");
 			System.out.println("Third argument is treshold");
 			System.out.println("Fourth argument is max grade of teh node in the graph");
 			System.out.println("Fifth argument is whether to use graph from input file");
+			System.out.println("Sixth optional is input graph filepath");
+			System.out.println("Seventh optional is output filepath");
 		}
 		System.out.println("Used arguments: countOfNodes="+countOfNodes+", a="+a+", treshold="+treshold+", maxGrade="+maxGrade);
 		GraphExtension ge = new GraphExtension(countOfNodes, maxGrade);
-		BufferedWriter out = new BufferedWriter(new FileWriter("/home/kozenym/Desktop/DP/measurement/data/zobecnenaBisekcniSirka/squander/"+countOfNodes+"_"+maxGrade+"/log.txt"));
+		BufferedWriter out = new BufferedWriter(new FileWriter(outputPath+countOfNodes+"_"+maxGrade+"/log"));
 		if(!useInputFile.equals("yes"))
 		{
 			ge.generateGraph(true);
@@ -52,7 +56,7 @@ public class Main {
 		else
 		{
 			ObjectInputStream ois = new ObjectInputStream(new FileInputStream(
-				"/home/kozenym/Desktop/DP/measurement/graphs/graph_"+countOfNodes+"_"+maxGrade+".txt"));
+				path+"graph_"+countOfNodes+"_"+maxGrade+".txt"));
 			Graph inputGraph = (Graph) ois.readObject();
 			ois.close();
 			ge.setNodes(inputGraph.getNodes());
@@ -69,9 +73,9 @@ public class Main {
 		Set<Edge> commonEdges = new HashSet<Edge>();
 		long parseTime = getCpuTime();
 		ge.solveZobecnenaBisekcniSirkaGrafuProblem(resultA, resultN, commonEdges, a, treshold);
-		long time=0L;
+		long time=getCpuTime() - parseTime;
 		out.write("TIME: "
-				+ getTimeFormat().format(time=getCpuTime() - parseTime) + " ns");
+				+ getTimeFormat().format(time) + " ns");
 		System.out.println("TIME: "
 				+ getTimeFormat().format(time) + " ns");
 		out.close();

@@ -29,18 +29,22 @@ public class Main {
 		int l = args.length>=2?Integer.parseInt(args[1]):2;
 		int treshold = args.length>=3?Integer.parseInt(args[2]):4;
 		int maxGrade = args.length>=4?Integer.parseInt(args[3]):3;
-		String useInputFile = args.length==5?args[4]:"yes";
-		if(args.length!=5)
+		String useInputFile = args.length>=5?args[4]:"yes";
+		String path = args.length>=6?args[5]:"/home/kozenym/Desktop/DP/measurement/graphs/";
+		String outputPath = args.length==7?args[6]:"/home/kozenym/Desktop/DP/measurement/data/lDominantniMozinaGrafu/imperatively/";
+		if(args.length!=5 || args.length!=6 || args.length!=7)
 		{
 			System.out.println("First argument is count of nodes");
 			System.out.println("Second argument is l number - length of neighborhood");
 			System.out.println("Third argument is treshold");
 			System.out.println("Fourth argument is max grade of teh node in the graph");
 			System.out.println("Fifth argument is whether to use graph from input file");
+			System.out.println("Sixth optional is input graph filepath");
+			System.out.println("Seventh optional is output filepath");
 		}
 		System.out.println("Used arguments: countOfNodes="+countOfNodes+", l="+l+", treshold="+treshold+", maxGrade="+maxGrade);
 		GraphExtension ge = new GraphExtension(countOfNodes,l,treshold, maxGrade);
-		BufferedWriter out = new BufferedWriter(new FileWriter("/home/kozenym/Desktop/DP/measurement/data/lDominantniMozinaGrafu/imperatively/"+countOfNodes+"_"+maxGrade+"/log.txt"));
+		BufferedWriter out = new BufferedWriter(new FileWriter(outputPath+countOfNodes+"_"+maxGrade+"/log"));
 		if(!useInputFile.equals("yes"))
 		{
 			ge.generateGraph();
@@ -48,7 +52,7 @@ public class Main {
 		else
 		{
 			ObjectInputStream ois = new ObjectInputStream(new FileInputStream(
-				"/home/kozenym/Desktop/DP/measurement/graphs/graph_"+countOfNodes+"_"+maxGrade+".txt"));
+				path+"graph_"+countOfNodes+"_"+maxGrade+".txt"));
 			Graph inputGraph = (Graph) ois.readObject();
 			ois.close();
 			ge.setNodes(inputGraph.getNodes());

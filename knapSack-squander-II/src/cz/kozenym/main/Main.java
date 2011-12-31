@@ -14,6 +14,9 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.StringTokenizer;
 
+import cz.kozenym.solver.KnapSack;
+import cz.kozenym.solver.Thing;
+
 public class Main {
 
 	//private static final int capacity = 100;
