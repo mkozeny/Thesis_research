@@ -194,7 +194,7 @@ public class GraphExtension extends Graph {
 			" all q1: result.elts | all q2: (result.elts - q1) |"
 					+ " (all n: q2.neighbourhood.elts | n.value!=q1.value)" /*there is no node appearing in result set more than once*/})
 	@Modifies({ "result.elts", "result.length" })/*we allow to modify elements of result set and its length*/
-	public void solveLDominantniMnozinaGrafuProblem(Set<ExtendedNode> result) {
+	public void solveLDominantSetOfGraphProblem(Set<ExtendedNode> result) {
 		Squander.exe(this, result);
 	}
 }

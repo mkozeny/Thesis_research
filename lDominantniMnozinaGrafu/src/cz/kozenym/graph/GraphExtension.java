@@ -30,7 +30,7 @@ public class GraphExtension extends Graph {
 	/*
 	 * BB-DFS implementation
 	 */
-	public void solveLDominantniMnozinaGrafuProblem() {
+	public void solveLDominantSetOfGraphProblem() {
 		while (!this.stateStack.empty()) {
 			State actualState = this.stateStack.pop();
 			/*generating followers of actual state*/

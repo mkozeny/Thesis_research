@@ -67,7 +67,7 @@ public class Main {
 		}
 		Set<ExtendedNode> result = new HashSet<ExtendedNode>();
 		long parseTime = getCpuTime();
-		ge.solveLDominantniMnozinaGrafuProblem(result);
+		ge.solveLDominantSetOfGraphProblem(result);
 		long time=getCpuTime() - parseTime;
 		out.write("TIME: "
 				+ getTimeFormat().format(time) + " ns");

@@ -60,7 +60,7 @@ public class Main {
 			ge.setMatrixOfFollowers(inputGraph.getMatrixOfFollowers());
 		}
 		long parseTime = getCpuTime();
-		ge.solveLDominantniMnozinaGrafuProblem();
+		ge.solveLDominantSetOfGraphProblem();
 		long time=0L;
 		out.write("TIME: "
 				+ getTimeFormat().format(time=getCpuTime() - parseTime) + " ns");

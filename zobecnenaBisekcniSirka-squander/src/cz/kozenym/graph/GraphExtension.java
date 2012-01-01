@@ -30,7 +30,7 @@ public class GraphExtension extends Graph {
 		"((this.edgesArray[i].dest in resultA.elts) && (this.edgesArray[i].src in resultN.elts))))?1:0) <= treshold"})
 	/*we allow to modify elements and length of both node groups*/
 	@Modifies ({ "resultA.elts" , "resultN.elts", "resultA.length" , "resultN.length"})
-	public void solveZobecnenaBisekcniSirkaGrafuProblem(Set<Node> resultA, Set<Node> resultN, Set<Edge> commonEdges, int a, int treshold)
+	public void solveGeneralBisectionBreadthProblem(Set<Node> resultA, Set<Node> resultN, Set<Edge> commonEdges, int a, int treshold)
 	{
 		Squander.exe(this, resultA, resultN, commonEdges, a, treshold);
 	}

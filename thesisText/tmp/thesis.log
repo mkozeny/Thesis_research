@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  1 JAN 2012 13:35
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  1 JAN 2012 18:29
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -1118,12 +1118,6 @@ LaTeX Warning: Label `samplecode' multiply defined.
 
 LaTeX Warning: Label `ldomset2' multiply defined.
 
-
-LaTeX Warning: Label `tab:hpTimes' multiply defined.
-
-
-LaTeX Warning: Label `tab:hpTimes' multiply defined.
-
 (./cd/tree.aux))
 \openout1 = `thesis.aux'.
 
@@ -1335,69 +1329,63 @@ File: figures/pf.png Graphic file (type png)
 File: figures/jconsole/overview.png Graphic file (type png)
 
 <use figures/jconsole/overview.png> [52 <./figures/jconsole/overview.png (PNG c
-opy)>] (./src/hp/imp/GraphExecutor.java) [53]
+opy)>] (./src/hp/imp/GraphExecutor.java)
+Underfull \vbox (badness 3657) has occurred while \output is active []
 
-Package caption Warning: \label before \caption on input line 3620.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `tab:hpTimes' on page 54 undefined on input line 2270.
-
-
-
+ [53]
 Overfull \hbox (7.80403pt too wide) in paragraph at lines 2288--2308
  [][] 
  []
 
 [54] [55] (./figures/graphs/hp/imp/40-5/heap.tex
-<figures/heap-hp-i-40-5-gc.pdf, id=1345, 361.35pt x 252.945pt>
+<figures/heap-hp-i-40-5-gc.pdf, id=1341, 361.35pt x 252.945pt>
 File: figures/heap-hp-i-40-5-gc.pdf Graphic file (type pdf)
 
 <use figures/heap-hp-i-40-5-gc.pdf>)
 (./figures/graphs/hp/squander/40-5/heap.tex
-<figures/heap-hp-s-40-5-gc.pdf, id=1346, 361.35pt x 252.945pt>
+<figures/heap-hp-s-40-5-gc.pdf, id=1342, 361.35pt x 252.945pt>
 File: figures/heap-hp-s-40-5-gc.pdf Graphic file (type pdf)
 
 <use figures/heap-hp-s-40-5-gc.pdf>) (./figures/graphs/hp/imp/40-5/cpu.tex
-<figures/cpu-hp-i-40-5.pdf, id=1347, 361.35pt x 252.945pt>
+<figures/cpu-hp-i-40-5.pdf, id=1343, 361.35pt x 252.945pt>
 File: figures/cpu-hp-i-40-5.pdf Graphic file (type pdf)
 
 <use figures/cpu-hp-i-40-5.pdf>) (./figures/graphs/hp/squander/40-5/cpu.tex
-<figures/cpu-hp-s-40-5-gc.pdf, id=1348, 361.35pt x 252.945pt>
+<figures/cpu-hp-s-40-5-gc.pdf, id=1344, 361.35pt x 252.945pt>
 File: figures/cpu-hp-s-40-5-gc.pdf Graphic file (type pdf)
 
 <use figures/cpu-hp-s-40-5-gc.pdf>) (./figures/graphs/hp/imp/50-4/heap.tex
-<figures/heap-hp-i-50-4-gc.pdf, id=1349, 361.35pt x 252.945pt>
+<figures/heap-hp-i-50-4-gc.pdf, id=1345, 361.35pt x 252.945pt>
 File: figures/heap-hp-i-50-4-gc.pdf Graphic file (type pdf)
 
 <use figures/heap-hp-i-50-4-gc.pdf>)
 (./figures/graphs/hp/squander/50-4/heap.tex
-<figures/heap-hp-s-50-4-gc.pdf, id=1350, 361.35pt x 252.945pt>
+<figures/heap-hp-s-50-4-gc.pdf, id=1346, 361.35pt x 252.945pt>
 File: figures/heap-hp-s-50-4-gc.pdf Graphic file (type pdf)
 
 <use figures/heap-hp-s-50-4-gc.pdf>) (./figures/graphs/hp/imp/50-4/cpu.tex
-<figures/cpu-hp-i-50-4.pdf, id=1351, 361.35pt x 252.945pt>
+<figures/cpu-hp-i-50-4.pdf, id=1347, 361.35pt x 252.945pt>
 File: figures/cpu-hp-i-50-4.pdf Graphic file (type pdf)
 
 <use figures/cpu-hp-i-50-4.pdf>) (./figures/graphs/hp/squander/50-4/cpu.tex
-<figures/cpu-hp-s-50-4-gc.pdf, id=1352, 361.35pt x 252.945pt>
+<figures/cpu-hp-s-50-4-gc.pdf, id=1348, 361.35pt x 252.945pt>
 File: figures/cpu-hp-s-50-4-gc.pdf Graphic file (type pdf)
 
 <use figures/cpu-hp-s-50-4-gc.pdf>) (./figures/graphs/hp/imp/80-3/heap.tex
-<figures/heap-hp-i-80-3-gc.pdf, id=1353, 361.35pt x 252.945pt>
+<figures/heap-hp-i-80-3-gc.pdf, id=1349, 361.35pt x 252.945pt>
 File: figures/heap-hp-i-80-3-gc.pdf Graphic file (type pdf)
 
 <use figures/heap-hp-i-80-3-gc.pdf>)
 (./figures/graphs/hp/squander/80-3/heap.tex
-<figures/heap-hp-s-80-3-gc.pdf, id=1354, 361.35pt x 252.945pt>
+<figures/heap-hp-s-80-3-gc.pdf, id=1350, 361.35pt x 252.945pt>
 File: figures/heap-hp-s-80-3-gc.pdf Graphic file (type pdf)
 
 <use figures/heap-hp-s-80-3-gc.pdf>) (./figures/graphs/hp/imp/80-3/cpu.tex
-<figures/cpu-hp-i-80-3.pdf, id=1355, 361.35pt x 252.945pt>
+<figures/cpu-hp-i-80-3.pdf, id=1351, 361.35pt x 252.945pt>
 File: figures/cpu-hp-i-80-3.pdf Graphic file (type pdf)
 
 <use figures/cpu-hp-i-80-3.pdf>) (./figures/graphs/hp/squander/80-3/cpu.tex
-<figures/cpu-hp-s-80-3-gc.pdf, id=1356, 361.35pt x 252.945pt>
+<figures/cpu-hp-s-80-3-gc.pdf, id=1352, 361.35pt x 252.945pt>
 File: figures/cpu-hp-s-80-3-gc.pdf Graphic file (type pdf)
 
 <use figures/cpu-hp-s-80-3-gc.pdf>) [56 <./figures/heap-hp-i-40-5-gc.pdf> <./fi
@@ -1406,7 +1394,7 @@ hp-s-40-5-gc.pdf>] [58 <./figures/heap-hp-i-50-4-gc.pdf> <./figures/heap-hp-s-5
 0-4-gc.pdf>] [59 <./figures/cpu-hp-i-50-4.pdf> <./figures/cpu-hp-s-50-4-gc.pdf>
 ] [60 <./figures/heap-hp-i-80-3-gc.pdf> <./figures/heap-hp-s-80-3-gc.pdf>]
 [61 <./figures/cpu-hp-i-80-3.pdf> <./figures/cpu-hp-s-80-3-gc.pdf>]
-Overfull \hbox (34.3067pt too wide) detected at line 2652
+Overfull \hbox (34.3067pt too wide) detected at line 2653
 \OML/cmm/m/it/10.95 varX \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 E\OT1/cmr/m/n
 /10.95 (\OML/cmm/m/it/10.95 X \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 EX\OT
 1/cmr/m/n/10.95 )[] = [] \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 [[][] + [][
@@ -1414,29 +1402,29 @@ Overfull \hbox (34.3067pt too wide) detected at line 2652
  []
 
 
-Overfull \hbox (14.79372pt too wide) detected at line 2653
+Overfull \hbox (14.79372pt too wide) detected at line 2654
 [][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][] +
  []
 
 
-Overfull \hbox (20.26872pt too wide) detected at line 2654
+Overfull \hbox (20.26872pt too wide) detected at line 2655
 [][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][] +
  []
 
 
-Overfull \hbox (42.16875pt too wide) detected at line 2656
+Overfull \hbox (42.16875pt too wide) detected at line 2657
 [][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][] +
  []
 
 
-Overfull \hbox (31.21873pt too wide) detected at line 2657
+Overfull \hbox (31.21873pt too wide) detected at line 2658
 [][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][] +
  []
 
 [62
 
 ]
-Overfull \hbox (3.51749pt too wide) in paragraph at lines 2670--2673
+Overfull \hbox (3.51749pt too wide) in paragraph at lines 2671--2674
 []\T1/cmr/m/n/10.95 now we com-pute me-dian $\OML/cmm/m/it/10.95 EXY$ \T1/cmr/m
 /n/10.95 and $\OML/cmm/m/it/10.95 EXZ$\T1/cmr/m/n/10.95 , $\OML/cmm/m/it/10.95 
 cov\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X; Y\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/
@@ -1448,7 +1436,7 @@ L/cmm/m/it/10.95 cor\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X; Z\OT1/cmr/m/n/10
  []
 
 
-Overfull \hbox (35.33556pt too wide) detected at line 2679
+Overfull \hbox (35.33556pt too wide) detected at line 2680
 \OT1/cmr/m/n/10.95 60 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 3600000 + 70 \
 OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 3940 + 70 \OMS/cmsy/m/n/10.95 ^^A \OT
 1/cmr/m/n/10.95 5100 + 70 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 3600000 + 
@@ -1459,29 +1447,29 @@ OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 3940 + 70 \OMS/cmsy/m/n/10.95 ^^A \OT
  []
 
 [63] [64] (./src/knapsack/imp/Knapsack.java) [65]
-Overfull \hbox (4.95694pt too wide) in paragraph at lines 2765--2778
+Overfull \hbox (4.95694pt too wide) in paragraph at lines 2766--2779
  [][] 
  []
 
 
-Overfull \hbox (34.64566pt too wide) in paragraph at lines 2794--2810
+Overfull \hbox (34.64566pt too wide) in paragraph at lines 2795--2811
  [][] 
  []
 
 (./figures/graphs/ks/imp/40/heap.tex
-<figures/heap-ks-i-40.pdf, id=1460, 361.35pt x 252.945pt>
+<figures/heap-ks-i-40.pdf, id=1461, 361.35pt x 252.945pt>
 File: figures/heap-ks-i-40.pdf Graphic file (type pdf)
 
 <use figures/heap-ks-i-40.pdf>) (./figures/graphs/ks/squander/40/heap.tex
-<figures/heap-ks-s-40.pdf, id=1461, 361.35pt x 252.945pt>
+<figures/heap-ks-s-40.pdf, id=1462, 361.35pt x 252.945pt>
 File: figures/heap-ks-s-40.pdf Graphic file (type pdf)
 
 <use figures/heap-ks-s-40.pdf>) (./figures/graphs/ks/imp/40/cpu.tex
-<figures/cpu-ks-i-40.pdf, id=1462, 361.35pt x 252.945pt>
+<figures/cpu-ks-i-40.pdf, id=1463, 361.35pt x 252.945pt>
 File: figures/cpu-ks-i-40.pdf Graphic file (type pdf)
 
 <use figures/cpu-ks-i-40.pdf>) (./figures/graphs/ks/squander/40/cpu.tex
-<figures/cpu-ks-s-40.pdf, id=1463, 361.35pt x 252.945pt>
+<figures/cpu-ks-s-40.pdf, id=1464, 361.35pt x 252.945pt>
 File: figures/cpu-ks-s-40.pdf Graphic file (type pdf)
 
 <use figures/cpu-ks-s-40.pdf>) [66] [67 <./figures/heap-ks-i-40.pdf> <./figures
@@ -1489,7 +1477,7 @@ File: figures/cpu-ks-s-40.pdf Graphic file (type pdf)
 ] [69
 
 ]
-Overfull \hbox (19.15215pt too wide) detected at line 2918
+Overfull \hbox (19.15215pt too wide) detected at line 2919
 [] \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 11 + [] \OMS/cmsy/m/n/10.95 ^^A \
 OT1/cmr/m/n/10.95 12 + [] \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 13 + [] \O
 MS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 14 + [] \OMS/cmsy/m/n/10.95 ^^A \OT1/c
@@ -1501,7 +1489,7 @@ n/10.95 ^^A \OT1/cmr/m/n/10.95 20 + [] \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.
  []
 
 
-Overfull \hbox (26.02962pt too wide) detected at line 2929
+Overfull \hbox (26.02962pt too wide) detected at line 2930
 \OML/cmm/m/it/10.95 varZ \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 E\OT1/cmr/m/n
 /10.95 (\OML/cmm/m/it/10.95 Z \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 EZ\OT
 1/cmr/m/n/10.95 )[] = [] \OMS/cmsy/m/n/10.95 ^^A [][] \OT1/cmr/m/n/10.95 + [] \
@@ -1510,15 +1498,7 @@ OMS/cmsy/m/n/10.95 ^^A [][] \OT1/cmr/m/n/10.95 + [] \OMS/cmsy/m/n/10.95 ^^A [][
  []
 
 
-Overfull \hbox (3.56035pt too wide) detected at line 2931
-[] \OMS/cmsy/m/n/10.95 ^^A [][] \OT1/cmr/m/n/10.95 + [] \OMS/cmsy/m/n/10.95 ^^A
- [][] \OT1/cmr/m/n/10.95 + [] \OMS/cmsy/m/n/10.95 ^^A [][] \OT1/cmr/m/n/10.95 +
- [] \OMS/cmsy/m/n/10.95 ^^A [][] \OT1/cmr/m/n/10.95 + [] \OMS/cmsy/m/n/10.95 ^^
-A [][] \OT1/cmr/m/n/10.95 +
- []
-
-
-Overfull \hbox (30.93538pt too wide) detected at line 2932
+Overfull \hbox (3.56035pt too wide) detected at line 2932
 [] \OMS/cmsy/m/n/10.95 ^^A [][] \OT1/cmr/m/n/10.95 + [] \OMS/cmsy/m/n/10.95 ^^A
  [][] \OT1/cmr/m/n/10.95 + [] \OMS/cmsy/m/n/10.95 ^^A [][] \OT1/cmr/m/n/10.95 +
  [] \OMS/cmsy/m/n/10.95 ^^A [][] \OT1/cmr/m/n/10.95 + [] \OMS/cmsy/m/n/10.95 ^^
@@ -1549,8 +1529,16 @@ Overfull \hbox (30.93538pt too wide) detected at line 2935
 A [][] \OT1/cmr/m/n/10.95 +
  []
 
+
+Overfull \hbox (30.93538pt too wide) detected at line 2936
+[] \OMS/cmsy/m/n/10.95 ^^A [][] \OT1/cmr/m/n/10.95 + [] \OMS/cmsy/m/n/10.95 ^^A
+ [][] \OT1/cmr/m/n/10.95 + [] \OMS/cmsy/m/n/10.95 ^^A [][] \OT1/cmr/m/n/10.95 +
+ [] \OMS/cmsy/m/n/10.95 ^^A [][] \OT1/cmr/m/n/10.95 + [] \OMS/cmsy/m/n/10.95 ^^
+A [][] \OT1/cmr/m/n/10.95 +
+ []
+
 [70]
-Overfull \hbox (18.84717pt too wide) detected at line 2957
+Overfull \hbox (18.84717pt too wide) detected at line 2958
 \OML/cmm/m/it/10.95 EXZ \OT1/cmr/m/n/10.95 = [] \OMS/cmsy/m/n/10.95 ^^A \OT1/cm
 r/m/n/10.95 1 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 450\OML/cmm/m/it/10.95
  :\OT1/cmr/m/n/10.95 56 + [] \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 2 \OMS/
@@ -1565,7 +1553,7 @@ y/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 4 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95
  []
 
 
-Overfull \hbox (29.05212pt too wide) detected at line 2958
+Overfull \hbox (29.05212pt too wide) detected at line 2959
 [] \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 7 \OMS/cmsy/m/n/10.95 ^^A \OT1/cm
 r/m/n/10.95 4839\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 412 + [] \OMS/cmsy/m/n/
 10.95 ^^A \OT1/cmr/m/n/10.95 8 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 6092\
@@ -1579,74 +1567,74 @@ sy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 12 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.
  []
 
 [71] [72] (./src/lDominantSet/imp/LDomSet.java) [73]
-Overfull \hbox (7.66754pt too wide) in paragraph at lines 3039--3059
+Overfull \hbox (7.66754pt too wide) in paragraph at lines 3040--3060
 [][][] 
  []
 
 [74]
-Overfull \hbox (2.2236pt too wide) in paragraph at lines 3098--3117
+Overfull \hbox (2.2236pt too wide) in paragraph at lines 3099--3118
 [][][] 
  []
 
 
-Overfull \hbox (15.53407pt too wide) in paragraph at lines 3157--3176
+Overfull \hbox (15.53407pt too wide) in paragraph at lines 3158--3177
 [][][] 
  []
 
 [75] [76
 
 ] (./figures/graphs/ldsg/imp/50-2/2/heap.tex
-<figures/heap-ldsg-i-50-2-2.pdf, id=1574, 361.35pt x 252.945pt>
+<figures/heap-ldsg-i-50-2-2.pdf, id=1581, 361.35pt x 252.945pt>
 File: figures/heap-ldsg-i-50-2-2.pdf Graphic file (type pdf)
 
 <use figures/heap-ldsg-i-50-2-2.pdf>)
 (./figures/graphs/ldsg/squander/50-2/2/heap.tex
-<figures/heap-ldsg-s-50-2-2.pdf, id=1575, 361.35pt x 252.945pt>
+<figures/heap-ldsg-s-50-2-2.pdf, id=1582, 361.35pt x 252.945pt>
 File: figures/heap-ldsg-s-50-2-2.pdf Graphic file (type pdf)
 
 <use figures/heap-ldsg-s-50-2-2.pdf>) (./figures/graphs/ldsg/imp/50-2/2/cpu.tex
-<figures/cpu-ldsg-i-50-2-2.pdf, id=1576, 361.35pt x 252.945pt>
+<figures/cpu-ldsg-i-50-2-2.pdf, id=1583, 361.35pt x 252.945pt>
 File: figures/cpu-ldsg-i-50-2-2.pdf Graphic file (type pdf)
 
 <use figures/cpu-ldsg-i-50-2-2.pdf>)
 (./figures/graphs/ldsg/squander/50-2/2/cpu.tex
-<figures/cpu-ldsg-s-50-2-2.pdf, id=1577, 361.35pt x 252.945pt>
+<figures/cpu-ldsg-s-50-2-2.pdf, id=1584, 361.35pt x 252.945pt>
 File: figures/cpu-ldsg-s-50-2-2.pdf Graphic file (type pdf)
 
 <use figures/cpu-ldsg-s-50-2-2.pdf>) (./figures/graphs/ldsg/imp/50-2/3/heap.tex
-<figures/heap-ldsg-i-50-2-3.pdf, id=1578, 361.35pt x 252.945pt>
+<figures/heap-ldsg-i-50-2-3.pdf, id=1585, 361.35pt x 252.945pt>
 File: figures/heap-ldsg-i-50-2-3.pdf Graphic file (type pdf)
 
 <use figures/heap-ldsg-i-50-2-3.pdf>)
 (./figures/graphs/ldsg/squander/50-2/3/heap.tex
-<figures/heap-ldsg-s-50-2-3.pdf, id=1579, 361.35pt x 252.945pt>
+<figures/heap-ldsg-s-50-2-3.pdf, id=1586, 361.35pt x 252.945pt>
 File: figures/heap-ldsg-s-50-2-3.pdf Graphic file (type pdf)
 
 <use figures/heap-ldsg-s-50-2-3.pdf>) (./figures/graphs/ldsg/imp/50-2/3/cpu.tex
-<figures/cpu-ldsg-i-50-2-3.pdf, id=1580, 361.35pt x 252.945pt>
+<figures/cpu-ldsg-i-50-2-3.pdf, id=1587, 361.35pt x 252.945pt>
 File: figures/cpu-ldsg-i-50-2-3.pdf Graphic file (type pdf)
 
 <use figures/cpu-ldsg-i-50-2-3.pdf>)
 (./figures/graphs/ldsg/squander/50-2/3/cpu.tex
-<figures/cpu-ldsg-s-50-2-3.pdf, id=1581, 361.35pt x 252.945pt>
+<figures/cpu-ldsg-s-50-2-3.pdf, id=1588, 361.35pt x 252.945pt>
 File: figures/cpu-ldsg-s-50-2-3.pdf Graphic file (type pdf)
 
 <use figures/cpu-ldsg-s-50-2-3.pdf>) (./figures/graphs/ldsg/imp/50-2/4/heap.tex
-<figures/heap-ldsg-i-50-2-4.pdf, id=1582, 361.35pt x 252.945pt>
+<figures/heap-ldsg-i-50-2-4.pdf, id=1589, 361.35pt x 252.945pt>
 File: figures/heap-ldsg-i-50-2-4.pdf Graphic file (type pdf)
 
 <use figures/heap-ldsg-i-50-2-4.pdf>)
 (./figures/graphs/ldsg/squander/50-2/4/heap.tex
-<figures/heap-ldsg-s-50-2-4.pdf, id=1583, 361.35pt x 252.945pt>
+<figures/heap-ldsg-s-50-2-4.pdf, id=1590, 361.35pt x 252.945pt>
 File: figures/heap-ldsg-s-50-2-4.pdf Graphic file (type pdf)
 
 <use figures/heap-ldsg-s-50-2-4.pdf>) (./figures/graphs/ldsg/imp/50-2/4/cpu.tex
-<figures/cpu-ldsg-i-50-2-4.pdf, id=1584, 361.35pt x 252.945pt>
+<figures/cpu-ldsg-i-50-2-4.pdf, id=1591, 361.35pt x 252.945pt>
 File: figures/cpu-ldsg-i-50-2-4.pdf Graphic file (type pdf)
 
 <use figures/cpu-ldsg-i-50-2-4.pdf>)
 (./figures/graphs/ldsg/squander/50-2/4/cpu.tex
-<figures/cpu-ldsg-s-50-2-4.pdf, id=1585, 361.35pt x 252.945pt>
+<figures/cpu-ldsg-s-50-2-4.pdf, id=1592, 361.35pt x 252.945pt>
 File: figures/cpu-ldsg-s-50-2-4.pdf Graphic file (type pdf)
 
 <use figures/cpu-ldsg-s-50-2-4.pdf>) [77 <./figures/heap-ldsg-i-50-2-2.pdf> <./
@@ -1659,7 +1647,7 @@ g-s-50-2-3.pdf>] [81 <./figures/heap-ldsg-i-50-2-4.pdf> <./figures/heap-ldsg-s-
 
 
 ]
-Overfull \hbox (3.51749pt too wide) in paragraph at lines 3434--3437
+Overfull \hbox (3.51749pt too wide) in paragraph at lines 3435--3438
 []\T1/cmr/m/n/10.95 now we com-pute me-dian $\OML/cmm/m/it/10.95 EXY$ \T1/cmr/m
 /n/10.95 and $\OML/cmm/m/it/10.95 EXZ$\T1/cmr/m/n/10.95 , $\OML/cmm/m/it/10.95 
 cov\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X; Y\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/
@@ -1671,59 +1659,59 @@ L/cmm/m/it/10.95 cor\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X; Z\OT1/cmr/m/n/10
  []
 
 [84] [85] [86] (./src/generalBisectionBreadth/imp/Gbb.java) [87]
-Overfull \hbox (7.66754pt too wide) in paragraph at lines 3588--3614
+Overfull \hbox (7.66754pt too wide) in paragraph at lines 3589--3615
 [][][] 
  []
 
 [88]
-Overfull \hbox (18.55542pt too wide) in paragraph at lines 3659--3685
+Overfull \hbox (18.55542pt too wide) in paragraph at lines 3660--3686
 [][][] 
  []
 
 
-Overfull \hbox (18.55542pt too wide) in paragraph at lines 3730--3756
+Overfull \hbox (18.55542pt too wide) in paragraph at lines 3731--3757
 [][][] 
  []
 
 [89] [90
 
 ] (./figures/graphs/gbb/imp/70-2-1-3/heap.tex
-<figures/heap-gbb-i-70-2-1-3.pdf, id=1706, 361.35pt x 252.945pt>
+<figures/heap-gbb-i-70-2-1-3.pdf, id=1714, 361.35pt x 252.945pt>
 File: figures/heap-gbb-i-70-2-1-3.pdf Graphic file (type pdf)
 
 <use figures/heap-gbb-i-70-2-1-3.pdf>)
 (./figures/graphs/gbb/squander/70-2-1-3/heap.tex
-<figures/heap-gbb-s-70-2-1-3.pdf, id=1707, 361.35pt x 252.945pt>
+<figures/heap-gbb-s-70-2-1-3.pdf, id=1715, 361.35pt x 252.945pt>
 File: figures/heap-gbb-s-70-2-1-3.pdf Graphic file (type pdf)
 
 <use figures/heap-gbb-s-70-2-1-3.pdf>)
 (./figures/graphs/gbb/imp/70-2-1-3/cpu.tex
-<figures/cpu-gbb-i-70-2-1-3.pdf, id=1708, 361.35pt x 252.945pt>
+<figures/cpu-gbb-i-70-2-1-3.pdf, id=1716, 361.35pt x 252.945pt>
 File: figures/cpu-gbb-i-70-2-1-3.pdf Graphic file (type pdf)
 
 <use figures/cpu-gbb-i-70-2-1-3.pdf>)
 (./figures/graphs/gbb/squander/70-2-1-3/cpu.tex
-<figures/cpu-gbb-s-70-2-1-3.pdf, id=1709, 361.35pt x 252.945pt>
+<figures/cpu-gbb-s-70-2-1-3.pdf, id=1717, 361.35pt x 252.945pt>
 File: figures/cpu-gbb-s-70-2-1-3.pdf Graphic file (type pdf)
 
 <use figures/cpu-gbb-s-70-2-1-3.pdf>)
 (./figures/graphs/gbb/imp/50-2-1-2/heap.tex
-<figures/heap-gbb-i-50-2-1-2.pdf, id=1710, 361.35pt x 252.945pt>
+<figures/heap-gbb-i-50-2-1-2.pdf, id=1718, 361.35pt x 252.945pt>
 File: figures/heap-gbb-i-50-2-1-2.pdf Graphic file (type pdf)
 
 <use figures/heap-gbb-i-50-2-1-2.pdf>)
 (./figures/graphs/gbb/squander/50-2-1-2/heap.tex
-<figures/heap-gbb-s-50-2-1-2.pdf, id=1711, 361.35pt x 252.945pt>
+<figures/heap-gbb-s-50-2-1-2.pdf, id=1719, 361.35pt x 252.945pt>
 File: figures/heap-gbb-s-50-2-1-2.pdf Graphic file (type pdf)
 
 <use figures/heap-gbb-s-50-2-1-2.pdf>)
 (./figures/graphs/gbb/imp/50-2-1-2/cpu.tex
-<figures/cpu-gbb-i-50-2-1-2.pdf, id=1712, 361.35pt x 252.945pt>
+<figures/cpu-gbb-i-50-2-1-2.pdf, id=1720, 361.35pt x 252.945pt>
 File: figures/cpu-gbb-i-50-2-1-2.pdf Graphic file (type pdf)
 
 <use figures/cpu-gbb-i-50-2-1-2.pdf>)
 (./figures/graphs/gbb/squander/50-2-1-2/cpu.tex
-<figures/cpu-gbb-s-50-2-1-2.pdf, id=1713, 361.35pt x 252.945pt>
+<figures/cpu-gbb-s-50-2-1-2.pdf, id=1721, 361.35pt x 252.945pt>
 File: figures/cpu-gbb-s-50-2-1-2.pdf Graphic file (type pdf)
 
 <use figures/cpu-gbb-s-50-2-1-2.pdf>) [91 <./figures/heap-gbb-i-70-2-1-3.pdf> <
@@ -1731,38 +1719,38 @@ File: figures/cpu-gbb-s-50-2-1-2.pdf Graphic file (type pdf)
 igures/cpu-gbb-s-70-2-1-3.pdf>] [93 <./figures/heap-gbb-i-50-2-1-2.pdf> <./figu
 res/heap-gbb-s-50-2-1-2.pdf>] [94 <./figures/cpu-gbb-i-50-2-1-2.pdf> <./figures
 /cpu-gbb-s-50-2-1-2.pdf>]
-Overfull \hbox (11.61057pt too wide) detected at line 3919
+Overfull \hbox (11.61057pt too wide) detected at line 3920
 \OT1/cmr/m/n/10.95 1210 + 1400 + 2240 + 2010 + 38610 + 40870 + 9850 + 3600000 +
  3600000 + 40980 + 3600000 + 3600000+
  []
 
 
-Overfull \hbox (3.8437pt too wide) detected at line 3930
+Overfull \hbox (3.8437pt too wide) detected at line 3931
 [][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][] +
  []
 
 
-Overfull \hbox (14.79372pt too wide) detected at line 3931
+Overfull \hbox (14.79372pt too wide) detected at line 3932
 [][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][] +
  []
 
 
-Overfull \hbox (31.21873pt too wide) detected at line 3939
+Overfull \hbox (31.21873pt too wide) detected at line 3940
 [][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][] +
  []
 
 
-Overfull \hbox (36.69374pt too wide) detected at line 3940
+Overfull \hbox (36.69374pt too wide) detected at line 3941
 [][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][] +
  []
 
 
-Overfull \hbox (20.26872pt too wide) detected at line 3942
+Overfull \hbox (20.26872pt too wide) detected at line 3943
 [][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][] +
  []
 
 
-Overfull \hbox (20.26872pt too wide) detected at line 3947
+Overfull \hbox (20.26872pt too wide) detected at line 3948
 [][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][] +
  []
 
@@ -1770,17 +1758,17 @@ Overfull \hbox (20.26872pt too wide) detected at line 3947
 
 
 ]
-Overfull \hbox (47.64375pt too wide) detected at line 3948
+Overfull \hbox (47.64375pt too wide) detected at line 3949
 [][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][] +
  []
 
 
-Overfull \hbox (40.34377pt too wide) detected at line 3949
+Overfull \hbox (40.34377pt too wide) detected at line 3950
 [][] \OT1/cmr/m/n/10.95 + [][] + [][] + [][]]
  []
 
 
-Overfull \hbox (3.51749pt too wide) in paragraph at lines 3968--3971
+Overfull \hbox (3.51749pt too wide) in paragraph at lines 3969--3972
 []\T1/cmr/m/n/10.95 now we com-pute me-dian $\OML/cmm/m/it/10.95 EXY$ \T1/cmr/m
 /n/10.95 and $\OML/cmm/m/it/10.95 EXZ$\T1/cmr/m/n/10.95 , $\OML/cmm/m/it/10.95 
 cov\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X; Y\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/
@@ -1792,7 +1780,7 @@ L/cmm/m/it/10.95 cor\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X; Z\OT1/cmr/m/n/10
  []
 
 
-Overfull \hbox (7.96053pt too wide) detected at line 3977
+Overfull \hbox (7.96053pt too wide) detected at line 3978
 \OT1/cmr/m/n/10.95 30 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 2970 + 40 \OMS
 /cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 2980 + 40 \OMS/cmsy/m/n/10.95 ^^A \OT1/c
 mr/m/n/10.95 15010 + 40 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 7880 + 50 \O
@@ -1803,7 +1791,7 @@ A \OT1/cmr/m/n/10.95 254570+
  []
 
 
-Overfull \hbox (23.77719pt too wide) detected at line 3985
+Overfull \hbox (23.77719pt too wide) detected at line 3986
 \OT1/cmr/m/n/10.95 50 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 13350 + 50 \OM
 S/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 3600000 + 50 \OMS/cmsy/m/n/10.95 ^^A \O
 T1/cmr/m/n/10.95 3600000 + 60 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 82140 
@@ -1813,7 +1801,7 @@ T1/cmr/m/n/10.95 3600000 + 60 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 82140
  []
 
 
-Overfull \hbox (1.87717pt too wide) detected at line 3991
+Overfull \hbox (1.87717pt too wide) detected at line 3992
 \OT1/cmr/m/n/10.95 30 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 38610 + 30 \OM
 S/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 40870 + 40 \OMS/cmsy/m/n/10.95 ^^A \OT1
 /cmr/m/n/10.95 9850 + 40 \OMS/cmsy/m/n/10.95 ^^A \OT1/cmr/m/n/10.95 3600000 + 4
@@ -1827,7 +1815,7 @@ Chapter 7.
 [99
 
 ] [100]
-Overfull \hbox (11.49219pt too wide) in paragraph at lines 4204--4206
+Overfull \hbox (11.49219pt too wide) in paragraph at lines 4205--4207
 []\T1/cmtt/m/n/10.95 http://download.oracle.com/javase/1,5.0/docs/guide/languag
 e/annotations.html 
  []
@@ -1855,16 +1843,13 @@ Appendix C.
 
 ] (./thesis.aux (./cd/tree.aux))
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19033 strings out of 495027
- 296890 string characters out of 1181419
- 696038 words of memory out of 3000000
+ 19041 strings out of 495027
+ 297018 string characters out of 1181419
+ 754048 words of memory out of 3000000
  20713 multiletter control sequences out of 15000+50000
  27227 words of font info for 67 fonts, out of 3000000 for 9000
  42 hyphenation exceptions out of 8191
@@ -1897,9 +1882,9 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/pub
 lic/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on thesis.pdf (126 pages, 1066565 bytes).
+Output written on thesis.pdf (126 pages, 1069783 bytes).
 PDF statistics:
- 2813 PDF objects out of 2984 (max. 8388607)
- 837 named destinations out of 1000 (max. 500000)
+ 2821 PDF objects out of 2984 (max. 8388607)
+ 845 named destinations out of 1000 (max. 500000)
  679 words of extra memory for PDF output out of 10000 (max. 10000000)
 

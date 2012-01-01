@@ -67,7 +67,7 @@ public class Main {
 		Set<Node> resultN = new HashSet<Node>();
 		Set<Edge> commonEdges = new HashSet<Edge>();
 		long parseTime = getCpuTime();
-		ge.solveZobecnenaBisekcniSirkaGrafuProblem(resultA, resultN, commonEdges, a, treshold);
+		ge.solveGeneralBisectionBreadthProblem(resultA, resultN, commonEdges, a, treshold);
 		long time=getCpuTime() - parseTime;
 		out.write("TIME: "
 				+ getTimeFormat().format(time) + " ns");
