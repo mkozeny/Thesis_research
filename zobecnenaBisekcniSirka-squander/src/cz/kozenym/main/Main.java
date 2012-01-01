@@ -10,7 +10,6 @@ import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadMXBean;
 import java.text.DecimalFormat;
 import java.util.HashSet;
-import java.util.Scanner;
 import java.util.Set;
 
 import cz.kozenym.graph.Edge;
@@ -28,7 +27,6 @@ public class Main {
 	 * @throws ClassNotFoundException 
 	 */
 	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
-		Scanner sc = new Scanner(System.in);
 		int countOfNodes = args.length>=1?Integer.parseInt(args[0]):30;
 		int a = args.length>=2?Integer.parseInt(args[1]):3;
 		int treshold = args.length>=3?Integer.parseInt(args[2]):3;
@@ -65,9 +63,6 @@ public class Main {
 			ge.setMatrixOfFollowers(inputGraph.getMatrixOfFollowers());
 			ge.generateGraph(false);
 		}
-		//GraphExecutor grex = new GraphExecutor(2,ge.getExtendedNodes());
-		System.out.println("Waiting...");
-		sc.nextLine();
 		Set<Node> resultA = new HashSet<Node>();
 		Set<Node> resultN = new HashSet<Node>();
 		Set<Edge> commonEdges = new HashSet<Edge>();

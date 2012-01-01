@@ -24,7 +24,6 @@ public class Main {
 	 * @throws ClassNotFoundException 
 	 */
 	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
-		Scanner sc = new Scanner(System.in);
 		int countOfNodes = args.length>=1?Integer.parseInt(args[0]):30;
 		int l = args.length>=2?Integer.parseInt(args[1]):2;
 		int treshold = args.length>=3?Integer.parseInt(args[2]):4;
@@ -60,8 +59,6 @@ public class Main {
 			ge.setMatrixOfIncidency(inputGraph.getMatrixOfIncidency());
 			ge.setMatrixOfFollowers(inputGraph.getMatrixOfFollowers());
 		}
-		System.out.println("Waiting...");
-		sc.nextLine();
 		long parseTime = getCpuTime();
 		ge.solveLDominantniMnozinaGrafuProblem();
 		long time=0L;

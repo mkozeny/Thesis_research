@@ -83,171 +83,118 @@ public class GraphExtension extends Graph {
 		return directNeghbours;
 	}
 }
-*/
+ */
 
 package cz.kozenym.graph;
 
-import edu.mit.csail.sdg.annotations.Ensures;
-import edu.mit.csail.sdg.annotations.Modifies;
-import edu.mit.csail.sdg.annotations.Requires;
-import edu.mit.csail.sdg.squander.Squander;
-import edu.mit.csail.sdg.squander.annotations.FreshObjects;
-import edu.mit.csail.sdg.squander.annotations.Options;
-
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 import java.util.Set;
 
-import cz.kozenym.graph.Edge;
-import cz.kozenym.graph.Graph;
-import cz.kozenym.graph.Node;
 import cz.kozenym.graph.ExtendedNode.State;
+import edu.mit.csail.sdg.annotations.Ensures;
+import edu.mit.csail.sdg.annotations.Modifies;
+import edu.mit.csail.sdg.squander.Squander;
 
 public class GraphExtension extends Graph {
 
 	private int l;
-	
+
 	private int treshold;
-	
+
 	private Set<ExtendedNode> extendedNodes;
-	
-	
+
 	public GraphExtension(int n, int l, int treshold, int maxGrade) {
 		super(n, maxGrade);
 		this.l = l;
 		this.treshold = treshold;
 		this.extendedNodes = new HashSet<ExtendedNode>();
 	}
-	public void generateGraph(boolean fromPredecessor)
-	{
-		if(fromPredecessor)
+
+	public void generateGraph(boolean fromPredecessor) {
+		if (fromPredecessor)
 			super.generateGraph();
 		System.out.println("---EDGES---");
-		for(Edge e:this.edges)
-		{
-			System.out.println("Edge src: "+e.getSrc().getValue()+",  dest: "+e.getDest().getValue());
-			
-			
+		for (Edge e : this.edges) {
+			System.out.println("Edge src: " + e.getSrc().getValue()
+					+ ",  dest: " + e.getDest().getValue());
+
 		}
-		//List<ExtendedNode> actualNodes = new ArrayList<ExtendedNode>();
-		for(Node n:this.nodes)
-		{
+		// List<ExtendedNode> actualNodes = new ArrayList<ExtendedNode>();
+		for (Node n : this.nodes) {
 			extendedNodes.add(new ExtendedNode(n.getValue()));
 		}
-		for(ExtendedNode n:extendedNodes)
-		{
-			createNeighbourhood(n);
-			//break;
+		for (ExtendedNode n : extendedNodes) {
+			createNeighborhood(n);
+			// break;
 		}
-		for(ExtendedNode n:extendedNodes)
-		{
-			System.out.println("ACTUAL NODE: "+n.getValue());
-			for(ExtendedNode neighbour:n.getNeighbourhood())
-				System.out.println("	NEIGHBOUR NODE: "+neighbour.getValue());
+		for (ExtendedNode n : extendedNodes) {
+			System.out.println("ACTUAL NODE: " + n.getValue());
+			for (ExtendedNode neighbour : n.getNeighbourhood())
+				System.out.println("	NEIGHBOUR NODE: " + neighbour.getValue());
 		}
 		System.out.println("---END OF GRAPH GENERATION---");
 	}
 
-	private void createNeighbourhood(ExtendedNode node)
-	{
-		//System.out.println("---STARTING SEARCHING---");
+	private void createNeighborhood(ExtendedNode node) {
+		// System.out.println("---STARTING SEARCHING---");
 		Set<ExtendedNode> searchedNodes = new HashSet<ExtendedNode>();
 		searchedNodes.addAll(extendedNodes);
 		searchedNodes.remove(node);
-		for(ExtendedNode n:extendedNodes)
-		{
-			n.setState(State.FRESH);n.setDistance(Integer.MAX_VALUE);
+		for (ExtendedNode n : extendedNodes) {
+			n.setState(State.FRESH);
+			n.setDistance(Integer.MAX_VALUE);
 		}
-		node.setState(State.OPENED);node.setDistance(0);
+		node.setState(State.OPENED);
+		node.setDistance(0);
 		Queue<ExtendedNode> queue = new LinkedList<ExtendedNode>();
 		queue.add(node);
-		while(!queue.isEmpty())
-		{
+		while (!queue.isEmpty()) {
 			ExtendedNode tmp = queue.poll();
-			if(tmp.getDistance()==this.l)
+			if (tmp.getDistance() == this.l)
 				break;
-			//System.out.println("Node: "+tmp.getValue());
-			Set<ExtendedNode> directNeighbours = getNodesDirectNeighbours(tmp,searchedNodes);
-			for(ExtendedNode neighbour:directNeighbours)
-			{
-				if(neighbour.getState() == State.FRESH)
-				{
-					//System.out.print("Visiting neighbour: "+neighbour.getValue()+", state: "+neighbour.getState()+";");
+			// System.out.println("Node: "+tmp.getValue());
+			Set<ExtendedNode> directNeighbours = getNodesDirectNeighbours(tmp,
+					searchedNodes);
+			for (ExtendedNode neighbour : directNeighbours) {
+				if (neighbour.getState() == State.FRESH) {
+					// System.out.print("Visiting neighbour: "+neighbour.getValue()+", state: "+neighbour.getState()+";");
 					neighbour.setState(State.OPENED);
-					neighbour.setDistance(tmp.getDistance()+1);
+					neighbour.setDistance(tmp.getDistance() + 1);
 					queue.add(neighbour);
 					node.getNeighbourhood().add(neighbour);
 				}
 			}
-			//System.out.println();
+			// System.out.println();
 			tmp.setState(State.CLOSED);
 		}
-		//actualNodes.add((ExtendedNode) actual);
+		// actualNodes.add((ExtendedNode) actual);
 	}
-	
-	
-	private Set<ExtendedNode> getNodesDirectNeighbours(ExtendedNode tmp, Set<ExtendedNode> actualNodes)
-	{
+
+	private Set<ExtendedNode> getNodesDirectNeighbours(ExtendedNode tmp,
+			Set<ExtendedNode> actualNodes) {
 		Set<ExtendedNode> directNeghbours = new HashSet<ExtendedNode>();
-		for(ExtendedNode n:actualNodes)
-		{
-			if(this.matrixOfIncidency[tmp.getValue()][n.getValue()])
+		for (ExtendedNode n : actualNodes) {
+			if (this.matrixOfIncidency[tmp.getValue()][n.getValue()])
 				directNeghbours.add(n);
-			
+
 		}
 		return directNeghbours;
 	}
+
 	public Set<ExtendedNode> getExtendedNodes() {
 		return extendedNodes;
 	}
-	/*@Ensures ( {
-		"return[int] in this.extendedNodes.elts" ,
-		"return.length <= this.treshold" ,
-		"return[int].neighbourhood.elts == this.extendedNodes.elts",
-		" all q1: return[int] | (no q2: (return[int] - q1) |" +
-				" q1.value == q2.value)",
-		" all q1: return[int] | all q2: (return[int] - q1) |" +
-						" (all n: q2.neighbourhood.elts | n.value!=q1.value)"
-				
-		//"{x: return[int] | x.neighbourhood.elts == this.extendedNodes.elts}"
-		//"all i: int | i >= 0 && i < return.length - 1 => return[i].dest = return[i+1].src"
-		})
-	@Modifies ({ "return.length" , "return.elems" })
-	@FreshObjects ( cls = ExtendedNode[].class , num = 1 )
-//	/@Options(ensureAllInts = true)
-	public ExtendedNode [] solveLDominantniMnozinaGrafuProblem()
-	{
-		return Squander.exe(this);
-	}*/
-//	/@Requires("#this.allExtendedNodes.elts == 0")
-	@Ensures ( {
-		"result.elts in this.extendedNodes.elts" ,
-		"result.length = this.treshold" ,
-		/*"all e1: return.elts | all e2: (return.elts - e1) | (all n: e2.neighbourhood.elts |" +
-		" (n.value!=e1.value)?(e1.neighbourhood.elts in return.elts):(e1.neighbourhood.elts !in return.elts))",*/
-		"result.elts.neighbourhood.elts == this.extendedNodes.elts",
-		/*"all e: return.elts | e.neighbourhood.elts in this.allExtendedNodes.elts",
-		"this.allExtendedNodes.elts == this.extendedNodes.elts",*/
-		/*" all q1: return[int] | (no q2: (return[int] - q1) |" +
-				" q1.value == q2.value)",*/
-		" all q1: result.elts | all q2: (result.elts - q1) |" +
-						" (all n: q2.neighbourhood.elts | n.value!=q1.value)"
-				
-		//"{x: return[int] | x.neighbourhood.elts == this.extendedNodes.elts}"
-		//"all i: int | i >= 0 && i < return.length - 1 => return[i].dest = return[i+1].src"
-		})
-	@Modifies ({ "result.elts","result.length"
-//, "this.extendedNodes.elts"
-		})
-	//@FreshObjects ( cls = Set.class, typeParams={ExtendedNode.class} , num = 1 )
-//	/@Options(ensureAllInts = true)
-	public void solveLDominantniMnozinaGrafuProblem(Set<ExtendedNode> result)
-	{
+
+	@Ensures({
+			"result.elts in this.extendedNodes.elts", /*result set is a subset of all extended nodes*/
+			"result.length <= this.treshold", /*length of result set has to be lower or equal than treshold*/
+			"result.elts.neighbourhood.elts == this.extendedNodes.elts", /*neighborhoods of all nodes in result set has to cover whole graph*/
+			" all q1: result.elts | all q2: (result.elts - q1) |"
+					+ " (all n: q2.neighbourhood.elts | n.value!=q1.value)" /*there is no node appearing in result set more than once*/})
+	@Modifies({ "result.elts", "result.length" })/*we allow to modify elements of result set and its length*/
+	public void solveLDominantniMnozinaGrafuProblem(Set<ExtendedNode> result) {
 		Squander.exe(this, result);
 	}
 }
-
-

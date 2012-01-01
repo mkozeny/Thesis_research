@@ -13,7 +13,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Scanner;
 import java.util.Set;
 
 import cz.kozenym.graph.ExtendedNode;
@@ -30,7 +29,6 @@ public class Main {
 	 * @throws ClassNotFoundException 
 	 */
 	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
-		Scanner sc = new Scanner(System.in);
 		int countOfNodes = args.length>=1?Integer.parseInt(args[0]):30;
 		int l = args.length>=2?Integer.parseInt(args[1]):3;
 		int treshold = args.length>=3?Integer.parseInt(args[2]):3;
@@ -67,16 +65,12 @@ public class Main {
 			ge.setMatrixOfFollowers(inputGraph.getMatrixOfFollowers());
 			ge.generateGraph(false);
 		}
-		//GraphExecutor grex = new GraphExecutor(2,ge.getExtendedNodes());
-		System.out.println("Waiting...");
-		sc.nextLine();
 		Set<ExtendedNode> result = new HashSet<ExtendedNode>();
 		long parseTime = getCpuTime();
 		ge.solveLDominantniMnozinaGrafuProblem(result);
-		//Set<ExtendedNode> result = ge.solveLDominantniMnozinaGrafuProblem();
-		long time=0L;
+		long time=getCpuTime() - parseTime;
 		out.write("TIME: "
-				+ getTimeFormat().format(time=getCpuTime() - parseTime) + " ns");
+				+ getTimeFormat().format(time) + " ns");
 		out.close();
 		System.out.println("TIME: "
 				+ getTimeFormat().format(time) + " ns");

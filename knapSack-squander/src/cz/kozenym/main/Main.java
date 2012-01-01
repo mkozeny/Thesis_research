@@ -5,6 +5,9 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.lang.management.ManagementFactory;
+import java.lang.management.ThreadMXBean;
+import java.text.DecimalFormat;
 import java.util.StringTokenizer;
 
 import cz.kozenym.solver.KnapSack;
@@ -21,9 +24,19 @@ public class Main {
 		int [] v = new int[n];
 		int [] c = new int[n];
 		String numberOfThings = args.length == 1 ? args[0]:"4";
-		String inputTaskFile = "files/knap_"+numberOfThings+".txt";
-		String inputResFile = "files/knap_"+numberOfThings+"_res.txt";
-		String outputFile = "files/knap_"+numberOfThings+"_sol.txt";
+		String path = args.length>=2?args[1]:"/home/kozenym/Desktop/DP/squander_workspace/knapSack-squander-II/files/";
+		String outputPath = args.length==3?args[2]:"/home/kozenym/Desktop/DP/measurement/data/knapSack/squander/";
+		if(args.length!=1 || args.length!=2 || args.length!=3)
+		{
+			System.out.println("First argument is number of things");
+			System.out.println("Second optional is input graph filepath");
+			System.out.println("Third optional is output filepath");
+		}
+		
+		
+		String inputTaskFile = path+"knap_"+numberOfThings+".txt";
+		String inputResFile = path+"knap_"+numberOfThings+"_res.txt";
+		String outputFile = outputPath+numberOfThings+"/log";
 		BufferedReader inTask = new BufferedReader(new FileReader(inputTaskFile));
 		BufferedReader inResult = new BufferedReader(new FileReader(inputResFile));
 		BufferedWriter out = new BufferedWriter(new FileWriter(outputFile));
@@ -40,12 +53,12 @@ public class Main {
 				k++;
 			}
 			int resCost = Integer.parseInt(tokenizerRes.nextToken());
-			//if(resCost>=510)
-			//	continue;
 			KnapSack kn = new KnapSack(capacity,n, c, v);
 			try
 			{
+				long parseTime = getCpuTime();
 				Boolean [] result = kn.solveKnapSackProblem(resCost);
+				long time = getCpuTime()-parseTime;
 				int price = 0;
 				int weight = 0;
 				for(int i=0; i < result.length; i++)
@@ -62,7 +75,8 @@ public class Main {
 				System.out.println("PRICE: "+price);
 				System.out.println("WEIGHT: "+weight);
 				System.out.println("RESULT PRICE: "+resCost);
-				out.write("PRICE: "+price +", WEIGHT: "+weight+"; "+inputResLine+ "\r\n");
+				System.out.println("TIME: "+getTimeFormat().format(time));
+				out.write("PRICE: "+price +", WEIGHT: "+weight+", TIME: "+getTimeFormat().format(time)+"; "+inputResLine+ "\r\n");
 			}catch(Exception e)
 			{
 				out.write("ERROR\r\n");
@@ -72,62 +86,15 @@ public class Main {
 		inResult.close();
 		out.close();
 
-		//27 38 2 86 41 112 1 0 25 66 1 97 34 195 3 85 50 42 12 223
-		/*int [] v = new int[10];
-		v[0]=27;
-		v[1]=2;
-		v[2]=41;
-		v[3]=1;
-		v[4]=25;
-		v[5]=1;
-		v[6]=34;
-		v[7]=3;
-		v[8]=50;
-		v[9]=12;*/
-		//18 114 42 136 88 192 3 223
-		/*int [] v = new int[4];
-		v[0]=18;
-		v[1]=42;
-		v[2]=88;
-		v[3]=3;*/
-		
-		//27 38 2 86 41 112 1 0 25 66 1 97 34 195 3 85 50 42 12 223
-		/*int [] c = new int[10];
-		c[0]=38;
-		c[1]=86;
-		c[2]=112;
-		c[3]=0;
-		c[4]=66;
-		c[5]=97;
-		c[6]=195;
-		c[7]=85;
-		c[8]=42;
-		c[9]=223;*/
-		//18 114 42 136 88 192 3 223
-		/*int [] c = new int[4];
-		c[0]=114;
-		c[1]=136;
-		c[2]=192;
-		c[3]=223;*/
-		
-		/*KnapSack kn = new KnapSack(230,10, c, v);*/
-		/*KnapSack kn = new KnapSack(capacity,n, c, v);
-		
-		Boolean [] result = kn.solveKnapSackProblem(470);
-		int price = 0;
-		int weight = 0;
-		for(int i=0; i < result.length; i++)
-		{
-			if(result[i])
-			{
-				price+=c[i];
-				weight+=v[i];
-			}
-			System.out.print((result[i]?1:0)+" ");
-		}
-		System.out.println();
-		System.out.println("PRICE: "+price);
-		System.out.println("WEIGHT: "+weight);*/
+	}
+	/** Get CPU time in nanoseconds. */
+	private static long getCpuTime() {
+		ThreadMXBean bean = ManagementFactory.getThreadMXBean();
+		return bean.isCurrentThreadCpuTimeSupported() ? bean
+				.getCurrentThreadCpuTime() : 0L;
 	}
 
+	private static DecimalFormat getTimeFormat() {
+		return new DecimalFormat("###,###,##0.00;'-'###,###,##0.00");
+	}
 }
