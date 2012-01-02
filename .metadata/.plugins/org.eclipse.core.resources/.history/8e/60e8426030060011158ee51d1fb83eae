@@ -1,6 +1,0 @@
-package graph;
-
-public class State {
-
-	private int n;
-}

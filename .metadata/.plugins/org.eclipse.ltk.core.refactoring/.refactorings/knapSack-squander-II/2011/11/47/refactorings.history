@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;knapSack-squander-II/files/knap_37_sol.txt&apos; to &apos;knap_37.txt&apos;" description="Rename resource &apos;knap_37_sol.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="files/knap_37_sol.txt" name="knap_37.txt" stamp="1321205925763" updateReferences="true"/>
+</session>

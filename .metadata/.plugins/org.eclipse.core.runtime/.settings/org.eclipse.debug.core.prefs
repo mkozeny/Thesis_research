@@ -1,4 +1,4 @@
-#Thu Nov 03 22:57:47 CET 2011
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="StrictMath.pow(base,arity)"/>\n<expression enabled\="true" text\="universe.size()"/>\n<expression enabled\="true" text\="Integer.MAX_VALUE"/>\n<expression enabled\="true" text\="leftNeighbors.get(cell)"/>\n<expression enabled\="true" text\="actualState.isCoveringAllNodes()"/>\n<expression enabled\="true" text\="newState.countOfNodes()"/>\n<expression enabled\="true" text\="newState.getConfiguration()"/>\n</watchExpressions>\n
+#Sun Nov 13 15:22:12 CET 2011
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions/>\n
 eclipse.preferences.version=1
 org.eclipse.debug.core.PREF_BREAKPOINT_MANAGER_ENABLED_STATE=true

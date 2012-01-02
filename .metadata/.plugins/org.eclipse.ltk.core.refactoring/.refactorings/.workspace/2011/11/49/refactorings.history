@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 0 elements to &apos;imp&apos;&#x0A;- Destination element: &apos;imp&apos;" description="Copy compilation units" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1322394739213" target="/thesisText/figures/graphs/gbb/imp" units="0" version="1.0"/>
+</session>

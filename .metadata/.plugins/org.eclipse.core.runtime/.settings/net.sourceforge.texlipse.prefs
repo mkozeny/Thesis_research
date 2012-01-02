@@ -1,4 +1,5 @@
-#Mon Sep 26 08:30:59 CEST 2011
+#Wed Dec 28 20:33:22 CET 2011
 builderNum=2
 eclipse.preferences.version=1
+spellcheckerDictDir=/home/kozenym/opt/texlipse/dict
 outputFormat=pdf

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;GraphExecutor.java&apos; to &apos;imp&apos;&#x0A;- Original project: &apos;hamiltonianPath&apos;&#x0A;- Destination element: &apos;imp&apos;&#x0A;- Original element: &apos;main.GraphExecutor.java&apos;" description="Copy compilation unit" element1="/src&lt;main{GraphExecutor.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1320791144080" target="/thesisText/src/hp/imp" units="1" version="1.0"/>
+</session>

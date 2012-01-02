@@ -1,0 +1,138 @@
+package cz.kozenym.graph;
+
+import java.util.Arrays;
+import java.util.Stack;
+
+import cz.kozenym.graph.Graph;
+
+public class GraphExtension extends Graph{
+
+	private int a;
+	
+	private Stack<State> stateStack;
+	
+	private State bestConfiguration;
+	
+	public GraphExtension(int n, int a, int maxGrade) {
+		super(n, maxGrade);
+		this.a = a;
+		State initState = new State(n/*, a*/,0);
+		//initState.init();
+		initState.setCountOfCommonEdges(countOfCommonEdges(initState,true));
+		this.stateStack = new Stack<State>();
+		this.stateStack.push(initState);
+		this.bestConfiguration = new State(n/*, a*/,0);
+		this.bestConfiguration.setConfiguration(new boolean[n]);
+		this.bestConfiguration.setCountOfCommonEdges(Integer.MAX_VALUE);
+	}
+	
+	public void solveZobecnenaBisekcniSirkaGrafuProblem()
+	{
+		/*System.out.println("---MATRIX OF INCIDENCY---");
+		for(int i=0; i < n; i++)
+		{
+			for(int j=0; j < n; j++)
+			{
+				System.out.print((matrixOfIncidency[i][j]?1:0)+" ");
+			}
+			System.out.println();
+		}
+		System.out.println();*/
+		while(!this.stateStack.empty())
+		{
+			State actualState = stateStack.pop();
+			/*System.out.println("---POPPING STATE---");
+			printStateInfo(actualState);*/
+			generateFollowers(actualState);
+		}
+	}
+
+	
+	
+	private void generateFollowers(State actualState)
+	{
+		if(actualState.getPointer()==actualState.getConfiguration().length 
+				//|| actualState.countOfNodes()>=this.a 
+				|| actualState.getCountOfCommonEdges()>=this.bestConfiguration.getCountOfCommonEdges())
+			return;
+		
+		createNewState(actualState, true);
+		createNewState(actualState, false);
+	}
+	
+	private void createNewState(State actualState, boolean occupied)
+	{
+		boolean [] configuration = actualState.getConfiguration();
+		boolean [] newConfiguration = Arrays.copyOf(configuration, configuration.length);
+		newConfiguration[actualState.getPointer()]=occupied;
+		State newState = new State(this.n/*, this.a*/,actualState.getPointer()+1);
+		newState.setConfiguration(newConfiguration);
+		newState.setCountOfCommonEdges(countOfCommonEdges(newState,newState.countOfNodes()==this.a));
+		if(newState.countOfNodes()==this.a && this.bestConfiguration.getCountOfCommonEdges()>=newState.getCountOfCommonEdges())
+			this.bestConfiguration = newState;
+		else if(newState.countOfNodes()<this.a)
+		/*{
+			System.out.println("---PUSHING STATE---");
+			printStateInfo(actualState);*/
+			this.stateStack.push(newState);
+		/*}*/
+	}
+	
+	/*private void printStateInfo(State actualState)
+	{
+		System.out.println("1) ACTUAL CONFIGURATION");
+		boolean [] configuration = actualState.getConfiguration();
+		for(int i = 0; i<configuration.length;i++)
+		{
+			if(configuration[i])
+				System.out.println("Node: "+i);
+		}
+		System.out.println("2) COUNT OF COMMON EDGES: "+actualState.getCountOfCommonEdges());
+		System.out.println();
+	}*/
+	
+	/*public void putRestNodesIntoSet(State actualState)
+	{
+		boolean [] configuration = Arrays.copyOf(actualState.getConfiguration(), actualState.getConfiguration().length);
+		for(int i = actualState.getPointer(); i<configuration.length; i++)
+			configuration[i]=true;
+		Arrays.fill(configuration, actualState.getPointer(), actualState.getConfiguration().length, true);
+		countOfCommonEdges(actualState);
+	}*/
+
+	private int countOfCommonEdges(State actualState, boolean finalState)
+	{
+		/*System.out.println("---COUNTING COMMON EDGES---");*/
+		int countOfCommonEdges = 0;
+		boolean [] configuration = actualState.getConfiguration();
+		int length = 0;
+		if(finalState)
+			length = configuration.length;
+		else
+			length = actualState.getPointer();
+		for(int i=0; i< length; i++)
+		{
+			if(configuration[i])
+			{
+				/*System.out.println("FOR NODE: "+i);
+				System.out.print("INCIDENCY WITH: : ");*/
+				for(int j= 0; j < length; j++)
+				{
+					if(this.matrixOfIncidency[i][j] && (!configuration[j]))
+					/*{
+						System.out.print(j+", ");*/
+						countOfCommonEdges++;
+					/*}*/
+				}
+				/*System.out.println();*/
+			}
+		}
+		return countOfCommonEdges;
+	}
+	
+	public State getBestConfiguration() {
+		return bestConfiguration;
+	}
+	
+	
+}

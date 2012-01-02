@@ -1,0 +1,56 @@
+package cz.kozenym.game;
+
+public class NQueensProblemSolver {
+
+	private int n;
+
+	private Cell[] cells;
+
+	private int pointer;
+
+	public NQueensProblemSolver(int n) {
+		super();
+		this.n = n;
+		this.cells = new Cell[n];
+		this.pointer = 0;
+	}
+
+	public void solveNQueensProblemRecursively() {
+		for (int j = 0; j < n; j++) {
+				if (!(isSomeQueenInSameRow(j) || isSomeQueenOnDiagonal(pointer,
+						j))) {
+					cells[pointer] = new Cell(pointer, j);
+					if (pointer == n - 1)
+						return;
+					++pointer;
+					solveNQueensProblemRecursively();
+					if (pointer < n - 1 || cells[pointer] == null)
+						cells[--pointer] = null;
+
+				}
+			}
+
+		
+	}
+
+	private boolean isSomeQueenInSameRow(int row) {
+		for (int k = 0; k < pointer; k++) {
+			if (cells[k].getJ() == row)
+				return true;
+		}
+		return false;
+	}
+
+	private boolean isSomeQueenOnDiagonal(int row, int column) {
+		for (int k = 0; k < pointer; k++) {
+			if (cells[k].getI() - cells[k].getJ() == row - column
+					|| cells[k].getI() + cells[k].getJ() == row + column)
+				return true;
+		}
+		return false;
+	}
+
+	public Cell[] getCells() {
+		return this.cells;
+	}
+}

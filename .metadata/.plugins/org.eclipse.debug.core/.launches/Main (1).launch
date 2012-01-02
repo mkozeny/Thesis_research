@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/nQueens-squander/src/main/Main.java"/>
+<listEntry value="/nQueens-squander/src/cz/kozenym/main/Main.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
@@ -12,6 +12,6 @@
 <stringAttribute key="org.eclipse.hyades.trace.ui.ATTR_DESTINATION_PROJECT" value="/lDominantniMnozinaGrafu-squander"/>
 <booleanAttribute key="org.eclipse.hyades.trace.ui.ATTR_PROFILE_TO_FILE" value="false"/>
 <stringAttribute key="org.eclipse.hyades.trace.ui.ATTR_PROFILING_SET" value="tptp-dummy-profiling-set-Main (1)"/>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="main.Main"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="cz.kozenym.main.Main"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="nQueens-squander"/>
 </launchConfiguration>

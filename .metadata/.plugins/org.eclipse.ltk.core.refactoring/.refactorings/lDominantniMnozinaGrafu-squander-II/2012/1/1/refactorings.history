@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;cz.kozenym.graph.GraphExtension.solveLDominantniMnozinaGrafuProblem()&apos; to &apos;solveLDominantSetOfGraphProblem&apos;&#x0A;- Original project: &apos;lDominantniMnozinaGrafu-squander-II&apos;&#x0A;- Original element: &apos;cz.kozenym.graph.GraphExtension.solveLDominantniMnozinaGrafuProblem()&apos;&#x0A;- Renamed element: &apos;cz.kozenym.graph.GraphExtension.solveLDominantSetOfGraphProblem()&apos;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;solveLDominantniMnozinaGrafuProblem&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;cz.kozenym.graph{GraphExtension.java[GraphExtension~solveLDominantniMnozinaGrafuProblem" name="solveLDominantSetOfGraphProblem" references="true" stamp="1325439746050" version="1.0"/>
+</session>

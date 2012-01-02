@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;graph&apos; to &apos;cz.kozenym.graph&apos;&#x0A;- Original project: &apos;commonGraphUtils&apos;&#x0A;- Original element: &apos;commonGraphUtils/src/graph&apos;&#x0A;- Renamed element: &apos;commonGraphUtils/src/cz.kozenym.graph&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;graph&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;graph" name="cz.kozenym.graph" qualified="false" references="true" stamp="1325232845535" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ExtendedNode.java&apos; to &apos;lDominantniMnozinaGrafu/src/graph&apos;&#x0A;- Original project: &apos;lDominantniMnozinaGrafu-squander&apos;&#x0A;- Destination element: &apos;lDominantniMnozinaGrafu/src/graph&apos;&#x0A;- Original element: &apos;graph.ExtendedNode.java&apos;" description="Copy compilation unit" destination="=lDominantniMnozinaGrafu/src&lt;graph" element1="/src&lt;graph{ExtendedNode.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1321993592622" units="1" version="1.0"/>
+</session>
