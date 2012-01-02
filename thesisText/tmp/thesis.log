@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  2 JAN 2012 08:40
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.24)  2 JAN 2012 10:41
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -1882,7 +1882,7 @@ texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
 ts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/pub
 lic/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on thesis.pdf (126 pages, 1069837 bytes).
+Output written on thesis.pdf (126 pages, 1069813 bytes).
 PDF statistics:
  2821 PDF objects out of 2984 (max. 8388607)
  845 named destinations out of 1000 (max. 500000)
