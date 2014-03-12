@@ -1,0 +1,11 @@
+\beamer@endinputifotherversion {3.07pt}
+\select@language {czech}
+\beamer@sectionintoc {1}{Zad\IeC {\'a}n\IeC {\'\i } a c\IeC {\'\i }le}{2}{0}{1}
+\beamer@sectionintoc {2}{Z\IeC {\'a}kladn\IeC {\'\i } pojmy}{6}{0}{2}
+\beamer@sectionintoc {3}{Squander}{9}{0}{3}
+\beamer@subsectionintoc {3}{1}{Architektura}{9}{0}{3}
+\beamer@subsectionintoc {3}{2}{Kodkod}{10}{0}{3}
+\beamer@subsectionintoc {3}{3}{JFSL}{14}{0}{3}
+\beamer@sectionintoc {4}{Implementovan\IeC {\'e} algoritmy}{17}{0}{4}
+\beamer@sectionintoc {5}{Porovn\IeC {\'a}n\IeC {\'\i }}{24}{0}{5}
+\beamer@sectionintoc {6}{Zhodnocen\IeC {\'\i }}{35}{0}{6}

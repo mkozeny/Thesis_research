@@ -2,36 +2,36 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="310" key="DIALOG_WIDTH"/>
-		<item value="310" key="DIALOG_Y_ORIGIN"/>
-		<item value="4" key="DIALOG_X_ORIGIN"/>
+		<item value="312" key="DIALOG_Y_ORIGIN"/>
 		<item value="430" key="DIALOG_HEIGHT"/>
+		<item value="4" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="tab:hpTimes" key="selection"/>
+		<item value="section" key="selection"/>
 		<list key="findhistory">
-			<item value="tab:hpTimes"/>
-			<item value="putRestOfThingsIntoBag"/>
-			<item value="maxWeight"/>
-			<item value="frequen"/>
-			<item value="bin"/>
-			<item value="files"/>
-			<item value="$"/>
-			<item value="such that"/>
+			<item value="section"/>
+			<item value="subsection"/>
+			<item value="Section"/>
+			<item value="thm"/>
+			<item value="squnder"/>
+			<item value="squander"/>
+			<item value="inciden"/>
+			<item value="obnov"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
 			<item value="successfully"/>
 			<item value="logic"/>
 			<item value="Logic"/>
 			<item value="0.5"/>
 			<item value="0.333333"/>
 			<item value="0.2"/>
-			<item value=""/>
 			<item value="21.49"/>
 		</list>
 	</section>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;presentation/src/Hp2.java&apos; to &apos;Hp.java&apos;" description="Rename resource &apos;Hp2.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Hp2.java" name="Hp.java" stamp="1327187475954" updateReferences="true"/>
+</session>

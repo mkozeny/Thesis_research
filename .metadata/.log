@@ -3197,3 +3197,210 @@ org.eclipse.jgit.api.errors.JGitInternalException: Entry not found by path: thes
 	at org.eclipse.egit.core.op.CommitOperation.execute(CommitOperation.java:217)
 	at org.eclipse.egit.ui.internal.commit.CommitUI$2.run(CommitUI.java:217)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2012-01-02 17:00:48.933 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2012-01-02 17:00:59.539
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2012-01-03 10:10:17.470 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2012-01-03 10:10:29.373
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2012-01-03 14:03:25.311 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2012-01-03 14:03:38.230
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2012-01-20 21:54:53.704 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2012-01-20 21:55:08.190
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2012-01-21 23:45:16.799 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2012-01-21 23:45:26.870
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2012-01-22 20:22:34.611 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2012-01-22 20:22:46.490
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2012-01-23 13:41:17.130 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2012-01-23 13:41:29.896
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2012-01-25 14:08:00.024 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2012-01-25 14:08:15.169
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2012-02-10 18:16:41.880 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2012-02-10 18:16:52.685
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2012-03-04 23:30:05.549 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2012-03-04 23:30:16.175
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2012-05-27 15:06:38.351 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2012-05-27 15:06:58.607
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2013-05-19 10:54:02.249 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.7.0_09
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86 -data /home/kozenym/Desktop/DP/squander_workspace
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2013-05-19 10:54:06.881
+!MESSAGE No search provider was registed. Tasks search is not available.
+!SESSION 2014-03-12 22:14:19.810 -----------------------------------------------
+eclipse.buildId=I20110613-1736
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.mylyn.tasks.ui 2 0 2014-03-12 22:14:38.285
+!MESSAGE No search provider was registed. Tasks search is not available.
+
+!ENTRY org.eclipse.egit.ui 4 0 2014-03-12 22:24:41.126
+!MESSAGE Committing failed
+!STACK 1
+org.eclipse.team.core.TeamException: An internal error occurred
+	at org.eclipse.egit.core.op.CommitOperation.commit(CommitOperation.java:282)
+	at org.eclipse.egit.core.op.CommitOperation$1.run(CommitOperation.java:207)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at org.eclipse.egit.core.op.CommitOperation.execute(CommitOperation.java:217)
+	at org.eclipse.egit.ui.internal.commit.CommitUI$2.run(CommitUI.java:217)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.jgit.api.errors.JGitInternalException: Entry not found by path: thesisText/.tex
+	at org.eclipse.jgit.api.CommitCommand.createTemporaryIndex(CommitCommand.java:401)
+	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:192)
+	at org.eclipse.egit.core.op.CommitOperation.commit(CommitOperation.java:271)
+	... 6 more
+!SUBENTRY 1 org.eclipse.team.core 4 0 2014-03-12 22:24:41.128
+!MESSAGE An internal error occurred
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Entry not found by path: thesisText/.tex
+	at org.eclipse.jgit.api.CommitCommand.createTemporaryIndex(CommitCommand.java:401)
+	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:192)
+	at org.eclipse.egit.core.op.CommitOperation.commit(CommitOperation.java:271)
+	at org.eclipse.egit.core.op.CommitOperation$1.run(CommitOperation.java:207)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at org.eclipse.egit.core.op.CommitOperation.execute(CommitOperation.java:217)
+	at org.eclipse.egit.ui.internal.commit.CommitUI$2.run(CommitUI.java:217)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.egit.ui 4 0 2014-03-12 22:25:58.289
+!MESSAGE Committing failed
+!STACK 1
+org.eclipse.team.core.TeamException: An internal error occurred
+	at org.eclipse.egit.core.op.CommitOperation.commit(CommitOperation.java:282)
+	at org.eclipse.egit.core.op.CommitOperation$1.run(CommitOperation.java:207)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at org.eclipse.egit.core.op.CommitOperation.execute(CommitOperation.java:217)
+	at org.eclipse.egit.ui.internal.commit.CommitUI$2.run(CommitUI.java:217)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.jgit.api.errors.JGitInternalException: Entry not found by path: thesisText/.tex
+	at org.eclipse.jgit.api.CommitCommand.createTemporaryIndex(CommitCommand.java:401)
+	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:192)
+	at org.eclipse.egit.core.op.CommitOperation.commit(CommitOperation.java:271)
+	... 6 more
+!SUBENTRY 1 org.eclipse.team.core 4 0 2014-03-12 22:25:58.289
+!MESSAGE An internal error occurred
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Entry not found by path: thesisText/.tex
+	at org.eclipse.jgit.api.CommitCommand.createTemporaryIndex(CommitCommand.java:401)
+	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:192)
+	at org.eclipse.egit.core.op.CommitOperation.commit(CommitOperation.java:271)
+	at org.eclipse.egit.core.op.CommitOperation$1.run(CommitOperation.java:207)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at org.eclipse.egit.core.op.CommitOperation.execute(CommitOperation.java:217)
+	at org.eclipse.egit.ui.internal.commit.CommitUI$2.run(CommitUI.java:217)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.egit.ui 4 0 2014-03-12 22:26:23.878
+!MESSAGE Committing failed
+!STACK 1
+org.eclipse.team.core.TeamException: An internal error occurred
+	at org.eclipse.egit.core.op.CommitOperation.commit(CommitOperation.java:282)
+	at org.eclipse.egit.core.op.CommitOperation$1.run(CommitOperation.java:207)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at org.eclipse.egit.core.op.CommitOperation.execute(CommitOperation.java:217)
+	at org.eclipse.egit.ui.internal.commit.CommitUI$2.run(CommitUI.java:217)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.jgit.api.errors.JGitInternalException: Entry not found by path: thesisText/.tex
+	at org.eclipse.jgit.api.CommitCommand.createTemporaryIndex(CommitCommand.java:401)
+	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:192)
+	at org.eclipse.egit.core.op.CommitOperation.commit(CommitOperation.java:271)
+	... 6 more
+!SUBENTRY 1 org.eclipse.team.core 4 0 2014-03-12 22:26:23.878
+!MESSAGE An internal error occurred
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Entry not found by path: thesisText/.tex
+	at org.eclipse.jgit.api.CommitCommand.createTemporaryIndex(CommitCommand.java:401)
+	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:192)
+	at org.eclipse.egit.core.op.CommitOperation.commit(CommitOperation.java:271)
+	at org.eclipse.egit.core.op.CommitOperation$1.run(CommitOperation.java:207)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2326)
+	at org.eclipse.egit.core.op.CommitOperation.execute(CommitOperation.java:217)
+	at org.eclipse.egit.ui.internal.commit.CommitUI$2.run(CommitUI.java:217)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)

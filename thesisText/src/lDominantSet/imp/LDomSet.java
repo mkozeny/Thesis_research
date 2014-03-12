@@ -26,9 +26,9 @@
 				for (int neighborhood = 0; neighborhood < this.l; neighborhood++) {
 					for (int j = 0; j < coverageTmp.length; j++) {
 						if (coverageTmp[j]) {
-							for (int k = 0; k < this.matrixOfIncidency[j].length; k++)
+							for (int k = 0; k < this.matrixOfAdjacency[j].length; k++)
 								newCoverage[k] = newCoverage[k]
-										|| this.matrixOfIncidency[j][k];
+										|| this.matrixOfAdjacency[j][k];
 						}
 					}
 					coverageTmp = Arrays

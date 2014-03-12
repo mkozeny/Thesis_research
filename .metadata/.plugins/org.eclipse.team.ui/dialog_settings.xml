@@ -2,7 +2,7 @@
 <section name="Workbench">
 	<section name="SynchronizeViewSettings">
 		<item value="false" key="linkWithEditor"/>
-		<item value="1325491207987" key="lastactiveparticipant_sec_id"/>
+		<item value="1325499491877" key="lastactiveparticipant_sec_id"/>
 		<item value="org.eclipse.egit.ui.modelCompareParticipant" key="lastactiveparticipant_id"/>
 		<section name="org.eclipse.egit.ui.modelCompareParticipant.1319962349233">
 		</section>
@@ -36,6 +36,8 @@
 		</section>
 		<section name="org.eclipse.egit.ui.modelCompareParticipant.1319963335304">
 		</section>
+		<section name="org.eclipse.egit.ui.modelCompareParticipant.1325499340634">
+		</section>
 		<section name="org.eclipse.egit.ui.modelCompareParticipant.1323726970533">
 		</section>
 		<section name="org.eclipse.egit.ui.modelCompareParticipant.1322436102886">
@@ -52,6 +54,10 @@
 		<section name="org.eclipse.egit.ui.modelCompareParticipant.1325111929849">
 		</section>
 		<section name="org.eclipse.egit.ui.modelCompareParticipant.1319502001728">
+		</section>
+		<section name="org.eclipse.egit.ui.modelCompareParticipant.1325499431502">
+		</section>
+		<section name="org.eclipse.egit.ui.modelCompareParticipant.1325498858031">
 		</section>
 		<section name="org.eclipse.egit.ui.modelCompareParticipant.1319227937688">
 		</section>
@@ -70,6 +76,8 @@
 		<section name="org.eclipse.egit.ui.modelCompareParticipant.1318520822591">
 		</section>
 		<section name="org.eclipse.egit.ui.modelCompareParticipant.1320359440050">
+		</section>
+		<section name="org.eclipse.egit.ui.modelCompareParticipant.1325499491877">
 		</section>
 	</section>
 	<section name="ConfigureProjectWizard">
